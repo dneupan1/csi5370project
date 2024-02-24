@@ -1,0 +1,6 @@
+.coverage
+**/__pycache__
+**/.pytest_cache
+**/pynguin-report
+**/tests/__pycache__
+**/.coverage
