@@ -23,4 +23,3 @@ def test_count_good_subarrays(nums, k, expected):
         expected (int): The expected number of good subarrays, adjusted for arrays of identical elements.
     """
     assert count_good_subarrays(nums, k) == expected, f"Failed with nums={nums}, k={k}, expected={expected}"
-
