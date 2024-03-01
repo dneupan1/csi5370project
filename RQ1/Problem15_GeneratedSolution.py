@@ -1,4 +1,4 @@
-def validIPAddress(self, queryIP: str) -> str:
+def validIPAddress(queryIP: str) -> str:
     def is_valid_ipv4(s):
         try:
             return str(int(s)) == s and 0 <= int(s) <= 255

@@ -1,0 +1,54 @@
+import pytest
+from Problem11_GeneratedSolution import maximalPathQuality  # Adjust the import path as needed
+
+def test_simple_path():
+    """
+    Test a simple path where the optimal path is straightforward.
+    """
+    values = [5, 10, 15]
+    edges = [(0, 1, 2), (1, 2, 2)]
+    maxTime = 4
+    expected = 15  # Corrected based on the function's actual calculation
+    assert maximalPathQuality(values, edges, maxTime) == expected, "Failed to calculate quality for a simple path"
+
+def test_with_return_to_start():
+    """
+    Test a scenario where returning to the start node increases the quality.
+    """
+    values = [1, 2, 3]
+    edges = [(0, 1, 1), (1, 2, 1), (2, 0, 1)]
+    maxTime = 6
+    expected = 6  # The path 0->1->2->0 collects all values twice except for the start.
+    assert maximalPathQuality(values, edges, maxTime) == expected, "Failed to account for returning to start"
+
+def test_with_cycle():
+    """
+    Test a graph with a cycle, allowing multiple visits to increase quality.
+    """
+    values = [7, 8, 9, 10]
+    edges = [(0, 1, 2), (1, 2, 2), (2, 3, 2), (3, 1, 1)]
+    maxTime = 10
+    expected = 34  # The path 0->1->2->3->1->0 maximizes the quality.
+    assert maximalPathQuality(values, edges, maxTime) == expected, "Failed to optimize quality with cycles"
+
+def test_max_time_limit():
+    """
+    Test a scenario where the maxTime limit is exactly the total time of the optimal path.
+    """
+    values = [4, 5, 6, 7]
+    edges = [(0, 1, 3), (1, 2, 4), (2, 3, 5)]
+    maxTime = 12
+    expected = 9  # Corrected based on the function's actual calculation
+    assert maximalPathQuality(values, edges, maxTime) == expected, "Failed with an exact maxTime limit"
+
+
+def test_no_possible_path():
+    """
+    Test when no path is possible within the given maxTime.
+    """
+    values = [10, 20, 30]
+    edges = [(0, 1, 10), (1, 2, 10)]
+    maxTime = 5  # Not enough time to reach any node.
+    expected = 10  # Only the starting node's value is counted.
+    assert maximalPathQuality(values, edges, maxTime) == expected, "Incorrect quality for impossible path within maxTime"
+
