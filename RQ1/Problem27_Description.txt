@@ -1,0 +1,61 @@
+PROBLEM: Search in Rotated Sorted Array
+
+LEVEL OF DIFFICULTY: Medium
+
+TAGS: Array, Binary Search
+
+DESCRIPTION:
+There is an integer array nums sorted in ascending order (with distinct values).
+
+Prior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].
+
+Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
+
+You must write an algorithm with O(log n) runtime complexity.
+
+Example 1:
+Input: nums = [4,5,6,7,0,1,2], target = 0
+Output: 4
+
+Example 2:
+Input: nums = [4,5,6,7,0,1,2], target = 3
+Output: -1
+
+Example 3:
+Input: nums = [1], target = 0
+Output: -1
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Input prompt for the implementation:
+
+You are a software developer. You have been given a problem statement as below:
+ ** description here **
+
+Implement a solution based on the given examples in Python.
+Follow good software developer practices while generating the code.
+Comment the code liberally to explain what each piece does and why it is written that way.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Input prompt for the test code generation:
+
+You are a software developer writing tests for some software functions.
+
+Given below is a function:
+  **** Generated Code is added here ****
+
+Implement test for the given implementation using pytest in Python.
+Ideal test code should have 100 percent test coverage.
+Follow good software developer practices while generating the code.
+Comment the code liberally to explain what each piece does and why it is written that way.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Input prompt for the repeating the test code generation in case the test fails.
+
+The test code fails with following error:
+ *** insert error from the console here ****
+
+ Fix the error and regenerate the test code. Run the code against the function below until you have the tests passing. The function below is absolutely correct.
+ *** insert the generated implementation code here ****
