@@ -1,6 +1,6 @@
 PROBLEM: Lowest Common Ancestor of a Binary Tree
 
-LEVEL OF DIFFICULTY: Medium
+LEVEL OF DIFFICULTY: Hard
 
 TAGS: Tree, DFS, Binary Tree, Recursion
 
