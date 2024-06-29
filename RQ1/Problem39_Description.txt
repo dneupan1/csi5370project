@@ -60,3 +60,33 @@ The test code fails with following error:
 
  Fix the error and regenerate the test code. Run the code against the function below until you have the tests passing. The function below is absolutely correct.
  *** insert the generated implementation code here ****
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Input prompt for the implementation:
+
+You are a software developer. You have been given a problem statement as below:
+Given a string s that contains parentheses and letters, remove the minimum number of invalid parentheses to make the input string valid.
+
+Return a list of unique strings that are valid with the minimum number of removals. You may return the answer in any order.
+
+Example 1:
+Input: s = "()())()"
+Output: ["(())()","()()()"]
+
+Example 2:
+Input: s = "(a)())()"
+Output: ["(a())()","(a)()()"]
+
+Example 3:
+Input: s = ")("
+Output: [""]
+
+Hint 1: Since we do not know which brackets can be removed, we try all the options! We can use recursion.
+Hint 2: In the recursion, for each bracket, we can either use it or remove it.
+Hint 3: Recursion will generate all the valid parentheses strings but we want the ones with the least number of parentheses deleted.
+Hint 4: We can count the number of invalid brackets to be deleted and only generate the valid strings in the recursion.
+
+Implement a solution based on the given examples in Python.
+Follow good software developer practices while generating the code.
+Comment the code liberally to explain what each piece does and why it is written that way.

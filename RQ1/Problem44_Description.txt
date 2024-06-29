@@ -48,3 +48,31 @@ Implement test for the given implementation using pytest in Python.
 Ideal test code should have 100 percent test coverage.
 Follow good software developer practices while generating the code.
 Comment the code liberally to explain what each piece does and why it is written that way.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Input prompt for the implementation:
+
+You are a software developer. You have been given a problem statement as below:
+There are n piles of coins on a table. Each pile consists of a positive number of coins of assorted denominations.
+
+In one move, you can choose any coin on top of any pile, remove it, and add it to your wallet.
+
+Given a list piles, where piles[i] is a list of integers denoting the composition of the ith pile from top to bottom, and a positive integer k, return the maximum total value of coins you can have in your wallet if you choose exactly k coins optimally.
+
+Example 1:
+Input: piles = [[1,100,3],[7,8,9]], k = 2
+Output: 101
+Explanation:
+The above diagram shows the different ways we can choose k coins.
+The maximum total we can obtain is 101.
+
+Example 2:
+Input: piles = [[100],[100],[100],[100],[100],[100],[1,1,1,1,1,1,700]], k = 7
+Output: 706
+Explanation:
+The maximum total can be obtained if we choose all coins from the last pile.
+ 
+Implement a solution based on the given examples in Python.
+Follow good software developer practices while generating the code.
+Comment the code liberally to explain what each piece does and why it is written that way.

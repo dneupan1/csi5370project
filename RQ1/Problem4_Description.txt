@@ -80,3 +80,34 @@ The test code fails with following error:
 
  Fix the error and regenerate the test code. Run the code against the function below until you have the tests passing. The function below is absolutely correct.
  *** insert the generated implementation code here ****
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Input prompt for the implementation:
+
+You are a software developer. You have been given a problem statement as below:
+Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where:
+
+'.' Matches any single character.​​​​
+'*' Matches zero or more of the preceding element.
+The matching should cover the entire input string (not partial).
+
+Example 1:
+  Input: s = "aa", p = "a"
+  Output: false
+  Explanation: "a" does not match the entire string "aa".
+
+Example 2:
+  Input: s = "aa", p = "a*"
+  Output: true
+  Explanation: '*' means zero or more of the preceding element, 'a'. Therefore, by repeating 'a' once, it becomes "aa".
+
+Example 3:
+  Input: s = "ab", p = ".*"
+  Output: true
+  Explanation: ".*" means "zero or more (*) of any character (.)".
+
+Implement a solution based on the given examples in Python.
+Follow good software developer practices while generating the code.
+Comment the code liberally to explain what each piece does and why it is written that way.
