@@ -91,6 +91,7 @@ Example 2:
     Explanation: Subarrays formed with exactly 3 different integers: [1,2,1,3], [2,1,3], [1,3,4]
 
 Implement test for the given problem description using pytest in Python.
-Ideal test code should have 100 percent test coverage.
 Follow good software developer practices while generating the code.
 Comment the code liberally to explain what each piece does and why it is written that way.
+
+

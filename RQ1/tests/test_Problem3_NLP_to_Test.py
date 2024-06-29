@@ -1,38 +1,36 @@
-def reverse(x: int) -> int:
-    """
-    This function takes a signed 32-bit integer x and returns x with its digits reversed.
-    If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1],
-    then it returns 0.
+import pytest
+from Problem3_GeneratedSolution import reverse_integer  # Import the function from your module
 
-    :param x: Signed 32-bit integer
-    :return: Reversed integer or 0 if the result is out of bounds
-    """
+# Test cases to check the reverse functionality and edge conditions
 
-    # Define the 32-bit integer boundaries
-    INT_MIN, INT_MAX = -2**31, 2**31 - 1
+def test_positive_number():
+    """Test reversing a positive number."""
+    assert reverse_integer(123) == 321, "Should correctly reverse a positive integer"
 
-    # Store the sign of the number and work with its absolute value
-    sign = -1 if x < 0 else 1
-    x = abs(x)
+def test_negative_number():
+    """Test reversing a negative number."""
+    assert reverse_integer(-123) == -321, "Should correctly reverse a negative integer"
 
-    # Initialize the reversed number to 0
-    reversed_num = 0
+def test_number_with_trailing_zeros():
+    """Test reversing a number that ends with zeros."""
+    assert reverse_integer(120) == 21, "Should correctly reverse a number with trailing zeros"
 
-    # Process each digit in the integer
-    while x != 0:
-        # Get the last digit of the number
-        digit = x % 10
-        x //= 10  # Remove the last digit from the number
+def test_zero():
+    """Test reversing zero."""
+    assert reverse_integer(0) == 0, "Should return zero for zero input"
 
-        # Check for overflow before updating the reversed number
-        if reversed_num > (INT_MAX - digit) // 10:
-            return 0
+def test_overflow_postive():
+    """Test reversing a number that would cause overflow when positive."""
+    assert reverse_integer(2**31 - 1) == 0, "Should return zero if reversed number exceeds positive limit"
 
-        # Update the reversed number
-        reversed_num = reversed_num * 10 + digit
+def test_overflow_negative():
+    """Test reversing a number that would cause overflow when negative."""
+    assert reverse_integer(-2**31) == 0, "Should return zero if reversed number exceeds negative limit"
 
-    # Apply the original sign to the reversed number
-    reversed_num *= sign
+def test_max_int():
+    """Test the edge case of the maximum int value."""
+    assert reverse_integer(2147483647) == 0, "Should handle edge case of max int value"
 
-    # Return the reversed number
-    return reversed_num
+def test_min_int():
+    """Test the edge case of the minimum int value."""
+    assert reverse_integer(-2147483648) == 0, "Should handle edge case of min int value"
