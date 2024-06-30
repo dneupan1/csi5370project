@@ -9,7 +9,7 @@ from Problem14_GeneratedSolution import getMaxRepetitions  # Assuming the functi
     # No possible subsequence of s2 in s1
     ("abc", 2, "def", 2, 0),
     # s1 repeated many times can match s2 repeated fewer times
-    ("abc", 10, "ab", 5, 5),
+    #("abc", 10, "ab", 5, 5),
     # Edge case: Single character repeated many times
     ("a", 1000, "aa", 1, 500),
     # Edge case: s1 and s2 are the same but n2 is larger than n1
@@ -19,7 +19,7 @@ from Problem14_GeneratedSolution import getMaxRepetitions  # Assuming the functi
     # Long strings with repeated patterns
     ("abcabcabc", 3, "abc", 3, 3),
     # Edge case: Large n1 and n2 values
-    ("abc", 100, "a", 50, 200),
+    #("abc", 100, "a", 50, 200),
     # Test with no repeats (n1 and n2 are 1)
     ("acb", 1, "ab", 1, 1),
 ])

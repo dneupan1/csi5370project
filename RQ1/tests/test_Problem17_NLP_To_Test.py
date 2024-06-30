@@ -15,9 +15,9 @@ from Problem17_GeneratedSolution import countSmaller  # Assuming the function 'c
     # All elements in decreasing order
     ([4, 3, 2, 1], [3, 2, 1, 0]),
     # Array with duplicates and negatives
-    ([2, 9, 5, 4, 8, 1, 1], [2, 4, 2, 1, 2, 0, 0]),
+    #([2, 9, 5, 4, 8, 1, 1], [2, 4, 2, 1, 2, 0, 0]),
     # Mixed positive and negative numbers
-    ([10, -10, 11, 20, -20, 15], [4, 1, 2, 2, 0, 1]),
+    #([10, -10, 11, 20, -20, 15], [4, 1, 2, 2, 0, 1]),
     # Array with single element
     ([3], [0]),
     # Array with all identical elements

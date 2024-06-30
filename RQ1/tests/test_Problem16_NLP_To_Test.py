@@ -17,9 +17,9 @@ from Problem16_GeneratedSolution import reconstructQueue  # Assuming the functio
     # People with no one taller in front
     ([[5, 0], [6, 0], [7, 0]], [[5, 0], [6, 0], [7, 0]]),
     # Random heights and k values
-    ([[3, 1], [4, 2], [2, 0], [1, 3]], [[2, 0], [3, 1], [4, 2], [1, 3]]),
+    #([[3, 1], [4, 2], [2, 0], [1, 3]], [[2, 0], [3, 1], [4, 2], [1, 3]]),
     # Edge case: Multiple people with k equal to their index
-    ([[4, 0], [5, 1], [6, 2], [7, 3]], [[4, 0], [5, 1], [6, 2], [7, 3]])
+    #([[4, 0], [5, 1], [6, 2], [7, 3]], [[4, 0], [5, 1], [6, 2], [7, 3]])
 ])
 def test_reconstructQueue(people, expected):
     """

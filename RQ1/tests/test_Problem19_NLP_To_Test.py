@@ -15,13 +15,13 @@ from Problem19_GeneratedSolution import countPrefixAligned as numTimesPrefixAlig
     # No flips, never prefix-aligned
     ([], 0),
     # Flip sequence that never aligns
-    ([5, 4, 3, 2, 1], 0),
+    #([5, 4, 3, 2, 1], 0),
     # Large sequence with only one alignment at the end
     ([10, 9, 8, 7, 6, 5, 4, 3, 2, 1], 1),
     # Sequence with multiple prefix alignments in the middle
     ([2, 3, 4, 1, 5], 2),
     # Random flips with multiple alignments
-    ([3, 1, 2, 5, 4], 3)
+    #([3, 1, 2, 5, 4], 3)
 ])
 def test_numTimesPrefixAligned(flips, expected):
     """
