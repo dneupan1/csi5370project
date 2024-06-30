@@ -113,8 +113,6 @@ Example 3:
 Input: head = [1]
 Output: [1]
 
-
-
 Implement test for the given problem description using pytest in Python.
 Ideal test code should have 100 percent test coverage.
 Follow good software developer practices while generating the code.
