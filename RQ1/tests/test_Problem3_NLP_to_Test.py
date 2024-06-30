@@ -1,5 +1,5 @@
 import pytest
-from Problem3_GeneratedSolution import reverse_integer  # Import the function from your module
+from Problem3_GeneratedSolution import reverse as reverse_integer # Import the function from your module
 
 # Test cases to check the reverse functionality and edge conditions
 
