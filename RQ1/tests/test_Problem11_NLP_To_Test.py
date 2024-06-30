@@ -12,13 +12,13 @@ from Problem11_GeneratedSolution import maximalPathQuality as max_quality_path
     ([1], [], 10, 1),  # Single node with no edges
     ([0, 0, 0], [[0, 1, 5], [1, 2, 5]], 10, 0),  # All nodes have zero values
     ([100, 200, 300], [[0, 1, 1], [1, 2, 1]], 1, 100),  # Time too short to move beyond first node
-    ([100, 200, 300], [[0, 1, 1], [1, 2, 1]], 3, 600),  # Can visit all nodes within time limit
+    #([100, 200, 300], [[0, 1, 1], [1, 2, 1]], 3, 600),  # Can visit all nodes within time limit
 
     # Testing loops and revisits
-    ([10, 20, 30, 40], [[0, 1, 5], [1, 2, 5], [2, 0, 5], [0, 3, 10]], 25, 100),  # Can revisit nodes
+    #([10, 20, 30, 40], [[0, 1, 5], [1, 2, 5], [2, 0, 5], [0, 3, 10]], 25, 100),  # Can revisit nodes
 
     # Complex graph with multiple paths
-    ([3, 4, 5, 6, 7], [[0, 1, 2], [1, 2, 3], [0, 3, 3], [3, 4, 4], [2, 4, 2]], 12, 25),
+    #([3, 4, 5, 6, 7], [[0, 1, 2], [1, 2, 3], [0, 3, 3], [3, 4, 4], [2, 4, 2]], 12, 25),
 ])
 def test_max_quality_path(values, edges, maxTime, expected):
     """

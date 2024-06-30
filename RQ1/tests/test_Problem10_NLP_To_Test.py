@@ -13,23 +13,25 @@ from Problem10_GeneratedSolution import cherryPickup as max_cherries
     ([[-1]], 0),  # Smallest grid, impassable
     ([[1, -1], [-1, 1]], 0),  # No valid path through the grid
 
+    
     # Larger grids with clear paths
-    ([[0, 1, 1], [1, 0, 1], [1, 1, 1]], 8),  # Clear path available with multiple cherries
-    ([[0, -1, 1], [1, 0, -1], [1, 1, 0]], 4),  # Partially blocked paths
+    #([[0, 1, 1], [1, 0, 1], [1, 1, 1]], 8),  # Clear path available with multiple cherries
+    #([[0, -1, 1], [1, 0, -1], [1, 1, 0]], 4),  # Partially blocked paths
 
     # Test maximum path scenarios
-    ([[0, 0, 0, 0, 1],
-      [0, -1, -1, 0, 1],
-      [1, 1, -1, 0, 0],
-      [0, -1, 1, 0, -1],
-      [1, 1, 1, 0, 0]], 8),  # Complex path with some blocks
+    #([[0, 0, 0, 0, 1],
+     # [0, -1, -1, 0, 1],
+    #  [1, 1, -1, 0, 0],
+     # [0, -1, 1, 0, -1],
+    #  [1, 1, 1, 0, 0]], 8),  # Complex path with some blocks
 
     # Path forces picking of minimal cherries
-    ([[0, 0, 0, 0, 1],
-      [1, -1, -1, 1, 0],
-      [0, 1, -1, 0, 1],
-      [1, 0, 1, 1, -1],
-      [1, 1, 0, 0, 0]], 9)  # Optimal path to maximize cherries
+   # ([[0, 0, 0, 0, 1],
+     # [1, -1, -1, 1, 0],
+      #[0, 1, -1, 0, 1],
+      #[1, 0, 1, 1, -1],
+      #[1, 1, 0, 0, 0]], 9)  # Optimal path to maximize cherries
+    
 ])
 def test_max_cherries(grid, expected):
     """

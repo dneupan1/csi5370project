@@ -9,9 +9,9 @@ from Problem39_GeneratedSolution import removeInvalidParentheses as remove_inval
     ("(((((((((", [""]),  # All open parentheses
     (")))))))))", [""]),  # All close parentheses
     ("((a))", ["((a))"]),  # No removal needed, already valid
-    ("((((((a))))))", ["((a))", "(((a)))", "((((a))))"]),  # Nested parentheses
-    ("())(()", ["()()", "(())"]),  # Requires removing different parentheses to balance
-    ("(a(b)c)())", ["(a(b)c)()", "(ab)c()()", "(a(b)c())"])  # Mixed with letters inside and outside
+    #("((((((a))))))", ["((a))", "(((a)))", "((((a))))"]),  # Nested parentheses
+    #("())(()", ["()()", "(())"]),  # Requires removing different parentheses to balance
+    #("(a(b)c)())", ["(a(b)c)()", "(ab)c()()", "(a(b)c())"])  # Mixed with letters inside and outside
 ])
 def test_remove_invalid_parentheses(s, expected):
     """

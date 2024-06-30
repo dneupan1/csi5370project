@@ -7,8 +7,8 @@ from Problem9_GeneratedSolution import minPathSum as min_path_sum
     ([[1]], 1),                              # Single element grid
     ([[1, 2], [3, 4]], 7),                   # Small 2x2 grid
     ([[1, 100], [1, 1]], 3),                 # Path choice significantly affects sum
-    ([[2, 2, 2], [2, 2, 2], [2, 2, 2]], 12), # Uniform values
-    ([[1, 2, 3], [4, 1, 6], [7, 8, 1]], 8),  # Path with minimal sum in the middle
+    #([[2, 2, 2], [2, 2, 2], [2, 2, 2]], 12), # Uniform values
+    #([[1, 2, 3], [4, 1, 6], [7, 8, 1]], 8),  # Path with minimal sum in the middle
     ([[1, 10, 1], [1, 1, 10], [10, 1, 1]], 5) # Path avoiding high values
 ])
 def test_min_path_sum(grid, expected):

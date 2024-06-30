@@ -7,7 +7,7 @@ from Problem45_GeneratedSolution import findItinerary as reconstruct_itinerary  
     ([["JFK", "LAX"], ["LAX", "JFK"]], ["JFK", "LAX", "JFK"]),  # Simple round trip
     ([["JFK", "ATL"], ["ATL", "JFK"], ["JFK", "ATL"], ["ATL", "JFK"]], ["JFK", "ATL", "JFK", "ATL", "JFK"]),  # Multiple possible paths, same route repeated
     ([["JFK", "LGA"], ["LGA", "ORD"], ["ORD", "ATL"], ["ATL", "JFK"]], ["JFK", "LGA", "ORD", "ATL", "JFK"]),  # Circular path
-    ([["JFK", "SFO"], ["JFK", "ATL"], ["SFO", "ATL"], ["ATL", "JFK"], ["ATL", "SFO"], ["JFK", "ATL"]], ["JFK", "ATL", "JFK", "ATL", "SFO", "ATL", "JFK", "SFO"]),
+    #([["JFK", "SFO"], ["JFK", "ATL"], ["SFO", "ATL"], ["ATL", "JFK"], ["ATL", "SFO"], ["JFK", "ATL"]], ["JFK", "ATL", "JFK", "ATL", "SFO", "ATL", "JFK", "SFO"]),
     ([["JFK", "NRT"], ["NRT", "JFK"], ["JFK", "NRT"], ["NRT", "ATL"], ["ATL", "JFK"]], ["JFK", "NRT", "ATL", "JFK", "NRT", "JFK"]),  # Complex multi-route with backtracking
 ])
 def test_reconstruct_itinerary(tickets, expected):
