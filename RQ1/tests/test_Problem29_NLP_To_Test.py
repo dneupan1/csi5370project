@@ -1,5 +1,5 @@
 import pytest
-from solution import rotate as rotate_matrix  # Assuming the function 'rotate_matrix' is defined in 'solution.py'
+from Problem29_GeneratedSolution import rotate as rotate_matrix  # Assuming the function 'rotate_matrix' is defined in 'solution.py'
 
 @pytest.mark.parametrize("matrix, expected", [
     # Example 1: Simple 3x3 matrix

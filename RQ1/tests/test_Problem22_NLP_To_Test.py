@@ -7,15 +7,15 @@ from Problem22_GeneratedSolution import canPartition  # Assuming the function 'c
     # Array with even number of elements and possible partition
     ([1, 2, 3, 4], True),
     # Array with even total sum but no possible partition
-    ([1, 1, 3, 5], False),
+    #([1, 1, 3, 5], False),
     # Empty array, cannot partition
-    ([], False),
+    #([], False),
     # Single element, cannot partition
     ([10], False),
     # All elements are the same and even count
     ([2, 2, 2, 2], True),
     # Odd total sum, automatically false
-    ([1, 2, 3], False),
+    #([1, 2, 3], False),
     # Large numbers with possible partition
     ([100, 1, 1, 98], True),
     # Large numbers without possible partition
@@ -25,7 +25,7 @@ from Problem22_GeneratedSolution import canPartition  # Assuming the function 'c
     # Large array with repetitive elements that can be partitioned
     ([1]*100 + [100]*50, True),
     # Large array with repetitive elements that cannot be partitioned
-    ([1]*100 + [100]*49, False)
+    #([1]*100 + [100]*49, False)
 ])
 def test_canPartition(nums, expected):
     """
