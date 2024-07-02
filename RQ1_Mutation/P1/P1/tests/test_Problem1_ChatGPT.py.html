@@ -1,0 +1,67 @@
+<html><body><h1>..\P1\.\tests\test_Problem1_ChatGPT.py</h1>Killed 18 out of 24 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 17</h3><pre>--- ..\P1\.\tests\test_Problem1_ChatGPT.py
++++ ..\P1\.\tests\test_Problem1_ChatGPT.py
+@@ -6,7 +6,7 @@
+     Test a string with all unique characters.
+     Expectation: The length of the string itself since all characters are unique.
+     """
+-    assert length_of_longest_substring("abcde") == 5, "Failed on all unique characters"
++    assert length_of_longest_substring("abcde") == 5, "XXFailed on all unique charactersXX"
+ 
+ # Test with repeating characters
+ @pytest.mark.parametrize("test_input,expected", [
+</pre><h3>Mutant 33</h3><pre>--- ..\P1\.\tests\test_Problem1_ChatGPT.py
++++ ..\P1\.\tests\test_Problem1_ChatGPT.py
+@@ -23,7 +23,7 @@
+     The test cases cover various scenarios including longest substrings at different positions,
+     an empty string, and strings with all characters being the same.
+     """
+-    assert length_of_longest_substring(test_input) == expected, f"Failed on input: {test_input}"
++    assert length_of_longest_substring(test_input) == expected, f"XXFailed on input: {test_input}XX"
+ 
+ # Test with a single character string
+ def test_single_character():
+</pre><h3>Mutant 37</h3><pre>--- ..\P1\.\tests\test_Problem1_ChatGPT.py
++++ ..\P1\.\tests\test_Problem1_ChatGPT.py
+@@ -31,7 +31,7 @@
+     Test a string that contains a single character.
+     Expectation: Length should be 1 as there's only one character.
+     """
+-    assert length_of_longest_substring("a") == 1, "Failed on single character"
++    assert length_of_longest_substring("a") == 1, "XXFailed on single characterXX"
+ 
+ # Optionally, you can add more specific tests for edge cases, or to increase coverage if necessary.
+ 
+</pre><h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 32</h3><pre>--- ..\P1\.\tests\test_Problem1_ChatGPT.py
++++ ..\P1\.\tests\test_Problem1_ChatGPT.py
+@@ -23,7 +23,7 @@
+     The test cases cover various scenarios including longest substrings at different positions,
+     an empty string, and strings with all characters being the same.
+     """
+-    assert length_of_longest_substring(test_input) == expected, f"Failed on input: {test_input}"
++    assert length_of_longest_substring(test_input) != expected, f"Failed on input: {test_input}"
+ 
+ # Test with a single character string
+ def test_single_character():
+</pre><h3>Mutant 35</h3><pre>--- ..\P1\.\tests\test_Problem1_ChatGPT.py
++++ ..\P1\.\tests\test_Problem1_ChatGPT.py
+@@ -31,7 +31,7 @@
+     Test a string that contains a single character.
+     Expectation: Length should be 1 as there's only one character.
+     """
+-    assert length_of_longest_substring("a") == 1, "Failed on single character"
++    assert length_of_longest_substring("a") != 1, "Failed on single character"
+ 
+ # Optionally, you can add more specific tests for edge cases, or to increase coverage if necessary.
+ 
+</pre><h3>Mutant 36</h3><pre>--- ..\P1\.\tests\test_Problem1_ChatGPT.py
++++ ..\P1\.\tests\test_Problem1_ChatGPT.py
+@@ -31,7 +31,7 @@
+     Test a string that contains a single character.
+     Expectation: Length should be 1 as there's only one character.
+     """
+-    assert length_of_longest_substring("a") == 1, "Failed on single character"
++    assert length_of_longest_substring("a") == 2, "Failed on single character"
+ 
+ # Optionally, you can add more specific tests for edge cases, or to increase coverage if necessary.
+ 
+</pre></body></html>

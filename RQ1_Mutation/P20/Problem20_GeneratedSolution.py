@@ -1,0 +1,33 @@
+import heapq
+
+def trapRainWater(heightMap):
+    if not heightMap or not heightMap[0]:
+        return 0
+    
+    m, n = len(heightMap), len(heightMap[0])
+    visited = [[False] * n for _ in range(m)]
+    heap = []
+    
+    # Add boundary cells to the heap and mark as visited
+    for i in range(m):
+        for j in range(n):
+            if i in [0, m-1] or j in [0, n-1]:
+                heapq.heappush(heap, (heightMap[i][j], i, j))
+                visited[i][j] = True
+                
+    # Directions for exploring neighbors (up, down, left, right)
+    directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+    water_trapped = 0
+    
+    # Process cells from the heap
+    while heap:
+        height, i, j = heapq.heappop(heap)
+        for di, dj in directions:
+            ni, nj = i + di, j + dj
+            if 0 <= ni < m and 0 <= nj < n and not visited[ni][nj]:
+                water_trapped += max(0, height - heightMap[ni][nj])
+                visited[ni][nj] = True
+                # Update the cell's height if water is trapped
+                heapq.heappush(heap, (max(height, heightMap[ni][nj]), ni, nj))
+    
+    return water_trapped

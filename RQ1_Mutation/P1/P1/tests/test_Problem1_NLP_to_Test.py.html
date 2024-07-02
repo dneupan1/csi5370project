@@ -1,0 +1,109 @@
+<html><body><h1>..\P1\.\tests\test_Problem1_NLP_to_Test.py</h1>Killed 30 out of 40 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 68</h3><pre>--- ..\P1\.\tests\test_Problem1_NLP_to_Test.py
++++ ..\P1\.\tests\test_Problem1_NLP_to_Test.py
+@@ -52,8 +52,6 @@
+     """
+     assert length_of_longest_substring("你好你好") == 2
+ 
+-# Optionally, you might want to test the function's performance with very long strings.
+-@pytest.mark.performance
+ def test_performance():
+     """
+     Performance test for very long strings.
+</pre><h3>Mutant 70</h3><pre>--- ..\P1\.\tests\test_Problem1_NLP_to_Test.py
++++ ..\P1\.\tests\test_Problem1_NLP_to_Test.py
+@@ -61,7 +61,7 @@
+     """
+     import time
+     start_time = time.time()
+-    assert length_of_longest_substring("a" * 10000 + "b" * 10000) == 2
++    assert length_of_longest_substring("XXaXX" * 10000 + "b" * 10000) == 2
+     end_time = time.time()
+     assert end_time - start_time < 1  # The test should run in less than one second
+ 
+</pre><h3>Mutant 72</h3><pre>--- ..\P1\.\tests\test_Problem1_NLP_to_Test.py
++++ ..\P1\.\tests\test_Problem1_NLP_to_Test.py
+@@ -61,7 +61,7 @@
+     """
+     import time
+     start_time = time.time()
+-    assert length_of_longest_substring("a" * 10000 + "b" * 10000) == 2
++    assert length_of_longest_substring("a" * 10001 + "b" * 10000) == 2
+     end_time = time.time()
+     assert end_time - start_time < 1  # The test should run in less than one second
+ 
+</pre><h3>Mutant 74</h3><pre>--- ..\P1\.\tests\test_Problem1_NLP_to_Test.py
++++ ..\P1\.\tests\test_Problem1_NLP_to_Test.py
+@@ -61,7 +61,7 @@
+     """
+     import time
+     start_time = time.time()
+-    assert length_of_longest_substring("a" * 10000 + "b" * 10000) == 2
++    assert length_of_longest_substring("a" * 10000 + "XXbXX" * 10000) == 2
+     end_time = time.time()
+     assert end_time - start_time < 1  # The test should run in less than one second
+ 
+</pre><h3>Mutant 76</h3><pre>--- ..\P1\.\tests\test_Problem1_NLP_to_Test.py
++++ ..\P1\.\tests\test_Problem1_NLP_to_Test.py
+@@ -61,7 +61,7 @@
+     """
+     import time
+     start_time = time.time()
+-    assert length_of_longest_substring("a" * 10000 + "b" * 10000) == 2
++    assert length_of_longest_substring("a" * 10000 + "b" * 10001) == 2
+     end_time = time.time()
+     assert end_time - start_time < 1  # The test should run in less than one second
+ 
+</pre><h3>Mutant 81</h3><pre>--- ..\P1\.\tests\test_Problem1_NLP_to_Test.py
++++ ..\P1\.\tests\test_Problem1_NLP_to_Test.py
+@@ -63,6 +63,6 @@
+     start_time = time.time()
+     assert length_of_longest_substring("a" * 10000 + "b" * 10000) == 2
+     end_time = time.time()
+-    assert end_time - start_time < 1  # The test should run in less than one second
++    assert end_time - start_time <= 1  # The test should run in less than one second
+ 
+ 
+</pre><h3>Mutant 82</h3><pre>--- ..\P1\.\tests\test_Problem1_NLP_to_Test.py
++++ ..\P1\.\tests\test_Problem1_NLP_to_Test.py
+@@ -63,6 +63,6 @@
+     start_time = time.time()
+     assert length_of_longest_substring("a" * 10000 + "b" * 10000) == 2
+     end_time = time.time()
+-    assert end_time - start_time < 1  # The test should run in less than one second
++    assert end_time - start_time < 2  # The test should run in less than one second
+ 
+ 
+</pre><h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 62</h3><pre>--- ..\P1\.\tests\test_Problem1_NLP_to_Test.py
++++ ..\P1\.\tests\test_Problem1_NLP_to_Test.py
+@@ -44,7 +44,7 @@
+     """
+     Test strings that include digits and special characters to ensure robustness with non-alphabet inputs.
+     """
+-    assert length_of_longest_substring("a1!a1!a1!") == 3
++    assert length_of_longest_substring("XXa1!a1!a1!XX") == 3
+ 
+ def test_unicode_characters():
+     """
+</pre><h3>Mutant 75</h3><pre>--- ..\P1\.\tests\test_Problem1_NLP_to_Test.py
++++ ..\P1\.\tests\test_Problem1_NLP_to_Test.py
+@@ -61,7 +61,7 @@
+     """
+     import time
+     start_time = time.time()
+-    assert length_of_longest_substring("a" * 10000 + "b" * 10000) == 2
++    assert length_of_longest_substring("a" * 10000 + "b" / 10000) == 2
+     end_time = time.time()
+     assert end_time - start_time < 1  # The test should run in less than one second
+ 
+</pre><h3>Mutant 77</h3><pre>--- ..\P1\.\tests\test_Problem1_NLP_to_Test.py
++++ ..\P1\.\tests\test_Problem1_NLP_to_Test.py
+@@ -61,7 +61,7 @@
+     """
+     import time
+     start_time = time.time()
+-    assert length_of_longest_substring("a" * 10000 + "b" * 10000) == 2
++    assert length_of_longest_substring("a" * 10000 + "b" * 10000) != 2
+     end_time = time.time()
+     assert end_time - start_time < 1  # The test should run in less than one second
+ 
+</pre></body></html>

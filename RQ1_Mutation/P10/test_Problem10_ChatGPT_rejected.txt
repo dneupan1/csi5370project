@@ -1,0 +1,73 @@
+import pytest
+from Problem10_GeneratedSolution import cherryPickup  # Adjust the import path as needed
+
+def test_basic_functionality():
+    """
+    Test a simple grid with a clear path for cherry pickup.
+    """
+    grid = [
+        [1, 1, 0, 0],
+        [0, 1, 1, 1],
+        [1, 0, 0, 1],
+        [0, 0, 1, 1]
+    ]
+    expected = 6  # Maximum cherries picked
+    assert cherryPickup(grid) == expected, "Basic grid with clear path should return the maximum cherries"
+
+def test_no_cherries():
+    """
+    Test a grid with no cherries.
+    """
+    grid = [
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]
+    ]
+    expected = 0
+    assert cherryPickup(grid) == expected, "Grid with no cherries should return 0"
+
+def test_with_obstacles():
+    """
+    Test a grid with obstacles blocking the path.
+    """
+    grid = [
+        [1, -1, 0],
+        [-1, 1, 1],
+        [1, 1, 1]
+    ]
+    expected = 0  # No path to reach the end
+    assert cherryPickup(grid) == expected, "Grid with obstacles blocking path should return 0"
+
+def test_max_cherries():
+    """
+    Test a grid to maximize cherry pickup.
+    """
+    grid = [
+        [1, 0, 1, 0, 0],
+        [1, 1, 1, 1, 0],
+        [0, 1, 0, 0, 1],
+        [1, 1, 1, 1, 1],
+        [0, 0, 1, 0, 1]
+    ]
+    expected = 10  # Maximum cherries that can be picked
+    assert cherryPickup(grid) == expected, "Should maximize cherry pickup"
+
+def test_single_path():
+    """
+    Test a grid where only one path is available.
+    """
+    grid = [
+        [1, 1, -1],
+        [-1, 1, 0],
+        [1, 1, 1]
+    ]
+    expected = 4  # Only one path without encountering an obstacle
+    assert cherryPickup(grid) == expected, "Should return the correct cherries for a single path"
+
+def test_large_grid():
+    """
+    Test the function's efficiency and correctness on a larger grid.
+    """
+    grid = [[1] * 20 for _ in range(20)]  # 20x20 grid filled with 1s
+    expected = 38  # Maximum cherries that can be picked in a 20x20 grid
+    assert cherryPickup(grid) == expected, "Should work correctly on a large grid"
