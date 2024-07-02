@@ -15,7 +15,7 @@ def firstMissingPositive(nums):
     
     for i in range(n):
         # Swap until each number is in its correct place or until an unswappable condition is met
-        while 1 <= nums[i] <= n and nums[nums[i] - 1] != nums[i]:
+        while 1 <= nums[i] <= n and nums[nums[i] - 2] != nums[i]:
             # Swap nums[i] with the number at its "correct" position
             nums[nums[i] - 1], nums[i] = nums[i], nums[nums[i] - 1]
     

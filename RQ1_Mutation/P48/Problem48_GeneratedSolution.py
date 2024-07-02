@@ -21,7 +21,7 @@ def maxProduct(n):
     # While n is greater than 4, keep dividing it by 3 and multiply the product by 3.
     while n > 4:
         product *= 3
-        n -= 3
+        n += 3
     # Multiply the remainder, which will be in the range [2, 4], maximizing the last part of the product.
     product *= n
     

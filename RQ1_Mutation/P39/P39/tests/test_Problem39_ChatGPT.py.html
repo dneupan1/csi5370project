@@ -1,0 +1,66 @@
+<html><body><h1>..\P39\.\tests\test_Problem39_ChatGPT.py</h1>Killed 31 out of 37 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 95</h3><pre>--- ..\P39\.\tests\test_Problem39_ChatGPT.py
++++ ..\P39\.\tests\test_Problem39_ChatGPT.py
+@@ -10,7 +10,7 @@
+     """
+     s = "abc(de)f"
+     expected = ["abc(de)f"]
+-    assert sorted(removeInvalidParentheses(s)) == sorted(expected), "Failed with an already valid string"
++    assert sorted(removeInvalidParentheses(s)) == sorted(expected), "XXFailed with an already valid stringXX"
+ 
+ # Test with a string needing removal of invalid parentheses in multiple ways
+ def test_multiple_removals():
+</pre><h3>Mutant 102</h3><pre>--- ..\P39\.\tests\test_Problem39_ChatGPT.py
++++ ..\P39\.\tests\test_Problem39_ChatGPT.py
+@@ -20,7 +20,7 @@
+     """
+     s = "()())()"
+     expected = ["()()()", "(())()"]
+-    assert sorted(removeInvalidParentheses(s)) == sorted(expected), "Failed with multiple removal options"
++    assert sorted(removeInvalidParentheses(s)) == sorted(expected), "XXFailed with multiple removal optionsXX"
+ 
+ # Test with all characters being parentheses, needing removals
+ def test_all_parentheses():
+</pre><h3>Mutant 108</h3><pre>--- ..\P39\.\tests\test_Problem39_ChatGPT.py
++++ ..\P39\.\tests\test_Problem39_ChatGPT.py
+@@ -30,7 +30,7 @@
+     """
+     s = "(()"
+     expected = ["()"]
+-    assert sorted(removeInvalidParentheses(s)) == sorted(expected), "Failed with all characters being parentheses"
++    assert sorted(removeInvalidParentheses(s)) == sorted(expected), "XXFailed with all characters being parenthesesXX"
+ 
+ # Test with mixed characters and parentheses
+ def test_mixed_characters():
+</pre><h3>Mutant 114</h3><pre>--- ..\P39\.\tests\test_Problem39_ChatGPT.py
++++ ..\P39\.\tests\test_Problem39_ChatGPT.py
+@@ -40,7 +40,7 @@
+     """
+     s = "a)b(c)d"
+     expected = ["ab(c)d"]
+-    assert sorted(removeInvalidParentheses(s)) == sorted(expected), "Failed with mixed characters and parentheses"
++    assert sorted(removeInvalidParentheses(s)) == sorted(expected), "XXFailed with mixed characters and parenthesesXX"
+ 
+ # Test with no parentheses
+ def test_no_parentheses():
+</pre><h3>Mutant 120</h3><pre>--- ..\P39\.\tests\test_Problem39_ChatGPT.py
++++ ..\P39\.\tests\test_Problem39_ChatGPT.py
+@@ -50,7 +50,7 @@
+     """
+     s = "abcd"
+     expected = ["abcd"]
+-    assert sorted(removeInvalidParentheses(s)) == sorted(expected), "Failed with no parentheses"
++    assert sorted(removeInvalidParentheses(s)) == sorted(expected), "XXFailed with no parenthesesXX"
+ 
+ # Test removing multiple unmatched parentheses
+ def test_multiple_unmatched():
+</pre><h3>Mutant 126</h3><pre>--- ..\P39\.\tests\test_Problem39_ChatGPT.py
++++ ..\P39\.\tests\test_Problem39_ChatGPT.py
+@@ -61,6 +61,6 @@
+     """
+     s = "))(("
+     expected = [""]
+-    assert sorted(removeInvalidParentheses(s)) == sorted(expected), "Failed with multiple unmatched parentheses"
++    assert sorted(removeInvalidParentheses(s)) == sorted(expected), "XXFailed with multiple unmatched parenthesesXX"
+ 
+ 
+</pre></body></html>

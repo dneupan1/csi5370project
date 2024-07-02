@@ -1,0 +1,144 @@
+<html><body><h1>..\P40\.\Problem40_GeneratedSolution.py</h1>Killed 84 out of 97 mutants<h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 13</h3><pre>--- ..\P40\.\Problem40_GeneratedSolution.py
++++ ..\P40\.\Problem40_GeneratedSolution.py
+@@ -9,7 +9,7 @@
+         if lo == hi:
+             self.tree[treeIndex] = nums[lo]
+             return
+-        mid = (lo + hi) // 2
++        mid = (lo - hi) // 2
+         self.buildTree(nums, 2 * treeIndex + 1, lo, mid)
+         self.buildTree(nums, 2 * treeIndex + 2, mid + 1, hi)
+         self.tree[treeIndex] = self.tree[2 * treeIndex + 1] + self.tree[2 * treeIndex + 2]
+</pre><h3>Mutant 14</h3><pre>--- ..\P40\.\Problem40_GeneratedSolution.py
++++ ..\P40\.\Problem40_GeneratedSolution.py
+@@ -9,7 +9,7 @@
+         if lo == hi:
+             self.tree[treeIndex] = nums[lo]
+             return
+-        mid = (lo + hi) // 2
++        mid = (lo + hi) / 2
+         self.buildTree(nums, 2 * treeIndex + 1, lo, mid)
+         self.buildTree(nums, 2 * treeIndex + 2, mid + 1, hi)
+         self.tree[treeIndex] = self.tree[2 * treeIndex + 1] + self.tree[2 * treeIndex + 2]
+</pre><h3>Mutant 16</h3><pre>--- ..\P40\.\Problem40_GeneratedSolution.py
++++ ..\P40\.\Problem40_GeneratedSolution.py
+@@ -9,7 +9,7 @@
+         if lo == hi:
+             self.tree[treeIndex] = nums[lo]
+             return
+-        mid = (lo + hi) // 2
++        mid = None
+         self.buildTree(nums, 2 * treeIndex + 1, lo, mid)
+         self.buildTree(nums, 2 * treeIndex + 2, mid + 1, hi)
+         self.tree[treeIndex] = self.tree[2 * treeIndex + 1] + self.tree[2 * treeIndex + 2]
+</pre><h3>Mutant 26</h3><pre>--- ..\P40\.\Problem40_GeneratedSolution.py
++++ ..\P40\.\Problem40_GeneratedSolution.py
+@@ -11,7 +11,7 @@
+             return
+         mid = (lo + hi) // 2
+         self.buildTree(nums, 2 * treeIndex + 1, lo, mid)
+-        self.buildTree(nums, 2 * treeIndex + 2, mid + 1, hi)
++        self.buildTree(nums, 2 * treeIndex + 2, mid + 2, hi)
+         self.tree[treeIndex] = self.tree[2 * treeIndex + 1] + self.tree[2 * treeIndex + 2]
+ 
+     def update(self, index: int, val: int) -> None:
+</pre><h3>Mutant 45</h3><pre>--- ..\P40\.\Problem40_GeneratedSolution.py
++++ ..\P40\.\Problem40_GeneratedSolution.py
+@@ -22,7 +22,7 @@
+             if lo == hi:
+                 self.tree[treeIndex] = val
+                 return
+-            mid = (lo + hi) // 2
++            mid = (lo - hi) // 2
+             if index <= mid:
+                 _update(index, val, 2 * treeIndex + 1, lo, mid)
+             else:
+</pre><h3>Mutant 58</h3><pre>--- ..\P40\.\Problem40_GeneratedSolution.py
++++ ..\P40\.\Problem40_GeneratedSolution.py
+@@ -26,7 +26,7 @@
+             if index <= mid:
+                 _update(index, val, 2 * treeIndex + 1, lo, mid)
+             else:
+-                _update(index, val, 2 * treeIndex + 2, mid + 1, hi)
++                _update(index, val, 2 * treeIndex + 2, mid - 1, hi)
+             self.tree[treeIndex] = self.tree[2 * treeIndex + 1] + self.tree[2 * treeIndex + 2]
+         _update(index, val)
+         
+</pre><h3>Mutant 59</h3><pre>--- ..\P40\.\Problem40_GeneratedSolution.py
++++ ..\P40\.\Problem40_GeneratedSolution.py
+@@ -26,7 +26,7 @@
+             if index <= mid:
+                 _update(index, val, 2 * treeIndex + 1, lo, mid)
+             else:
+-                _update(index, val, 2 * treeIndex + 2, mid + 1, hi)
++                _update(index, val, 2 * treeIndex + 2, mid + 2, hi)
+             self.tree[treeIndex] = self.tree[2 * treeIndex + 1] + self.tree[2 * treeIndex + 2]
+         _update(index, val)
+         
+</pre><h3>Mutant 78</h3><pre>--- ..\P40\.\Problem40_GeneratedSolution.py
++++ ..\P40\.\Problem40_GeneratedSolution.py
+@@ -35,7 +35,7 @@
+         def _sumRange(left, right, treeIndex=0, lo=0, hi=None):
+             if hi is None:
+                 hi = self.n - 1
+-            if left > hi or right < lo:
++            if left > hi and right < lo:
+                 return 0
+             if left <= lo and right >= hi:
+                 return self.tree[treeIndex]
+</pre><h3>Mutant 80</h3><pre>--- ..\P40\.\Problem40_GeneratedSolution.py
++++ ..\P40\.\Problem40_GeneratedSolution.py
+@@ -37,7 +37,7 @@
+                 hi = self.n - 1
+             if left > hi or right < lo:
+                 return 0
+-            if left <= lo and right >= hi:
++            if left < lo and right >= hi:
+                 return self.tree[treeIndex]
+             mid = (lo + hi) // 2
+             return _sumRange(left, right, 2 * treeIndex + 1, lo, mid) + \
+</pre><h3>Mutant 81</h3><pre>--- ..\P40\.\Problem40_GeneratedSolution.py
++++ ..\P40\.\Problem40_GeneratedSolution.py
+@@ -37,7 +37,7 @@
+                 hi = self.n - 1
+             if left > hi or right < lo:
+                 return 0
+-            if left <= lo and right >= hi:
++            if left <= lo and right > hi:
+                 return self.tree[treeIndex]
+             mid = (lo + hi) // 2
+             return _sumRange(left, right, 2 * treeIndex + 1, lo, mid) + \
+</pre><h3>Mutant 83</h3><pre>--- ..\P40\.\Problem40_GeneratedSolution.py
++++ ..\P40\.\Problem40_GeneratedSolution.py
+@@ -39,7 +39,7 @@
+                 return 0
+             if left <= lo and right >= hi:
+                 return self.tree[treeIndex]
+-            mid = (lo + hi) // 2
++            mid = (lo - hi) // 2
+             return _sumRange(left, right, 2 * treeIndex + 1, lo, mid) + \
+                    _sumRange(left, right, 2 * treeIndex + 2, mid + 1, hi)
+         return _sumRange(left, right)
+</pre><h3>Mutant 86</h3><pre>--- ..\P40\.\Problem40_GeneratedSolution.py
++++ ..\P40\.\Problem40_GeneratedSolution.py
+@@ -39,7 +39,7 @@
+                 return 0
+             if left <= lo and right >= hi:
+                 return self.tree[treeIndex]
+-            mid = (lo + hi) // 2
++            mid = None
+             return _sumRange(left, right, 2 * treeIndex + 1, lo, mid) + \
+                    _sumRange(left, right, 2 * treeIndex + 2, mid + 1, hi)
+         return _sumRange(left, right)
+</pre><h3>Mutant 96</h3><pre>--- ..\P40\.\Problem40_GeneratedSolution.py
++++ ..\P40\.\Problem40_GeneratedSolution.py
+@@ -41,7 +41,7 @@
+                 return self.tree[treeIndex]
+             mid = (lo + hi) // 2
+             return _sumRange(left, right, 2 * treeIndex + 1, lo, mid) + \
+-                   _sumRange(left, right, 2 * treeIndex + 2, mid + 1, hi)
++                   _sumRange(left, right, 2 * treeIndex + 2, mid - 1, hi)
+         return _sumRange(left, right)
+ 
+ 
+</pre></body></html>

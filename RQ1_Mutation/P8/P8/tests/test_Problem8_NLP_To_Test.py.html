@@ -1,0 +1,56 @@
+<html><body><h1>..\P8\.\tests\test_Problem8_NLP_To_Test.py</h1>Killed 82 out of 87 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 164</h3><pre>--- ..\P8\.\tests\test_Problem8_NLP_To_Test.py
++++ ..\P8\.\tests\test_Problem8_NLP_To_Test.py
+@@ -6,7 +6,7 @@
+     @staticmethod
+     def build_linked_list(values):
+         """ Helper function to construct a linked list from a list of integers. """
+-        dummy = ListNode(0)  # Dummy node to handle edge cases more uniformly
++        dummy = ListNode(1)  # Dummy node to handle edge cases more uniformly
+         current = dummy
+         for value in values:
+             current.next = ListNode(value)
+</pre><h3>Mutant 172</h3><pre>--- ..\P8\.\tests\test_Problem8_NLP_To_Test.py
++++ ..\P8\.\tests\test_Problem8_NLP_To_Test.py
+@@ -22,7 +22,7 @@
+             head = head.next
+         return values
+ 
+-    @pytest.mark.parametrize("values, k, expected", [
++    @pytest.mark.parametrize("XXvalues, k, expectedXX", [
+         ([1, 2, 3, 4, 5], 2, [2, 1, 4, 3, 5]),
+         ([1, 2, 3, 4, 5], 3, [3, 2, 1, 4, 5]),
+         ([], 1, []),
+</pre><h3>Mutant 195</h3><pre>--- ..\P8\.\tests\test_Problem8_NLP_To_Test.py
++++ ..\P8\.\tests\test_Problem8_NLP_To_Test.py
+@@ -25,7 +25,7 @@
+     @pytest.mark.parametrize("values, k, expected", [
+         ([1, 2, 3, 4, 5], 2, [2, 1, 4, 3, 5]),
+         ([1, 2, 3, 4, 5], 3, [3, 2, 1, 4, 5]),
+-        ([], 1, []),
++        ([], 2, []),
+         ([1], 1, [1]),
+         ([1, 2, 3, 4, 5, 6], 3, [3, 2, 1, 6, 5, 4]),
+         ([1, 2, 3, 4, 5, 6], 4, [4, 3, 2, 1, 5, 6]),
+</pre><h3>Mutant 197</h3><pre>--- ..\P8\.\tests\test_Problem8_NLP_To_Test.py
++++ ..\P8\.\tests\test_Problem8_NLP_To_Test.py
+@@ -26,7 +26,7 @@
+         ([1, 2, 3, 4, 5], 2, [2, 1, 4, 3, 5]),
+         ([1, 2, 3, 4, 5], 3, [3, 2, 1, 4, 5]),
+         ([], 1, []),
+-        ([1], 1, [1]),
++        ([1], 2, [1]),
+         ([1, 2, 3, 4, 5, 6], 3, [3, 2, 1, 6, 5, 4]),
+         ([1, 2, 3, 4, 5, 6], 4, [4, 3, 2, 1, 5, 6]),
+         ([1, 2, 3, 4, 5, 6, 7, 8, 9], 5, [5, 4, 3, 2, 1, 6, 7, 8, 9])
+</pre><h3>Mutant 249</h3><pre>--- ..\P8\.\tests\test_Problem8_NLP_To_Test.py
++++ ..\P8\.\tests\test_Problem8_NLP_To_Test.py
+@@ -40,7 +40,7 @@
+         head = self.build_linked_list(values)
+         reversed_head = reverse_k_group(head, k)
+         result = self.extract_values(reversed_head)
+-        assert result == expected, f"Expected {expected}, got {result}"
++        assert result == expected, f"XXExpected {expected}, got {result}XX"
+ 
+ # This script uses a class structure to encapsulate helper methods and test cases,
+ # providing a clean and organized way to test the linked list reversal function.
+</pre></body></html>

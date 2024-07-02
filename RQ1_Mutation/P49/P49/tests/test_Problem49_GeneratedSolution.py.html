@@ -1,0 +1,231 @@
+<html><body><h1>..\P49\.\tests\test_Problem49_GeneratedSolution.py</h1>Killed 14 out of 35 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 131</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -11,7 +11,7 @@
+     assert var_0 is False
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_1():
+     str_0 = "QaP\t}"
+     module_0.isRectangleCover(str_0)
+</pre><h3>Mutant 133</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -13,7 +13,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_1():
+-    str_0 = "QaP\t}"
++    str_0 = "XXQaP\t}XX"
+     module_0.isRectangleCover(str_0)
+ 
+ 
+</pre><h3>Mutant 134</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -13,7 +13,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_1():
+-    str_0 = "QaP\t}"
++    str_0 = None
+     module_0.isRectangleCover(str_0)
+ 
+ 
+</pre><h3>Mutant 135</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -17,7 +17,7 @@
+     module_0.isRectangleCover(str_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_2():
+     bool_0 = True
+     module_0.isRectangleCover(bool_0)
+</pre><h3>Mutant 137</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -19,7 +19,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+-    bool_0 = True
++    bool_0 = False
+     module_0.isRectangleCover(bool_0)
+ 
+ 
+</pre><h3>Mutant 138</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -19,7 +19,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+-    bool_0 = True
++    bool_0 = None
+     module_0.isRectangleCover(bool_0)
+ 
+ 
+</pre><h3>Mutant 145</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -30,7 +30,7 @@
+     assert var_0 is True
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_4():
+     bytes_0 = b"<g\xc8\xc9"
+     list_0 = [bytes_0, bytes_0]
+</pre><h3>Mutant 147</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -32,7 +32,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_4():
+-    bytes_0 = b"<g\xc8\xc9"
++    bytes_0 = b"XX<g\xc8\xc9XX"
+     list_0 = [bytes_0, bytes_0]
+     var_0 = module_0.isRectangleCover(list_0)
+     assert var_0 is False
+</pre><h3>Mutant 148</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -32,7 +32,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_4():
+-    bytes_0 = b"<g\xc8\xc9"
++    bytes_0 = None
+     list_0 = [bytes_0, bytes_0]
+     var_0 = module_0.isRectangleCover(list_0)
+     assert var_0 is False
+</pre><h3>Mutant 149</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -33,7 +33,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_4():
+     bytes_0 = b"<g\xc8\xc9"
+-    list_0 = [bytes_0, bytes_0]
++    list_0 = None
+     var_0 = module_0.isRectangleCover(list_0)
+     assert var_0 is False
+     module_0.isRectangleCover(var_0)
+</pre><h3>Mutant 150</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -34,7 +34,7 @@
+ def test_case_4():
+     bytes_0 = b"<g\xc8\xc9"
+     list_0 = [bytes_0, bytes_0]
+-    var_0 = module_0.isRectangleCover(list_0)
++    var_0 = None
+     assert var_0 is False
+     module_0.isRectangleCover(var_0)
+ 
+</pre><h3>Mutant 151</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -35,7 +35,7 @@
+     bytes_0 = b"<g\xc8\xc9"
+     list_0 = [bytes_0, bytes_0]
+     var_0 = module_0.isRectangleCover(list_0)
+-    assert var_0 is False
++    assert var_0 is not False
+     module_0.isRectangleCover(var_0)
+ 
+ 
+</pre><h3>Mutant 152</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -35,7 +35,7 @@
+     bytes_0 = b"<g\xc8\xc9"
+     list_0 = [bytes_0, bytes_0]
+     var_0 = module_0.isRectangleCover(list_0)
+-    assert var_0 is False
++    assert var_0 is True
+     module_0.isRectangleCover(var_0)
+ 
+ 
+</pre><h3>Mutant 153</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -39,7 +39,7 @@
+     module_0.isRectangleCover(var_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_5():
+     bytes_0 = b"<g<\xc9"
+     list_0 = [bytes_0]
+</pre><h3>Mutant 155</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -41,7 +41,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_5():
+-    bytes_0 = b"<g<\xc9"
++    bytes_0 = b"XX<g<\xc9XX"
+     list_0 = [bytes_0]
+     var_0 = module_0.isRectangleCover(list_0)
+     assert var_0 is False
+</pre><h3>Mutant 156</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -41,7 +41,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_5():
+-    bytes_0 = b"<g<\xc9"
++    bytes_0 = None
+     list_0 = [bytes_0]
+     var_0 = module_0.isRectangleCover(list_0)
+     assert var_0 is False
+</pre><h3>Mutant 157</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -42,7 +42,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_5():
+     bytes_0 = b"<g<\xc9"
+-    list_0 = [bytes_0]
++    list_0 = None
+     var_0 = module_0.isRectangleCover(list_0)
+     assert var_0 is False
+     var_1 = module_1.object()
+</pre><h3>Mutant 158</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -43,7 +43,7 @@
+ def test_case_5():
+     bytes_0 = b"<g<\xc9"
+     list_0 = [bytes_0]
+-    var_0 = module_0.isRectangleCover(list_0)
++    var_0 = None
+     assert var_0 is False
+     var_1 = module_1.object()
+     module_1.object(**var_0)
+</pre><h3>Mutant 159</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -44,7 +44,7 @@
+     bytes_0 = b"<g<\xc9"
+     list_0 = [bytes_0]
+     var_0 = module_0.isRectangleCover(list_0)
+-    assert var_0 is False
++    assert var_0 is not False
+     var_1 = module_1.object()
+     module_1.object(**var_0)
+ 
+</pre><h3>Mutant 160</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -44,7 +44,7 @@
+     bytes_0 = b"<g<\xc9"
+     list_0 = [bytes_0]
+     var_0 = module_0.isRectangleCover(list_0)
+-    assert var_0 is False
++    assert var_0 is True
+     var_1 = module_1.object()
+     module_1.object(**var_0)
+ 
+</pre><h3>Mutant 161</h3><pre>--- ..\P49\.\tests\test_Problem49_GeneratedSolution.py
++++ ..\P49\.\tests\test_Problem49_GeneratedSolution.py
+@@ -45,6 +45,6 @@
+     list_0 = [bytes_0]
+     var_0 = module_0.isRectangleCover(list_0)
+     assert var_0 is False
+-    var_1 = module_1.object()
++    var_1 = None
+     module_1.object(**var_0)
+ 
+</pre></body></html>

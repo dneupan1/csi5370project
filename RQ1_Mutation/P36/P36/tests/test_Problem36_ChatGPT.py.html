@@ -1,0 +1,174 @@
+<html><body><h1>..\P36\.\tests\test_Problem36_ChatGPT.py</h1>Killed 45 out of 61 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 34</h3><pre>--- ..\P36\.\tests\test_Problem36_ChatGPT.py
++++ ..\P36\.\tests\test_Problem36_ChatGPT.py
+@@ -28,7 +28,7 @@
+ 
+ # Updated test cases with proper assertion checks
+ def test_lca_left_subtree():
+-    p = nodes[5]
++    p = nodes[6]
+     q = nodes[6]
+     assert lowestCommonAncestor(root, p, q).val == p.val, "Failed with both nodes in the left subtree"
+ 
+</pre><h3>Mutant 36</h3><pre>--- ..\P36\.\tests\test_Problem36_ChatGPT.py
++++ ..\P36\.\tests\test_Problem36_ChatGPT.py
+@@ -29,7 +29,7 @@
+ # Updated test cases with proper assertion checks
+ def test_lca_left_subtree():
+     p = nodes[5]
+-    q = nodes[6]
++    q = nodes[7]
+     assert lowestCommonAncestor(root, p, q).val == p.val, "Failed with both nodes in the left subtree"
+ 
+ def test_lca_different_subtrees():
+</pre><h3>Mutant 37</h3><pre>--- ..\P36\.\tests\test_Problem36_ChatGPT.py
++++ ..\P36\.\tests\test_Problem36_ChatGPT.py
+@@ -29,7 +29,7 @@
+ # Updated test cases with proper assertion checks
+ def test_lca_left_subtree():
+     p = nodes[5]
+-    q = nodes[6]
++    q = None
+     assert lowestCommonAncestor(root, p, q).val == p.val, "Failed with both nodes in the left subtree"
+ 
+ def test_lca_different_subtrees():
+</pre><h3>Mutant 39</h3><pre>--- ..\P36\.\tests\test_Problem36_ChatGPT.py
++++ ..\P36\.\tests\test_Problem36_ChatGPT.py
+@@ -30,7 +30,7 @@
+ def test_lca_left_subtree():
+     p = nodes[5]
+     q = nodes[6]
+-    assert lowestCommonAncestor(root, p, q).val == p.val, "Failed with both nodes in the left subtree"
++    assert lowestCommonAncestor(root, p, q).val == p.val, "XXFailed with both nodes in the left subtreeXX"
+ 
+ def test_lca_different_subtrees():
+     p = nodes[5]
+</pre><h3>Mutant 40</h3><pre>--- ..\P36\.\tests\test_Problem36_ChatGPT.py
++++ ..\P36\.\tests\test_Problem36_ChatGPT.py
+@@ -33,7 +33,7 @@
+     assert lowestCommonAncestor(root, p, q).val == p.val, "Failed with both nodes in the left subtree"
+ 
+ def test_lca_different_subtrees():
+-    p = nodes[5]
++    p = nodes[6]
+     q = nodes[1]
+     assert lowestCommonAncestor(root, p, q).val == nodes[3].val, "Failed with nodes in different subtrees"
+ 
+</pre><h3>Mutant 46</h3><pre>--- ..\P36\.\tests\test_Problem36_ChatGPT.py
++++ ..\P36\.\tests\test_Problem36_ChatGPT.py
+@@ -35,7 +35,7 @@
+ def test_lca_different_subtrees():
+     p = nodes[5]
+     q = nodes[1]
+-    assert lowestCommonAncestor(root, p, q).val == nodes[3].val, "Failed with nodes in different subtrees"
++    assert lowestCommonAncestor(root, p, q).val == nodes[3].val, "XXFailed with nodes in different subtreesXX"
+ 
+ def test_lca_right_subtree():
+     p = nodes[0]
+</pre><h3>Mutant 47</h3><pre>--- ..\P36\.\tests\test_Problem36_ChatGPT.py
++++ ..\P36\.\tests\test_Problem36_ChatGPT.py
+@@ -38,7 +38,7 @@
+     assert lowestCommonAncestor(root, p, q).val == nodes[3].val, "Failed with nodes in different subtrees"
+ 
+ def test_lca_right_subtree():
+-    p = nodes[0]
++    p = nodes[1]
+     q = nodes[8]
+     assert lowestCommonAncestor(root, p, q).val == nodes[1].val, "Failed with both nodes in the right subtree"
+ 
+</pre><h3>Mutant 53</h3><pre>--- ..\P36\.\tests\test_Problem36_ChatGPT.py
++++ ..\P36\.\tests\test_Problem36_ChatGPT.py
+@@ -40,7 +40,7 @@
+ def test_lca_right_subtree():
+     p = nodes[0]
+     q = nodes[8]
+-    assert lowestCommonAncestor(root, p, q).val == nodes[1].val, "Failed with both nodes in the right subtree"
++    assert lowestCommonAncestor(root, p, q).val == nodes[1].val, "XXFailed with both nodes in the right subtreeXX"
+ 
+ def test_lca_with_root():
+     p = nodes[3]
+</pre><h3>Mutant 54</h3><pre>--- ..\P36\.\tests\test_Problem36_ChatGPT.py
++++ ..\P36\.\tests\test_Problem36_ChatGPT.py
+@@ -43,7 +43,7 @@
+     assert lowestCommonAncestor(root, p, q).val == nodes[1].val, "Failed with both nodes in the right subtree"
+ 
+ def test_lca_with_root():
+-    p = nodes[3]
++    p = nodes[4]
+     q = nodes[4]
+     assert lowestCommonAncestor(root, p, q).val == p.val, "Failed with the root being one of the nodes"
+ 
+</pre><h3>Mutant 56</h3><pre>--- ..\P36\.\tests\test_Problem36_ChatGPT.py
++++ ..\P36\.\tests\test_Problem36_ChatGPT.py
+@@ -44,7 +44,7 @@
+ 
+ def test_lca_with_root():
+     p = nodes[3]
+-    q = nodes[4]
++    q = nodes[5]
+     assert lowestCommonAncestor(root, p, q).val == p.val, "Failed with the root being one of the nodes"
+ 
+ def test_lca_deeper_ancestor():
+</pre><h3>Mutant 57</h3><pre>--- ..\P36\.\tests\test_Problem36_ChatGPT.py
++++ ..\P36\.\tests\test_Problem36_ChatGPT.py
+@@ -44,7 +44,7 @@
+ 
+ def test_lca_with_root():
+     p = nodes[3]
+-    q = nodes[4]
++    q = None
+     assert lowestCommonAncestor(root, p, q).val == p.val, "Failed with the root being one of the nodes"
+ 
+ def test_lca_deeper_ancestor():
+</pre><h3>Mutant 59</h3><pre>--- ..\P36\.\tests\test_Problem36_ChatGPT.py
++++ ..\P36\.\tests\test_Problem36_ChatGPT.py
+@@ -45,7 +45,7 @@
+ def test_lca_with_root():
+     p = nodes[3]
+     q = nodes[4]
+-    assert lowestCommonAncestor(root, p, q).val == p.val, "Failed with the root being one of the nodes"
++    assert lowestCommonAncestor(root, p, q).val == p.val, "XXFailed with the root being one of the nodesXX"
+ 
+ def test_lca_deeper_ancestor():
+     p = nodes[7]
+</pre><h3>Mutant 66</h3><pre>--- ..\P36\.\tests\test_Problem36_ChatGPT.py
++++ ..\P36\.\tests\test_Problem36_ChatGPT.py
+@@ -50,7 +50,7 @@
+ def test_lca_deeper_ancestor():
+     p = nodes[7]
+     q = nodes[4]
+-    assert lowestCommonAncestor(root, p, q).val == nodes[2].val, "Failed with a deeper common ancestor"
++    assert lowestCommonAncestor(root, p, q).val == nodes[2].val, "XXFailed with a deeper common ancestorXX"
+ 
+ def test_lca_node_is_ancestor():
+     p = nodes[5]
+</pre><h3>Mutant 70</h3><pre>--- ..\P36\.\tests\test_Problem36_ChatGPT.py
++++ ..\P36\.\tests\test_Problem36_ChatGPT.py
+@@ -54,6 +54,6 @@
+ 
+ def test_lca_node_is_ancestor():
+     p = nodes[5]
+-    q = nodes[2]
++    q = None
+     assert lowestCommonAncestor(root, p, q).val == p.val, "Failed with one node being the ancestor of the other"
+ 
+</pre><h3>Mutant 72</h3><pre>--- ..\P36\.\tests\test_Problem36_ChatGPT.py
++++ ..\P36\.\tests\test_Problem36_ChatGPT.py
+@@ -55,5 +55,5 @@
+ def test_lca_node_is_ancestor():
+     p = nodes[5]
+     q = nodes[2]
+-    assert lowestCommonAncestor(root, p, q).val == p.val, "Failed with one node being the ancestor of the other"
++    assert lowestCommonAncestor(root, p, q).val == p.val, "XXFailed with one node being the ancestor of the otherXX"
+ 
+</pre><h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 14</h3><pre>--- ..\P36\.\tests\test_Problem36_ChatGPT.py
++++ ..\P36\.\tests\test_Problem36_ChatGPT.py
+@@ -5,7 +5,7 @@
+ def build_tree_and_map(values):
+     if not values:
+         return None, {}
+-    nodes = [None if val is None else TreeNode(val) for val in values]
++    nodes = None
+     value_node_map = {val: node for val, node in zip(values, nodes) if val is not None}
+     kids = nodes[::-1]
+     root = kids.pop()
+</pre></body></html>

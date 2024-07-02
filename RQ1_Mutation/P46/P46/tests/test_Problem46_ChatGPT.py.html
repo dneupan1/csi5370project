@@ -1,0 +1,671 @@
+<html><body><h1>..\P46\.\tests\test_Problem46_ChatGPT.py</h1>Killed 11 out of 73 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 10</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -7,7 +7,7 @@
+     """
+     An empty list cannot contain an increasing triplet.
+     """
+-    assert not increasingTriplet([]), "Failed with an empty list"
++    assert not increasingTriplet([]), "XXFailed with an empty listXX"
+ 
+ # Test with fewer than three elements
+ def test_fewer_than_three_elements():
+</pre><h3>Mutant 12</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -14,7 +14,7 @@
+     """
+     Lists with fewer than three elements cannot contain an increasing triplet.
+     """
+-    assert not increasingTriplet([1]), "Failed with a single element"
++    assert not increasingTriplet([2]), "Failed with a single element"
+     assert not increasingTriplet([2, 1]), "Failed with two elements"
+ 
+ # Test with an increasing triplet present
+</pre><h3>Mutant 13</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -14,7 +14,7 @@
+     """
+     Lists with fewer than three elements cannot contain an increasing triplet.
+     """
+-    assert not increasingTriplet([1]), "Failed with a single element"
++    assert not increasingTriplet([1]), "XXFailed with a single elementXX"
+     assert not increasingTriplet([2, 1]), "Failed with two elements"
+ 
+ # Test with an increasing triplet present
+</pre><h3>Mutant 15</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -15,7 +15,7 @@
+     Lists with fewer than three elements cannot contain an increasing triplet.
+     """
+     assert not increasingTriplet([1]), "Failed with a single element"
+-    assert not increasingTriplet([2, 1]), "Failed with two elements"
++    assert not increasingTriplet([3, 1]), "Failed with two elements"
+ 
+ # Test with an increasing triplet present
+ def test_with_increasing_triplet():
+</pre><h3>Mutant 16</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -15,7 +15,7 @@
+     Lists with fewer than three elements cannot contain an increasing triplet.
+     """
+     assert not increasingTriplet([1]), "Failed with a single element"
+-    assert not increasingTriplet([2, 1]), "Failed with two elements"
++    assert not increasingTriplet([2, 2]), "Failed with two elements"
+ 
+ # Test with an increasing triplet present
+ def test_with_increasing_triplet():
+</pre><h3>Mutant 17</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -15,7 +15,7 @@
+     Lists with fewer than three elements cannot contain an increasing triplet.
+     """
+     assert not increasingTriplet([1]), "Failed with a single element"
+-    assert not increasingTriplet([2, 1]), "Failed with two elements"
++    assert not increasingTriplet([2, 1]), "XXFailed with two elementsXX"
+ 
+ # Test with an increasing triplet present
+ def test_with_increasing_triplet():
+</pre><h3>Mutant 20</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -22,7 +22,7 @@
+     """
+     Tests scenarios where an increasing triplet is present.
+     """
+-    assert increasingTriplet([1, 2, 3]), "Failed with a straightforward increasing triplet"
++    assert increasingTriplet([1, 2, 4]), "Failed with a straightforward increasing triplet"
+     assert increasingTriplet([5, 1, 5, 5, 2, 5, 4]), "Failed with a hidden increasing triplet"
+ 
+ # Test without an increasing triplet
+</pre><h3>Mutant 21</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -22,7 +22,7 @@
+     """
+     Tests scenarios where an increasing triplet is present.
+     """
+-    assert increasingTriplet([1, 2, 3]), "Failed with a straightforward increasing triplet"
++    assert increasingTriplet([1, 2, 3]), "XXFailed with a straightforward increasing tripletXX"
+     assert increasingTriplet([5, 1, 5, 5, 2, 5, 4]), "Failed with a hidden increasing triplet"
+ 
+ # Test without an increasing triplet
+</pre><h3>Mutant 22</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -23,7 +23,7 @@
+     Tests scenarios where an increasing triplet is present.
+     """
+     assert increasingTriplet([1, 2, 3]), "Failed with a straightforward increasing triplet"
+-    assert increasingTriplet([5, 1, 5, 5, 2, 5, 4]), "Failed with a hidden increasing triplet"
++    assert increasingTriplet([6, 1, 5, 5, 2, 5, 4]), "Failed with a hidden increasing triplet"
+ 
+ # Test without an increasing triplet
+ def test_without_increasing_triplet():
+</pre><h3>Mutant 24</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -23,7 +23,7 @@
+     Tests scenarios where an increasing triplet is present.
+     """
+     assert increasingTriplet([1, 2, 3]), "Failed with a straightforward increasing triplet"
+-    assert increasingTriplet([5, 1, 5, 5, 2, 5, 4]), "Failed with a hidden increasing triplet"
++    assert increasingTriplet([5, 1, 6, 5, 2, 5, 4]), "Failed with a hidden increasing triplet"
+ 
+ # Test without an increasing triplet
+ def test_without_increasing_triplet():
+</pre><h3>Mutant 25</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -23,7 +23,7 @@
+     Tests scenarios where an increasing triplet is present.
+     """
+     assert increasingTriplet([1, 2, 3]), "Failed with a straightforward increasing triplet"
+-    assert increasingTriplet([5, 1, 5, 5, 2, 5, 4]), "Failed with a hidden increasing triplet"
++    assert increasingTriplet([5, 1, 5, 6, 2, 5, 4]), "Failed with a hidden increasing triplet"
+ 
+ # Test without an increasing triplet
+ def test_without_increasing_triplet():
+</pre><h3>Mutant 26</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -23,7 +23,7 @@
+     Tests scenarios where an increasing triplet is present.
+     """
+     assert increasingTriplet([1, 2, 3]), "Failed with a straightforward increasing triplet"
+-    assert increasingTriplet([5, 1, 5, 5, 2, 5, 4]), "Failed with a hidden increasing triplet"
++    assert increasingTriplet([5, 1, 5, 5, 3, 5, 4]), "Failed with a hidden increasing triplet"
+ 
+ # Test without an increasing triplet
+ def test_without_increasing_triplet():
+</pre><h3>Mutant 27</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -23,7 +23,7 @@
+     Tests scenarios where an increasing triplet is present.
+     """
+     assert increasingTriplet([1, 2, 3]), "Failed with a straightforward increasing triplet"
+-    assert increasingTriplet([5, 1, 5, 5, 2, 5, 4]), "Failed with a hidden increasing triplet"
++    assert increasingTriplet([5, 1, 5, 5, 2, 6, 4]), "Failed with a hidden increasing triplet"
+ 
+ # Test without an increasing triplet
+ def test_without_increasing_triplet():
+</pre><h3>Mutant 28</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -23,7 +23,7 @@
+     Tests scenarios where an increasing triplet is present.
+     """
+     assert increasingTriplet([1, 2, 3]), "Failed with a straightforward increasing triplet"
+-    assert increasingTriplet([5, 1, 5, 5, 2, 5, 4]), "Failed with a hidden increasing triplet"
++    assert increasingTriplet([5, 1, 5, 5, 2, 5, 5]), "Failed with a hidden increasing triplet"
+ 
+ # Test without an increasing triplet
+ def test_without_increasing_triplet():
+</pre><h3>Mutant 29</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -23,7 +23,7 @@
+     Tests scenarios where an increasing triplet is present.
+     """
+     assert increasingTriplet([1, 2, 3]), "Failed with a straightforward increasing triplet"
+-    assert increasingTriplet([5, 1, 5, 5, 2, 5, 4]), "Failed with a hidden increasing triplet"
++    assert increasingTriplet([5, 1, 5, 5, 2, 5, 4]), "XXFailed with a hidden increasing tripletXX"
+ 
+ # Test without an increasing triplet
+ def test_without_increasing_triplet():
+</pre><h3>Mutant 31</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -30,7 +30,7 @@
+     """
+     Tests scenarios where no increasing triplet exists.
+     """
+-    assert not increasingTriplet([5, 4, 3, 2, 1]), "Failed with a strictly decreasing sequence"
++    assert not increasingTriplet([6, 4, 3, 2, 1]), "Failed with a strictly decreasing sequence"
+     assert not increasingTriplet([1, 2, -1, -2]), "Failed with no increasing triplet due to decreasing elements"
+ 
+ # Test with negative numbers
+</pre><h3>Mutant 32</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -30,7 +30,7 @@
+     """
+     Tests scenarios where no increasing triplet exists.
+     """
+-    assert not increasingTriplet([5, 4, 3, 2, 1]), "Failed with a strictly decreasing sequence"
++    assert not increasingTriplet([5, 5, 3, 2, 1]), "Failed with a strictly decreasing sequence"
+     assert not increasingTriplet([1, 2, -1, -2]), "Failed with no increasing triplet due to decreasing elements"
+ 
+ # Test with negative numbers
+</pre><h3>Mutant 33</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -30,7 +30,7 @@
+     """
+     Tests scenarios where no increasing triplet exists.
+     """
+-    assert not increasingTriplet([5, 4, 3, 2, 1]), "Failed with a strictly decreasing sequence"
++    assert not increasingTriplet([5, 4, 4, 2, 1]), "Failed with a strictly decreasing sequence"
+     assert not increasingTriplet([1, 2, -1, -2]), "Failed with no increasing triplet due to decreasing elements"
+ 
+ # Test with negative numbers
+</pre><h3>Mutant 34</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -30,7 +30,7 @@
+     """
+     Tests scenarios where no increasing triplet exists.
+     """
+-    assert not increasingTriplet([5, 4, 3, 2, 1]), "Failed with a strictly decreasing sequence"
++    assert not increasingTriplet([5, 4, 3, 3, 1]), "Failed with a strictly decreasing sequence"
+     assert not increasingTriplet([1, 2, -1, -2]), "Failed with no increasing triplet due to decreasing elements"
+ 
+ # Test with negative numbers
+</pre><h3>Mutant 35</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -30,7 +30,7 @@
+     """
+     Tests scenarios where no increasing triplet exists.
+     """
+-    assert not increasingTriplet([5, 4, 3, 2, 1]), "Failed with a strictly decreasing sequence"
++    assert not increasingTriplet([5, 4, 3, 2, 2]), "Failed with a strictly decreasing sequence"
+     assert not increasingTriplet([1, 2, -1, -2]), "Failed with no increasing triplet due to decreasing elements"
+ 
+ # Test with negative numbers
+</pre><h3>Mutant 36</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -30,7 +30,7 @@
+     """
+     Tests scenarios where no increasing triplet exists.
+     """
+-    assert not increasingTriplet([5, 4, 3, 2, 1]), "Failed with a strictly decreasing sequence"
++    assert not increasingTriplet([5, 4, 3, 2, 1]), "XXFailed with a strictly decreasing sequenceXX"
+     assert not increasingTriplet([1, 2, -1, -2]), "Failed with no increasing triplet due to decreasing elements"
+ 
+ # Test with negative numbers
+</pre><h3>Mutant 38</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -31,7 +31,7 @@
+     Tests scenarios where no increasing triplet exists.
+     """
+     assert not increasingTriplet([5, 4, 3, 2, 1]), "Failed with a strictly decreasing sequence"
+-    assert not increasingTriplet([1, 2, -1, -2]), "Failed with no increasing triplet due to decreasing elements"
++    assert not increasingTriplet([2, 2, -1, -2]), "Failed with no increasing triplet due to decreasing elements"
+ 
+ # Test with negative numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 39</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -31,7 +31,7 @@
+     Tests scenarios where no increasing triplet exists.
+     """
+     assert not increasingTriplet([5, 4, 3, 2, 1]), "Failed with a strictly decreasing sequence"
+-    assert not increasingTriplet([1, 2, -1, -2]), "Failed with no increasing triplet due to decreasing elements"
++    assert not increasingTriplet([1, 3, -1, -2]), "Failed with no increasing triplet due to decreasing elements"
+ 
+ # Test with negative numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 40</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -31,7 +31,7 @@
+     Tests scenarios where no increasing triplet exists.
+     """
+     assert not increasingTriplet([5, 4, 3, 2, 1]), "Failed with a strictly decreasing sequence"
+-    assert not increasingTriplet([1, 2, -1, -2]), "Failed with no increasing triplet due to decreasing elements"
++    assert not increasingTriplet([1, 2, +1, -2]), "Failed with no increasing triplet due to decreasing elements"
+ 
+ # Test with negative numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 41</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -31,7 +31,7 @@
+     Tests scenarios where no increasing triplet exists.
+     """
+     assert not increasingTriplet([5, 4, 3, 2, 1]), "Failed with a strictly decreasing sequence"
+-    assert not increasingTriplet([1, 2, -1, -2]), "Failed with no increasing triplet due to decreasing elements"
++    assert not increasingTriplet([1, 2, -2, -2]), "Failed with no increasing triplet due to decreasing elements"
+ 
+ # Test with negative numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 42</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -31,7 +31,7 @@
+     Tests scenarios where no increasing triplet exists.
+     """
+     assert not increasingTriplet([5, 4, 3, 2, 1]), "Failed with a strictly decreasing sequence"
+-    assert not increasingTriplet([1, 2, -1, -2]), "Failed with no increasing triplet due to decreasing elements"
++    assert not increasingTriplet([1, 2, -1, +2]), "Failed with no increasing triplet due to decreasing elements"
+ 
+ # Test with negative numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 43</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -31,7 +31,7 @@
+     Tests scenarios where no increasing triplet exists.
+     """
+     assert not increasingTriplet([5, 4, 3, 2, 1]), "Failed with a strictly decreasing sequence"
+-    assert not increasingTriplet([1, 2, -1, -2]), "Failed with no increasing triplet due to decreasing elements"
++    assert not increasingTriplet([1, 2, -1, -3]), "Failed with no increasing triplet due to decreasing elements"
+ 
+ # Test with negative numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 44</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -31,7 +31,7 @@
+     Tests scenarios where no increasing triplet exists.
+     """
+     assert not increasingTriplet([5, 4, 3, 2, 1]), "Failed with a strictly decreasing sequence"
+-    assert not increasingTriplet([1, 2, -1, -2]), "Failed with no increasing triplet due to decreasing elements"
++    assert not increasingTriplet([1, 2, -1, -2]), "XXFailed with no increasing triplet due to decreasing elementsXX"
+ 
+ # Test with negative numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 46</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -40,7 +40,7 @@
+     Tests scenarios with negative numbers, ensuring the function correctly identifies increasing triplets
+     involving negative values.
+     """
+-    assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
++    assert increasingTriplet([+2, -1, 0]), "Failed with an increasing triplet including negative numbers"
+     assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+</pre><h3>Mutant 47</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -40,7 +40,7 @@
+     Tests scenarios with negative numbers, ensuring the function correctly identifies increasing triplets
+     involving negative values.
+     """
+-    assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
++    assert increasingTriplet([-3, -1, 0]), "Failed with an increasing triplet including negative numbers"
+     assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+</pre><h3>Mutant 48</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -40,7 +40,7 @@
+     Tests scenarios with negative numbers, ensuring the function correctly identifies increasing triplets
+     involving negative values.
+     """
+-    assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
++    assert increasingTriplet([-2, +1, 0]), "Failed with an increasing triplet including negative numbers"
+     assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+</pre><h3>Mutant 49</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -40,7 +40,7 @@
+     Tests scenarios with negative numbers, ensuring the function correctly identifies increasing triplets
+     involving negative values.
+     """
+-    assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
++    assert increasingTriplet([-2, -2, 0]), "Failed with an increasing triplet including negative numbers"
+     assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+</pre><h3>Mutant 50</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -40,7 +40,7 @@
+     Tests scenarios with negative numbers, ensuring the function correctly identifies increasing triplets
+     involving negative values.
+     """
+-    assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
++    assert increasingTriplet([-2, -1, 1]), "Failed with an increasing triplet including negative numbers"
+     assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+</pre><h3>Mutant 51</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -40,7 +40,7 @@
+     Tests scenarios with negative numbers, ensuring the function correctly identifies increasing triplets
+     involving negative values.
+     """
+-    assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
++    assert increasingTriplet([-2, -1, 0]), "XXFailed with an increasing triplet including negative numbersXX"
+     assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+</pre><h3>Mutant 52</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -41,7 +41,7 @@
+     involving negative values.
+     """
+     assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
+-    assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
++    assert  increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 53</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -41,7 +41,7 @@
+     involving negative values.
+     """
+     assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
+-    assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
++    assert not increasingTriplet([+5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 54</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -41,7 +41,7 @@
+     involving negative values.
+     """
+     assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
+-    assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
++    assert not increasingTriplet([-6, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 55</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -41,7 +41,7 @@
+     involving negative values.
+     """
+     assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
+-    assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
++    assert not increasingTriplet([-5, +4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 56</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -41,7 +41,7 @@
+     involving negative values.
+     """
+     assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
+-    assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
++    assert not increasingTriplet([-5, -5, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 57</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -41,7 +41,7 @@
+     involving negative values.
+     """
+     assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
+-    assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
++    assert not increasingTriplet([-5, -4, +3, -5, -6]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 58</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -41,7 +41,7 @@
+     involving negative values.
+     """
+     assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
+-    assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
++    assert not increasingTriplet([-5, -4, -4, -5, -6]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 59</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -41,7 +41,7 @@
+     involving negative values.
+     """
+     assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
+-    assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
++    assert not increasingTriplet([-5, -4, -3, +5, -6]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 60</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -41,7 +41,7 @@
+     involving negative values.
+     """
+     assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
+-    assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
++    assert not increasingTriplet([-5, -4, -3, -6, -6]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 61</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -41,7 +41,7 @@
+     involving negative values.
+     """
+     assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
+-    assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
++    assert not increasingTriplet([-5, -4, -3, -5, +6]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 62</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -41,7 +41,7 @@
+     involving negative values.
+     """
+     assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
+-    assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
++    assert not increasingTriplet([-5, -4, -3, -5, -7]), "Failed with decreasing sequence including negative numbers"
+ 
+ # Test with large numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 63</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -41,7 +41,7 @@
+     involving negative values.
+     """
+     assert increasingTriplet([-2, -1, 0]), "Failed with an increasing triplet including negative numbers"
+-    assert not increasingTriplet([-5, -4, -3, -5, -6]), "Failed with decreasing sequence including negative numbers"
++    assert not increasingTriplet([-5, -4, -3, -5, -6]), "XXFailed with decreasing sequence including negative numbersXX"
+ 
+ # Test with large numbers
+ @pytest.mark.skip()
+</pre><h3>Mutant 65</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -49,7 +49,7 @@
+     """
+     Ensures the function can handle large numbers and still identify an increasing triplet correctly.
+     """
+-    assert increasingTriplet([100000000, -10000000, 1000000000]), "Failed with large numbers"
++    assert increasingTriplet([100000001, -10000000, 1000000000]), "Failed with large numbers"
+     assert not increasingTriplet([100000000, 99999999, 99999998]), "Failed with decreasing large numbers"
+ 
+ # Test with repeated numbers not forming a triplet
+</pre><h3>Mutant 66</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -49,7 +49,7 @@
+     """
+     Ensures the function can handle large numbers and still identify an increasing triplet correctly.
+     """
+-    assert increasingTriplet([100000000, -10000000, 1000000000]), "Failed with large numbers"
++    assert increasingTriplet([100000000, +10000000, 1000000000]), "Failed with large numbers"
+     assert not increasingTriplet([100000000, 99999999, 99999998]), "Failed with decreasing large numbers"
+ 
+ # Test with repeated numbers not forming a triplet
+</pre><h3>Mutant 67</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -49,7 +49,7 @@
+     """
+     Ensures the function can handle large numbers and still identify an increasing triplet correctly.
+     """
+-    assert increasingTriplet([100000000, -10000000, 1000000000]), "Failed with large numbers"
++    assert increasingTriplet([100000000, -10000001, 1000000000]), "Failed with large numbers"
+     assert not increasingTriplet([100000000, 99999999, 99999998]), "Failed with decreasing large numbers"
+ 
+ # Test with repeated numbers not forming a triplet
+</pre><h3>Mutant 68</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -49,7 +49,7 @@
+     """
+     Ensures the function can handle large numbers and still identify an increasing triplet correctly.
+     """
+-    assert increasingTriplet([100000000, -10000000, 1000000000]), "Failed with large numbers"
++    assert increasingTriplet([100000000, -10000000, 1000000001]), "Failed with large numbers"
+     assert not increasingTriplet([100000000, 99999999, 99999998]), "Failed with decreasing large numbers"
+ 
+ # Test with repeated numbers not forming a triplet
+</pre><h3>Mutant 69</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -49,7 +49,7 @@
+     """
+     Ensures the function can handle large numbers and still identify an increasing triplet correctly.
+     """
+-    assert increasingTriplet([100000000, -10000000, 1000000000]), "Failed with large numbers"
++    assert increasingTriplet([100000000, -10000000, 1000000000]), "XXFailed with large numbersXX"
+     assert not increasingTriplet([100000000, 99999999, 99999998]), "Failed with decreasing large numbers"
+ 
+ # Test with repeated numbers not forming a triplet
+</pre><h3>Mutant 70</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -50,7 +50,7 @@
+     Ensures the function can handle large numbers and still identify an increasing triplet correctly.
+     """
+     assert increasingTriplet([100000000, -10000000, 1000000000]), "Failed with large numbers"
+-    assert not increasingTriplet([100000000, 99999999, 99999998]), "Failed with decreasing large numbers"
++    assert  increasingTriplet([100000000, 99999999, 99999998]), "Failed with decreasing large numbers"
+ 
+ # Test with repeated numbers not forming a triplet
+ def test_repeated_numbers_not_forming_triplet():
+</pre><h3>Mutant 71</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -50,7 +50,7 @@
+     Ensures the function can handle large numbers and still identify an increasing triplet correctly.
+     """
+     assert increasingTriplet([100000000, -10000000, 1000000000]), "Failed with large numbers"
+-    assert not increasingTriplet([100000000, 99999999, 99999998]), "Failed with decreasing large numbers"
++    assert not increasingTriplet([100000001, 99999999, 99999998]), "Failed with decreasing large numbers"
+ 
+ # Test with repeated numbers not forming a triplet
+ def test_repeated_numbers_not_forming_triplet():
+</pre><h3>Mutant 72</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -50,7 +50,7 @@
+     Ensures the function can handle large numbers and still identify an increasing triplet correctly.
+     """
+     assert increasingTriplet([100000000, -10000000, 1000000000]), "Failed with large numbers"
+-    assert not increasingTriplet([100000000, 99999999, 99999998]), "Failed with decreasing large numbers"
++    assert not increasingTriplet([100000000, 100000000, 99999998]), "Failed with decreasing large numbers"
+ 
+ # Test with repeated numbers not forming a triplet
+ def test_repeated_numbers_not_forming_triplet():
+</pre><h3>Mutant 73</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -50,7 +50,7 @@
+     Ensures the function can handle large numbers and still identify an increasing triplet correctly.
+     """
+     assert increasingTriplet([100000000, -10000000, 1000000000]), "Failed with large numbers"
+-    assert not increasingTriplet([100000000, 99999999, 99999998]), "Failed with decreasing large numbers"
++    assert not increasingTriplet([100000000, 99999999, 99999999]), "Failed with decreasing large numbers"
+ 
+ # Test with repeated numbers not forming a triplet
+ def test_repeated_numbers_not_forming_triplet():
+</pre><h3>Mutant 74</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -50,7 +50,7 @@
+     Ensures the function can handle large numbers and still identify an increasing triplet correctly.
+     """
+     assert increasingTriplet([100000000, -10000000, 1000000000]), "Failed with large numbers"
+-    assert not increasingTriplet([100000000, 99999999, 99999998]), "Failed with decreasing large numbers"
++    assert not increasingTriplet([100000000, 99999999, 99999998]), "XXFailed with decreasing large numbersXX"
+ 
+ # Test with repeated numbers not forming a triplet
+ def test_repeated_numbers_not_forming_triplet():
+</pre><h3>Mutant 76</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -57,5 +57,5 @@
+     """
+     Tests scenarios with repeated numbers that do not form an increasing triplet.
+     """
+-    assert not increasingTriplet([2, 2, 2, 2, 2]), "Failed with repeated numbers"
++    assert not increasingTriplet([3, 2, 2, 2, 2]), "Failed with repeated numbers"
+ 
+</pre><h3>Mutant 77</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -57,5 +57,5 @@
+     """
+     Tests scenarios with repeated numbers that do not form an increasing triplet.
+     """
+-    assert not increasingTriplet([2, 2, 2, 2, 2]), "Failed with repeated numbers"
++    assert not increasingTriplet([2, 3, 2, 2, 2]), "Failed with repeated numbers"
+ 
+</pre><h3>Mutant 78</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -57,5 +57,5 @@
+     """
+     Tests scenarios with repeated numbers that do not form an increasing triplet.
+     """
+-    assert not increasingTriplet([2, 2, 2, 2, 2]), "Failed with repeated numbers"
++    assert not increasingTriplet([2, 2, 3, 2, 2]), "Failed with repeated numbers"
+ 
+</pre><h3>Mutant 79</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -57,5 +57,5 @@
+     """
+     Tests scenarios with repeated numbers that do not form an increasing triplet.
+     """
+-    assert not increasingTriplet([2, 2, 2, 2, 2]), "Failed with repeated numbers"
++    assert not increasingTriplet([2, 2, 2, 3, 2]), "Failed with repeated numbers"
+ 
+</pre><h3>Mutant 80</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -57,5 +57,5 @@
+     """
+     Tests scenarios with repeated numbers that do not form an increasing triplet.
+     """
+-    assert not increasingTriplet([2, 2, 2, 2, 2]), "Failed with repeated numbers"
++    assert not increasingTriplet([2, 2, 2, 2, 3]), "Failed with repeated numbers"
+ 
+</pre><h3>Mutant 81</h3><pre>--- ..\P46\.\tests\test_Problem46_ChatGPT.py
++++ ..\P46\.\tests\test_Problem46_ChatGPT.py
+@@ -57,5 +57,5 @@
+     """
+     Tests scenarios with repeated numbers that do not form an increasing triplet.
+     """
+-    assert not increasingTriplet([2, 2, 2, 2, 2]), "Failed with repeated numbers"
++    assert not increasingTriplet([2, 2, 2, 2, 2]), "XXFailed with repeated numbersXX"
+ 
+</pre></body></html>

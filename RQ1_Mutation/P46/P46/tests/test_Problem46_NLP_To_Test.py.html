@@ -1,0 +1,472 @@
+<html><body><h1>..\P46\.\tests\test_Problem46_NLP_To_Test.py</h1>Killed 19 out of 62 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 116</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -1,7 +1,7 @@
+ import pytest
+ from Problem46_GeneratedSolution import increasingTriplet as find_increasing_triplet  # Assuming the function is named 'find_increasing_triplet' and resides in 'solution.py'
+ 
+-@pytest.mark.parametrize("nums, expected", [
++@pytest.mark.parametrize("XXnums, expectedXX", [
+     ([1, 2, 3, 4, 5], True),  # All increasing order
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+</pre><h3>Mutant 117</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -2,7 +2,7 @@
+ from Problem46_GeneratedSolution import increasingTriplet as find_increasing_triplet  # Assuming the function is named 'find_increasing_triplet' and resides in 'solution.py'
+ 
+ @pytest.mark.parametrize("nums, expected", [
+-    ([1, 2, 3, 4, 5], True),  # All increasing order
++    ([2, 2, 3, 4, 5], True),  # All increasing order
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+</pre><h3>Mutant 118</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -2,7 +2,7 @@
+ from Problem46_GeneratedSolution import increasingTriplet as find_increasing_triplet  # Assuming the function is named 'find_increasing_triplet' and resides in 'solution.py'
+ 
+ @pytest.mark.parametrize("nums, expected", [
+-    ([1, 2, 3, 4, 5], True),  # All increasing order
++    ([1, 3, 3, 4, 5], True),  # All increasing order
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+</pre><h3>Mutant 119</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -2,7 +2,7 @@
+ from Problem46_GeneratedSolution import increasingTriplet as find_increasing_triplet  # Assuming the function is named 'find_increasing_triplet' and resides in 'solution.py'
+ 
+ @pytest.mark.parametrize("nums, expected", [
+-    ([1, 2, 3, 4, 5], True),  # All increasing order
++    ([1, 2, 4, 4, 5], True),  # All increasing order
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+</pre><h3>Mutant 120</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -2,7 +2,7 @@
+ from Problem46_GeneratedSolution import increasingTriplet as find_increasing_triplet  # Assuming the function is named 'find_increasing_triplet' and resides in 'solution.py'
+ 
+ @pytest.mark.parametrize("nums, expected", [
+-    ([1, 2, 3, 4, 5], True),  # All increasing order
++    ([1, 2, 3, 5, 5], True),  # All increasing order
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+</pre><h3>Mutant 121</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -2,7 +2,7 @@
+ from Problem46_GeneratedSolution import increasingTriplet as find_increasing_triplet  # Assuming the function is named 'find_increasing_triplet' and resides in 'solution.py'
+ 
+ @pytest.mark.parametrize("nums, expected", [
+-    ([1, 2, 3, 4, 5], True),  # All increasing order
++    ([1, 2, 3, 4, 6], True),  # All increasing order
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+</pre><h3>Mutant 123</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -3,7 +3,7 @@
+ 
+ @pytest.mark.parametrize("nums, expected", [
+     ([1, 2, 3, 4, 5], True),  # All increasing order
+-    ([5, 4, 3, 2, 1], False),  # All decreasing order
++    ([6, 4, 3, 2, 1], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+     ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+</pre><h3>Mutant 124</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -3,7 +3,7 @@
+ 
+ @pytest.mark.parametrize("nums, expected", [
+     ([1, 2, 3, 4, 5], True),  # All increasing order
+-    ([5, 4, 3, 2, 1], False),  # All decreasing order
++    ([5, 5, 3, 2, 1], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+     ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+</pre><h3>Mutant 125</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -3,7 +3,7 @@
+ 
+ @pytest.mark.parametrize("nums, expected", [
+     ([1, 2, 3, 4, 5], True),  # All increasing order
+-    ([5, 4, 3, 2, 1], False),  # All decreasing order
++    ([5, 4, 4, 2, 1], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+     ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+</pre><h3>Mutant 126</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -3,7 +3,7 @@
+ 
+ @pytest.mark.parametrize("nums, expected", [
+     ([1, 2, 3, 4, 5], True),  # All increasing order
+-    ([5, 4, 3, 2, 1], False),  # All decreasing order
++    ([5, 4, 3, 3, 1], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+     ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+</pre><h3>Mutant 127</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -3,7 +3,7 @@
+ 
+ @pytest.mark.parametrize("nums, expected", [
+     ([1, 2, 3, 4, 5], True),  # All increasing order
+-    ([5, 4, 3, 2, 1], False),  # All decreasing order
++    ([5, 4, 3, 2, 2], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+     ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+</pre><h3>Mutant 129</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -4,7 +4,7 @@
+ @pytest.mark.parametrize("nums, expected", [
+     ([1, 2, 3, 4, 5], True),  # All increasing order
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+-    ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
++    ([3, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+     ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+     ([], False),  # Empty list
+</pre><h3>Mutant 130</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -4,7 +4,7 @@
+ @pytest.mark.parametrize("nums, expected", [
+     ([1, 2, 3, 4, 5], True),  # All increasing order
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+-    ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
++    ([2, 2, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+     ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+     ([], False),  # Empty list
+</pre><h3>Mutant 131</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -4,7 +4,7 @@
+ @pytest.mark.parametrize("nums, expected", [
+     ([1, 2, 3, 4, 5], True),  # All increasing order
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+-    ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
++    ([2, 1, 6, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+     ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+     ([], False),  # Empty list
+</pre><h3>Mutant 132</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -4,7 +4,7 @@
+ @pytest.mark.parametrize("nums, expected", [
+     ([1, 2, 3, 4, 5], True),  # All increasing order
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+-    ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
++    ([2, 1, 5, 1, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+     ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+     ([], False),  # Empty list
+</pre><h3>Mutant 133</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -4,7 +4,7 @@
+ @pytest.mark.parametrize("nums, expected", [
+     ([1, 2, 3, 4, 5], True),  # All increasing order
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+-    ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
++    ([2, 1, 5, 0, 5, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+     ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+     ([], False),  # Empty list
+</pre><h3>Mutant 134</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -4,7 +4,7 @@
+ @pytest.mark.parametrize("nums, expected", [
+     ([1, 2, 3, 4, 5], True),  # All increasing order
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+-    ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
++    ([2, 1, 5, 0, 4, 7], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+     ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+     ([], False),  # Empty list
+</pre><h3>Mutant 136</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -5,7 +5,7 @@
+     ([1, 2, 3, 4, 5], True),  # All increasing order
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+-    ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
++    ([11, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+     ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+     ([], False),  # Empty list
+     ([1], False),  # Single element
+</pre><h3>Mutant 137</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -5,7 +5,7 @@
+     ([1, 2, 3, 4, 5], True),  # All increasing order
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+-    ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
++    ([10, 21, 10, 20, 10, 20], False),  # No strictly increasing triplet
+     ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+     ([], False),  # Empty list
+     ([1], False),  # Single element
+</pre><h3>Mutant 143</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -6,7 +6,7 @@
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+-    ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
++    ([2, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+     ([], False),  # Empty list
+     ([1], False),  # Single element
+     ([1, 2], False),  # Two elements
+</pre><h3>Mutant 144</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -6,7 +6,7 @@
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+-    ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
++    ([1, 3, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+     ([], False),  # Empty list
+     ([1], False),  # Single element
+     ([1, 2], False),  # Two elements
+</pre><h3>Mutant 145</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -6,7 +6,7 @@
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+-    ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
++    ([1, 2, 2, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+     ([], False),  # Empty list
+     ([1], False),  # Single element
+     ([1, 2], False),  # Two elements
+</pre><h3>Mutant 147</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -6,7 +6,7 @@
+     ([5, 4, 3, 2, 1], False),  # All decreasing order
+     ([2, 1, 5, 0, 4, 6], True),  # Increasing triplet found not at consecutive positions
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+-    ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
++    ([1, 2, 1, 2, 2, 2], False),  # Alternating values without a strictly increasing triplet
+     ([], False),  # Empty list
+     ([1], False),  # Single element
+     ([1, 2], False),  # Two elements
+</pre><h3>Mutant 151</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -8,7 +8,7 @@
+     ([10, 20, 10, 20, 10, 20], False),  # No strictly increasing triplet
+     ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+     ([], False),  # Empty list
+-    ([1], False),  # Single element
++    ([2], False),  # Single element
+     ([1, 2], False),  # Two elements
+     ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
+     ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
+</pre><h3>Mutant 153</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -9,7 +9,7 @@
+     ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+     ([], False),  # Empty list
+     ([1], False),  # Single element
+-    ([1, 2], False),  # Two elements
++    ([2, 2], False),  # Two elements
+     ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
+     ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
+     ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
+</pre><h3>Mutant 154</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -9,7 +9,7 @@
+     ([1, 2, 1, 2, 1, 2], False),  # Alternating values without a strictly increasing triplet
+     ([], False),  # Empty list
+     ([1], False),  # Single element
+-    ([1, 2], False),  # Two elements
++    ([1, 3], False),  # Two elements
+     ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
+     ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
+     ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
+</pre><h3>Mutant 156</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -10,7 +10,7 @@
+     ([], False),  # Empty list
+     ([1], False),  # Single element
+     ([1, 2], False),  # Two elements
+-    ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
++    ([2, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
+     ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
+     ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
+ ])
+</pre><h3>Mutant 157</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -10,7 +10,7 @@
+     ([], False),  # Empty list
+     ([1], False),  # Single element
+     ([1, 2], False),  # Two elements
+-    ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
++    ([1, 6, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
+     ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
+     ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
+ ])
+</pre><h3>Mutant 158</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -10,7 +10,7 @@
+     ([], False),  # Empty list
+     ([1], False),  # Single element
+     ([1, 2], False),  # Two elements
+-    ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
++    ([1, 5, 2, 5, 1, 5, 6], True),  # Increasing triplet at the end
+     ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
+     ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
+ ])
+</pre><h3>Mutant 159</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -10,7 +10,7 @@
+     ([], False),  # Empty list
+     ([1], False),  # Single element
+     ([1, 2], False),  # Two elements
+-    ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
++    ([1, 5, 1, 6, 1, 5, 6], True),  # Increasing triplet at the end
+     ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
+     ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
+ ])
+</pre><h3>Mutant 160</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -10,7 +10,7 @@
+     ([], False),  # Empty list
+     ([1], False),  # Single element
+     ([1, 2], False),  # Two elements
+-    ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
++    ([1, 5, 1, 5, 2, 5, 6], True),  # Increasing triplet at the end
+     ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
+     ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
+ ])
+</pre><h3>Mutant 161</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -10,7 +10,7 @@
+     ([], False),  # Empty list
+     ([1], False),  # Single element
+     ([1, 2], False),  # Two elements
+-    ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
++    ([1, 5, 1, 5, 1, 6, 6], True),  # Increasing triplet at the end
+     ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
+     ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
+ ])
+</pre><h3>Mutant 162</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -10,7 +10,7 @@
+     ([], False),  # Empty list
+     ([1], False),  # Single element
+     ([1, 2], False),  # Two elements
+-    ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
++    ([1, 5, 1, 5, 1, 5, 7], True),  # Increasing triplet at the end
+     ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
+     ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
+ ])
+</pre><h3>Mutant 164</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -11,7 +11,7 @@
+     ([1], False),  # Single element
+     ([1, 2], False),  # Two elements
+     ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
+-    ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
++    ([101, 10, 1000, 1, 10000], True),  # Significant difference in values
+     ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
+ ])
+ def test_find_increasing_triplet(nums, expected):
+</pre><h3>Mutant 165</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -11,7 +11,7 @@
+     ([1], False),  # Single element
+     ([1, 2], False),  # Two elements
+     ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
+-    ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
++    ([100, 11, 1000, 1, 10000], True),  # Significant difference in values
+     ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
+ ])
+ def test_find_increasing_triplet(nums, expected):
+</pre><h3>Mutant 166</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -11,7 +11,7 @@
+     ([1], False),  # Single element
+     ([1, 2], False),  # Two elements
+     ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
+-    ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
++    ([100, 10, 1001, 1, 10000], True),  # Significant difference in values
+     ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
+ ])
+ def test_find_increasing_triplet(nums, expected):
+</pre><h3>Mutant 167</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -11,7 +11,7 @@
+     ([1], False),  # Single element
+     ([1, 2], False),  # Two elements
+     ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
+-    ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
++    ([100, 10, 1000, 2, 10000], True),  # Significant difference in values
+     ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
+ ])
+ def test_find_increasing_triplet(nums, expected):
+</pre><h3>Mutant 168</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -11,7 +11,7 @@
+     ([1], False),  # Single element
+     ([1, 2], False),  # Two elements
+     ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
+-    ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
++    ([100, 10, 1000, 1, 10001], True),  # Significant difference in values
+     ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
+ ])
+ def test_find_increasing_triplet(nums, expected):
+</pre><h3>Mutant 170</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -12,7 +12,7 @@
+     ([1, 2], False),  # Two elements
+     ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
+     ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
+-    ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
++    ([4, 5, 4, 7], True),  # Triple not in direct sequence but in order
+ ])
+ def test_find_increasing_triplet(nums, expected):
+     """
+</pre><h3>Mutant 171</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -12,7 +12,7 @@
+     ([1, 2], False),  # Two elements
+     ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
+     ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
+-    ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
++    ([3, 6, 4, 7], True),  # Triple not in direct sequence but in order
+ ])
+ def test_find_increasing_triplet(nums, expected):
+     """
+</pre><h3>Mutant 172</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -12,7 +12,7 @@
+     ([1, 2], False),  # Two elements
+     ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
+     ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
+-    ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
++    ([3, 5, 5, 7], True),  # Triple not in direct sequence but in order
+ ])
+ def test_find_increasing_triplet(nums, expected):
+     """
+</pre><h3>Mutant 173</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -12,7 +12,7 @@
+     ([1, 2], False),  # Two elements
+     ([1, 5, 1, 5, 1, 5, 6], True),  # Increasing triplet at the end
+     ([100, 10, 1000, 1, 10000], True),  # Significant difference in values
+-    ([3, 5, 4, 7], True),  # Triple not in direct sequence but in order
++    ([3, 5, 4, 8], True),  # Triple not in direct sequence but in order
+ ])
+ def test_find_increasing_triplet(nums, expected):
+     """
+</pre><h3>Mutant 177</h3><pre>--- ..\P46\.\tests\test_Problem46_NLP_To_Test.py
++++ ..\P46\.\tests\test_Problem46_NLP_To_Test.py
+@@ -27,5 +27,5 @@
+     nums (list of int): List of integers where we need to find if any increasing triplet exists.
+     expected (bool): Expected result indicating whether an increasing triplet exists or not.
+     """
+-    assert find_increasing_triplet(nums) == expected, f"Test failed for input {nums}"
++    assert find_increasing_triplet(nums) == expected, f"XXTest failed for input {nums}XX"
+ 
+</pre></body></html>

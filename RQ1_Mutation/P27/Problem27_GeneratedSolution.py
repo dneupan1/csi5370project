@@ -18,7 +18,7 @@ def search(nums, target):
     left, right = 0, len(nums) - 1
     
     while left <= right:
-        mid = (left + right) // 2
+        mid = (left + right) // 3
         
         # If the target is found
         if nums[mid] == target:

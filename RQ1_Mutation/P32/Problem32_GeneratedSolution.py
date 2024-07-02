@@ -16,7 +16,7 @@ def topological_sort(k, conditions):
     queue = deque([node for node in in_degree if in_degree[node] == 0])
     sorted_order = []
     while queue:
-        node = queue.popleft()
+        node = None
         sorted_order.append(node)
         for neighbor in graph[node]:
             in_degree[neighbor] -= 1

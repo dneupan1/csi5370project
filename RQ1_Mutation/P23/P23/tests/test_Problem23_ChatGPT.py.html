@@ -1,0 +1,110 @@
+<html><body><h1>..\P23\.\tests\test_Problem23_ChatGPT.py</h1>Killed 21 out of 31 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 70</h3><pre>--- ..\P23\.\tests\test_Problem23_ChatGPT.py
++++ ..\P23\.\tests\test_Problem23_ChatGPT.py
+@@ -8,7 +8,7 @@
+     Tests the function with a string containing a jumbled representation of multiple digits.
+     Verifies if the function correctly identifies and orders all digits.
+     """
+-    s = "owoztneoer"
++    s = "XXowoztneoerXX"
+     expected_output = "012"
+     assert reorderDigits(s) == expected_output
+ 
+</pre><h3>Mutant 75</h3><pre>--- ..\P23\.\tests\test_Problem23_ChatGPT.py
++++ ..\P23\.\tests\test_Problem23_ChatGPT.py
+@@ -18,7 +18,7 @@
+     Tests the function with a string representing a single digit repeated multiple times.
+     Ensures the function handles repeated digits correctly.
+     """
+-    s = "gggg"
++    s = "XXggggXX"
+     expected_output = "8888"
+     assert reorderDigits(s) == expected_output
+ 
+</pre><h3>Mutant 80</h3><pre>--- ..\P23\.\tests\test_Problem23_ChatGPT.py
++++ ..\P23\.\tests\test_Problem23_ChatGPT.py
+@@ -28,7 +28,7 @@
+     Tests the function with an empty string. Expected to return an empty string
+     as there are no digits to identify or reorder.
+     """
+-    s = ""
++    s = "XXXX"
+     expected_output = ""
+     assert reorderDigits(s) == expected_output
+ 
+</pre><h3>Mutant 85</h3><pre>--- ..\P23\.\tests\test_Problem23_ChatGPT.py
++++ ..\P23\.\tests\test_Problem23_ChatGPT.py
+@@ -38,7 +38,7 @@
+     Tests the function with a string that includes all digits 0-9 in a jumbled order.
+     Verifies the function's ability to correctly identify and order every digit from 0 to 9.
+     """
+-    s = "ninesixthreeonefourtwoseveneightfivezero"
++    s = "XXninesixthreeonefourtwoseveneightfivezeroXX"
+     expected_output = "0123456789"
+     assert reorderDigits(s) == expected_output
+ 
+</pre><h3>Mutant 90</h3><pre>--- ..\P23\.\tests\test_Problem23_ChatGPT.py
++++ ..\P23\.\tests\test_Problem23_ChatGPT.py
+@@ -48,7 +48,7 @@
+     Tests the function with a string that contains letters but does not form any digit.
+     Expected to return an empty string as no complete digits can be identified.
+     """
+-    s = "abc"
++    s = "XXabcXX"
+     expected_output = ""
+     assert reorderDigits(s) == expected_output
+ 
+</pre><h3>Mutant 96</h3><pre>--- ..\P23\.\tests\test_Problem23_ChatGPT.py
++++ ..\P23\.\tests\test_Problem23_ChatGPT.py
+@@ -59,7 +59,7 @@
+     Tests the function with a complex string representing multiple occurrences of various digits.
+     This case checks the function's accuracy and efficiency with a larger and more complex input.
+     """
+-    s = "fviefurofoursixtwothreetwofiveoneeightzero"
++    s = "XXfviefurofoursixtwothreetwofiveoneeightzeroXX"
+     expected_output = "012234568"
+     assert reorderDigits(s) == expected_output
+ 
+</pre><h3>Mutant 97</h3><pre>--- ..\P23\.\tests\test_Problem23_ChatGPT.py
++++ ..\P23\.\tests\test_Problem23_ChatGPT.py
+@@ -59,7 +59,7 @@
+     Tests the function with a complex string representing multiple occurrences of various digits.
+     This case checks the function's accuracy and efficiency with a larger and more complex input.
+     """
+-    s = "fviefurofoursixtwothreetwofiveoneeightzero"
++    s = None
+     expected_output = "012234568"
+     assert reorderDigits(s) == expected_output
+ 
+</pre><h3>Mutant 98</h3><pre>--- ..\P23\.\tests\test_Problem23_ChatGPT.py
++++ ..\P23\.\tests\test_Problem23_ChatGPT.py
+@@ -60,7 +60,7 @@
+     This case checks the function's accuracy and efficiency with a larger and more complex input.
+     """
+     s = "fviefurofoursixtwothreetwofiveoneeightzero"
+-    expected_output = "012234568"
++    expected_output = "XX012234568XX"
+     assert reorderDigits(s) == expected_output
+ 
+ 
+</pre><h3>Mutant 99</h3><pre>--- ..\P23\.\tests\test_Problem23_ChatGPT.py
++++ ..\P23\.\tests\test_Problem23_ChatGPT.py
+@@ -60,7 +60,7 @@
+     This case checks the function's accuracy and efficiency with a larger and more complex input.
+     """
+     s = "fviefurofoursixtwothreetwofiveoneeightzero"
+-    expected_output = "012234568"
++    expected_output = None
+     assert reorderDigits(s) == expected_output
+ 
+ 
+</pre><h3>Mutant 100</h3><pre>--- ..\P23\.\tests\test_Problem23_ChatGPT.py
++++ ..\P23\.\tests\test_Problem23_ChatGPT.py
+@@ -61,6 +61,6 @@
+     """
+     s = "fviefurofoursixtwothreetwofiveoneeightzero"
+     expected_output = "012234568"
+-    assert reorderDigits(s) == expected_output
++    assert reorderDigits(s) != expected_output
+ 
+ 
+</pre></body></html>

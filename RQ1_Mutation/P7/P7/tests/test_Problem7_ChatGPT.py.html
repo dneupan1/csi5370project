@@ -1,0 +1,65 @@
+<html><body><h1>..\P7\.\tests\test_Problem7_ChatGPT.py</h1>Killed 30 out of 36 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 28</h3><pre>--- ..\P7\.\tests\test_Problem7_ChatGPT.py
++++ ..\P7\.\tests\test_Problem7_ChatGPT.py
+@@ -22,7 +22,7 @@
+     """
+     Test swapping pairs in an empty list.
+     """
+-    assert linked_list_to_array(swapPairs(create_linked_list([]))) == [], "Empty list should remain unchanged"
++    assert linked_list_to_array(swapPairs(create_linked_list([]))) == [], "XXEmpty list should remain unchangedXX"
+ 
+ def test_single_node_list():
+     """
+</pre><h3>Mutant 32</h3><pre>--- ..\P7\.\tests\test_Problem7_ChatGPT.py
++++ ..\P7\.\tests\test_Problem7_ChatGPT.py
+@@ -28,7 +28,7 @@
+     """
+     Test swapping pairs in a list with a single node.
+     """
+-    assert linked_list_to_array(swapPairs(create_linked_list([1]))) == [1], "Single-node list should remain unchanged"
++    assert linked_list_to_array(swapPairs(create_linked_list([1]))) == [1], "XXSingle-node list should remain unchangedXX"
+ 
+ def test_even_number_of_nodes():
+     """
+</pre><h3>Mutant 42</h3><pre>--- ..\P7\.\tests\test_Problem7_ChatGPT.py
++++ ..\P7\.\tests\test_Problem7_ChatGPT.py
+@@ -34,7 +34,7 @@
+     """
+     Test swapping pairs in a list with an even number of nodes.
+     """
+-    assert linked_list_to_array(swapPairs(create_linked_list([1, 2, 3, 4]))) == [2, 1, 4, 3], "Pairs should be swapped in a list with an even number of nodes"
++    assert linked_list_to_array(swapPairs(create_linked_list([1, 2, 3, 4]))) == [2, 1, 4, 3], "XXPairs should be swapped in a list with an even number of nodesXX"
+ 
+ def test_odd_number_of_nodes():
+     """
+</pre><h3>Mutant 54</h3><pre>--- ..\P7\.\tests\test_Problem7_ChatGPT.py
++++ ..\P7\.\tests\test_Problem7_ChatGPT.py
+@@ -40,6 +40,6 @@
+     """
+     Test swapping pairs in a list with an odd number of nodes.
+     """
+-    assert linked_list_to_array(swapPairs(create_linked_list([1, 2, 3, 4, 5]))) == [2, 1, 4, 3, 5], "Pairs should be swapped with the last node remaining in place in a list with an odd number of nodes"
++    assert linked_list_to_array(swapPairs(create_linked_list([1, 2, 3, 4, 5]))) == [2, 1, 4, 3, 5], "XXPairs should be swapped with the last node remaining in place in a list with an odd number of nodesXX"
+ 
+ 
+</pre><h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 31</h3><pre>--- ..\P7\.\tests\test_Problem7_ChatGPT.py
++++ ..\P7\.\tests\test_Problem7_ChatGPT.py
+@@ -28,7 +28,7 @@
+     """
+     Test swapping pairs in a list with a single node.
+     """
+-    assert linked_list_to_array(swapPairs(create_linked_list([1]))) == [1], "Single-node list should remain unchanged"
++    assert linked_list_to_array(swapPairs(create_linked_list([1]))) == [2], "Single-node list should remain unchanged"
+ 
+ def test_even_number_of_nodes():
+     """
+</pre><h3>Mutant 47</h3><pre>--- ..\P7\.\tests\test_Problem7_ChatGPT.py
++++ ..\P7\.\tests\test_Problem7_ChatGPT.py
+@@ -40,6 +40,6 @@
+     """
+     Test swapping pairs in a list with an odd number of nodes.
+     """
+-    assert linked_list_to_array(swapPairs(create_linked_list([1, 2, 3, 4, 5]))) == [2, 1, 4, 3, 5], "Pairs should be swapped with the last node remaining in place in a list with an odd number of nodes"
++    assert linked_list_to_array(swapPairs(create_linked_list([1, 2, 3, 4, 6]))) == [2, 1, 4, 3, 5], "Pairs should be swapped with the last node remaining in place in a list with an odd number of nodes"
+ 
+ 
+</pre></body></html>

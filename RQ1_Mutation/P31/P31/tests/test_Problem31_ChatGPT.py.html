@@ -1,0 +1,440 @@
+<html><body><h1>..\P31\.\tests\test_Problem31_ChatGPT.py</h1>Killed 63 out of 103 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 13</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -4,7 +4,7 @@
+ 
+ # Test case with no prerequisites
+ def test_no_prerequisites():
+-    numCourses = 4
++    numCourses = 5
+     prerequisites = []
+     # Any order is valid; checking for length and uniqueness of courses
+     result = findOrder(numCourses, prerequisites)
+</pre><h3>Mutant 19</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -8,7 +8,7 @@
+     prerequisites = []
+     # Any order is valid; checking for length and uniqueness of courses
+     result = findOrder(numCourses, prerequisites)
+-    assert len(result) == numCourses and len(set(result)) == numCourses, "Failed with no prerequisites"
++    assert len(result) == numCourses or len(set(result)) == numCourses, "Failed with no prerequisites"
+ 
+ # Test case with a simple linear order
+ def test_linear_order():
+</pre><h3>Mutant 20</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -8,7 +8,7 @@
+     prerequisites = []
+     # Any order is valid; checking for length and uniqueness of courses
+     result = findOrder(numCourses, prerequisites)
+-    assert len(result) == numCourses and len(set(result)) == numCourses, "Failed with no prerequisites"
++    assert len(result) == numCourses and len(set(result)) == numCourses, "XXFailed with no prerequisitesXX"
+ 
+ # Test case with a simple linear order
+ def test_linear_order():
+</pre><h3>Mutant 23</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -13,7 +13,7 @@
+ # Test case with a simple linear order
+ def test_linear_order():
+     numCourses = 3
+-    prerequisites = [[1, 0], [2, 1]]
++    prerequisites = [[2, 0], [2, 1]]
+     expected = [0, 1, 2]  # The only valid order
+     assert findOrder(numCourses, prerequisites) == expected, "Failed with a simple linear order"
+ 
+</pre><h3>Mutant 33</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -15,7 +15,7 @@
+     numCourses = 3
+     prerequisites = [[1, 0], [2, 1]]
+     expected = [0, 1, 2]  # The only valid order
+-    assert findOrder(numCourses, prerequisites) == expected, "Failed with a simple linear order"
++    assert findOrder(numCourses, prerequisites) == expected, "XXFailed with a simple linear orderXX"
+ 
+ # Test case with a circular dependency
+ def test_circular_dependency():
+</pre><h3>Mutant 34</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -19,7 +19,7 @@
+ 
+ # Test case with a circular dependency
+ def test_circular_dependency():
+-    numCourses = 3
++    numCourses = 4
+     prerequisites = [[1, 0], [2, 1], [0, 2]]
+     expected = []  # No valid order due to circular dependency
+     assert findOrder(numCourses, prerequisites) == expected, "Failed to identify circular dependency"
+</pre><h3>Mutant 36</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -20,7 +20,7 @@
+ # Test case with a circular dependency
+ def test_circular_dependency():
+     numCourses = 3
+-    prerequisites = [[1, 0], [2, 1], [0, 2]]
++    prerequisites = [[2, 0], [2, 1], [0, 2]]
+     expected = []  # No valid order due to circular dependency
+     assert findOrder(numCourses, prerequisites) == expected, "Failed to identify circular dependency"
+ 
+</pre><h3>Mutant 37</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -20,7 +20,7 @@
+ # Test case with a circular dependency
+ def test_circular_dependency():
+     numCourses = 3
+-    prerequisites = [[1, 0], [2, 1], [0, 2]]
++    prerequisites = [[1, 1], [2, 1], [0, 2]]
+     expected = []  # No valid order due to circular dependency
+     assert findOrder(numCourses, prerequisites) == expected, "Failed to identify circular dependency"
+ 
+</pre><h3>Mutant 39</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -20,7 +20,7 @@
+ # Test case with a circular dependency
+ def test_circular_dependency():
+     numCourses = 3
+-    prerequisites = [[1, 0], [2, 1], [0, 2]]
++    prerequisites = [[1, 0], [2, 2], [0, 2]]
+     expected = []  # No valid order due to circular dependency
+     assert findOrder(numCourses, prerequisites) == expected, "Failed to identify circular dependency"
+ 
+</pre><h3>Mutant 40</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -20,7 +20,7 @@
+ # Test case with a circular dependency
+ def test_circular_dependency():
+     numCourses = 3
+-    prerequisites = [[1, 0], [2, 1], [0, 2]]
++    prerequisites = [[1, 0], [2, 1], [1, 2]]
+     expected = []  # No valid order due to circular dependency
+     assert findOrder(numCourses, prerequisites) == expected, "Failed to identify circular dependency"
+ 
+</pre><h3>Mutant 45</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -22,7 +22,7 @@
+     numCourses = 3
+     prerequisites = [[1, 0], [2, 1], [0, 2]]
+     expected = []  # No valid order due to circular dependency
+-    assert findOrder(numCourses, prerequisites) == expected, "Failed to identify circular dependency"
++    assert findOrder(numCourses, prerequisites) == expected, "XXFailed to identify circular dependencyXX"
+ 
+ # Test case with complex dependencies
+ def test_complex_dependencies():
+</pre><h3>Mutant 49</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -27,7 +27,7 @@
+ # Test case with complex dependencies
+ def test_complex_dependencies():
+     numCourses = 6
+-    prerequisites = [[5, 2], [5, 0], [4, 0], [4, 1], [2, 3], [3, 1]]
++    prerequisites = [[5, 3], [5, 0], [4, 0], [4, 1], [2, 3], [3, 1]]
+     # Multiple valid orders possible, checking for one of the valid solutions
+     valid_solution_sets = [
+         [0, 1, 3, 2, 4, 5],
+</pre><h3>Mutant 51</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -27,7 +27,7 @@
+ # Test case with complex dependencies
+ def test_complex_dependencies():
+     numCourses = 6
+-    prerequisites = [[5, 2], [5, 0], [4, 0], [4, 1], [2, 3], [3, 1]]
++    prerequisites = [[5, 2], [5, 1], [4, 0], [4, 1], [2, 3], [3, 1]]
+     # Multiple valid orders possible, checking for one of the valid solutions
+     valid_solution_sets = [
+         [0, 1, 3, 2, 4, 5],
+</pre><h3>Mutant 52</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -27,7 +27,7 @@
+ # Test case with complex dependencies
+ def test_complex_dependencies():
+     numCourses = 6
+-    prerequisites = [[5, 2], [5, 0], [4, 0], [4, 1], [2, 3], [3, 1]]
++    prerequisites = [[5, 2], [5, 0], [5, 0], [4, 1], [2, 3], [3, 1]]
+     # Multiple valid orders possible, checking for one of the valid solutions
+     valid_solution_sets = [
+         [0, 1, 3, 2, 4, 5],
+</pre><h3>Mutant 53</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -27,7 +27,7 @@
+ # Test case with complex dependencies
+ def test_complex_dependencies():
+     numCourses = 6
+-    prerequisites = [[5, 2], [5, 0], [4, 0], [4, 1], [2, 3], [3, 1]]
++    prerequisites = [[5, 2], [5, 0], [4, 1], [4, 1], [2, 3], [3, 1]]
+     # Multiple valid orders possible, checking for one of the valid solutions
+     valid_solution_sets = [
+         [0, 1, 3, 2, 4, 5],
+</pre><h3>Mutant 54</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -27,7 +27,7 @@
+ # Test case with complex dependencies
+ def test_complex_dependencies():
+     numCourses = 6
+-    prerequisites = [[5, 2], [5, 0], [4, 0], [4, 1], [2, 3], [3, 1]]
++    prerequisites = [[5, 2], [5, 0], [4, 0], [5, 1], [2, 3], [3, 1]]
+     # Multiple valid orders possible, checking for one of the valid solutions
+     valid_solution_sets = [
+         [0, 1, 3, 2, 4, 5],
+</pre><h3>Mutant 55</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -27,7 +27,7 @@
+ # Test case with complex dependencies
+ def test_complex_dependencies():
+     numCourses = 6
+-    prerequisites = [[5, 2], [5, 0], [4, 0], [4, 1], [2, 3], [3, 1]]
++    prerequisites = [[5, 2], [5, 0], [4, 0], [4, 2], [2, 3], [3, 1]]
+     # Multiple valid orders possible, checking for one of the valid solutions
+     valid_solution_sets = [
+         [0, 1, 3, 2, 4, 5],
+</pre><h3>Mutant 58</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -27,7 +27,7 @@
+ # Test case with complex dependencies
+ def test_complex_dependencies():
+     numCourses = 6
+-    prerequisites = [[5, 2], [5, 0], [4, 0], [4, 1], [2, 3], [3, 1]]
++    prerequisites = [[5, 2], [5, 0], [4, 0], [4, 1], [2, 3], [4, 1]]
+     # Multiple valid orders possible, checking for one of the valid solutions
+     valid_solution_sets = [
+         [0, 1, 3, 2, 4, 5],
+</pre><h3>Mutant 67</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -31,7 +31,7 @@
+     # Multiple valid orders possible, checking for one of the valid solutions
+     valid_solution_sets = [
+         [0, 1, 3, 2, 4, 5],
+-        [1, 0, 3, 2, 4, 5]
++        [2, 0, 3, 2, 4, 5]
+     ]
+     result = findOrder(numCourses, prerequisites)
+     assert result in valid_solution_sets, "Failed with complex dependencies"
+</pre><h3>Mutant 68</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -31,7 +31,7 @@
+     # Multiple valid orders possible, checking for one of the valid solutions
+     valid_solution_sets = [
+         [0, 1, 3, 2, 4, 5],
+-        [1, 0, 3, 2, 4, 5]
++        [1, 1, 3, 2, 4, 5]
+     ]
+     result = findOrder(numCourses, prerequisites)
+     assert result in valid_solution_sets, "Failed with complex dependencies"
+</pre><h3>Mutant 69</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -31,7 +31,7 @@
+     # Multiple valid orders possible, checking for one of the valid solutions
+     valid_solution_sets = [
+         [0, 1, 3, 2, 4, 5],
+-        [1, 0, 3, 2, 4, 5]
++        [1, 0, 4, 2, 4, 5]
+     ]
+     result = findOrder(numCourses, prerequisites)
+     assert result in valid_solution_sets, "Failed with complex dependencies"
+</pre><h3>Mutant 70</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -31,7 +31,7 @@
+     # Multiple valid orders possible, checking for one of the valid solutions
+     valid_solution_sets = [
+         [0, 1, 3, 2, 4, 5],
+-        [1, 0, 3, 2, 4, 5]
++        [1, 0, 3, 3, 4, 5]
+     ]
+     result = findOrder(numCourses, prerequisites)
+     assert result in valid_solution_sets, "Failed with complex dependencies"
+</pre><h3>Mutant 71</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -31,7 +31,7 @@
+     # Multiple valid orders possible, checking for one of the valid solutions
+     valid_solution_sets = [
+         [0, 1, 3, 2, 4, 5],
+-        [1, 0, 3, 2, 4, 5]
++        [1, 0, 3, 2, 5, 5]
+     ]
+     result = findOrder(numCourses, prerequisites)
+     assert result in valid_solution_sets, "Failed with complex dependencies"
+</pre><h3>Mutant 72</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -31,7 +31,7 @@
+     # Multiple valid orders possible, checking for one of the valid solutions
+     valid_solution_sets = [
+         [0, 1, 3, 2, 4, 5],
+-        [1, 0, 3, 2, 4, 5]
++        [1, 0, 3, 2, 4, 6]
+     ]
+     result = findOrder(numCourses, prerequisites)
+     assert result in valid_solution_sets, "Failed with complex dependencies"
+</pre><h3>Mutant 76</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -34,7 +34,7 @@
+         [1, 0, 3, 2, 4, 5]
+     ]
+     result = findOrder(numCourses, prerequisites)
+-    assert result in valid_solution_sets, "Failed with complex dependencies"
++    assert result in valid_solution_sets, "XXFailed with complex dependenciesXX"
+ 
+ # Test case with self dependency (impossible to complete)
+ def test_self_dependency():
+</pre><h3>Mutant 77</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -38,7 +38,7 @@
+ 
+ # Test case with self dependency (impossible to complete)
+ def test_self_dependency():
+-    numCourses = 2
++    numCourses = 3
+     prerequisites = [[0, 0]]
+     expected = []  # No valid order due to self dependency
+     assert findOrder(numCourses, prerequisites) == expected, "Failed to identify self dependency"
+</pre><h3>Mutant 84</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -41,7 +41,7 @@
+     numCourses = 2
+     prerequisites = [[0, 0]]
+     expected = []  # No valid order due to self dependency
+-    assert findOrder(numCourses, prerequisites) == expected, "Failed to identify self dependency"
++    assert findOrder(numCourses, prerequisites) == expected, "XXFailed to identify self dependencyXX"
+ 
+ # Test case for a large number of courses
+ def test_large_number_of_courses():
+</pre><h3>Mutant 89</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -46,7 +46,7 @@
+ # Test case for a large number of courses
+ def test_large_number_of_courses():
+     numCourses = 1000
+-    prerequisites = [[i, i - 1] for i in range(1, 1000)]
++    prerequisites = [[i, i - 1] for i in range(2, 1000)]
+     result = findOrder(numCourses, prerequisites)
+     # Verifying the first and last courses in the expected linear order
+     assert result[0] == 0 and result[-1] == 999, "Failed with a large number of courses"
+</pre><h3>Mutant 100</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -49,7 +49,7 @@
+     prerequisites = [[i, i - 1] for i in range(1, 1000)]
+     result = findOrder(numCourses, prerequisites)
+     # Verifying the first and last courses in the expected linear order
+-    assert result[0] == 0 and result[-1] == 999, "Failed with a large number of courses"
++    assert result[0] == 0 or result[-1] == 999, "Failed with a large number of courses"
+ 
+ # Test case with no possible order due to a partial cycle
+ def test_partial_cycle():
+</pre><h3>Mutant 101</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -49,7 +49,7 @@
+     prerequisites = [[i, i - 1] for i in range(1, 1000)]
+     result = findOrder(numCourses, prerequisites)
+     # Verifying the first and last courses in the expected linear order
+-    assert result[0] == 0 and result[-1] == 999, "Failed with a large number of courses"
++    assert result[0] == 0 and result[-1] == 999, "XXFailed with a large number of coursesXX"
+ 
+ # Test case with no possible order due to a partial cycle
+ def test_partial_cycle():
+</pre><h3>Mutant 102</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -53,7 +53,7 @@
+ 
+ # Test case with no possible order due to a partial cycle
+ def test_partial_cycle():
+-    numCourses = 4
++    numCourses = 5
+     prerequisites = [[0, 1], [1, 2], [2, 0], [3, 2]]
+     expected = []  # No valid order because of the cycle 0 -> 1 -> 2 -> 0
+     assert findOrder(numCourses, prerequisites) == expected, "Failed to identify partial cycle"
+</pre><h3>Mutant 104</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -54,7 +54,7 @@
+ # Test case with no possible order due to a partial cycle
+ def test_partial_cycle():
+     numCourses = 4
+-    prerequisites = [[0, 1], [1, 2], [2, 0], [3, 2]]
++    prerequisites = [[1, 1], [1, 2], [2, 0], [3, 2]]
+     expected = []  # No valid order because of the cycle 0 -> 1 -> 2 -> 0
+     assert findOrder(numCourses, prerequisites) == expected, "Failed to identify partial cycle"
+ 
+</pre><h3>Mutant 105</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -54,7 +54,7 @@
+ # Test case with no possible order due to a partial cycle
+ def test_partial_cycle():
+     numCourses = 4
+-    prerequisites = [[0, 1], [1, 2], [2, 0], [3, 2]]
++    prerequisites = [[0, 2], [1, 2], [2, 0], [3, 2]]
+     expected = []  # No valid order because of the cycle 0 -> 1 -> 2 -> 0
+     assert findOrder(numCourses, prerequisites) == expected, "Failed to identify partial cycle"
+ 
+</pre><h3>Mutant 106</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -54,7 +54,7 @@
+ # Test case with no possible order due to a partial cycle
+ def test_partial_cycle():
+     numCourses = 4
+-    prerequisites = [[0, 1], [1, 2], [2, 0], [3, 2]]
++    prerequisites = [[0, 1], [2, 2], [2, 0], [3, 2]]
+     expected = []  # No valid order because of the cycle 0 -> 1 -> 2 -> 0
+     assert findOrder(numCourses, prerequisites) == expected, "Failed to identify partial cycle"
+ 
+</pre><h3>Mutant 107</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -54,7 +54,7 @@
+ # Test case with no possible order due to a partial cycle
+ def test_partial_cycle():
+     numCourses = 4
+-    prerequisites = [[0, 1], [1, 2], [2, 0], [3, 2]]
++    prerequisites = [[0, 1], [1, 3], [2, 0], [3, 2]]
+     expected = []  # No valid order because of the cycle 0 -> 1 -> 2 -> 0
+     assert findOrder(numCourses, prerequisites) == expected, "Failed to identify partial cycle"
+ 
+</pre><h3>Mutant 109</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -54,7 +54,7 @@
+ # Test case with no possible order due to a partial cycle
+ def test_partial_cycle():
+     numCourses = 4
+-    prerequisites = [[0, 1], [1, 2], [2, 0], [3, 2]]
++    prerequisites = [[0, 1], [1, 2], [2, 1], [3, 2]]
+     expected = []  # No valid order because of the cycle 0 -> 1 -> 2 -> 0
+     assert findOrder(numCourses, prerequisites) == expected, "Failed to identify partial cycle"
+ 
+</pre><h3>Mutant 111</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -54,7 +54,7 @@
+ # Test case with no possible order due to a partial cycle
+ def test_partial_cycle():
+     numCourses = 4
+-    prerequisites = [[0, 1], [1, 2], [2, 0], [3, 2]]
++    prerequisites = [[0, 1], [1, 2], [2, 0], [3, 3]]
+     expected = []  # No valid order because of the cycle 0 -> 1 -> 2 -> 0
+     assert findOrder(numCourses, prerequisites) == expected, "Failed to identify partial cycle"
+ 
+</pre><h3>Mutant 115</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -56,6 +56,6 @@
+     numCourses = 4
+     prerequisites = [[0, 1], [1, 2], [2, 0], [3, 2]]
+     expected = []  # No valid order because of the cycle 0 -> 1 -> 2 -> 0
+-    assert findOrder(numCourses, prerequisites) == expected, "Failed to identify partial cycle"
++    assert findOrder(numCourses, prerequisites) == expected, "XXFailed to identify partial cycleXX"
+ 
+ 
+</pre><h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 41</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -20,7 +20,7 @@
+ # Test case with a circular dependency
+ def test_circular_dependency():
+     numCourses = 3
+-    prerequisites = [[1, 0], [2, 1], [0, 2]]
++    prerequisites = [[1, 0], [2, 1], [0, 3]]
+     expected = []  # No valid order due to circular dependency
+     assert findOrder(numCourses, prerequisites) == expected, "Failed to identify circular dependency"
+ 
+</pre><h3>Mutant 87</h3><pre>--- ..\P31\.\tests\test_Problem31_ChatGPT.py
++++ ..\P31\.\tests\test_Problem31_ChatGPT.py
+@@ -46,7 +46,7 @@
+ # Test case for a large number of courses
+ def test_large_number_of_courses():
+     numCourses = 1000
+-    prerequisites = [[i, i - 1] for i in range(1, 1000)]
++    prerequisites = [[i, i + 1] for i in range(1, 1000)]
+     result = findOrder(numCourses, prerequisites)
+     # Verifying the first and last courses in the expected linear order
+     assert result[0] == 0 and result[-1] == 999, "Failed with a large number of courses"
+</pre></body></html>

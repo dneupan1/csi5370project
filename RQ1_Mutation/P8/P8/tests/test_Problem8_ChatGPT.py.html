@@ -1,0 +1,109 @@
+<html><body><h1>..\P8\.\tests\test_Problem8_ChatGPT.py</h1>Killed 70 out of 80 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 46</h3><pre>--- ..\P8\.\tests\test_Problem8_ChatGPT.py
++++ ..\P8\.\tests\test_Problem8_ChatGPT.py
+@@ -25,7 +25,7 @@
+     head = create_linked_list([1, 2, 3, 4, 5, 6])
+     k = 2
+     expected = [2, 1, 4, 3, 6, 5]
+-    assert linked_list_to_array(reverseKGroup(head, k)) == expected, "Should reverse every k group of nodes"
++    assert linked_list_to_array(reverseKGroup(head, k)) == expected, "XXShould reverse every k group of nodesXX"
+ 
+ def test_list_length_not_multiple_of_k():
+     """
+</pre><h3>Mutant 62</h3><pre>--- ..\P8\.\tests\test_Problem8_ChatGPT.py
++++ ..\P8\.\tests\test_Problem8_ChatGPT.py
+@@ -34,7 +34,7 @@
+     head = create_linked_list([1, 2, 3, 4, 5])
+     k = 3
+     expected = [3, 2, 1, 4, 5]
+-    assert linked_list_to_array(reverseKGroup(head, k)) == expected, "Should reverse the first k group of nodes and leave the rest as is"
++    assert linked_list_to_array(reverseKGroup(head, k)) == expected, "XXShould reverse the first k group of nodes and leave the rest as isXX"
+ 
+ def test_list_shorter_than_k():
+     """
+</pre><h3>Mutant 66</h3><pre>--- ..\P8\.\tests\test_Problem8_ChatGPT.py
++++ ..\P8\.\tests\test_Problem8_ChatGPT.py
+@@ -41,7 +41,7 @@
+     Test a list that is shorter than k.
+     """
+     head = create_linked_list([1, 2])
+-    k = 3
++    k = 4
+     expected = [1, 2]
+     assert linked_list_to_array(reverseKGroup(head, k)) == expected, "Should leave the list as is if shorter than k"
+ 
+</pre><h3>Mutant 72</h3><pre>--- ..\P8\.\tests\test_Problem8_ChatGPT.py
++++ ..\P8\.\tests\test_Problem8_ChatGPT.py
+@@ -43,7 +43,7 @@
+     head = create_linked_list([1, 2])
+     k = 3
+     expected = [1, 2]
+-    assert linked_list_to_array(reverseKGroup(head, k)) == expected, "Should leave the list as is if shorter than k"
++    assert linked_list_to_array(reverseKGroup(head, k)) == expected, "XXShould leave the list as is if shorter than kXX"
+ 
+ def test_k_equals_one():
+     """
+</pre><h3>Mutant 86</h3><pre>--- ..\P8\.\tests\test_Problem8_ChatGPT.py
++++ ..\P8\.\tests\test_Problem8_ChatGPT.py
+@@ -52,7 +52,7 @@
+     head = create_linked_list([1, 2, 3, 4])
+     k = 1
+     expected = [1, 2, 3, 4]
+-    assert linked_list_to_array(reverseKGroup(head, k)) == expected, "Should leave the list as is if k is 1"
++    assert linked_list_to_array(reverseKGroup(head, k)) == expected, "XXShould leave the list as is if k is 1XX"
+ 
+ def test_empty_list():
+     """
+</pre><h3>Mutant 87</h3><pre>--- ..\P8\.\tests\test_Problem8_ChatGPT.py
++++ ..\P8\.\tests\test_Problem8_ChatGPT.py
+@@ -58,7 +58,7 @@
+     """
+     Test an empty list.
+     """
+-    head = create_linked_list([])
++    head = None
+     k = 2
+     expected = []
+     assert linked_list_to_array(reverseKGroup(head, k)) == expected, "Should return an empty list"
+</pre><h3>Mutant 88</h3><pre>--- ..\P8\.\tests\test_Problem8_ChatGPT.py
++++ ..\P8\.\tests\test_Problem8_ChatGPT.py
+@@ -59,7 +59,7 @@
+     Test an empty list.
+     """
+     head = create_linked_list([])
+-    k = 2
++    k = 3
+     expected = []
+     assert linked_list_to_array(reverseKGroup(head, k)) == expected, "Should return an empty list"
+ 
+</pre><h3>Mutant 92</h3><pre>--- ..\P8\.\tests\test_Problem8_ChatGPT.py
++++ ..\P8\.\tests\test_Problem8_ChatGPT.py
+@@ -61,7 +61,7 @@
+     head = create_linked_list([])
+     k = 2
+     expected = []
+-    assert linked_list_to_array(reverseKGroup(head, k)) == expected, "Should return an empty list"
++    assert linked_list_to_array(reverseKGroup(head, k)) == expected, "XXShould return an empty listXX"
+ 
+ def test_single_node_list():
+     """
+</pre><h3>Mutant 95</h3><pre>--- ..\P8\.\tests\test_Problem8_ChatGPT.py
++++ ..\P8\.\tests\test_Problem8_ChatGPT.py
+@@ -68,7 +68,7 @@
+     Test a list with a single node.
+     """
+     head = create_linked_list([1])
+-    k = 2
++    k = 3
+     expected = [1]
+     assert linked_list_to_array(reverseKGroup(head, k)) == expected, "Single-node list should remain unchanged"
+ 
+</pre><h3>Mutant 100</h3><pre>--- ..\P8\.\tests\test_Problem8_ChatGPT.py
++++ ..\P8\.\tests\test_Problem8_ChatGPT.py
+@@ -70,5 +70,5 @@
+     head = create_linked_list([1])
+     k = 2
+     expected = [1]
+-    assert linked_list_to_array(reverseKGroup(head, k)) == expected, "Single-node list should remain unchanged"
++    assert linked_list_to_array(reverseKGroup(head, k)) == expected, "XXSingle-node list should remain unchangedXX"
+ 
+</pre></body></html>

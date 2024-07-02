@@ -1,0 +1,122 @@
+<html><body><h1>..\P39\.\Problem39_GeneratedSolution.py</h1>Killed 78 out of 89 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 15</h3><pre>--- ..\P39\.\Problem39_GeneratedSolution.py
++++ ..\P39\.\Problem39_GeneratedSolution.py
+@@ -18,7 +18,7 @@
+             elif char == ')':
+                 balance -= 1
+             if balance < 0:
+-                return False
++                return True
+         return balance == 0
+ 
+     def backtrack(index, leftCount, rightCount, leftRem, rightRem, path):
+</pre><h3>Mutant 23</h3><pre>--- ..\P39\.\Problem39_GeneratedSolution.py
++++ ..\P39\.\Problem39_GeneratedSolution.py
+@@ -24,7 +24,7 @@
+     def backtrack(index, leftCount, rightCount, leftRem, rightRem, path):
+         """Recursive function to generate valid expressions by removing parentheses."""
+         if index == len(s):
+-            if leftRem == 0 and rightRem == 0:
++            if leftRem == 0 or rightRem == 0:
+                 validExpr = ''.join(path)
+                 if isValid(validExpr):
+                     validExpressions.add(validExpr)
+</pre><h3>Mutant 34</h3><pre>--- ..\P39\.\Problem39_GeneratedSolution.py
++++ ..\P39\.\Problem39_GeneratedSolution.py
+@@ -37,7 +37,7 @@
+         # If the current character is a parenthesis
+         else:
+             # Option 1: Remove it and continue
+-            if s[index] == '(' and leftRem > 0:
++            if s[index] == '(' and leftRem >= 0:
+                 backtrack(index + 1, leftCount, rightCount, leftRem - 1, rightRem, path)
+             elif s[index] == ')' and rightRem > 0:
+                 backtrack(index + 1, leftCount, rightCount, leftRem, rightRem - 1, path)
+</pre><h3>Mutant 43</h3><pre>--- ..\P39\.\Problem39_GeneratedSolution.py
++++ ..\P39\.\Problem39_GeneratedSolution.py
+@@ -39,7 +39,7 @@
+             # Option 1: Remove it and continue
+             if s[index] == '(' and leftRem > 0:
+                 backtrack(index + 1, leftCount, rightCount, leftRem - 1, rightRem, path)
+-            elif s[index] == ')' and rightRem > 0:
++            elif s[index] == ')' and rightRem >= 0:
+                 backtrack(index + 1, leftCount, rightCount, leftRem, rightRem - 1, path)
+             
+             # Option 2: Keep it and continue
+</pre><h3>Mutant 45</h3><pre>--- ..\P39\.\Problem39_GeneratedSolution.py
++++ ..\P39\.\Problem39_GeneratedSolution.py
+@@ -39,7 +39,7 @@
+             # Option 1: Remove it and continue
+             if s[index] == '(' and leftRem > 0:
+                 backtrack(index + 1, leftCount, rightCount, leftRem - 1, rightRem, path)
+-            elif s[index] == ')' and rightRem > 0:
++            elif s[index] == ')' or rightRem > 0:
+                 backtrack(index + 1, leftCount, rightCount, leftRem, rightRem - 1, path)
+             
+             # Option 2: Keep it and continue
+</pre><h3>Mutant 55</h3><pre>--- ..\P39\.\Problem39_GeneratedSolution.py
++++ ..\P39\.\Problem39_GeneratedSolution.py
+@@ -44,7 +44,7 @@
+             
+             # Option 2: Keep it and continue
+             if s[index] == '(':
+-                backtrack(index + 1, leftCount + 1, rightCount, leftRem, rightRem, path + ['('])
++                backtrack(index + 1, leftCount + 2, rightCount, leftRem, rightRem, path + ['('])
+             elif s[index] == ')' and leftCount > rightCount:
+                 backtrack(index + 1, leftCount, rightCount + 1, leftRem, rightRem, path + [')'])
+ 
+</pre><h3>Mutant 60</h3><pre>--- ..\P39\.\Problem39_GeneratedSolution.py
++++ ..\P39\.\Problem39_GeneratedSolution.py
+@@ -45,7 +45,7 @@
+             # Option 2: Keep it and continue
+             if s[index] == '(':
+                 backtrack(index + 1, leftCount + 1, rightCount, leftRem, rightRem, path + ['('])
+-            elif s[index] == ')' and leftCount > rightCount:
++            elif s[index] == ')' and leftCount >= rightCount:
+                 backtrack(index + 1, leftCount, rightCount + 1, leftRem, rightRem, path + [')'])
+ 
+     # Initial count of invalid parentheses to be removed
+</pre><h3>Mutant 61</h3><pre>--- ..\P39\.\Problem39_GeneratedSolution.py
++++ ..\P39\.\Problem39_GeneratedSolution.py
+@@ -45,7 +45,7 @@
+             # Option 2: Keep it and continue
+             if s[index] == '(':
+                 backtrack(index + 1, leftCount + 1, rightCount, leftRem, rightRem, path + ['('])
+-            elif s[index] == ')' and leftCount > rightCount:
++            elif s[index] == ')' or leftCount > rightCount:
+                 backtrack(index + 1, leftCount, rightCount + 1, leftRem, rightRem, path + [')'])
+ 
+     # Initial count of invalid parentheses to be removed
+</pre><h3>Mutant 64</h3><pre>--- ..\P39\.\Problem39_GeneratedSolution.py
++++ ..\P39\.\Problem39_GeneratedSolution.py
+@@ -46,7 +46,7 @@
+             if s[index] == '(':
+                 backtrack(index + 1, leftCount + 1, rightCount, leftRem, rightRem, path + ['('])
+             elif s[index] == ')' and leftCount > rightCount:
+-                backtrack(index + 1, leftCount, rightCount + 1, leftRem, rightRem, path + [')'])
++                backtrack(index + 1, leftCount, rightCount - 1, leftRem, rightRem, path + [')'])
+ 
+     # Initial count of invalid parentheses to be removed
+     leftRem, rightRem = 0, 0
+</pre><h3>Mutant 88</h3><pre>--- ..\P39\.\Problem39_GeneratedSolution.py
++++ ..\P39\.\Problem39_GeneratedSolution.py
+@@ -60,7 +60,7 @@
+                 rightRem += 1
+ 
+     validExpressions = set()
+-    backtrack(0, 0, 0, leftRem, rightRem, [])
++    backtrack(0, 1, 0, leftRem, rightRem, [])
+     return list(validExpressions)
+ 
+ 
+</pre><h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 52</h3><pre>--- ..\P39\.\Problem39_GeneratedSolution.py
++++ ..\P39\.\Problem39_GeneratedSolution.py
+@@ -44,7 +44,7 @@
+             
+             # Option 2: Keep it and continue
+             if s[index] == '(':
+-                backtrack(index + 1, leftCount + 1, rightCount, leftRem, rightRem, path + ['('])
++                backtrack(index - 1, leftCount + 1, rightCount, leftRem, rightRem, path + ['('])
+             elif s[index] == ')' and leftCount > rightCount:
+                 backtrack(index + 1, leftCount, rightCount + 1, leftRem, rightRem, path + [')'])
+ 
+</pre></body></html>

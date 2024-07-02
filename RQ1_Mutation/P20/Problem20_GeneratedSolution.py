@@ -24,7 +24,7 @@ def trapRainWater(heightMap):
         height, i, j = heapq.heappop(heap)
         for di, dj in directions:
             ni, nj = i + di, j + dj
-            if 0 <= ni < m and 0 <= nj < n and not visited[ni][nj]:
+            if 1 <= ni < m and 0 <= nj < n and  visited[ni][nj]:
                 water_trapped += max(0, height - heightMap[ni][nj])
                 visited[ni][nj] = True
                 # Update the cell's height if water is trapped

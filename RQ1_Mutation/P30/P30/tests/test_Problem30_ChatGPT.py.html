@@ -1,0 +1,517 @@
+<html><body><h1>..\P30\.\tests\test_Problem30_ChatGPT.py</h1>Killed 55 out of 102 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 44</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -5,7 +5,7 @@
+ # Test case where the word is found along a straight line horizontally
+ def test_word_found_horizontal():
+     board = [
+-        ['A', 'B', 'C', 'E'],
++        ['A', 'B', 'C', 'XXEXX'],
+         ['S', 'F', 'C', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+</pre><h3>Mutant 45</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -6,7 +6,7 @@
+ def test_word_found_horizontal():
+     board = [
+         ['A', 'B', 'C', 'E'],
+-        ['S', 'F', 'C', 'S'],
++        ['XXSXX', 'F', 'C', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+     word = "ABCCED"
+</pre><h3>Mutant 46</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -6,7 +6,7 @@
+ def test_word_found_horizontal():
+     board = [
+         ['A', 'B', 'C', 'E'],
+-        ['S', 'F', 'C', 'S'],
++        ['S', 'XXFXX', 'C', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+     word = "ABCCED"
+</pre><h3>Mutant 48</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -6,7 +6,7 @@
+ def test_word_found_horizontal():
+     board = [
+         ['A', 'B', 'C', 'E'],
+-        ['S', 'F', 'C', 'S'],
++        ['S', 'F', 'C', 'XXSXX'],
+         ['A', 'D', 'E', 'E']
+     ]
+     word = "ABCCED"
+</pre><h3>Mutant 49</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -7,7 +7,7 @@
+     board = [
+         ['A', 'B', 'C', 'E'],
+         ['S', 'F', 'C', 'S'],
+-        ['A', 'D', 'E', 'E']
++        ['XXAXX', 'D', 'E', 'E']
+     ]
+     word = "ABCCED"
+     assert exist(board, word) == True, "Failed to find the word horizontally"
+</pre><h3>Mutant 52</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -7,7 +7,7 @@
+     board = [
+         ['A', 'B', 'C', 'E'],
+         ['S', 'F', 'C', 'S'],
+-        ['A', 'D', 'E', 'E']
++        ['A', 'D', 'E', 'XXEXX']
+     ]
+     word = "ABCCED"
+     assert exist(board, word) == True, "Failed to find the word horizontally"
+</pre><h3>Mutant 58</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -10,7 +10,7 @@
+         ['A', 'D', 'E', 'E']
+     ]
+     word = "ABCCED"
+-    assert exist(board, word) == True, "Failed to find the word horizontally"
++    assert exist(board, word) == True, "XXFailed to find the word horizontallyXX"
+ 
+ # Test case where the word is found along a straight line vertically
+ def test_word_found_vertical():
+</pre><h3>Mutant 59</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -15,7 +15,7 @@
+ # Test case where the word is found along a straight line vertically
+ def test_word_found_vertical():
+     board = [
+-        ['A', 'B', 'C', 'E'],
++        ['XXAXX', 'B', 'C', 'E'],
+         ['S', 'F', 'C', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+</pre><h3>Mutant 60</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -15,7 +15,7 @@
+ # Test case where the word is found along a straight line vertically
+ def test_word_found_vertical():
+     board = [
+-        ['A', 'B', 'C', 'E'],
++        ['A', 'XXBXX', 'C', 'E'],
+         ['S', 'F', 'C', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+</pre><h3>Mutant 61</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -15,7 +15,7 @@
+ # Test case where the word is found along a straight line vertically
+ def test_word_found_vertical():
+     board = [
+-        ['A', 'B', 'C', 'E'],
++        ['A', 'B', 'XXCXX', 'E'],
+         ['S', 'F', 'C', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+</pre><h3>Mutant 62</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -15,7 +15,7 @@
+ # Test case where the word is found along a straight line vertically
+ def test_word_found_vertical():
+     board = [
+-        ['A', 'B', 'C', 'E'],
++        ['A', 'B', 'C', 'XXEXX'],
+         ['S', 'F', 'C', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+</pre><h3>Mutant 63</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -16,7 +16,7 @@
+ def test_word_found_vertical():
+     board = [
+         ['A', 'B', 'C', 'E'],
+-        ['S', 'F', 'C', 'S'],
++        ['XXSXX', 'F', 'C', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+     word = "SEE"
+</pre><h3>Mutant 64</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -16,7 +16,7 @@
+ def test_word_found_vertical():
+     board = [
+         ['A', 'B', 'C', 'E'],
+-        ['S', 'F', 'C', 'S'],
++        ['S', 'XXFXX', 'C', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+     word = "SEE"
+</pre><h3>Mutant 65</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -16,7 +16,7 @@
+ def test_word_found_vertical():
+     board = [
+         ['A', 'B', 'C', 'E'],
+-        ['S', 'F', 'C', 'S'],
++        ['S', 'F', 'XXCXX', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+     word = "SEE"
+</pre><h3>Mutant 67</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -17,7 +17,7 @@
+     board = [
+         ['A', 'B', 'C', 'E'],
+         ['S', 'F', 'C', 'S'],
+-        ['A', 'D', 'E', 'E']
++        ['XXAXX', 'D', 'E', 'E']
+     ]
+     word = "SEE"
+     assert exist(board, word) == True, "Failed to find the word vertically"
+</pre><h3>Mutant 68</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -17,7 +17,7 @@
+     board = [
+         ['A', 'B', 'C', 'E'],
+         ['S', 'F', 'C', 'S'],
+-        ['A', 'D', 'E', 'E']
++        ['A', 'XXDXX', 'E', 'E']
+     ]
+     word = "SEE"
+     assert exist(board, word) == True, "Failed to find the word vertically"
+</pre><h3>Mutant 76</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -20,7 +20,7 @@
+         ['A', 'D', 'E', 'E']
+     ]
+     word = "SEE"
+-    assert exist(board, word) == True, "Failed to find the word vertically"
++    assert exist(board, word) == True, "XXFailed to find the word verticallyXX"
+ 
+ # Test case where the word is found with a complex path
+ def test_word_found_complex_path():
+</pre><h3>Mutant 85</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -27,7 +27,7 @@
+     board = [
+         ['A', 'B', 'C', 'E'],
+         ['S', 'F', 'E', 'S'],
+-        ['A', 'D', 'E', 'E']
++        ['XXAXX', 'D', 'E', 'E']
+     ]
+     word = "ABCESEEEFS"
+     assert exist(board, word) == True, "Failed to find the word with a complex path"
+</pre><h3>Mutant 86</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -27,7 +27,7 @@
+     board = [
+         ['A', 'B', 'C', 'E'],
+         ['S', 'F', 'E', 'S'],
+-        ['A', 'D', 'E', 'E']
++        ['A', 'XXDXX', 'E', 'E']
+     ]
+     word = "ABCESEEEFS"
+     assert exist(board, word) == True, "Failed to find the word with a complex path"
+</pre><h3>Mutant 94</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -30,7 +30,7 @@
+         ['A', 'D', 'E', 'E']
+     ]
+     word = "ABCESEEEFS"
+-    assert exist(board, word) == True, "Failed to find the word with a complex path"
++    assert exist(board, word) == True, "XXFailed to find the word with a complex pathXX"
+ 
+ # Test case where the word does not exist
+ def test_word_not_found():
+</pre><h3>Mutant 95</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -35,7 +35,7 @@
+ # Test case where the word does not exist
+ def test_word_not_found():
+     board = [
+-        ['A', 'B', 'C', 'E'],
++        ['XXAXX', 'B', 'C', 'E'],
+         ['S', 'F', 'C', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+</pre><h3>Mutant 96</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -35,7 +35,7 @@
+ # Test case where the word does not exist
+ def test_word_not_found():
+     board = [
+-        ['A', 'B', 'C', 'E'],
++        ['A', 'XXBXX', 'C', 'E'],
+         ['S', 'F', 'C', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+</pre><h3>Mutant 97</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -35,7 +35,7 @@
+ # Test case where the word does not exist
+ def test_word_not_found():
+     board = [
+-        ['A', 'B', 'C', 'E'],
++        ['A', 'B', 'XXCXX', 'E'],
+         ['S', 'F', 'C', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+</pre><h3>Mutant 98</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -35,7 +35,7 @@
+ # Test case where the word does not exist
+ def test_word_not_found():
+     board = [
+-        ['A', 'B', 'C', 'E'],
++        ['A', 'B', 'C', 'XXEXX'],
+         ['S', 'F', 'C', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+</pre><h3>Mutant 99</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -36,7 +36,7 @@
+ def test_word_not_found():
+     board = [
+         ['A', 'B', 'C', 'E'],
+-        ['S', 'F', 'C', 'S'],
++        ['XXSXX', 'F', 'C', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+     word = "ABCB"
+</pre><h3>Mutant 100</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -36,7 +36,7 @@
+ def test_word_not_found():
+     board = [
+         ['A', 'B', 'C', 'E'],
+-        ['S', 'F', 'C', 'S'],
++        ['S', 'XXFXX', 'C', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+     word = "ABCB"
+</pre><h3>Mutant 101</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -36,7 +36,7 @@
+ def test_word_not_found():
+     board = [
+         ['A', 'B', 'C', 'E'],
+-        ['S', 'F', 'C', 'S'],
++        ['S', 'F', 'XXCXX', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+     word = "ABCB"
+</pre><h3>Mutant 102</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -36,7 +36,7 @@
+ def test_word_not_found():
+     board = [
+         ['A', 'B', 'C', 'E'],
+-        ['S', 'F', 'C', 'S'],
++        ['S', 'F', 'C', 'XXSXX'],
+         ['A', 'D', 'E', 'E']
+     ]
+     word = "ABCB"
+</pre><h3>Mutant 103</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -37,7 +37,7 @@
+     board = [
+         ['A', 'B', 'C', 'E'],
+         ['S', 'F', 'C', 'S'],
+-        ['A', 'D', 'E', 'E']
++        ['XXAXX', 'D', 'E', 'E']
+     ]
+     word = "ABCB"
+     assert exist(board, word) == False, "Incorrectly found a non-existent word"
+</pre><h3>Mutant 104</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -37,7 +37,7 @@
+     board = [
+         ['A', 'B', 'C', 'E'],
+         ['S', 'F', 'C', 'S'],
+-        ['A', 'D', 'E', 'E']
++        ['A', 'XXDXX', 'E', 'E']
+     ]
+     word = "ABCB"
+     assert exist(board, word) == False, "Incorrectly found a non-existent word"
+</pre><h3>Mutant 105</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -37,7 +37,7 @@
+     board = [
+         ['A', 'B', 'C', 'E'],
+         ['S', 'F', 'C', 'S'],
+-        ['A', 'D', 'E', 'E']
++        ['A', 'D', 'XXEXX', 'E']
+     ]
+     word = "ABCB"
+     assert exist(board, word) == False, "Incorrectly found a non-existent word"
+</pre><h3>Mutant 106</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -37,7 +37,7 @@
+     board = [
+         ['A', 'B', 'C', 'E'],
+         ['S', 'F', 'C', 'S'],
+-        ['A', 'D', 'E', 'E']
++        ['A', 'D', 'E', 'XXEXX']
+     ]
+     word = "ABCB"
+     assert exist(board, word) == False, "Incorrectly found a non-existent word"
+</pre><h3>Mutant 108</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -39,7 +39,7 @@
+         ['S', 'F', 'C', 'S'],
+         ['A', 'D', 'E', 'E']
+     ]
+-    word = "ABCB"
++    word = "XXABCBXX"
+     assert exist(board, word) == False, "Incorrectly found a non-existent word"
+ 
+ # Test case for an empty grid
+</pre><h3>Mutant 112</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -40,7 +40,7 @@
+         ['A', 'D', 'E', 'E']
+     ]
+     word = "ABCB"
+-    assert exist(board, word) == False, "Incorrectly found a non-existent word"
++    assert exist(board, word) == False, "XXIncorrectly found a non-existent wordXX"
+ 
+ # Test case for an empty grid
+ def test_empty_grid():
+</pre><h3>Mutant 114</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -45,7 +45,7 @@
+ # Test case for an empty grid
+ def test_empty_grid():
+     board = []
+-    word = "ABCB"
++    word = "XXABCBXX"
+     assert exist(board, word) == False, "Incorrectly found a word in an empty grid"
+ 
+ 
+</pre><h3>Mutant 115</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -45,7 +45,7 @@
+ # Test case for an empty grid
+ def test_empty_grid():
+     board = []
+-    word = "ABCB"
++    word = None
+     assert exist(board, word) == False, "Incorrectly found a word in an empty grid"
+ 
+ 
+</pre><h3>Mutant 118</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -46,7 +46,7 @@
+ def test_empty_grid():
+     board = []
+     word = "ABCB"
+-    assert exist(board, word) == False, "Incorrectly found a word in an empty grid"
++    assert exist(board, word) == False, "XXIncorrectly found a word in an empty gridXX"
+ 
+ 
+ # Test case for a single letter word that exists
+</pre><h3>Mutant 125</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -55,7 +55,7 @@
+         ['A']
+     ]
+     word = "A"
+-    assert exist(board, word) == True, "Failed to find a single letter word"
++    assert exist(board, word) == True, "XXFailed to find a single letter wordXX"
+ 
+ # Test case for a single letter word that does not exist
+ def test_single_letter_word_not_exists():
+</pre><h3>Mutant 126</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -60,7 +60,7 @@
+ # Test case for a single letter word that does not exist
+ def test_single_letter_word_not_exists():
+     board = [
+-        ['A']
++        ['XXAXX']
+     ]
+     word = "B"
+     assert exist(board, word) == False, "Incorrectly found a non-existent single letter word"
+</pre><h3>Mutant 128</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -62,7 +62,7 @@
+     board = [
+         ['A']
+     ]
+-    word = "B"
++    word = "XXBXX"
+     assert exist(board, word) == False, "Incorrectly found a non-existent single letter word"
+ 
+ # Test case where the word is longer than any possible path in the grid
+</pre><h3>Mutant 132</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -63,7 +63,7 @@
+         ['A']
+     ]
+     word = "B"
+-    assert exist(board, word) == False, "Incorrectly found a non-existent single letter word"
++    assert exist(board, word) == False, "XXIncorrectly found a non-existent single letter wordXX"
+ 
+ # Test case where the word is longer than any possible path in the grid
+ def test_word_too_long():
+</pre><h3>Mutant 133</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -68,7 +68,7 @@
+ # Test case where the word is longer than any possible path in the grid
+ def test_word_too_long():
+     board = [
+-        ['A', 'B'],
++        ['XXAXX', 'B'],
+         ['C', 'D']
+     ]
+     word = "ABCDABCD"
+</pre><h3>Mutant 134</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -68,7 +68,7 @@
+ # Test case where the word is longer than any possible path in the grid
+ def test_word_too_long():
+     board = [
+-        ['A', 'B'],
++        ['A', 'XXBXX'],
+         ['C', 'D']
+     ]
+     word = "ABCDABCD"
+</pre><h3>Mutant 135</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -69,7 +69,7 @@
+ def test_word_too_long():
+     board = [
+         ['A', 'B'],
+-        ['C', 'D']
++        ['XXCXX', 'D']
+     ]
+     word = "ABCDABCD"
+     assert exist(board, word) == False, "Incorrectly found a word that is too long for the grid"
+</pre><h3>Mutant 136</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -69,7 +69,7 @@
+ def test_word_too_long():
+     board = [
+         ['A', 'B'],
+-        ['C', 'D']
++        ['C', 'XXDXX']
+     ]
+     word = "ABCDABCD"
+     assert exist(board, word) == False, "Incorrectly found a word that is too long for the grid"
+</pre><h3>Mutant 138</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -71,7 +71,7 @@
+         ['A', 'B'],
+         ['C', 'D']
+     ]
+-    word = "ABCDABCD"
++    word = "XXABCDABCDXX"
+     assert exist(board, word) == False, "Incorrectly found a word that is too long for the grid"
+ 
+ 
+</pre><h3>Mutant 142</h3><pre>--- ..\P30\.\tests\test_Problem30_ChatGPT.py
++++ ..\P30\.\tests\test_Problem30_ChatGPT.py
+@@ -72,6 +72,6 @@
+         ['C', 'D']
+     ]
+     word = "ABCDABCD"
+-    assert exist(board, word) == False, "Incorrectly found a word that is too long for the grid"
++    assert exist(board, word) == False, "XXIncorrectly found a word that is too long for the gridXX"
+ 
+ 
+</pre></body></html>

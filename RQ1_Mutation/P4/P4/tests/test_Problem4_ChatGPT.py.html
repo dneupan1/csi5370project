@@ -1,0 +1,294 @@
+<html><body><h1>..\P4\.\tests\test_Problem4_ChatGPT.py</h1>Killed 44 out of 71 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 70</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -5,7 +5,7 @@
+     """
+     Test exact matching without special characters.
+     """
+-    assert isMatch("abc", "abc") == True, "Exact match should return True"
++    assert isMatch("abc", "abc") == True, "XXExact match should return TrueXX"
+ 
+ def test_match_single_character():
+     """
+</pre><h3>Mutant 75</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -11,7 +11,7 @@
+     """
+     Test matching with '.' which should match any single character.
+     """
+-    assert isMatch("abc", "a.c") == True, "Single character match should return True"
++    assert isMatch("abc", "a.c") == True, "XXSingle character match should return TrueXX"
+ 
+ def test_match_zero_or_more():
+     """
+</pre><h3>Mutant 80</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -17,7 +17,7 @@
+     """
+     Test matching with '*' which matches zero or more of the preceding element.
+     """
+-    assert isMatch("abcccc", "abc*") == True, "Zero or more match should return True"
++    assert isMatch("abcccc", "abc*") == True, "XXZero or more match should return TrueXX"
+     assert isMatch("ab", "abc*") == True, "Zero occurrence match should return True"
+ 
+ def test_no_match():
+</pre><h3>Mutant 85</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -18,7 +18,7 @@
+     Test matching with '*' which matches zero or more of the preceding element.
+     """
+     assert isMatch("abcccc", "abc*") == True, "Zero or more match should return True"
+-    assert isMatch("ab", "abc*") == True, "Zero occurrence match should return True"
++    assert isMatch("ab", "abc*") == True, "XXZero occurrence match should return TrueXX"
+ 
+ def test_no_match():
+     """
+</pre><h3>Mutant 86</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -24,7 +24,7 @@
+     """
+     Test scenarios where patterns do not match.
+     """
+-    assert isMatch("abc", "abcd") == False, "Mismatch should return False"
++    assert isMatch("XXabcXX", "abcd") == False, "Mismatch should return False"
+     assert isMatch("abc", "a.d") == False, "Mismatch with single character should return False"
+ 
+ def test_match_empty_string():
+</pre><h3>Mutant 87</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -24,7 +24,7 @@
+     """
+     Test scenarios where patterns do not match.
+     """
+-    assert isMatch("abc", "abcd") == False, "Mismatch should return False"
++    assert isMatch("abc", "XXabcdXX") == False, "Mismatch should return False"
+     assert isMatch("abc", "a.d") == False, "Mismatch with single character should return False"
+ 
+ def test_match_empty_string():
+</pre><h3>Mutant 90</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -24,7 +24,7 @@
+     """
+     Test scenarios where patterns do not match.
+     """
+-    assert isMatch("abc", "abcd") == False, "Mismatch should return False"
++    assert isMatch("abc", "abcd") == False, "XXMismatch should return FalseXX"
+     assert isMatch("abc", "a.d") == False, "Mismatch with single character should return False"
+ 
+ def test_match_empty_string():
+</pre><h3>Mutant 91</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -25,7 +25,7 @@
+     Test scenarios where patterns do not match.
+     """
+     assert isMatch("abc", "abcd") == False, "Mismatch should return False"
+-    assert isMatch("abc", "a.d") == False, "Mismatch with single character should return False"
++    assert isMatch("XXabcXX", "a.d") == False, "Mismatch with single character should return False"
+ 
+ def test_match_empty_string():
+     """
+</pre><h3>Mutant 92</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -25,7 +25,7 @@
+     Test scenarios where patterns do not match.
+     """
+     assert isMatch("abc", "abcd") == False, "Mismatch should return False"
+-    assert isMatch("abc", "a.d") == False, "Mismatch with single character should return False"
++    assert isMatch("abc", "XXa.dXX") == False, "Mismatch with single character should return False"
+ 
+ def test_match_empty_string():
+     """
+</pre><h3>Mutant 95</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -25,7 +25,7 @@
+     Test scenarios where patterns do not match.
+     """
+     assert isMatch("abc", "abcd") == False, "Mismatch should return False"
+-    assert isMatch("abc", "a.d") == False, "Mismatch with single character should return False"
++    assert isMatch("abc", "a.d") == False, "XXMismatch with single character should return FalseXX"
+ 
+ def test_match_empty_string():
+     """
+</pre><h3>Mutant 100</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -31,7 +31,7 @@
+     """
+     Test matching with an empty string and pattern.
+     """
+-    assert isMatch("", "") == True, "Empty string and pattern should match"
++    assert isMatch("", "") == True, "XXEmpty string and pattern should matchXX"
+     assert isMatch("a", "") == False, "Non-empty string should not match empty pattern"
+     assert isMatch("", "a*") == True, "Empty string should match pattern with zero occurrence"
+ 
+</pre><h3>Mutant 101</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -32,7 +32,7 @@
+     Test matching with an empty string and pattern.
+     """
+     assert isMatch("", "") == True, "Empty string and pattern should match"
+-    assert isMatch("a", "") == False, "Non-empty string should not match empty pattern"
++    assert isMatch("XXaXX", "") == False, "Non-empty string should not match empty pattern"
+     assert isMatch("", "a*") == True, "Empty string should match pattern with zero occurrence"
+ 
+ def test_match_complex_patterns():
+</pre><h3>Mutant 102</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -32,7 +32,7 @@
+     Test matching with an empty string and pattern.
+     """
+     assert isMatch("", "") == True, "Empty string and pattern should match"
+-    assert isMatch("a", "") == False, "Non-empty string should not match empty pattern"
++    assert isMatch("a", "XXXX") == False, "Non-empty string should not match empty pattern"
+     assert isMatch("", "a*") == True, "Empty string should match pattern with zero occurrence"
+ 
+ def test_match_complex_patterns():
+</pre><h3>Mutant 105</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -32,7 +32,7 @@
+     Test matching with an empty string and pattern.
+     """
+     assert isMatch("", "") == True, "Empty string and pattern should match"
+-    assert isMatch("a", "") == False, "Non-empty string should not match empty pattern"
++    assert isMatch("a", "") == False, "XXNon-empty string should not match empty patternXX"
+     assert isMatch("", "a*") == True, "Empty string should match pattern with zero occurrence"
+ 
+ def test_match_complex_patterns():
+</pre><h3>Mutant 110</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -33,7 +33,7 @@
+     """
+     assert isMatch("", "") == True, "Empty string and pattern should match"
+     assert isMatch("a", "") == False, "Non-empty string should not match empty pattern"
+-    assert isMatch("", "a*") == True, "Empty string should match pattern with zero occurrence"
++    assert isMatch("", "a*") == True, "XXEmpty string should match pattern with zero occurrenceXX"
+ 
+ def test_match_complex_patterns():
+     """
+</pre><h3>Mutant 115</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -39,7 +39,7 @@
+     """
+     Test matching with complex patterns involving multiple '*' and '.' characters.
+     """
+-    assert isMatch("aab", "c*a*b") == True, "Complex pattern should match"
++    assert isMatch("aab", "c*a*b") == True, "XXComplex pattern should matchXX"
+     assert isMatch("mississippi", "mis*is*p*.") == False, "Complex pattern should not match"
+ 
+ def test_match_starting_star():
+</pre><h3>Mutant 116</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -40,7 +40,7 @@
+     Test matching with complex patterns involving multiple '*' and '.' characters.
+     """
+     assert isMatch("aab", "c*a*b") == True, "Complex pattern should match"
+-    assert isMatch("mississippi", "mis*is*p*.") == False, "Complex pattern should not match"
++    assert isMatch("XXmississippiXX", "mis*is*p*.") == False, "Complex pattern should not match"
+ 
+ def test_match_starting_star():
+     """
+</pre><h3>Mutant 117</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -40,7 +40,7 @@
+     Test matching with complex patterns involving multiple '*' and '.' characters.
+     """
+     assert isMatch("aab", "c*a*b") == True, "Complex pattern should match"
+-    assert isMatch("mississippi", "mis*is*p*.") == False, "Complex pattern should not match"
++    assert isMatch("mississippi", "XXmis*is*p*.XX") == False, "Complex pattern should not match"
+ 
+ def test_match_starting_star():
+     """
+</pre><h3>Mutant 120</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -40,7 +40,7 @@
+     Test matching with complex patterns involving multiple '*' and '.' characters.
+     """
+     assert isMatch("aab", "c*a*b") == True, "Complex pattern should match"
+-    assert isMatch("mississippi", "mis*is*p*.") == False, "Complex pattern should not match"
++    assert isMatch("mississippi", "mis*is*p*.") == False, "XXComplex pattern should not matchXX"
+ 
+ def test_match_starting_star():
+     """
+</pre><h3>Mutant 121</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -46,7 +46,7 @@
+     """
+     Test patterns that start with '*' which are technically invalid but should be handled.
+     """
+-    assert isMatch("abc", "*abc") == False, "Pattern starting with '*' should not match"
++    assert isMatch("XXabcXX", "*abc") == False, "Pattern starting with '*' should not match"
+ 
+ def test_long_string():
+     """
+</pre><h3>Mutant 122</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -46,7 +46,7 @@
+     """
+     Test patterns that start with '*' which are technically invalid but should be handled.
+     """
+-    assert isMatch("abc", "*abc") == False, "Pattern starting with '*' should not match"
++    assert isMatch("abc", "XX*abcXX") == False, "Pattern starting with '*' should not match"
+ 
+ def test_long_string():
+     """
+</pre><h3>Mutant 125</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -46,7 +46,7 @@
+     """
+     Test patterns that start with '*' which are technically invalid but should be handled.
+     """
+-    assert isMatch("abc", "*abc") == False, "Pattern starting with '*' should not match"
++    assert isMatch("abc", "*abc") == False, "XXPattern starting with '*' should not matchXX"
+ 
+ def test_long_string():
+     """
+</pre><h3>Mutant 126</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -52,7 +52,7 @@
+     """
+     Test with a longer string to check efficiency and correctness.
+     """
+-    long_string = "a" * 50
++    long_string = "XXaXX" * 50
+     pattern = "a*" + "b"
+     assert isMatch(long_string, pattern) == False, "Long string with non-matching pattern should return False"
+ 
+</pre><h3>Mutant 128</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -52,7 +52,7 @@
+     """
+     Test with a longer string to check efficiency and correctness.
+     """
+-    long_string = "a" * 50
++    long_string = "a" * 51
+     pattern = "a*" + "b"
+     assert isMatch(long_string, pattern) == False, "Long string with non-matching pattern should return False"
+ 
+</pre><h3>Mutant 130</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -53,6 +53,6 @@
+     Test with a longer string to check efficiency and correctness.
+     """
+     long_string = "a" * 50
+-    pattern = "a*" + "b"
++    pattern = "XXa*XX" + "b"
+     assert isMatch(long_string, pattern) == False, "Long string with non-matching pattern should return False"
+ 
+</pre><h3>Mutant 132</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -53,6 +53,6 @@
+     Test with a longer string to check efficiency and correctness.
+     """
+     long_string = "a" * 50
+-    pattern = "a*" + "b"
++    pattern = "a*" + "XXbXX"
+     assert isMatch(long_string, pattern) == False, "Long string with non-matching pattern should return False"
+ 
+</pre><h3>Mutant 136</h3><pre>--- ..\P4\.\tests\test_Problem4_ChatGPT.py
++++ ..\P4\.\tests\test_Problem4_ChatGPT.py
+@@ -54,5 +54,5 @@
+     """
+     long_string = "a" * 50
+     pattern = "a*" + "b"
+-    assert isMatch(long_string, pattern) == False, "Long string with non-matching pattern should return False"
++    assert isMatch(long_string, pattern) == False, "XXLong string with non-matching pattern should return FalseXX"
+ 
+</pre></body></html>

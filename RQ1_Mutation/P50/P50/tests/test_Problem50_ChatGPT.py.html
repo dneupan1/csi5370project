@@ -1,0 +1,592 @@
+<html><body><h1>..\P50\.\tests\test_Problem50_ChatGPT.py</h1>Killed 19 out of 75 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 31</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -6,7 +6,7 @@
+     """
+     Test simple successful scenarios where the frog can cross the river.
+     """
+-    assert canCross([0, 1, 3, 5, 6, 8, 12, 17]) == True, "Failed to cross in a straightforward scenario"
++    assert canCross([1, 1, 3, 5, 6, 8, 12, 17]) == True, "Failed to cross in a straightforward scenario"
+ 
+ @pytest.mark.skip()
+ def test_success_with_exact_jumps():
+</pre><h3>Mutant 35</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -6,7 +6,7 @@
+     """
+     Test simple successful scenarios where the frog can cross the river.
+     """
+-    assert canCross([0, 1, 3, 5, 6, 8, 12, 17]) == True, "Failed to cross in a straightforward scenario"
++    assert canCross([0, 1, 3, 5, 7, 8, 12, 17]) == True, "Failed to cross in a straightforward scenario"
+ 
+ @pytest.mark.skip()
+ def test_success_with_exact_jumps():
+</pre><h3>Mutant 41</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -6,7 +6,7 @@
+     """
+     Test simple successful scenarios where the frog can cross the river.
+     """
+-    assert canCross([0, 1, 3, 5, 6, 8, 12, 17]) == True, "Failed to cross in a straightforward scenario"
++    assert canCross([0, 1, 3, 5, 6, 8, 12, 17]) == True, "XXFailed to cross in a straightforward scenarioXX"
+ 
+ @pytest.mark.skip()
+ def test_success_with_exact_jumps():
+</pre><h3>Mutant 43</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -13,7 +13,7 @@
+     """
+     Test scenarios where the frog can cross with jumps of exact lengths needed.
+     """
+-    assert canCross([0, 1, 2, 3, 4, 8, 9, 11]) == True, "Failed to cross with exact jump lengths"
++    assert canCross([1, 1, 2, 3, 4, 8, 9, 11]) == True, "Failed to cross with exact jump lengths"
+ 
+ def test_failure_due_to_large_gap():
+     """
+</pre><h3>Mutant 44</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -13,7 +13,7 @@
+     """
+     Test scenarios where the frog can cross with jumps of exact lengths needed.
+     """
+-    assert canCross([0, 1, 2, 3, 4, 8, 9, 11]) == True, "Failed to cross with exact jump lengths"
++    assert canCross([0, 2, 2, 3, 4, 8, 9, 11]) == True, "Failed to cross with exact jump lengths"
+ 
+ def test_failure_due_to_large_gap():
+     """
+</pre><h3>Mutant 45</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -13,7 +13,7 @@
+     """
+     Test scenarios where the frog can cross with jumps of exact lengths needed.
+     """
+-    assert canCross([0, 1, 2, 3, 4, 8, 9, 11]) == True, "Failed to cross with exact jump lengths"
++    assert canCross([0, 1, 3, 3, 4, 8, 9, 11]) == True, "Failed to cross with exact jump lengths"
+ 
+ def test_failure_due_to_large_gap():
+     """
+</pre><h3>Mutant 46</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -13,7 +13,7 @@
+     """
+     Test scenarios where the frog can cross with jumps of exact lengths needed.
+     """
+-    assert canCross([0, 1, 2, 3, 4, 8, 9, 11]) == True, "Failed to cross with exact jump lengths"
++    assert canCross([0, 1, 2, 4, 4, 8, 9, 11]) == True, "Failed to cross with exact jump lengths"
+ 
+ def test_failure_due_to_large_gap():
+     """
+</pre><h3>Mutant 47</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -13,7 +13,7 @@
+     """
+     Test scenarios where the frog can cross with jumps of exact lengths needed.
+     """
+-    assert canCross([0, 1, 2, 3, 4, 8, 9, 11]) == True, "Failed to cross with exact jump lengths"
++    assert canCross([0, 1, 2, 3, 5, 8, 9, 11]) == True, "Failed to cross with exact jump lengths"
+ 
+ def test_failure_due_to_large_gap():
+     """
+</pre><h3>Mutant 48</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -13,7 +13,7 @@
+     """
+     Test scenarios where the frog can cross with jumps of exact lengths needed.
+     """
+-    assert canCross([0, 1, 2, 3, 4, 8, 9, 11]) == True, "Failed to cross with exact jump lengths"
++    assert canCross([0, 1, 2, 3, 4, 9, 9, 11]) == True, "Failed to cross with exact jump lengths"
+ 
+ def test_failure_due_to_large_gap():
+     """
+</pre><h3>Mutant 49</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -13,7 +13,7 @@
+     """
+     Test scenarios where the frog can cross with jumps of exact lengths needed.
+     """
+-    assert canCross([0, 1, 2, 3, 4, 8, 9, 11]) == True, "Failed to cross with exact jump lengths"
++    assert canCross([0, 1, 2, 3, 4, 8, 10, 11]) == True, "Failed to cross with exact jump lengths"
+ 
+ def test_failure_due_to_large_gap():
+     """
+</pre><h3>Mutant 50</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -13,7 +13,7 @@
+     """
+     Test scenarios where the frog can cross with jumps of exact lengths needed.
+     """
+-    assert canCross([0, 1, 2, 3, 4, 8, 9, 11]) == True, "Failed to cross with exact jump lengths"
++    assert canCross([0, 1, 2, 3, 4, 8, 9, 12]) == True, "Failed to cross with exact jump lengths"
+ 
+ def test_failure_due_to_large_gap():
+     """
+</pre><h3>Mutant 51</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -13,7 +13,7 @@
+     """
+     Test scenarios where the frog can cross with jumps of exact lengths needed.
+     """
+-    assert canCross([0, 1, 2, 3, 4, 8, 9, 11]) == True, "Failed to cross with exact jump lengths"
++    assert canCross([0, 1, 2, 3, 4, 8, 9, 11]) != True, "Failed to cross with exact jump lengths"
+ 
+ def test_failure_due_to_large_gap():
+     """
+</pre><h3>Mutant 52</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -13,7 +13,7 @@
+     """
+     Test scenarios where the frog can cross with jumps of exact lengths needed.
+     """
+-    assert canCross([0, 1, 2, 3, 4, 8, 9, 11]) == True, "Failed to cross with exact jump lengths"
++    assert canCross([0, 1, 2, 3, 4, 8, 9, 11]) == False, "Failed to cross with exact jump lengths"
+ 
+ def test_failure_due_to_large_gap():
+     """
+</pre><h3>Mutant 53</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -13,7 +13,7 @@
+     """
+     Test scenarios where the frog can cross with jumps of exact lengths needed.
+     """
+-    assert canCross([0, 1, 2, 3, 4, 8, 9, 11]) == True, "Failed to cross with exact jump lengths"
++    assert canCross([0, 1, 2, 3, 4, 8, 9, 11]) == True, "XXFailed to cross with exact jump lengthsXX"
+ 
+ def test_failure_due_to_large_gap():
+     """
+</pre><h3>Mutant 54</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -19,7 +19,7 @@
+     """
+     Test failure due to an impossible large gap between stones.
+     """
+-    assert canCross([0, 1, 2, 3, 7]) == False, "Incorrectly crossed with a large gap"
++    assert canCross([1, 1, 2, 3, 7]) == False, "Incorrectly crossed with a large gap"
+ 
+ def test_failure_due_to_initial_gap():
+     """
+</pre><h3>Mutant 55</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -19,7 +19,7 @@
+     """
+     Test failure due to an impossible large gap between stones.
+     """
+-    assert canCross([0, 1, 2, 3, 7]) == False, "Incorrectly crossed with a large gap"
++    assert canCross([0, 2, 2, 3, 7]) == False, "Incorrectly crossed with a large gap"
+ 
+ def test_failure_due_to_initial_gap():
+     """
+</pre><h3>Mutant 56</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -19,7 +19,7 @@
+     """
+     Test failure due to an impossible large gap between stones.
+     """
+-    assert canCross([0, 1, 2, 3, 7]) == False, "Incorrectly crossed with a large gap"
++    assert canCross([0, 1, 3, 3, 7]) == False, "Incorrectly crossed with a large gap"
+ 
+ def test_failure_due_to_initial_gap():
+     """
+</pre><h3>Mutant 58</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -19,7 +19,7 @@
+     """
+     Test failure due to an impossible large gap between stones.
+     """
+-    assert canCross([0, 1, 2, 3, 7]) == False, "Incorrectly crossed with a large gap"
++    assert canCross([0, 1, 2, 3, 8]) == False, "Incorrectly crossed with a large gap"
+ 
+ def test_failure_due_to_initial_gap():
+     """
+</pre><h3>Mutant 61</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -19,7 +19,7 @@
+     """
+     Test failure due to an impossible large gap between stones.
+     """
+-    assert canCross([0, 1, 2, 3, 7]) == False, "Incorrectly crossed with a large gap"
++    assert canCross([0, 1, 2, 3, 7]) == False, "XXIncorrectly crossed with a large gapXX"
+ 
+ def test_failure_due_to_initial_gap():
+     """
+</pre><h3>Mutant 62</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -25,7 +25,7 @@
+     """
+     Test the specific edge case where the second stone is too far for the initial jump.
+     """
+-    assert canCross([0, 2]) == False, "Incorrectly crossed with an initial gap too large"
++    assert canCross([1, 2]) == False, "Incorrectly crossed with an initial gap too large"
+ 
+ @pytest.mark.skip()
+ def test_memoization_effectiveness():
+</pre><h3>Mutant 63</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -25,7 +25,7 @@
+     """
+     Test the specific edge case where the second stone is too far for the initial jump.
+     """
+-    assert canCross([0, 2]) == False, "Incorrectly crossed with an initial gap too large"
++    assert canCross([0, 3]) == False, "Incorrectly crossed with an initial gap too large"
+ 
+ @pytest.mark.skip()
+ def test_memoization_effectiveness():
+</pre><h3>Mutant 66</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -25,7 +25,7 @@
+     """
+     Test the specific edge case where the second stone is too far for the initial jump.
+     """
+-    assert canCross([0, 2]) == False, "Incorrectly crossed with an initial gap too large"
++    assert canCross([0, 2]) == False, "XXIncorrectly crossed with an initial gap too largeXX"
+ 
+ @pytest.mark.skip()
+ def test_memoization_effectiveness():
+</pre><h3>Mutant 68</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -32,7 +32,7 @@
+     """
+     Test to ensure memoization is effective by using a scenario that would be very slow if memoization wasn't working.
+     """
+-    stones = [0, 1]
++    stones = [1, 1]
+     for i in range(2, 1001):
+         stones.append(stones[-1] + i)
+     assert canCross(stones) == True, "Failed to utilize memoization effectively, leading to slow performance"
+</pre><h3>Mutant 69</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -32,7 +32,7 @@
+     """
+     Test to ensure memoization is effective by using a scenario that would be very slow if memoization wasn't working.
+     """
+-    stones = [0, 1]
++    stones = [0, 2]
+     for i in range(2, 1001):
+         stones.append(stones[-1] + i)
+     assert canCross(stones) == True, "Failed to utilize memoization effectively, leading to slow performance"
+</pre><h3>Mutant 70</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -32,7 +32,7 @@
+     """
+     Test to ensure memoization is effective by using a scenario that would be very slow if memoization wasn't working.
+     """
+-    stones = [0, 1]
++    stones = None
+     for i in range(2, 1001):
+         stones.append(stones[-1] + i)
+     assert canCross(stones) == True, "Failed to utilize memoization effectively, leading to slow performance"
+</pre><h3>Mutant 71</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -33,7 +33,7 @@
+     Test to ensure memoization is effective by using a scenario that would be very slow if memoization wasn't working.
+     """
+     stones = [0, 1]
+-    for i in range(2, 1001):
++    for i in range(3, 1001):
+         stones.append(stones[-1] + i)
+     assert canCross(stones) == True, "Failed to utilize memoization effectively, leading to slow performance"
+ 
+</pre><h3>Mutant 72</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -33,7 +33,7 @@
+     Test to ensure memoization is effective by using a scenario that would be very slow if memoization wasn't working.
+     """
+     stones = [0, 1]
+-    for i in range(2, 1001):
++    for i in range(2, 1002):
+         stones.append(stones[-1] + i)
+     assert canCross(stones) == True, "Failed to utilize memoization effectively, leading to slow performance"
+ 
+</pre><h3>Mutant 73</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -34,7 +34,7 @@
+     """
+     stones = [0, 1]
+     for i in range(2, 1001):
+-        stones.append(stones[-1] + i)
++        stones.append(stones[+1] + i)
+     assert canCross(stones) == True, "Failed to utilize memoization effectively, leading to slow performance"
+ 
+ @pytest.mark.skip()
+</pre><h3>Mutant 74</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -34,7 +34,7 @@
+     """
+     stones = [0, 1]
+     for i in range(2, 1001):
+-        stones.append(stones[-1] + i)
++        stones.append(stones[-2] + i)
+     assert canCross(stones) == True, "Failed to utilize memoization effectively, leading to slow performance"
+ 
+ @pytest.mark.skip()
+</pre><h3>Mutant 75</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -34,7 +34,7 @@
+     """
+     stones = [0, 1]
+     for i in range(2, 1001):
+-        stones.append(stones[-1] + i)
++        stones.append(stones[-1] - i)
+     assert canCross(stones) == True, "Failed to utilize memoization effectively, leading to slow performance"
+ 
+ @pytest.mark.skip()
+</pre><h3>Mutant 76</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -35,7 +35,7 @@
+     stones = [0, 1]
+     for i in range(2, 1001):
+         stones.append(stones[-1] + i)
+-    assert canCross(stones) == True, "Failed to utilize memoization effectively, leading to slow performance"
++    assert canCross(stones) != True, "Failed to utilize memoization effectively, leading to slow performance"
+ 
+ @pytest.mark.skip()
+ def test_single_stone():
+</pre><h3>Mutant 77</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -35,7 +35,7 @@
+     stones = [0, 1]
+     for i in range(2, 1001):
+         stones.append(stones[-1] + i)
+-    assert canCross(stones) == True, "Failed to utilize memoization effectively, leading to slow performance"
++    assert canCross(stones) == False, "Failed to utilize memoization effectively, leading to slow performance"
+ 
+ @pytest.mark.skip()
+ def test_single_stone():
+</pre><h3>Mutant 78</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -35,7 +35,7 @@
+     stones = [0, 1]
+     for i in range(2, 1001):
+         stones.append(stones[-1] + i)
+-    assert canCross(stones) == True, "Failed to utilize memoization effectively, leading to slow performance"
++    assert canCross(stones) == True, "XXFailed to utilize memoization effectively, leading to slow performanceXX"
+ 
+ @pytest.mark.skip()
+ def test_single_stone():
+</pre><h3>Mutant 80</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -42,7 +42,7 @@
+     """
+     Test the trivial case where there's only the starting stone.
+     """
+-    assert canCross([0]) == False, "Incorrectly handled the single stone scenario"
++    assert canCross([1]) == False, "Incorrectly handled the single stone scenario"
+ 
+ def test_two_stones_success():
+     """
+</pre><h3>Mutant 81</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -42,7 +42,7 @@
+     """
+     Test the trivial case where there's only the starting stone.
+     """
+-    assert canCross([0]) == False, "Incorrectly handled the single stone scenario"
++    assert canCross([0]) != False, "Incorrectly handled the single stone scenario"
+ 
+ def test_two_stones_success():
+     """
+</pre><h3>Mutant 82</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -42,7 +42,7 @@
+     """
+     Test the trivial case where there's only the starting stone.
+     """
+-    assert canCross([0]) == False, "Incorrectly handled the single stone scenario"
++    assert canCross([0]) == True, "Incorrectly handled the single stone scenario"
+ 
+ def test_two_stones_success():
+     """
+</pre><h3>Mutant 83</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -42,7 +42,7 @@
+     """
+     Test the trivial case where there's only the starting stone.
+     """
+-    assert canCross([0]) == False, "Incorrectly handled the single stone scenario"
++    assert canCross([0]) == False, "XXIncorrectly handled the single stone scenarioXX"
+ 
+ def test_two_stones_success():
+     """
+</pre><h3>Mutant 84</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -48,7 +48,7 @@
+     """
+     Test the trivial case where there's exactly one jump needed to cross.
+     """
+-    assert canCross([0, 1]) == True, "Failed to cross with only one jump needed"
++    assert canCross([1, 1]) == True, "Failed to cross with only one jump needed"
+ 
+ @pytest.mark.skip()
+ def test_complex_scenarios():
+</pre><h3>Mutant 88</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -48,7 +48,7 @@
+     """
+     Test the trivial case where there's exactly one jump needed to cross.
+     """
+-    assert canCross([0, 1]) == True, "Failed to cross with only one jump needed"
++    assert canCross([0, 1]) == True, "XXFailed to cross with only one jump neededXX"
+ 
+ @pytest.mark.skip()
+ def test_complex_scenarios():
+</pre><h3>Mutant 90</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -55,6 +55,6 @@
+     """
+     Test more complex scenarios with multiple potential paths and backtrackings.
+     """
+-    assert canCross([0, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
++    assert canCross([1, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
+     assert canCross([0, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
+ 
+</pre><h3>Mutant 91</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -55,6 +55,6 @@
+     """
+     Test more complex scenarios with multiple potential paths and backtrackings.
+     """
+-    assert canCross([0, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
++    assert canCross([0, 2, 3, 6, 7]) == True, "Failed in a complex scenario"
+     assert canCross([0, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
+ 
+</pre><h3>Mutant 92</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -55,6 +55,6 @@
+     """
+     Test more complex scenarios with multiple potential paths and backtrackings.
+     """
+-    assert canCross([0, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
++    assert canCross([0, 1, 4, 6, 7]) == True, "Failed in a complex scenario"
+     assert canCross([0, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
+ 
+</pre><h3>Mutant 93</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -55,6 +55,6 @@
+     """
+     Test more complex scenarios with multiple potential paths and backtrackings.
+     """
+-    assert canCross([0, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
++    assert canCross([0, 1, 3, 7, 7]) == True, "Failed in a complex scenario"
+     assert canCross([0, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
+ 
+</pre><h3>Mutant 94</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -55,6 +55,6 @@
+     """
+     Test more complex scenarios with multiple potential paths and backtrackings.
+     """
+-    assert canCross([0, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
++    assert canCross([0, 1, 3, 6, 8]) == True, "Failed in a complex scenario"
+     assert canCross([0, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
+ 
+</pre><h3>Mutant 95</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -55,6 +55,6 @@
+     """
+     Test more complex scenarios with multiple potential paths and backtrackings.
+     """
+-    assert canCross([0, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
++    assert canCross([0, 1, 3, 6, 7]) != True, "Failed in a complex scenario"
+     assert canCross([0, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
+ 
+</pre><h3>Mutant 96</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -55,6 +55,6 @@
+     """
+     Test more complex scenarios with multiple potential paths and backtrackings.
+     """
+-    assert canCross([0, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
++    assert canCross([0, 1, 3, 6, 7]) == False, "Failed in a complex scenario"
+     assert canCross([0, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
+ 
+</pre><h3>Mutant 97</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -55,6 +55,6 @@
+     """
+     Test more complex scenarios with multiple potential paths and backtrackings.
+     """
+-    assert canCross([0, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
++    assert canCross([0, 1, 3, 6, 7]) == True, "XXFailed in a complex scenarioXX"
+     assert canCross([0, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
+ 
+</pre><h3>Mutant 98</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -56,5 +56,5 @@
+     Test more complex scenarios with multiple potential paths and backtrackings.
+     """
+     assert canCross([0, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
+-    assert canCross([0, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
++    assert canCross([1, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
+ 
+</pre><h3>Mutant 99</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -56,5 +56,5 @@
+     Test more complex scenarios with multiple potential paths and backtrackings.
+     """
+     assert canCross([0, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
+-    assert canCross([0, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
++    assert canCross([0, 2, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
+ 
+</pre><h3>Mutant 100</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -56,5 +56,5 @@
+     Test more complex scenarios with multiple potential paths and backtrackings.
+     """
+     assert canCross([0, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
+-    assert canCross([0, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
++    assert canCross([0, 1, 4, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
+ 
+</pre><h3>Mutant 101</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -56,5 +56,5 @@
+     Test more complex scenarios with multiple potential paths and backtrackings.
+     """
+     assert canCross([0, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
+-    assert canCross([0, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
++    assert canCross([0, 1, 3, 8, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
+ 
+</pre><h3>Mutant 102</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -56,5 +56,5 @@
+     Test more complex scenarios with multiple potential paths and backtrackings.
+     """
+     assert canCross([0, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
+-    assert canCross([0, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
++    assert canCross([0, 1, 3, 7, 9]) == False, "Incorrectly crossed in a complex, impossible scenario"
+ 
+</pre><h3>Mutant 103</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -56,5 +56,5 @@
+     Test more complex scenarios with multiple potential paths and backtrackings.
+     """
+     assert canCross([0, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
+-    assert canCross([0, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
++    assert canCross([0, 1, 3, 7, 8]) != False, "Incorrectly crossed in a complex, impossible scenario"
+ 
+</pre><h3>Mutant 104</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -56,5 +56,5 @@
+     Test more complex scenarios with multiple potential paths and backtrackings.
+     """
+     assert canCross([0, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
+-    assert canCross([0, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
++    assert canCross([0, 1, 3, 7, 8]) == True, "Incorrectly crossed in a complex, impossible scenario"
+ 
+</pre><h3>Mutant 105</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -56,5 +56,5 @@
+     Test more complex scenarios with multiple potential paths and backtrackings.
+     """
+     assert canCross([0, 1, 3, 6, 7]) == True, "Failed in a complex scenario"
+-    assert canCross([0, 1, 3, 7, 8]) == False, "Incorrectly crossed in a complex, impossible scenario"
++    assert canCross([0, 1, 3, 7, 8]) == False, "XXIncorrectly crossed in a complex, impossible scenarioXX"
+ 
+</pre><h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 67</h3><pre>--- ..\P50\.\tests\test_Problem50_ChatGPT.py
++++ ..\P50\.\tests\test_Problem50_ChatGPT.py
+@@ -27,7 +27,6 @@
+     """
+     assert canCross([0, 2]) == False, "Incorrectly crossed with an initial gap too large"
+ 
+-@pytest.mark.skip()
+ def test_memoization_effectiveness():
+     """
+     Test to ensure memoization is effective by using a scenario that would be very slow if memoization wasn't working.
+</pre></body></html>

@@ -1,0 +1,373 @@
+<html><body><h1>..\P47\.\tests\test_Problem47_GeneratedSolution.py</h1>Killed 6 out of 40 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 70</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -4,7 +4,7 @@
+ import Problem47_GeneratedSolution as module_0
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_0():
+     str_0 = "JSYARc\x0b D\nIN"
+     module_0.isPathCrossing(str_0)
+</pre><h3>Mutant 72</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -6,7 +6,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+-    str_0 = "JSYARc\x0b D\nIN"
++    str_0 = "XXJSYARc\x0b D\nINXX"
+     module_0.isPathCrossing(str_0)
+ 
+ 
+</pre><h3>Mutant 73</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -6,7 +6,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+-    str_0 = "JSYARc\x0b D\nIN"
++    str_0 = None
+     module_0.isPathCrossing(str_0)
+ 
+ 
+</pre><h3>Mutant 76</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -12,7 +12,7 @@
+ 
+ def test_case_1():
+     str_0 = ""
+-    var_0 = module_0.isPathCrossing(str_0)
++    var_0 = None
+ 
+ 
+ @pytest.mark.xfail(strict=True)
+</pre><h3>Mutant 77</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -15,7 +15,7 @@
+     var_0 = module_0.isPathCrossing(str_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_2():
+     bool_0 = True
+     list_0 = [bool_0]
+</pre><h3>Mutant 79</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -17,7 +17,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+-    bool_0 = True
++    bool_0 = False
+     list_0 = [bool_0]
+     var_0 = module_0.isPathCrossing(list_0)
+     assert var_0 is False
+</pre><h3>Mutant 80</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -17,7 +17,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+-    bool_0 = True
++    bool_0 = None
+     list_0 = [bool_0]
+     var_0 = module_0.isPathCrossing(list_0)
+     assert var_0 is False
+</pre><h3>Mutant 81</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -18,7 +18,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+     bool_0 = True
+-    list_0 = [bool_0]
++    list_0 = None
+     var_0 = module_0.isPathCrossing(list_0)
+     assert var_0 is False
+     str_0 = "aS"
+</pre><h3>Mutant 82</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -19,7 +19,7 @@
+ def test_case_2():
+     bool_0 = True
+     list_0 = [bool_0]
+-    var_0 = module_0.isPathCrossing(list_0)
++    var_0 = None
+     assert var_0 is False
+     str_0 = "aS"
+     module_0.isPathCrossing(str_0)
+</pre><h3>Mutant 83</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -20,7 +20,7 @@
+     bool_0 = True
+     list_0 = [bool_0]
+     var_0 = module_0.isPathCrossing(list_0)
+-    assert var_0 is False
++    assert var_0 is not False
+     str_0 = "aS"
+     module_0.isPathCrossing(str_0)
+ 
+</pre><h3>Mutant 84</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -20,7 +20,7 @@
+     bool_0 = True
+     list_0 = [bool_0]
+     var_0 = module_0.isPathCrossing(list_0)
+-    assert var_0 is False
++    assert var_0 is True
+     str_0 = "aS"
+     module_0.isPathCrossing(str_0)
+ 
+</pre><h3>Mutant 85</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -21,7 +21,7 @@
+     list_0 = [bool_0]
+     var_0 = module_0.isPathCrossing(list_0)
+     assert var_0 is False
+-    str_0 = "aS"
++    str_0 = "XXaSXX"
+     module_0.isPathCrossing(str_0)
+ 
+ 
+</pre><h3>Mutant 86</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -21,7 +21,7 @@
+     list_0 = [bool_0]
+     var_0 = module_0.isPathCrossing(list_0)
+     assert var_0 is False
+-    str_0 = "aS"
++    str_0 = None
+     module_0.isPathCrossing(str_0)
+ 
+ 
+</pre><h3>Mutant 87</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -25,7 +25,7 @@
+     module_0.isPathCrossing(str_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_3():
+     bool_0 = False
+     bool_1 = True
+</pre><h3>Mutant 89</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -27,7 +27,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+-    bool_0 = False
++    bool_0 = True
+     bool_1 = True
+     str_0 = ".Y^E^?&V!}m{l8W7k3"
+     bool_2 = True
+</pre><h3>Mutant 90</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -27,7 +27,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+-    bool_0 = False
++    bool_0 = None
+     bool_1 = True
+     str_0 = ".Y^E^?&V!}m{l8W7k3"
+     bool_2 = True
+</pre><h3>Mutant 91</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -28,7 +28,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+     bool_0 = False
+-    bool_1 = True
++    bool_1 = False
+     str_0 = ".Y^E^?&V!}m{l8W7k3"
+     bool_2 = True
+     bool_3 = True
+</pre><h3>Mutant 92</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -28,7 +28,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+     bool_0 = False
+-    bool_1 = True
++    bool_1 = None
+     str_0 = ".Y^E^?&V!}m{l8W7k3"
+     bool_2 = True
+     bool_3 = True
+</pre><h3>Mutant 93</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -29,7 +29,7 @@
+ def test_case_3():
+     bool_0 = False
+     bool_1 = True
+-    str_0 = ".Y^E^?&V!}m{l8W7k3"
++    str_0 = "XX.Y^E^?&V!}m{l8W7k3XX"
+     bool_2 = True
+     bool_3 = True
+     dict_0 = {bool_0: bool_1, str_0: bool_2, bool_3: bool_0, bool_3: bool_0}
+</pre><h3>Mutant 94</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -29,7 +29,7 @@
+ def test_case_3():
+     bool_0 = False
+     bool_1 = True
+-    str_0 = ".Y^E^?&V!}m{l8W7k3"
++    str_0 = None
+     bool_2 = True
+     bool_3 = True
+     dict_0 = {bool_0: bool_1, str_0: bool_2, bool_3: bool_0, bool_3: bool_0}
+</pre><h3>Mutant 95</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -30,7 +30,7 @@
+     bool_0 = False
+     bool_1 = True
+     str_0 = ".Y^E^?&V!}m{l8W7k3"
+-    bool_2 = True
++    bool_2 = False
+     bool_3 = True
+     dict_0 = {bool_0: bool_1, str_0: bool_2, bool_3: bool_0, bool_3: bool_0}
+     module_0.isPathCrossing(dict_0)
+</pre><h3>Mutant 96</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -30,7 +30,7 @@
+     bool_0 = False
+     bool_1 = True
+     str_0 = ".Y^E^?&V!}m{l8W7k3"
+-    bool_2 = True
++    bool_2 = None
+     bool_3 = True
+     dict_0 = {bool_0: bool_1, str_0: bool_2, bool_3: bool_0, bool_3: bool_0}
+     module_0.isPathCrossing(dict_0)
+</pre><h3>Mutant 97</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -31,7 +31,7 @@
+     bool_1 = True
+     str_0 = ".Y^E^?&V!}m{l8W7k3"
+     bool_2 = True
+-    bool_3 = True
++    bool_3 = False
+     dict_0 = {bool_0: bool_1, str_0: bool_2, bool_3: bool_0, bool_3: bool_0}
+     module_0.isPathCrossing(dict_0)
+ 
+</pre><h3>Mutant 98</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -31,7 +31,7 @@
+     bool_1 = True
+     str_0 = ".Y^E^?&V!}m{l8W7k3"
+     bool_2 = True
+-    bool_3 = True
++    bool_3 = None
+     dict_0 = {bool_0: bool_1, str_0: bool_2, bool_3: bool_0, bool_3: bool_0}
+     module_0.isPathCrossing(dict_0)
+ 
+</pre><h3>Mutant 99</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -32,7 +32,7 @@
+     str_0 = ".Y^E^?&V!}m{l8W7k3"
+     bool_2 = True
+     bool_3 = True
+-    dict_0 = {bool_0: bool_1, str_0: bool_2, bool_3: bool_0, bool_3: bool_0}
++    dict_0 = None
+     module_0.isPathCrossing(dict_0)
+ 
+ 
+</pre><h3>Mutant 100</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -36,7 +36,7 @@
+     module_0.isPathCrossing(dict_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_4():
+     bytes_0 = b"\xb8[\xa2\xfb"
+     var_0 = module_0.isPathCrossing(bytes_0)
+</pre><h3>Mutant 102</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -38,7 +38,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_4():
+-    bytes_0 = b"\xb8[\xa2\xfb"
++    bytes_0 = b"XX\xb8[\xa2\xfbXX"
+     var_0 = module_0.isPathCrossing(bytes_0)
+     assert var_0 is True
+     var_1 = module_0.isPathCrossing(bytes_0)
+</pre><h3>Mutant 103</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -38,7 +38,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_4():
+-    bytes_0 = b"\xb8[\xa2\xfb"
++    bytes_0 = None
+     var_0 = module_0.isPathCrossing(bytes_0)
+     assert var_0 is True
+     var_1 = module_0.isPathCrossing(bytes_0)
+</pre><h3>Mutant 104</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -39,7 +39,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_4():
+     bytes_0 = b"\xb8[\xa2\xfb"
+-    var_0 = module_0.isPathCrossing(bytes_0)
++    var_0 = None
+     assert var_0 is True
+     var_1 = module_0.isPathCrossing(bytes_0)
+     assert var_1 is True
+</pre><h3>Mutant 105</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -40,7 +40,7 @@
+ def test_case_4():
+     bytes_0 = b"\xb8[\xa2\xfb"
+     var_0 = module_0.isPathCrossing(bytes_0)
+-    assert var_0 is True
++    assert var_0 is not True
+     var_1 = module_0.isPathCrossing(bytes_0)
+     assert var_1 is True
+     module_0.isPathCrossing(var_0)
+</pre><h3>Mutant 106</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -40,7 +40,7 @@
+ def test_case_4():
+     bytes_0 = b"\xb8[\xa2\xfb"
+     var_0 = module_0.isPathCrossing(bytes_0)
+-    assert var_0 is True
++    assert var_0 is False
+     var_1 = module_0.isPathCrossing(bytes_0)
+     assert var_1 is True
+     module_0.isPathCrossing(var_0)
+</pre><h3>Mutant 107</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -41,7 +41,7 @@
+     bytes_0 = b"\xb8[\xa2\xfb"
+     var_0 = module_0.isPathCrossing(bytes_0)
+     assert var_0 is True
+-    var_1 = module_0.isPathCrossing(bytes_0)
++    var_1 = None
+     assert var_1 is True
+     module_0.isPathCrossing(var_0)
+ 
+</pre><h3>Mutant 108</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -42,6 +42,6 @@
+     var_0 = module_0.isPathCrossing(bytes_0)
+     assert var_0 is True
+     var_1 = module_0.isPathCrossing(bytes_0)
+-    assert var_1 is True
++    assert var_1 is not True
+     module_0.isPathCrossing(var_0)
+ 
+</pre><h3>Mutant 109</h3><pre>--- ..\P47\.\tests\test_Problem47_GeneratedSolution.py
++++ ..\P47\.\tests\test_Problem47_GeneratedSolution.py
+@@ -42,6 +42,6 @@
+     var_0 = module_0.isPathCrossing(bytes_0)
+     assert var_0 is True
+     var_1 = module_0.isPathCrossing(bytes_0)
+-    assert var_1 is True
++    assert var_1 is False
+     module_0.isPathCrossing(var_0)
+ 
+</pre></body></html>

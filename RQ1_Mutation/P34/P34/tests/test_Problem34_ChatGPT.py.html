@@ -1,0 +1,88 @@
+<html><body><h1>..\P34\.\tests\test_Problem34_ChatGPT.py</h1>Killed 24 out of 32 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 10</h3><pre>--- ..\P34\.\tests\test_Problem34_ChatGPT.py
++++ ..\P34\.\tests\test_Problem34_ChatGPT.py
+@@ -4,7 +4,7 @@
+ 
+ # Test with an empty string
+ def test_empty_string():
+-    assert shortestPalindrome("") == "", "Failed to handle an empty string"
++    assert shortestPalindrome("") == "", "XXFailed to handle an empty stringXX"
+ 
+ # Test with a string that is already a palindrome
+ def test_already_palindrome():
+</pre><h3>Mutant 14</h3><pre>--- ..\P34\.\tests\test_Problem34_ChatGPT.py
++++ ..\P34\.\tests\test_Problem34_ChatGPT.py
+@@ -8,7 +8,7 @@
+ 
+ # Test with a string that is already a palindrome
+ def test_already_palindrome():
+-    assert shortestPalindrome("racecar") == "racecar", "Failed with a string that is already a palindrome"
++    assert shortestPalindrome("racecar") == "racecar", "XXFailed with a string that is already a palindromeXX"
+ 
+ # Test with a string needing one character added
+ def test_one_char_needed():
+</pre><h3>Mutant 18</h3><pre>--- ..\P34\.\tests\test_Problem34_ChatGPT.py
++++ ..\P34\.\tests\test_Problem34_ChatGPT.py
+@@ -12,7 +12,7 @@
+ 
+ # Test with a string needing one character added
+ def test_one_char_needed():
+-    assert shortestPalindrome("abcd") == "dcbabcd", "Failed with a string needing one character added"
++    assert shortestPalindrome("abcd") == "dcbabcd", "XXFailed with a string needing one character addedXX"
+ 
+ # Test with a string needing multiple characters added
+ def test_multiple_chars_needed():
+</pre><h3>Mutant 22</h3><pre>--- ..\P34\.\tests\test_Problem34_ChatGPT.py
++++ ..\P34\.\tests\test_Problem34_ChatGPT.py
+@@ -16,7 +16,7 @@
+ 
+ # Test with a string needing multiple characters added
+ def test_multiple_chars_needed():
+-    assert shortestPalindrome("abc") == "cbabc", "Failed with a string needing multiple characters added"
++    assert shortestPalindrome("abc") == "cbabc", "XXFailed with a string needing multiple characters addedXX"
+ 
+ # Test with a string where the entire string except one character forms a palindrome
+ def test_almost_all_chars_needed():
+</pre><h3>Mutant 26</h3><pre>--- ..\P34\.\tests\test_Problem34_ChatGPT.py
++++ ..\P34\.\tests\test_Problem34_ChatGPT.py
+@@ -20,7 +20,7 @@
+ 
+ # Test with a string where the entire string except one character forms a palindrome
+ def test_almost_all_chars_needed():
+-    assert shortestPalindrome("aacecaaa") == "aaacecaaa", "Failed with a string where the entire string except one character forms a palindrome"
++    assert shortestPalindrome("aacecaaa") == "aaacecaaa", "XXFailed with a string where the entire string except one character forms a palindromeXX"
+ 
+ # Test with single character strings
+ def test_single_char():
+</pre><h3>Mutant 30</h3><pre>--- ..\P34\.\tests\test_Problem34_ChatGPT.py
++++ ..\P34\.\tests\test_Problem34_ChatGPT.py
+@@ -24,7 +24,7 @@
+ 
+ # Test with single character strings
+ def test_single_char():
+-    assert shortestPalindrome("a") == "a", "Failed with a single character string"
++    assert shortestPalindrome("a") == "a", "XXFailed with a single character stringXX"
+ 
+ # Test with a string of two different characters
+ def test_two_chars():
+</pre><h3>Mutant 34</h3><pre>--- ..\P34\.\tests\test_Problem34_ChatGPT.py
++++ ..\P34\.\tests\test_Problem34_ChatGPT.py
+@@ -28,7 +28,7 @@
+ 
+ # Test with a string of two different characters
+ def test_two_chars():
+-    assert shortestPalindrome("ab") == "bab", "Failed with a string of two different characters"
++    assert shortestPalindrome("ab") == "bab", "XXFailed with a string of two different charactersXX"
+ 
+ # Test with complex strings requiring extensive additions
+ def test_complex_string():
+</pre><h3>Mutant 38</h3><pre>--- ..\P34\.\tests\test_Problem34_ChatGPT.py
++++ ..\P34\.\tests\test_Problem34_ChatGPT.py
+@@ -32,6 +32,6 @@
+ 
+ # Test with complex strings requiring extensive additions
+ def test_complex_string():
+-    assert shortestPalindrome("abcdefg") == "gfedcbabcdefg", "Failed with a complex string requiring extensive additions"
++    assert shortestPalindrome("abcdefg") == "gfedcbabcdefg", "XXFailed with a complex string requiring extensive additionsXX"
+ 
+ 
+</pre></body></html>

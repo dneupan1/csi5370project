@@ -1,0 +1,56 @@
+<html><body><h1>..\P50\.\tests\test_Problem50_GeneratedSolution.py</h1>Killed 11 out of 16 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 106</h3><pre>--- ..\P50\.\tests\test_Problem50_GeneratedSolution.py
++++ ..\P50\.\tests\test_Problem50_GeneratedSolution.py
+@@ -5,7 +5,7 @@
+ 
+ 
+ def test_case_0():
+-    bytes_0 = b"\x0fp\xeb\n\x01\xd1\x8dS(\t"
++    bytes_0 = b"XX\x0fp\xeb\n\x01\xd1\x8dS(\tXX"
+     var_0 = module_0.canCross(bytes_0)
+ 
+ 
+</pre><h3>Mutant 108</h3><pre>--- ..\P50\.\tests\test_Problem50_GeneratedSolution.py
++++ ..\P50\.\tests\test_Problem50_GeneratedSolution.py
+@@ -6,7 +6,7 @@
+ 
+ def test_case_0():
+     bytes_0 = b"\x0fp\xeb\n\x01\xd1\x8dS(\t"
+-    var_0 = module_0.canCross(bytes_0)
++    var_0 = None
+ 
+ 
+ @pytest.mark.xfail(strict=True)
+</pre><h3>Mutant 109</h3><pre>--- ..\P50\.\tests\test_Problem50_GeneratedSolution.py
++++ ..\P50\.\tests\test_Problem50_GeneratedSolution.py
+@@ -9,7 +9,7 @@
+     var_0 = module_0.canCross(bytes_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_1():
+     none_type_0 = None
+     module_0.canCross(none_type_0)
+</pre><h3>Mutant 111</h3><pre>--- ..\P50\.\tests\test_Problem50_GeneratedSolution.py
++++ ..\P50\.\tests\test_Problem50_GeneratedSolution.py
+@@ -11,7 +11,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_1():
+-    none_type_0 = None
++    none_type_0 = ""
+     module_0.canCross(none_type_0)
+ 
+ 
+</pre><h3>Mutant 117</h3><pre>--- ..\P50\.\tests\test_Problem50_GeneratedSolution.py
++++ ..\P50\.\tests\test_Problem50_GeneratedSolution.py
+@@ -22,7 +22,7 @@
+ 
+ 
+ def test_case_3():
+-    bytes_0 = b"g\x01\xc8"
++    bytes_0 = b"XXg\x01\xc8XX"
+     var_0 = module_0.canCross(bytes_0)
+     assert var_0 is False
+ 
+</pre></body></html>

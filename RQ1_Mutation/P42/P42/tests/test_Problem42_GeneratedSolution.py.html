@@ -1,0 +1,527 @@
+<html><body><h1>..\P42\.\tests\test_Problem42_GeneratedSolution.py</h1>Killed 11 out of 59 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 129</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -5,7 +5,7 @@
+ 
+ 
+ def test_case_0():
+-    bytes_0 = b'm\xc9"}\xe5\x86\xef\xb9T20i\x87\xd2O\xa3j'
++    bytes_0 = b'XXm\xc9"}\xe5\x86\xef\xb9T20i\x87\xd2O\xa3jXX'
+     bool_0 = False
+     var_0 = module_0.mergeStones(bytes_0, bool_0)
+     assert var_0 == -1
+</pre><h3>Mutant 137</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -11,7 +11,7 @@
+     assert var_0 == -1
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_1():
+     none_type_0 = None
+     module_0.mergeStones(none_type_0, none_type_0)
+</pre><h3>Mutant 139</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -13,7 +13,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_1():
+-    none_type_0 = None
++    none_type_0 = ""
+     module_0.mergeStones(none_type_0, none_type_0)
+ 
+ 
+</pre><h3>Mutant 140</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -17,7 +17,7 @@
+     module_0.mergeStones(none_type_0, none_type_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_2():
+     bool_0 = True
+     list_0 = [bool_0, bool_0, bool_0]
+</pre><h3>Mutant 142</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -19,7 +19,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+-    bool_0 = True
++    bool_0 = False
+     list_0 = [bool_0, bool_0, bool_0]
+     bool_1 = False
+     var_0 = module_0.mergeStones(list_0, bool_1)
+</pre><h3>Mutant 143</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -19,7 +19,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+-    bool_0 = True
++    bool_0 = None
+     list_0 = [bool_0, bool_0, bool_0]
+     bool_1 = False
+     var_0 = module_0.mergeStones(list_0, bool_1)
+</pre><h3>Mutant 144</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -20,7 +20,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+     bool_0 = True
+-    list_0 = [bool_0, bool_0, bool_0]
++    list_0 = None
+     bool_1 = False
+     var_0 = module_0.mergeStones(list_0, bool_1)
+     assert var_0 == -1
+</pre><h3>Mutant 145</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -21,7 +21,7 @@
+ def test_case_2():
+     bool_0 = True
+     list_0 = [bool_0, bool_0, bool_0]
+-    bool_1 = False
++    bool_1 = True
+     var_0 = module_0.mergeStones(list_0, bool_1)
+     assert var_0 == -1
+     var_1 = module_0.mergeStones(list_0, var_0)
+</pre><h3>Mutant 146</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -21,7 +21,7 @@
+ def test_case_2():
+     bool_0 = True
+     list_0 = [bool_0, bool_0, bool_0]
+-    bool_1 = False
++    bool_1 = None
+     var_0 = module_0.mergeStones(list_0, bool_1)
+     assert var_0 == -1
+     var_1 = module_0.mergeStones(list_0, var_0)
+</pre><h3>Mutant 147</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -22,7 +22,7 @@
+     bool_0 = True
+     list_0 = [bool_0, bool_0, bool_0]
+     bool_1 = False
+-    var_0 = module_0.mergeStones(list_0, bool_1)
++    var_0 = None
+     assert var_0 == -1
+     var_1 = module_0.mergeStones(list_0, var_0)
+     assert var_1 == -1
+</pre><h3>Mutant 148</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -23,7 +23,7 @@
+     list_0 = [bool_0, bool_0, bool_0]
+     bool_1 = False
+     var_0 = module_0.mergeStones(list_0, bool_1)
+-    assert var_0 == -1
++    assert var_0 != -1
+     var_1 = module_0.mergeStones(list_0, var_0)
+     assert var_1 == -1
+     module_0.mergeStones(bool_1, bool_0)
+</pre><h3>Mutant 149</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -23,7 +23,7 @@
+     list_0 = [bool_0, bool_0, bool_0]
+     bool_1 = False
+     var_0 = module_0.mergeStones(list_0, bool_1)
+-    assert var_0 == -1
++    assert var_0 == +1
+     var_1 = module_0.mergeStones(list_0, var_0)
+     assert var_1 == -1
+     module_0.mergeStones(bool_1, bool_0)
+</pre><h3>Mutant 150</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -23,7 +23,7 @@
+     list_0 = [bool_0, bool_0, bool_0]
+     bool_1 = False
+     var_0 = module_0.mergeStones(list_0, bool_1)
+-    assert var_0 == -1
++    assert var_0 == -2
+     var_1 = module_0.mergeStones(list_0, var_0)
+     assert var_1 == -1
+     module_0.mergeStones(bool_1, bool_0)
+</pre><h3>Mutant 151</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -24,7 +24,7 @@
+     bool_1 = False
+     var_0 = module_0.mergeStones(list_0, bool_1)
+     assert var_0 == -1
+-    var_1 = module_0.mergeStones(list_0, var_0)
++    var_1 = None
+     assert var_1 == -1
+     module_0.mergeStones(bool_1, bool_0)
+ 
+</pre><h3>Mutant 152</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -25,7 +25,7 @@
+     var_0 = module_0.mergeStones(list_0, bool_1)
+     assert var_0 == -1
+     var_1 = module_0.mergeStones(list_0, var_0)
+-    assert var_1 == -1
++    assert var_1 != -1
+     module_0.mergeStones(bool_1, bool_0)
+ 
+ 
+</pre><h3>Mutant 153</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -25,7 +25,7 @@
+     var_0 = module_0.mergeStones(list_0, bool_1)
+     assert var_0 == -1
+     var_1 = module_0.mergeStones(list_0, var_0)
+-    assert var_1 == -1
++    assert var_1 == +1
+     module_0.mergeStones(bool_1, bool_0)
+ 
+ 
+</pre><h3>Mutant 154</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -25,7 +25,7 @@
+     var_0 = module_0.mergeStones(list_0, bool_1)
+     assert var_0 == -1
+     var_1 = module_0.mergeStones(list_0, var_0)
+-    assert var_1 == -1
++    assert var_1 == -2
+     module_0.mergeStones(bool_1, bool_0)
+ 
+ 
+</pre><h3>Mutant 155</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -29,7 +29,7 @@
+     module_0.mergeStones(bool_1, bool_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_3():
+     float_0 = -2286.38
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+</pre><h3>Mutant 157</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -31,7 +31,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+-    float_0 = -2286.38
++    float_0 = +2286.38
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+     assert var_0 == -1
+</pre><h3>Mutant 158</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -31,7 +31,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+-    float_0 = -2286.38
++    float_0 = -2287.38
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+     assert var_0 == -1
+</pre><h3>Mutant 159</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -31,7 +31,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+-    float_0 = -2286.38
++    float_0 = None
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+     assert var_0 == -1
+</pre><h3>Mutant 160</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -32,7 +32,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+     float_0 = -2286.38
+-    bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
++    bytes_0 = b'XXm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3jXX'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+     assert var_0 == -1
+     bool_0 = False
+</pre><h3>Mutant 161</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -32,7 +32,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+     float_0 = -2286.38
+-    bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
++    bytes_0 = None
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+     assert var_0 == -1
+     bool_0 = False
+</pre><h3>Mutant 162</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -33,7 +33,7 @@
+ def test_case_3():
+     float_0 = -2286.38
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+-    var_0 = module_0.mergeStones(bytes_0, float_0)
++    var_0 = None
+     assert var_0 == -1
+     bool_0 = False
+     var_1 = module_0.mergeStones(bytes_0, bool_0)
+</pre><h3>Mutant 163</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -34,7 +34,7 @@
+     float_0 = -2286.38
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+-    assert var_0 == -1
++    assert var_0 != -1
+     bool_0 = False
+     var_1 = module_0.mergeStones(bytes_0, bool_0)
+     assert var_1 == -1
+</pre><h3>Mutant 164</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -34,7 +34,7 @@
+     float_0 = -2286.38
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+-    assert var_0 == -1
++    assert var_0 == +1
+     bool_0 = False
+     var_1 = module_0.mergeStones(bytes_0, bool_0)
+     assert var_1 == -1
+</pre><h3>Mutant 165</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -34,7 +34,7 @@
+     float_0 = -2286.38
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+-    assert var_0 == -1
++    assert var_0 == -2
+     bool_0 = False
+     var_1 = module_0.mergeStones(bytes_0, bool_0)
+     assert var_1 == -1
+</pre><h3>Mutant 166</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -35,7 +35,7 @@
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+     assert var_0 == -1
+-    bool_0 = False
++    bool_0 = True
+     var_1 = module_0.mergeStones(bytes_0, bool_0)
+     assert var_1 == -1
+     module_0.mergeStones(float_0, bool_0)
+</pre><h3>Mutant 167</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -35,7 +35,7 @@
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+     assert var_0 == -1
+-    bool_0 = False
++    bool_0 = None
+     var_1 = module_0.mergeStones(bytes_0, bool_0)
+     assert var_1 == -1
+     module_0.mergeStones(float_0, bool_0)
+</pre><h3>Mutant 168</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -36,7 +36,7 @@
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+     assert var_0 == -1
+     bool_0 = False
+-    var_1 = module_0.mergeStones(bytes_0, bool_0)
++    var_1 = None
+     assert var_1 == -1
+     module_0.mergeStones(float_0, bool_0)
+ 
+</pre><h3>Mutant 169</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -37,7 +37,7 @@
+     assert var_0 == -1
+     bool_0 = False
+     var_1 = module_0.mergeStones(bytes_0, bool_0)
+-    assert var_1 == -1
++    assert var_1 != -1
+     module_0.mergeStones(float_0, bool_0)
+ 
+ 
+</pre><h3>Mutant 170</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -37,7 +37,7 @@
+     assert var_0 == -1
+     bool_0 = False
+     var_1 = module_0.mergeStones(bytes_0, bool_0)
+-    assert var_1 == -1
++    assert var_1 == +1
+     module_0.mergeStones(float_0, bool_0)
+ 
+ 
+</pre><h3>Mutant 171</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -37,7 +37,7 @@
+     assert var_0 == -1
+     bool_0 = False
+     var_1 = module_0.mergeStones(bytes_0, bool_0)
+-    assert var_1 == -1
++    assert var_1 == -2
+     module_0.mergeStones(float_0, bool_0)
+ 
+ 
+</pre><h3>Mutant 172</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -41,7 +41,7 @@
+     module_0.mergeStones(float_0, bool_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_4():
+     float_0 = -2286.38
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+</pre><h3>Mutant 174</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -43,7 +43,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_4():
+-    float_0 = -2286.38
++    float_0 = +2286.38
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+     assert var_0 == -1
+</pre><h3>Mutant 175</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -43,7 +43,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_4():
+-    float_0 = -2286.38
++    float_0 = -2287.38
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+     assert var_0 == -1
+</pre><h3>Mutant 176</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -43,7 +43,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_4():
+-    float_0 = -2286.38
++    float_0 = None
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+     assert var_0 == -1
+</pre><h3>Mutant 177</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -44,7 +44,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_4():
+     float_0 = -2286.38
+-    bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
++    bytes_0 = b'XXm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3jXX'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+     assert var_0 == -1
+     int_0 = 3
+</pre><h3>Mutant 178</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -44,7 +44,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_4():
+     float_0 = -2286.38
+-    bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
++    bytes_0 = None
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+     assert var_0 == -1
+     int_0 = 3
+</pre><h3>Mutant 179</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -45,7 +45,7 @@
+ def test_case_4():
+     float_0 = -2286.38
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+-    var_0 = module_0.mergeStones(bytes_0, float_0)
++    var_0 = None
+     assert var_0 == -1
+     int_0 = 3
+     var_1 = module_0.mergeStones(bytes_0, int_0)
+</pre><h3>Mutant 180</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -46,7 +46,7 @@
+     float_0 = -2286.38
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+-    assert var_0 == -1
++    assert var_0 != -1
+     int_0 = 3
+     var_1 = module_0.mergeStones(bytes_0, int_0)
+     assert var_1 == 6705
+</pre><h3>Mutant 181</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -46,7 +46,7 @@
+     float_0 = -2286.38
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+-    assert var_0 == -1
++    assert var_0 == +1
+     int_0 = 3
+     var_1 = module_0.mergeStones(bytes_0, int_0)
+     assert var_1 == 6705
+</pre><h3>Mutant 182</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -46,7 +46,7 @@
+     float_0 = -2286.38
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+-    assert var_0 == -1
++    assert var_0 == -2
+     int_0 = 3
+     var_1 = module_0.mergeStones(bytes_0, int_0)
+     assert var_1 == 6705
+</pre><h3>Mutant 183</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -47,7 +47,7 @@
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+     assert var_0 == -1
+-    int_0 = 3
++    int_0 = 4
+     var_1 = module_0.mergeStones(bytes_0, int_0)
+     assert var_1 == 6705
+     module_0.mergeStones(int_0, var_1)
+</pre><h3>Mutant 184</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -47,7 +47,7 @@
+     bytes_0 = b'm\xc9\x9c"\xcf}\xe5\x86t\xb9T20i\x87\xd2O\xa3j'
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+     assert var_0 == -1
+-    int_0 = 3
++    int_0 = None
+     var_1 = module_0.mergeStones(bytes_0, int_0)
+     assert var_1 == 6705
+     module_0.mergeStones(int_0, var_1)
+</pre><h3>Mutant 185</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -48,7 +48,7 @@
+     var_0 = module_0.mergeStones(bytes_0, float_0)
+     assert var_0 == -1
+     int_0 = 3
+-    var_1 = module_0.mergeStones(bytes_0, int_0)
++    var_1 = None
+     assert var_1 == 6705
+     module_0.mergeStones(int_0, var_1)
+ 
+</pre><h3>Mutant 186</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -49,6 +49,6 @@
+     assert var_0 == -1
+     int_0 = 3
+     var_1 = module_0.mergeStones(bytes_0, int_0)
+-    assert var_1 == 6705
++    assert var_1 != 6705
+     module_0.mergeStones(int_0, var_1)
+ 
+</pre><h3>Mutant 187</h3><pre>--- ..\P42\.\tests\test_Problem42_GeneratedSolution.py
++++ ..\P42\.\tests\test_Problem42_GeneratedSolution.py
+@@ -49,6 +49,6 @@
+     assert var_0 == -1
+     int_0 = 3
+     var_1 = module_0.mergeStones(bytes_0, int_0)
+-    assert var_1 == 6705
++    assert var_1 == 6706
+     module_0.mergeStones(int_0, var_1)
+ 
+</pre></body></html>

@@ -12,7 +12,7 @@ def findItinerary(tickets):
         # While there are airports to visit from the current airport, visit them
         while graph[airport]:
             # Pop the last destination from the airport's destination list to maintain lexical order
-            next_airport = graph[airport].pop()
+            next_airport = None
             visit(next_airport)
         route.append(airport)
     

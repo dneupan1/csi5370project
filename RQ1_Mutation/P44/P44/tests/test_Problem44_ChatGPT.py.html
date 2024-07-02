@@ -1,0 +1,684 @@
+<html><body><h1>..\P44\.\tests\test_Problem44_ChatGPT.py</h1>Killed 41 out of 104 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 36</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -8,7 +8,7 @@
+     """
+     When there is only one pile, the maximum total value is the sum of taking the top k coins.
+     """
+-    piles = [[1, 2, 3, 4]]
++    piles = [[2, 2, 3, 4]]
+     k = 2
+     expected = 3 + 4  # Take the top 2 coins
+     assert maxCoins(piles, k) == expected, "Failed with a single pile"
+</pre><h3>Mutant 37</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -8,7 +8,7 @@
+     """
+     When there is only one pile, the maximum total value is the sum of taking the top k coins.
+     """
+-    piles = [[1, 2, 3, 4]]
++    piles = [[1, 3, 3, 4]]
+     k = 2
+     expected = 3 + 4  # Take the top 2 coins
+     assert maxCoins(piles, k) == expected, "Failed with a single pile"
+</pre><h3>Mutant 38</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -8,7 +8,7 @@
+     """
+     When there is only one pile, the maximum total value is the sum of taking the top k coins.
+     """
+-    piles = [[1, 2, 3, 4]]
++    piles = [[1, 2, 4, 4]]
+     k = 2
+     expected = 3 + 4  # Take the top 2 coins
+     assert maxCoins(piles, k) == expected, "Failed with a single pile"
+</pre><h3>Mutant 39</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -8,7 +8,7 @@
+     """
+     When there is only one pile, the maximum total value is the sum of taking the top k coins.
+     """
+-    piles = [[1, 2, 3, 4]]
++    piles = [[1, 2, 3, 5]]
+     k = 2
+     expected = 3 + 4  # Take the top 2 coins
+     assert maxCoins(piles, k) == expected, "Failed with a single pile"
+</pre><h3>Mutant 40</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -8,7 +8,7 @@
+     """
+     When there is only one pile, the maximum total value is the sum of taking the top k coins.
+     """
+-    piles = [[1, 2, 3, 4]]
++    piles = None
+     k = 2
+     expected = 3 + 4  # Take the top 2 coins
+     assert maxCoins(piles, k) == expected, "Failed with a single pile"
+</pre><h3>Mutant 41</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -9,7 +9,7 @@
+     When there is only one pile, the maximum total value is the sum of taking the top k coins.
+     """
+     piles = [[1, 2, 3, 4]]
+-    k = 2
++    k = 3
+     expected = 3 + 4  # Take the top 2 coins
+     assert maxCoins(piles, k) == expected, "Failed with a single pile"
+ 
+</pre><h3>Mutant 42</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -9,7 +9,7 @@
+     When there is only one pile, the maximum total value is the sum of taking the top k coins.
+     """
+     piles = [[1, 2, 3, 4]]
+-    k = 2
++    k = None
+     expected = 3 + 4  # Take the top 2 coins
+     assert maxCoins(piles, k) == expected, "Failed with a single pile"
+ 
+</pre><h3>Mutant 43</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -10,7 +10,7 @@
+     """
+     piles = [[1, 2, 3, 4]]
+     k = 2
+-    expected = 3 + 4  # Take the top 2 coins
++    expected = 4 + 4  # Take the top 2 coins
+     assert maxCoins(piles, k) == expected, "Failed with a single pile"
+ 
+ # Test with multiple piles taking all coins
+</pre><h3>Mutant 44</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -10,7 +10,7 @@
+     """
+     piles = [[1, 2, 3, 4]]
+     k = 2
+-    expected = 3 + 4  # Take the top 2 coins
++    expected = 3 - 4  # Take the top 2 coins
+     assert maxCoins(piles, k) == expected, "Failed with a single pile"
+ 
+ # Test with multiple piles taking all coins
+</pre><h3>Mutant 45</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -10,7 +10,7 @@
+     """
+     piles = [[1, 2, 3, 4]]
+     k = 2
+-    expected = 3 + 4  # Take the top 2 coins
++    expected = 3 + 5  # Take the top 2 coins
+     assert maxCoins(piles, k) == expected, "Failed with a single pile"
+ 
+ # Test with multiple piles taking all coins
+</pre><h3>Mutant 46</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -10,7 +10,7 @@
+     """
+     piles = [[1, 2, 3, 4]]
+     k = 2
+-    expected = 3 + 4  # Take the top 2 coins
++    expected = None  # Take the top 2 coins
+     assert maxCoins(piles, k) == expected, "Failed with a single pile"
+ 
+ # Test with multiple piles taking all coins
+</pre><h3>Mutant 47</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -11,7 +11,7 @@
+     piles = [[1, 2, 3, 4]]
+     k = 2
+     expected = 3 + 4  # Take the top 2 coins
+-    assert maxCoins(piles, k) == expected, "Failed with a single pile"
++    assert maxCoins(piles, k) != expected, "Failed with a single pile"
+ 
+ # Test with multiple piles taking all coins
+ def test_multiple_piles_all_coins():
+</pre><h3>Mutant 48</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -11,7 +11,7 @@
+     piles = [[1, 2, 3, 4]]
+     k = 2
+     expected = 3 + 4  # Take the top 2 coins
+-    assert maxCoins(piles, k) == expected, "Failed with a single pile"
++    assert maxCoins(piles, k) == expected, "XXFailed with a single pileXX"
+ 
+ # Test with multiple piles taking all coins
+ def test_multiple_piles_all_coins():
+</pre><h3>Mutant 49</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -18,7 +18,7 @@
+     """
+     When k allows taking all coins from all piles, the maximum total value is the sum of all coins.
+     """
+-    piles = [[1, 2, 3], [2, 3, 4], [1, 4, 5]]
++    piles = [[2, 2, 3], [2, 3, 4], [1, 4, 5]]
+     k = 9
+     expected = sum(sum(pile) for pile in piles)  # Take all coins
+     assert maxCoins(piles, k) == expected, "Failed with multiple piles taking all coins"
+</pre><h3>Mutant 50</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -18,7 +18,7 @@
+     """
+     When k allows taking all coins from all piles, the maximum total value is the sum of all coins.
+     """
+-    piles = [[1, 2, 3], [2, 3, 4], [1, 4, 5]]
++    piles = [[1, 3, 3], [2, 3, 4], [1, 4, 5]]
+     k = 9
+     expected = sum(sum(pile) for pile in piles)  # Take all coins
+     assert maxCoins(piles, k) == expected, "Failed with multiple piles taking all coins"
+</pre><h3>Mutant 51</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -18,7 +18,7 @@
+     """
+     When k allows taking all coins from all piles, the maximum total value is the sum of all coins.
+     """
+-    piles = [[1, 2, 3], [2, 3, 4], [1, 4, 5]]
++    piles = [[1, 2, 4], [2, 3, 4], [1, 4, 5]]
+     k = 9
+     expected = sum(sum(pile) for pile in piles)  # Take all coins
+     assert maxCoins(piles, k) == expected, "Failed with multiple piles taking all coins"
+</pre><h3>Mutant 52</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -18,7 +18,7 @@
+     """
+     When k allows taking all coins from all piles, the maximum total value is the sum of all coins.
+     """
+-    piles = [[1, 2, 3], [2, 3, 4], [1, 4, 5]]
++    piles = [[1, 2, 3], [3, 3, 4], [1, 4, 5]]
+     k = 9
+     expected = sum(sum(pile) for pile in piles)  # Take all coins
+     assert maxCoins(piles, k) == expected, "Failed with multiple piles taking all coins"
+</pre><h3>Mutant 53</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -18,7 +18,7 @@
+     """
+     When k allows taking all coins from all piles, the maximum total value is the sum of all coins.
+     """
+-    piles = [[1, 2, 3], [2, 3, 4], [1, 4, 5]]
++    piles = [[1, 2, 3], [2, 4, 4], [1, 4, 5]]
+     k = 9
+     expected = sum(sum(pile) for pile in piles)  # Take all coins
+     assert maxCoins(piles, k) == expected, "Failed with multiple piles taking all coins"
+</pre><h3>Mutant 54</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -18,7 +18,7 @@
+     """
+     When k allows taking all coins from all piles, the maximum total value is the sum of all coins.
+     """
+-    piles = [[1, 2, 3], [2, 3, 4], [1, 4, 5]]
++    piles = [[1, 2, 3], [2, 3, 5], [1, 4, 5]]
+     k = 9
+     expected = sum(sum(pile) for pile in piles)  # Take all coins
+     assert maxCoins(piles, k) == expected, "Failed with multiple piles taking all coins"
+</pre><h3>Mutant 55</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -18,7 +18,7 @@
+     """
+     When k allows taking all coins from all piles, the maximum total value is the sum of all coins.
+     """
+-    piles = [[1, 2, 3], [2, 3, 4], [1, 4, 5]]
++    piles = [[1, 2, 3], [2, 3, 4], [2, 4, 5]]
+     k = 9
+     expected = sum(sum(pile) for pile in piles)  # Take all coins
+     assert maxCoins(piles, k) == expected, "Failed with multiple piles taking all coins"
+</pre><h3>Mutant 56</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -18,7 +18,7 @@
+     """
+     When k allows taking all coins from all piles, the maximum total value is the sum of all coins.
+     """
+-    piles = [[1, 2, 3], [2, 3, 4], [1, 4, 5]]
++    piles = [[1, 2, 3], [2, 3, 4], [1, 5, 5]]
+     k = 9
+     expected = sum(sum(pile) for pile in piles)  # Take all coins
+     assert maxCoins(piles, k) == expected, "Failed with multiple piles taking all coins"
+</pre><h3>Mutant 57</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -18,7 +18,7 @@
+     """
+     When k allows taking all coins from all piles, the maximum total value is the sum of all coins.
+     """
+-    piles = [[1, 2, 3], [2, 3, 4], [1, 4, 5]]
++    piles = [[1, 2, 3], [2, 3, 4], [1, 4, 6]]
+     k = 9
+     expected = sum(sum(pile) for pile in piles)  # Take all coins
+     assert maxCoins(piles, k) == expected, "Failed with multiple piles taking all coins"
+</pre><h3>Mutant 59</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -19,7 +19,7 @@
+     When k allows taking all coins from all piles, the maximum total value is the sum of all coins.
+     """
+     piles = [[1, 2, 3], [2, 3, 4], [1, 4, 5]]
+-    k = 9
++    k = 10
+     expected = sum(sum(pile) for pile in piles)  # Take all coins
+     assert maxCoins(piles, k) == expected, "Failed with multiple piles taking all coins"
+ 
+</pre><h3>Mutant 63</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -21,7 +21,7 @@
+     piles = [[1, 2, 3], [2, 3, 4], [1, 4, 5]]
+     k = 9
+     expected = sum(sum(pile) for pile in piles)  # Take all coins
+-    assert maxCoins(piles, k) == expected, "Failed with multiple piles taking all coins"
++    assert maxCoins(piles, k) == expected, "XXFailed with multiple piles taking all coinsXX"
+ 
+ # Test with no coins to be taken
+ def test_no_coins():
+</pre><h3>Mutant 64</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -28,7 +28,7 @@
+     """
+     When k is 0, no coins should be taken, and the total value must be 0.
+     """
+-    piles = [[1, 2, 3], [4, 5, 6]]
++    piles = [[2, 2, 3], [4, 5, 6]]
+     k = 0
+     expected = 0  # Take no coins
+     assert maxCoins(piles, k) == expected, "Failed with no coins to be taken"
+</pre><h3>Mutant 65</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -28,7 +28,7 @@
+     """
+     When k is 0, no coins should be taken, and the total value must be 0.
+     """
+-    piles = [[1, 2, 3], [4, 5, 6]]
++    piles = [[1, 3, 3], [4, 5, 6]]
+     k = 0
+     expected = 0  # Take no coins
+     assert maxCoins(piles, k) == expected, "Failed with no coins to be taken"
+</pre><h3>Mutant 66</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -28,7 +28,7 @@
+     """
+     When k is 0, no coins should be taken, and the total value must be 0.
+     """
+-    piles = [[1, 2, 3], [4, 5, 6]]
++    piles = [[1, 2, 4], [4, 5, 6]]
+     k = 0
+     expected = 0  # Take no coins
+     assert maxCoins(piles, k) == expected, "Failed with no coins to be taken"
+</pre><h3>Mutant 67</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -28,7 +28,7 @@
+     """
+     When k is 0, no coins should be taken, and the total value must be 0.
+     """
+-    piles = [[1, 2, 3], [4, 5, 6]]
++    piles = [[1, 2, 3], [5, 5, 6]]
+     k = 0
+     expected = 0  # Take no coins
+     assert maxCoins(piles, k) == expected, "Failed with no coins to be taken"
+</pre><h3>Mutant 68</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -28,7 +28,7 @@
+     """
+     When k is 0, no coins should be taken, and the total value must be 0.
+     """
+-    piles = [[1, 2, 3], [4, 5, 6]]
++    piles = [[1, 2, 3], [4, 6, 6]]
+     k = 0
+     expected = 0  # Take no coins
+     assert maxCoins(piles, k) == expected, "Failed with no coins to be taken"
+</pre><h3>Mutant 69</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -28,7 +28,7 @@
+     """
+     When k is 0, no coins should be taken, and the total value must be 0.
+     """
+-    piles = [[1, 2, 3], [4, 5, 6]]
++    piles = [[1, 2, 3], [4, 5, 7]]
+     k = 0
+     expected = 0  # Take no coins
+     assert maxCoins(piles, k) == expected, "Failed with no coins to be taken"
+</pre><h3>Mutant 76</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -31,7 +31,7 @@
+     piles = [[1, 2, 3], [4, 5, 6]]
+     k = 0
+     expected = 0  # Take no coins
+-    assert maxCoins(piles, k) == expected, "Failed with no coins to be taken"
++    assert maxCoins(piles, k) == expected, "XXFailed with no coins to be takenXX"
+ 
+ # Test with taking fewer coins than available in all piles
+ def test_fewer_coins_than_available():
+</pre><h3>Mutant 93</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -42,7 +42,7 @@
+     piles = [[3, 1, 5], [2, 4], [7]]
+     k = 4
+     expected = 7 + 4 + 5  # Optimal choice is to take 1 from the first pile, 1 from the second, and 1 from the third
+-    assert maxCoins(piles, k) == expected, "Failed with taking fewer coins than available"
++    assert maxCoins(piles, k) == expected, "XXFailed with taking fewer coins than availableXX"
+ 
+ # Test with empty piles
+ @pytest.mark.skip()
+</pre><h3>Mutant 95</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -50,7 +50,7 @@
+     """
+     If some piles are empty, they should simply be ignored as they contribute no value.
+     """
+-    piles = [[], [1, 2, 3], []]
++    piles = [[], [2, 2, 3], []]
+     k = 2
+     expected = 2 + 3  # Take the top 2 coins from the only non-empty pile
+     assert maxCoins(piles, k) == expected, "Failed with empty piles"
+</pre><h3>Mutant 96</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -50,7 +50,7 @@
+     """
+     If some piles are empty, they should simply be ignored as they contribute no value.
+     """
+-    piles = [[], [1, 2, 3], []]
++    piles = [[], [1, 3, 3], []]
+     k = 2
+     expected = 2 + 3  # Take the top 2 coins from the only non-empty pile
+     assert maxCoins(piles, k) == expected, "Failed with empty piles"
+</pre><h3>Mutant 97</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -50,7 +50,7 @@
+     """
+     If some piles are empty, they should simply be ignored as they contribute no value.
+     """
+-    piles = [[], [1, 2, 3], []]
++    piles = [[], [1, 2, 4], []]
+     k = 2
+     expected = 2 + 3  # Take the top 2 coins from the only non-empty pile
+     assert maxCoins(piles, k) == expected, "Failed with empty piles"
+</pre><h3>Mutant 98</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -50,7 +50,7 @@
+     """
+     If some piles are empty, they should simply be ignored as they contribute no value.
+     """
+-    piles = [[], [1, 2, 3], []]
++    piles = None
+     k = 2
+     expected = 2 + 3  # Take the top 2 coins from the only non-empty pile
+     assert maxCoins(piles, k) == expected, "Failed with empty piles"
+</pre><h3>Mutant 99</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -51,7 +51,7 @@
+     If some piles are empty, they should simply be ignored as they contribute no value.
+     """
+     piles = [[], [1, 2, 3], []]
+-    k = 2
++    k = 3
+     expected = 2 + 3  # Take the top 2 coins from the only non-empty pile
+     assert maxCoins(piles, k) == expected, "Failed with empty piles"
+ 
+</pre><h3>Mutant 100</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -51,7 +51,7 @@
+     If some piles are empty, they should simply be ignored as they contribute no value.
+     """
+     piles = [[], [1, 2, 3], []]
+-    k = 2
++    k = None
+     expected = 2 + 3  # Take the top 2 coins from the only non-empty pile
+     assert maxCoins(piles, k) == expected, "Failed with empty piles"
+ 
+</pre><h3>Mutant 101</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -52,7 +52,7 @@
+     """
+     piles = [[], [1, 2, 3], []]
+     k = 2
+-    expected = 2 + 3  # Take the top 2 coins from the only non-empty pile
++    expected = 3 + 3  # Take the top 2 coins from the only non-empty pile
+     assert maxCoins(piles, k) == expected, "Failed with empty piles"
+ 
+ # Test with k greater than total number of coins
+</pre><h3>Mutant 102</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -52,7 +52,7 @@
+     """
+     piles = [[], [1, 2, 3], []]
+     k = 2
+-    expected = 2 + 3  # Take the top 2 coins from the only non-empty pile
++    expected = 2 - 3  # Take the top 2 coins from the only non-empty pile
+     assert maxCoins(piles, k) == expected, "Failed with empty piles"
+ 
+ # Test with k greater than total number of coins
+</pre><h3>Mutant 103</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -52,7 +52,7 @@
+     """
+     piles = [[], [1, 2, 3], []]
+     k = 2
+-    expected = 2 + 3  # Take the top 2 coins from the only non-empty pile
++    expected = 2 + 4  # Take the top 2 coins from the only non-empty pile
+     assert maxCoins(piles, k) == expected, "Failed with empty piles"
+ 
+ # Test with k greater than total number of coins
+</pre><h3>Mutant 104</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -52,7 +52,7 @@
+     """
+     piles = [[], [1, 2, 3], []]
+     k = 2
+-    expected = 2 + 3  # Take the top 2 coins from the only non-empty pile
++    expected = None  # Take the top 2 coins from the only non-empty pile
+     assert maxCoins(piles, k) == expected, "Failed with empty piles"
+ 
+ # Test with k greater than total number of coins
+</pre><h3>Mutant 105</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -53,7 +53,7 @@
+     piles = [[], [1, 2, 3], []]
+     k = 2
+     expected = 2 + 3  # Take the top 2 coins from the only non-empty pile
+-    assert maxCoins(piles, k) == expected, "Failed with empty piles"
++    assert maxCoins(piles, k) != expected, "Failed with empty piles"
+ 
+ # Test with k greater than total number of coins
+ def test_k_greater_than_total_coins():
+</pre><h3>Mutant 106</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -53,7 +53,7 @@
+     piles = [[], [1, 2, 3], []]
+     k = 2
+     expected = 2 + 3  # Take the top 2 coins from the only non-empty pile
+-    assert maxCoins(piles, k) == expected, "Failed with empty piles"
++    assert maxCoins(piles, k) == expected, "XXFailed with empty pilesXX"
+ 
+ # Test with k greater than total number of coins
+ def test_k_greater_than_total_coins():
+</pre><h3>Mutant 111</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -61,7 +61,7 @@
+     When k is greater than the total number of coins, the function should return the sum of all coins.
+     """
+     piles = [[1, 2], [3]]
+-    k = 5  # More than total coins available
++    k = 6  # More than total coins available
+     expected = 1 + 2 + 3  # Take all coins
+     assert maxCoins(piles, k) == expected, "Failed with k greater than total coins"
+ 
+</pre><h3>Mutant 120</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -63,7 +63,7 @@
+     piles = [[1, 2], [3]]
+     k = 5  # More than total coins available
+     expected = 1 + 2 + 3  # Take all coins
+-    assert maxCoins(piles, k) == expected, "Failed with k greater than total coins"
++    assert maxCoins(piles, k) == expected, "XXFailed with k greater than total coinsXX"
+ 
+ # Test with piles of unequal sizes
+ @pytest.mark.skip()
+</pre><h3>Mutant 122</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -71,7 +71,7 @@
+     """
+     Tests the function's ability to handle piles of unequal sizes correctly.
+     """
+-    piles = [[5, 6], [7, 8, 9], [1]]
++    piles = [[6, 6], [7, 8, 9], [1]]
+     k = 3
+     expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
+     assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
+</pre><h3>Mutant 123</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -71,7 +71,7 @@
+     """
+     Tests the function's ability to handle piles of unequal sizes correctly.
+     """
+-    piles = [[5, 6], [7, 8, 9], [1]]
++    piles = [[5, 7], [7, 8, 9], [1]]
+     k = 3
+     expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
+     assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
+</pre><h3>Mutant 124</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -71,7 +71,7 @@
+     """
+     Tests the function's ability to handle piles of unequal sizes correctly.
+     """
+-    piles = [[5, 6], [7, 8, 9], [1]]
++    piles = [[5, 6], [8, 8, 9], [1]]
+     k = 3
+     expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
+     assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
+</pre><h3>Mutant 125</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -71,7 +71,7 @@
+     """
+     Tests the function's ability to handle piles of unequal sizes correctly.
+     """
+-    piles = [[5, 6], [7, 8, 9], [1]]
++    piles = [[5, 6], [7, 9, 9], [1]]
+     k = 3
+     expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
+     assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
+</pre><h3>Mutant 126</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -71,7 +71,7 @@
+     """
+     Tests the function's ability to handle piles of unequal sizes correctly.
+     """
+-    piles = [[5, 6], [7, 8, 9], [1]]
++    piles = [[5, 6], [7, 8, 10], [1]]
+     k = 3
+     expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
+     assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
+</pre><h3>Mutant 127</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -71,7 +71,7 @@
+     """
+     Tests the function's ability to handle piles of unequal sizes correctly.
+     """
+-    piles = [[5, 6], [7, 8, 9], [1]]
++    piles = [[5, 6], [7, 8, 9], [2]]
+     k = 3
+     expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
+     assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
+</pre><h3>Mutant 128</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -71,7 +71,7 @@
+     """
+     Tests the function's ability to handle piles of unequal sizes correctly.
+     """
+-    piles = [[5, 6], [7, 8, 9], [1]]
++    piles = None
+     k = 3
+     expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
+     assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
+</pre><h3>Mutant 129</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -72,7 +72,7 @@
+     Tests the function's ability to handle piles of unequal sizes correctly.
+     """
+     piles = [[5, 6], [7, 8, 9], [1]]
+-    k = 3
++    k = 4
+     expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
+     assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
+ 
+</pre><h3>Mutant 130</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -72,7 +72,7 @@
+     Tests the function's ability to handle piles of unequal sizes correctly.
+     """
+     piles = [[5, 6], [7, 8, 9], [1]]
+-    k = 3
++    k = None
+     expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
+     assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
+ 
+</pre><h3>Mutant 131</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -73,6 +73,6 @@
+     """
+     piles = [[5, 6], [7, 8, 9], [1]]
+     k = 3
+-    expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
++    expected = 9 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
+     assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
+ 
+</pre><h3>Mutant 132</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -73,6 +73,6 @@
+     """
+     piles = [[5, 6], [7, 8, 9], [1]]
+     k = 3
+-    expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
++    expected = 8 - 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
+     assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
+ 
+</pre><h3>Mutant 133</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -73,6 +73,6 @@
+     """
+     piles = [[5, 6], [7, 8, 9], [1]]
+     k = 3
+-    expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
++    expected = 8 + 10 + 6  # Optimal strategy involves taking coins from piles of different sizes
+     assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
+ 
+</pre><h3>Mutant 134</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -73,6 +73,6 @@
+     """
+     piles = [[5, 6], [7, 8, 9], [1]]
+     k = 3
+-    expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
++    expected = 8 + 9 - 6  # Optimal strategy involves taking coins from piles of different sizes
+     assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
+ 
+</pre><h3>Mutant 135</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -73,6 +73,6 @@
+     """
+     piles = [[5, 6], [7, 8, 9], [1]]
+     k = 3
+-    expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
++    expected = 8 + 9 + 7  # Optimal strategy involves taking coins from piles of different sizes
+     assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
+ 
+</pre><h3>Mutant 136</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -73,6 +73,6 @@
+     """
+     piles = [[5, 6], [7, 8, 9], [1]]
+     k = 3
+-    expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
++    expected = None  # Optimal strategy involves taking coins from piles of different sizes
+     assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
+ 
+</pre><h3>Mutant 137</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -74,5 +74,5 @@
+     piles = [[5, 6], [7, 8, 9], [1]]
+     k = 3
+     expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
+-    assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
++    assert maxCoins(piles, k) != expected, "Failed with piles of unequal sizes"
+ 
+</pre><h3>Mutant 138</h3><pre>--- ..\P44\.\tests\test_Problem44_ChatGPT.py
++++ ..\P44\.\tests\test_Problem44_ChatGPT.py
+@@ -74,5 +74,5 @@
+     piles = [[5, 6], [7, 8, 9], [1]]
+     k = 3
+     expected = 8 + 9 + 6  # Optimal strategy involves taking coins from piles of different sizes
+-    assert maxCoins(piles, k) == expected, "Failed with piles of unequal sizes"
++    assert maxCoins(piles, k) == expected, "XXFailed with piles of unequal sizesXX"
+ 
+</pre></body></html>

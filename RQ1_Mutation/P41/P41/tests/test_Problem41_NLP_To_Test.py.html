@@ -1,0 +1,21 @@
+<html><body><h1>..\P41\.\tests\test_Problem41_NLP_To_Test.py</h1>Killed 28 out of 30 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 100</h3><pre>--- ..\P41\.\tests\test_Problem41_NLP_To_Test.py
++++ ..\P41\.\tests\test_Problem41_NLP_To_Test.py
+@@ -1,7 +1,7 @@
+ import pytest
+ from Problem41_GeneratedSolution import maxCoins as max_coins  # Assuming the function is named 'max_coins' and is in 'solution.py'
+ 
+-@pytest.mark.parametrize("nums, expected", [
++@pytest.mark.parametrize("XXnums, expectedXX", [
+     ([3, 1, 5, 8], 167),  # Example 1 from the problem statement
+     ([1, 5], 10),  # Example 2 from the problem statement
+     ([], 0),  # No balloons to burst should return 0
+</pre><h3>Mutant 129</h3><pre>--- ..\P41\.\tests\test_Problem41_NLP_To_Test.py
++++ ..\P41\.\tests\test_Problem41_NLP_To_Test.py
+@@ -26,5 +26,5 @@
+     nums (list of int): The numbers on the balloons, representing potential coins collected when bursting.
+     expected (int): The expected maximum coins collectible from the given array of balloons.
+     """
+-    assert max_coins(nums) == expected, f"Test failed for nums={nums}"
++    assert max_coins(nums) == expected, f"XXTest failed for nums={nums}XX"
+ 
+</pre></body></html>

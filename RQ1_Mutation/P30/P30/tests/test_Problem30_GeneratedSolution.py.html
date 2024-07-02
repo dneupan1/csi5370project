@@ -1,0 +1,100 @@
+<html><body><h1>..\P30\.\tests\test_Problem30_GeneratedSolution.py</h1>Killed 25 out of 34 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 143</h3><pre>--- ..\P30\.\tests\test_Problem30_GeneratedSolution.py
++++ ..\P30\.\tests\test_Problem30_GeneratedSolution.py
+@@ -4,7 +4,7 @@
+ import Problem30_GeneratedSolution as module_0
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_0():
+     str_0 = "mHK_&I5G0o>3"
+     module_0.exist(str_0, str_0)
+</pre><h3>Mutant 145</h3><pre>--- ..\P30\.\tests\test_Problem30_GeneratedSolution.py
++++ ..\P30\.\tests\test_Problem30_GeneratedSolution.py
+@@ -6,7 +6,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+-    str_0 = "mHK_&I5G0o>3"
++    str_0 = "XXmHK_&I5G0o>3XX"
+     module_0.exist(str_0, str_0)
+ 
+ 
+</pre><h3>Mutant 146</h3><pre>--- ..\P30\.\tests\test_Problem30_GeneratedSolution.py
++++ ..\P30\.\tests\test_Problem30_GeneratedSolution.py
+@@ -6,7 +6,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+-    str_0 = "mHK_&I5G0o>3"
++    str_0 = None
+     module_0.exist(str_0, str_0)
+ 
+ 
+</pre><h3>Mutant 148</h3><pre>--- ..\P30\.\tests\test_Problem30_GeneratedSolution.py
++++ ..\P30\.\tests\test_Problem30_GeneratedSolution.py
+@@ -12,7 +12,7 @@
+ 
+ def test_case_1():
+     set_0 = set()
+-    var_0 = module_0.exist(set_0, set_0)
++    var_0 = None
+ 
+ 
+ def test_case_2():
+</pre><h3>Mutant 156</h3><pre>--- ..\P30\.\tests\test_Problem30_GeneratedSolution.py
++++ ..\P30\.\tests\test_Problem30_GeneratedSolution.py
+@@ -24,7 +24,7 @@
+ 
+ 
+ def test_case_3():
+-    str_0 = "WM'"
++    str_0 = "XXWM'XX"
+     list_0 = [str_0, str_0, str_0]
+     list_1 = [str_0, list_0]
+     var_0 = module_0.exist(list_1, list_0)
+</pre><h3>Mutant 163</h3><pre>--- ..\P30\.\tests\test_Problem30_GeneratedSolution.py
++++ ..\P30\.\tests\test_Problem30_GeneratedSolution.py
+@@ -32,7 +32,7 @@
+ 
+ 
+ def test_case_4():
+-    str_0 = "hQ'"
++    str_0 = "XXhQ'XX"
+     list_0 = [str_0, str_0, str_0, str_0]
+     list_1 = [list_0]
+     var_0 = module_0.exist(list_1, list_0)
+</pre><h3>Mutant 164</h3><pre>--- ..\P30\.\tests\test_Problem30_GeneratedSolution.py
++++ ..\P30\.\tests\test_Problem30_GeneratedSolution.py
+@@ -32,7 +32,7 @@
+ 
+ 
+ def test_case_4():
+-    str_0 = "hQ'"
++    str_0 = None
+     list_0 = [str_0, str_0, str_0, str_0]
+     list_1 = [list_0]
+     var_0 = module_0.exist(list_1, list_0)
+</pre><h3>Mutant 170</h3><pre>--- ..\P30\.\tests\test_Problem30_GeneratedSolution.py
++++ ..\P30\.\tests\test_Problem30_GeneratedSolution.py
+@@ -40,7 +40,7 @@
+ 
+ 
+ def test_case_5():
+-    str_0 = "/4WM'"
++    str_0 = "XX/4WM'XX"
+     list_0 = [str_0, str_0, str_0, str_0, str_0, str_0, str_0]
+     list_1 = [str_0, list_0, list_0]
+     var_0 = module_0.exist(list_1, list_0)
+</pre><h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 172</h3><pre>--- ..\P30\.\tests\test_Problem30_GeneratedSolution.py
++++ ..\P30\.\tests\test_Problem30_GeneratedSolution.py
+@@ -41,7 +41,7 @@
+ 
+ def test_case_5():
+     str_0 = "/4WM'"
+-    list_0 = [str_0, str_0, str_0, str_0, str_0, str_0, str_0]
++    list_0 = None
+     list_1 = [str_0, list_0, list_0]
+     var_0 = module_0.exist(list_1, list_0)
+     assert var_0 is True
+</pre></body></html>

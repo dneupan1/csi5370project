@@ -1,0 +1,54 @@
+<html><body><h1>..\P10\.\tests\test_Problem10_ChatGPT.py</h1>Killed 6 out of 11 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 55</h3><pre>--- ..\P10\.\tests\test_Problem10_ChatGPT.py
++++ ..\P10\.\tests\test_Problem10_ChatGPT.py
+@@ -6,7 +6,7 @@
+     Test grid where no path exists to reach the end.
+     """
+     grid = [
+-        [1, -1],
++        [2, -1],
+         [-1, 1]
+     ]
+     expected = 0  # No cherries can be picked since there's no path to the end.
+</pre><h3>Mutant 57</h3><pre>--- ..\P10\.\tests\test_Problem10_ChatGPT.py
++++ ..\P10\.\tests\test_Problem10_ChatGPT.py
+@@ -6,7 +6,7 @@
+     Test grid where no path exists to reach the end.
+     """
+     grid = [
+-        [1, -1],
++        [1, -2],
+         [-1, 1]
+     ]
+     expected = 0  # No cherries can be picked since there's no path to the end.
+</pre><h3>Mutant 59</h3><pre>--- ..\P10\.\tests\test_Problem10_ChatGPT.py
++++ ..\P10\.\tests\test_Problem10_ChatGPT.py
+@@ -7,7 +7,7 @@
+     """
+     grid = [
+         [1, -1],
+-        [-1, 1]
++        [-2, 1]
+     ]
+     expected = 0  # No cherries can be picked since there's no path to the end.
+     assert cherryPickup(grid) == expected, "Failed to handle grid with no valid path."
+</pre><h3>Mutant 60</h3><pre>--- ..\P10\.\tests\test_Problem10_ChatGPT.py
++++ ..\P10\.\tests\test_Problem10_ChatGPT.py
+@@ -7,7 +7,7 @@
+     """
+     grid = [
+         [1, -1],
+-        [-1, 1]
++        [-1, 2]
+     ]
+     expected = 0  # No cherries can be picked since there's no path to the end.
+     assert cherryPickup(grid) == expected, "Failed to handle grid with no valid path."
+</pre><h3>Mutant 65</h3><pre>--- ..\P10\.\tests\test_Problem10_ChatGPT.py
++++ ..\P10\.\tests\test_Problem10_ChatGPT.py
+@@ -10,5 +10,5 @@
+         [-1, 1]
+     ]
+     expected = 0  # No cherries can be picked since there's no path to the end.
+-    assert cherryPickup(grid) == expected, "Failed to handle grid with no valid path."
++    assert cherryPickup(grid) == expected, "XXFailed to handle grid with no valid path.XX"
+ 
+</pre></body></html>

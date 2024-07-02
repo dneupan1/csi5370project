@@ -1,0 +1,130 @@
+<html><body><h1>..\P39\.\tests\test_Problem39_GeneratedSolution.py</h1>Killed 9 out of 21 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 127</h3><pre>--- ..\P39\.\tests\test_Problem39_GeneratedSolution.py
++++ ..\P39\.\tests\test_Problem39_GeneratedSolution.py
+@@ -5,7 +5,7 @@
+ 
+ 
+ def test_case_0():
+-    str_0 = "c_]Vz"
++    str_0 = "XXc_]VzXX"
+     var_0 = module_0.removeInvalidParentheses(str_0)
+ 
+ 
+</pre><h3>Mutant 129</h3><pre>--- ..\P39\.\tests\test_Problem39_GeneratedSolution.py
++++ ..\P39\.\tests\test_Problem39_GeneratedSolution.py
+@@ -6,7 +6,7 @@
+ 
+ def test_case_0():
+     str_0 = "c_]Vz"
+-    var_0 = module_0.removeInvalidParentheses(str_0)
++    var_0 = None
+ 
+ 
+ @pytest.mark.xfail(strict=True)
+</pre><h3>Mutant 130</h3><pre>--- ..\P39\.\tests\test_Problem39_GeneratedSolution.py
++++ ..\P39\.\tests\test_Problem39_GeneratedSolution.py
+@@ -9,7 +9,7 @@
+     var_0 = module_0.removeInvalidParentheses(str_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_1():
+     none_type_0 = None
+     module_0.removeInvalidParentheses(none_type_0)
+</pre><h3>Mutant 133</h3><pre>--- ..\P39\.\tests\test_Problem39_GeneratedSolution.py
++++ ..\P39\.\tests\test_Problem39_GeneratedSolution.py
+@@ -16,7 +16,7 @@
+ 
+ 
+ def test_case_2():
+-    str_0 = "75()"
++    str_0 = "XX75()XX"
+     var_0 = module_0.removeInvalidParentheses(str_0)
+ 
+ 
+</pre><h3>Mutant 135</h3><pre>--- ..\P39\.\tests\test_Problem39_GeneratedSolution.py
++++ ..\P39\.\tests\test_Problem39_GeneratedSolution.py
+@@ -17,7 +17,7 @@
+ 
+ def test_case_2():
+     str_0 = "75()"
+-    var_0 = module_0.removeInvalidParentheses(str_0)
++    var_0 = None
+ 
+ 
+ def test_case_3():
+</pre><h3>Mutant 136</h3><pre>--- ..\P39\.\tests\test_Problem39_GeneratedSolution.py
++++ ..\P39\.\tests\test_Problem39_GeneratedSolution.py
+@@ -21,7 +21,7 @@
+ 
+ 
+ def test_case_3():
+-    str_0 = "5()(YF"
++    str_0 = "XX5()(YFXX"
+     var_0 = module_0.removeInvalidParentheses(str_0)
+ 
+ 
+</pre><h3>Mutant 138</h3><pre>--- ..\P39\.\tests\test_Problem39_GeneratedSolution.py
++++ ..\P39\.\tests\test_Problem39_GeneratedSolution.py
+@@ -22,7 +22,7 @@
+ 
+ def test_case_3():
+     str_0 = "5()(YF"
+-    var_0 = module_0.removeInvalidParentheses(str_0)
++    var_0 = None
+ 
+ 
+ def test_case_4():
+</pre><h3>Mutant 139</h3><pre>--- ..\P39\.\tests\test_Problem39_GeneratedSolution.py
++++ ..\P39\.\tests\test_Problem39_GeneratedSolution.py
+@@ -26,7 +26,7 @@
+ 
+ 
+ def test_case_4():
+-    str_0 = "+.z)"
++    str_0 = "XX+.z)XX"
+     var_0 = module_0.removeInvalidParentheses(str_0)
+ 
+ 
+</pre><h3>Mutant 141</h3><pre>--- ..\P39\.\tests\test_Problem39_GeneratedSolution.py
++++ ..\P39\.\tests\test_Problem39_GeneratedSolution.py
+@@ -27,7 +27,7 @@
+ 
+ def test_case_4():
+     str_0 = "+.z)"
+-    var_0 = module_0.removeInvalidParentheses(str_0)
++    var_0 = None
+ 
+ 
+ def test_case_5():
+</pre><h3>Mutant 142</h3><pre>--- ..\P39\.\tests\test_Problem39_GeneratedSolution.py
++++ ..\P39\.\tests\test_Problem39_GeneratedSolution.py
+@@ -31,7 +31,7 @@
+ 
+ 
+ def test_case_5():
+-    str_0 = "5(s)\\\r`)^\r6l"
++    str_0 = "XX5(s)\\\r`)^\r6lXX"
+     var_0 = module_0.removeInvalidParentheses(str_0)
+     list_0 = [str_0]
+     var_1 = module_0.removeInvalidParentheses(var_0)
+</pre><h3>Mutant 146</h3><pre>--- ..\P39\.\tests\test_Problem39_GeneratedSolution.py
++++ ..\P39\.\tests\test_Problem39_GeneratedSolution.py
+@@ -34,6 +34,6 @@
+     str_0 = "5(s)\\\r`)^\r6l"
+     var_0 = module_0.removeInvalidParentheses(str_0)
+     list_0 = [str_0]
+-    var_1 = module_0.removeInvalidParentheses(var_0)
++    var_1 = None
+     var_2 = module_0.removeInvalidParentheses(list_0)
+ 
+</pre><h3>Mutant 147</h3><pre>--- ..\P39\.\tests\test_Problem39_GeneratedSolution.py
++++ ..\P39\.\tests\test_Problem39_GeneratedSolution.py
+@@ -35,5 +35,5 @@
+     var_0 = module_0.removeInvalidParentheses(str_0)
+     list_0 = [str_0]
+     var_1 = module_0.removeInvalidParentheses(var_0)
+-    var_2 = module_0.removeInvalidParentheses(list_0)
++    var_2 = None
+ 
+</pre></body></html>

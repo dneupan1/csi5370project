@@ -1,0 +1,78 @@
+<html><body><h1>..\P50\.\Problem50_GeneratedSolution.py</h1>Killed 23 out of 30 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 13</h3><pre>--- ..\P50\.\Problem50_GeneratedSolution.py
++++ ..\P50\.\Problem50_GeneratedSolution.py
+@@ -37,7 +37,7 @@
+             return True
+ 
+         # Try all possible next jumps: k-1, k, k+1
+-        for nextJump in [jump - 1, jump, jump + 1]:
++        for nextJump in [jump + 1, jump, jump + 1]:
+             nextPosition = position + nextJump
+             if nextJump > 0 and nextPosition in stoneSet and dfs(nextPosition, nextJump):
+                 memo[(position, jump)] = True
+</pre><h3>Mutant 14</h3><pre>--- ..\P50\.\Problem50_GeneratedSolution.py
++++ ..\P50\.\Problem50_GeneratedSolution.py
+@@ -37,7 +37,7 @@
+             return True
+ 
+         # Try all possible next jumps: k-1, k, k+1
+-        for nextJump in [jump - 1, jump, jump + 1]:
++        for nextJump in [jump - 2, jump, jump + 1]:
+             nextPosition = position + nextJump
+             if nextJump > 0 and nextPosition in stoneSet and dfs(nextPosition, nextJump):
+                 memo[(position, jump)] = True
+</pre><h3>Mutant 20</h3><pre>--- ..\P50\.\Problem50_GeneratedSolution.py
++++ ..\P50\.\Problem50_GeneratedSolution.py
+@@ -39,7 +39,7 @@
+         # Try all possible next jumps: k-1, k, k+1
+         for nextJump in [jump - 1, jump, jump + 1]:
+             nextPosition = position + nextJump
+-            if nextJump > 0 and nextPosition in stoneSet and dfs(nextPosition, nextJump):
++            if nextJump > 1 and nextPosition in stoneSet and dfs(nextPosition, nextJump):
+                 memo[(position, jump)] = True
+                 return True
+ 
+</pre><h3>Mutant 23</h3><pre>--- ..\P50\.\Problem50_GeneratedSolution.py
++++ ..\P50\.\Problem50_GeneratedSolution.py
+@@ -40,7 +40,7 @@
+         for nextJump in [jump - 1, jump, jump + 1]:
+             nextPosition = position + nextJump
+             if nextJump > 0 and nextPosition in stoneSet and dfs(nextPosition, nextJump):
+-                memo[(position, jump)] = True
++                memo[(position, jump)] = False
+                 return True
+ 
+         # If no path found, memoize and return False.
+</pre><h3>Mutant 24</h3><pre>--- ..\P50\.\Problem50_GeneratedSolution.py
++++ ..\P50\.\Problem50_GeneratedSolution.py
+@@ -40,7 +40,7 @@
+         for nextJump in [jump - 1, jump, jump + 1]:
+             nextPosition = position + nextJump
+             if nextJump > 0 and nextPosition in stoneSet and dfs(nextPosition, nextJump):
+-                memo[(position, jump)] = True
++                memo[(position, jump)] = None
+                 return True
+ 
+         # If no path found, memoize and return False.
+</pre><h3>Mutant 27</h3><pre>--- ..\P50\.\Problem50_GeneratedSolution.py
++++ ..\P50\.\Problem50_GeneratedSolution.py
+@@ -44,7 +44,7 @@
+                 return True
+ 
+         # If no path found, memoize and return False.
+-        memo[(position, jump)] = False
++        memo[(position, jump)] = None
+         return False
+ 
+     # Initial call to dfs from the first stone with an initial jump of 1.
+</pre><h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 21</h3><pre>--- ..\P50\.\Problem50_GeneratedSolution.py
++++ ..\P50\.\Problem50_GeneratedSolution.py
+@@ -39,7 +39,7 @@
+         # Try all possible next jumps: k-1, k, k+1
+         for nextJump in [jump - 1, jump, jump + 1]:
+             nextPosition = position + nextJump
+-            if nextJump > 0 and nextPosition in stoneSet and dfs(nextPosition, nextJump):
++            if nextJump > 0 and nextPosition not in stoneSet and dfs(nextPosition, nextJump):
+                 memo[(position, jump)] = True
+                 return True
+ 
+</pre></body></html>

@@ -1,0 +1,22 @@
+<html><body><h1>..\P7\.\tests\test_Problem7_NLP_To_Test.py</h1>Killed 45 out of 47 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 244</h3><pre>--- ..\P7\.\tests\test_Problem7_NLP_To_Test.py
++++ ..\P7\.\tests\test_Problem7_NLP_To_Test.py
+@@ -22,7 +22,7 @@
+         current = current.next
+     return elements
+ 
+-@pytest.mark.parametrize("input_list, expected_output", [
++@pytest.mark.parametrize("XXinput_list, expected_outputXX", [
+     ([1, 2, 3, 4], [2, 1, 4, 3]),
+     ([], []),
+     ([1], [1]),
+</pre><h3>Mutant 280</h3><pre>--- ..\P7\.\tests\test_Problem7_NLP_To_Test.py
++++ ..\P7\.\tests\test_Problem7_NLP_To_Test.py
+@@ -41,6 +41,6 @@
+     # Convert the result back to a list to verify correct order
+     result_list = linked_list_to_list(swapped_head)
+     # Assert the result matches the expected output
+-    assert result_list == expected_output, f"Failed for input {input_list}"
++    assert result_list == expected_output, f"XXFailed for input {input_list}XX"
+ 
+ 
+</pre></body></html>

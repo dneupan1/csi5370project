@@ -1,0 +1,359 @@
+<html><body><h1>..\P40\.\tests\test_Problem40_ChatGPT.py</h1>Killed 47 out of 80 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 98</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -9,7 +9,7 @@
+     This does not directly test the internal structure but ensures the sumRange function
+     works correctly immediately after initialization.
+     """
+-    nums = [1, 3, 5]
++    nums = [2, 3, 5]
+     numArray = NumArray(nums)
+     assert numArray.sumRange(0, 2) == sum(nums), "Failed to correctly initialize the segment tree"
+ 
+</pre><h3>Mutant 99</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -9,7 +9,7 @@
+     This does not directly test the internal structure but ensures the sumRange function
+     works correctly immediately after initialization.
+     """
+-    nums = [1, 3, 5]
++    nums = [1, 4, 5]
+     numArray = NumArray(nums)
+     assert numArray.sumRange(0, 2) == sum(nums), "Failed to correctly initialize the segment tree"
+ 
+</pre><h3>Mutant 100</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -9,7 +9,7 @@
+     This does not directly test the internal structure but ensures the sumRange function
+     works correctly immediately after initialization.
+     """
+-    nums = [1, 3, 5]
++    nums = [1, 3, 6]
+     numArray = NumArray(nums)
+     assert numArray.sumRange(0, 2) == sum(nums), "Failed to correctly initialize the segment tree"
+ 
+</pre><h3>Mutant 104</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -11,7 +11,7 @@
+     """
+     nums = [1, 3, 5]
+     numArray = NumArray(nums)
+-    assert numArray.sumRange(0, 2) == sum(nums), "Failed to correctly initialize the segment tree"
++    assert numArray.sumRange(0, 3) == sum(nums), "Failed to correctly initialize the segment tree"
+ 
+ # Test updating a single element and querying a range
+ def test_update_and_query():
+</pre><h3>Mutant 106</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -11,7 +11,7 @@
+     """
+     nums = [1, 3, 5]
+     numArray = NumArray(nums)
+-    assert numArray.sumRange(0, 2) == sum(nums), "Failed to correctly initialize the segment tree"
++    assert numArray.sumRange(0, 2) == sum(nums), "XXFailed to correctly initialize the segment treeXX"
+ 
+ # Test updating a single element and querying a range
+ def test_update_and_query():
+</pre><h3>Mutant 108</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -19,7 +19,7 @@
+     Test updating a single element in the array and then querying a range to ensure the update
+     is reflected in the range sum.
+     """
+-    nums = [1, 3, 5]
++    nums = [1, 4, 5]
+     numArray = NumArray(nums)
+     numArray.update(1, 2)  # Update index 1 from 3 to 2
+     assert numArray.sumRange(0, 2) == 8, "Failed to reflect update in the range sum"
+</pre><h3>Mutant 115</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -22,7 +22,7 @@
+     nums = [1, 3, 5]
+     numArray = NumArray(nums)
+     numArray.update(1, 2)  # Update index 1 from 3 to 2
+-    assert numArray.sumRange(0, 2) == 8, "Failed to reflect update in the range sum"
++    assert numArray.sumRange(0, 3) == 8, "Failed to reflect update in the range sum"
+ 
+ # Test querying the sum of the entire array
+ def test_sum_entire_array():
+</pre><h3>Mutant 118</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -22,7 +22,7 @@
+     nums = [1, 3, 5]
+     numArray = NumArray(nums)
+     numArray.update(1, 2)  # Update index 1 from 3 to 2
+-    assert numArray.sumRange(0, 2) == 8, "Failed to reflect update in the range sum"
++    assert numArray.sumRange(0, 2) == 8, "XXFailed to reflect update in the range sumXX"
+ 
+ # Test querying the sum of the entire array
+ def test_sum_entire_array():
+</pre><h3>Mutant 119</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -29,7 +29,7 @@
+     """
+     Tests querying the sum of the entire array to ensure the segment tree covers the full array.
+     """
+-    nums = [1, 3, 5, 7, 9]
++    nums = [2, 3, 5, 7, 9]
+     numArray = NumArray(nums)
+     assert numArray.sumRange(0, len(nums) - 1) == sum(nums), "Failed to sum the entire array correctly"
+ 
+</pre><h3>Mutant 120</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -29,7 +29,7 @@
+     """
+     Tests querying the sum of the entire array to ensure the segment tree covers the full array.
+     """
+-    nums = [1, 3, 5, 7, 9]
++    nums = [1, 4, 5, 7, 9]
+     numArray = NumArray(nums)
+     assert numArray.sumRange(0, len(nums) - 1) == sum(nums), "Failed to sum the entire array correctly"
+ 
+</pre><h3>Mutant 121</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -29,7 +29,7 @@
+     """
+     Tests querying the sum of the entire array to ensure the segment tree covers the full array.
+     """
+-    nums = [1, 3, 5, 7, 9]
++    nums = [1, 3, 6, 7, 9]
+     numArray = NumArray(nums)
+     assert numArray.sumRange(0, len(nums) - 1) == sum(nums), "Failed to sum the entire array correctly"
+ 
+</pre><h3>Mutant 122</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -29,7 +29,7 @@
+     """
+     Tests querying the sum of the entire array to ensure the segment tree covers the full array.
+     """
+-    nums = [1, 3, 5, 7, 9]
++    nums = [1, 3, 5, 8, 9]
+     numArray = NumArray(nums)
+     assert numArray.sumRange(0, len(nums) - 1) == sum(nums), "Failed to sum the entire array correctly"
+ 
+</pre><h3>Mutant 123</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -29,7 +29,7 @@
+     """
+     Tests querying the sum of the entire array to ensure the segment tree covers the full array.
+     """
+-    nums = [1, 3, 5, 7, 9]
++    nums = [1, 3, 5, 7, 10]
+     numArray = NumArray(nums)
+     assert numArray.sumRange(0, len(nums) - 1) == sum(nums), "Failed to sum the entire array correctly"
+ 
+</pre><h3>Mutant 127</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -31,7 +31,7 @@
+     """
+     nums = [1, 3, 5, 7, 9]
+     numArray = NumArray(nums)
+-    assert numArray.sumRange(0, len(nums) - 1) == sum(nums), "Failed to sum the entire array correctly"
++    assert numArray.sumRange(0, len(nums) + 1) == sum(nums), "Failed to sum the entire array correctly"
+ 
+ # Test querying a sub-range
+ def test_subrange_query():
+</pre><h3>Mutant 130</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -31,7 +31,7 @@
+     """
+     nums = [1, 3, 5, 7, 9]
+     numArray = NumArray(nums)
+-    assert numArray.sumRange(0, len(nums) - 1) == sum(nums), "Failed to sum the entire array correctly"
++    assert numArray.sumRange(0, len(nums) - 1) == sum(nums), "XXFailed to sum the entire array correctlyXX"
+ 
+ # Test querying a sub-range
+ def test_subrange_query():
+</pre><h3>Mutant 131</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -39,7 +39,7 @@
+     Tests querying a sub-range of the array to ensure intermediate nodes in the segment tree
+     correctly represent the sums of their corresponding sub-arrays.
+     """
+-    nums = [1, 3, 5, 7, 9]
++    nums = [2, 3, 5, 7, 9]
+     numArray = NumArray(nums)
+     assert numArray.sumRange(1, 3) == sum(nums[1:4]), "Failed to query a sub-range correctly"
+ 
+</pre><h3>Mutant 132</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -39,7 +39,7 @@
+     Tests querying a sub-range of the array to ensure intermediate nodes in the segment tree
+     correctly represent the sums of their corresponding sub-arrays.
+     """
+-    nums = [1, 3, 5, 7, 9]
++    nums = [1, 4, 5, 7, 9]
+     numArray = NumArray(nums)
+     assert numArray.sumRange(1, 3) == sum(nums[1:4]), "Failed to query a sub-range correctly"
+ 
+</pre><h3>Mutant 133</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -39,7 +39,7 @@
+     Tests querying a sub-range of the array to ensure intermediate nodes in the segment tree
+     correctly represent the sums of their corresponding sub-arrays.
+     """
+-    nums = [1, 3, 5, 7, 9]
++    nums = [1, 3, 6, 7, 9]
+     numArray = NumArray(nums)
+     assert numArray.sumRange(1, 3) == sum(nums[1:4]), "Failed to query a sub-range correctly"
+ 
+</pre><h3>Mutant 134</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -39,7 +39,7 @@
+     Tests querying a sub-range of the array to ensure intermediate nodes in the segment tree
+     correctly represent the sums of their corresponding sub-arrays.
+     """
+-    nums = [1, 3, 5, 7, 9]
++    nums = [1, 3, 5, 8, 9]
+     numArray = NumArray(nums)
+     assert numArray.sumRange(1, 3) == sum(nums[1:4]), "Failed to query a sub-range correctly"
+ 
+</pre><h3>Mutant 135</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -39,7 +39,7 @@
+     Tests querying a sub-range of the array to ensure intermediate nodes in the segment tree
+     correctly represent the sums of their corresponding sub-arrays.
+     """
+-    nums = [1, 3, 5, 7, 9]
++    nums = [1, 3, 5, 7, 10]
+     numArray = NumArray(nums)
+     assert numArray.sumRange(1, 3) == sum(nums[1:4]), "Failed to query a sub-range correctly"
+ 
+</pre><h3>Mutant 143</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -41,7 +41,7 @@
+     """
+     nums = [1, 3, 5, 7, 9]
+     numArray = NumArray(nums)
+-    assert numArray.sumRange(1, 3) == sum(nums[1:4]), "Failed to query a sub-range correctly"
++    assert numArray.sumRange(1, 3) == sum(nums[1:4]), "XXFailed to query a sub-range correctlyXX"
+ 
+ # Test updating the first and last elements
+ def test_update_edges():
+</pre><h3>Mutant 144</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -49,7 +49,7 @@
+     Tests updating the first and last elements in the array to ensure the segment tree
+     correctly handles updates at the edges of the array.
+     """
+-    nums = [1, 3, 5, 7, 9]
++    nums = [2, 3, 5, 7, 9]
+     numArray = NumArray(nums)
+     numArray.update(0, 10)  # Update the first element
+     numArray.update(len(nums) - 1, 20)  # Update the last element
+</pre><h3>Mutant 145</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -49,7 +49,7 @@
+     Tests updating the first and last elements in the array to ensure the segment tree
+     correctly handles updates at the edges of the array.
+     """
+-    nums = [1, 3, 5, 7, 9]
++    nums = [1, 4, 5, 7, 9]
+     numArray = NumArray(nums)
+     numArray.update(0, 10)  # Update the first element
+     numArray.update(len(nums) - 1, 20)  # Update the last element
+</pre><h3>Mutant 146</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -49,7 +49,7 @@
+     Tests updating the first and last elements in the array to ensure the segment tree
+     correctly handles updates at the edges of the array.
+     """
+-    nums = [1, 3, 5, 7, 9]
++    nums = [1, 3, 6, 7, 9]
+     numArray = NumArray(nums)
+     numArray.update(0, 10)  # Update the first element
+     numArray.update(len(nums) - 1, 20)  # Update the last element
+</pre><h3>Mutant 147</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -49,7 +49,7 @@
+     Tests updating the first and last elements in the array to ensure the segment tree
+     correctly handles updates at the edges of the array.
+     """
+-    nums = [1, 3, 5, 7, 9]
++    nums = [1, 3, 5, 8, 9]
+     numArray = NumArray(nums)
+     numArray.update(0, 10)  # Update the first element
+     numArray.update(len(nums) - 1, 20)  # Update the last element
+</pre><h3>Mutant 148</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -49,7 +49,7 @@
+     Tests updating the first and last elements in the array to ensure the segment tree
+     correctly handles updates at the edges of the array.
+     """
+-    nums = [1, 3, 5, 7, 9]
++    nums = [1, 3, 5, 7, 10]
+     numArray = NumArray(nums)
+     numArray.update(0, 10)  # Update the first element
+     numArray.update(len(nums) - 1, 20)  # Update the last element
+</pre><h3>Mutant 153</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -52,7 +52,7 @@
+     nums = [1, 3, 5, 7, 9]
+     numArray = NumArray(nums)
+     numArray.update(0, 10)  # Update the first element
+-    numArray.update(len(nums) - 1, 20)  # Update the last element
++    numArray.update(len(nums) + 1, 20)  # Update the last element
+     assert numArray.sumRange(0, len(nums) - 1) == 10 + sum(nums[1:-1]) + 20, "Failed to update the edges correctly"
+ 
+ # Edge case: Test with a single-element array
+</pre><h3>Mutant 157</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -53,7 +53,7 @@
+     numArray = NumArray(nums)
+     numArray.update(0, 10)  # Update the first element
+     numArray.update(len(nums) - 1, 20)  # Update the last element
+-    assert numArray.sumRange(0, len(nums) - 1) == 10 + sum(nums[1:-1]) + 20, "Failed to update the edges correctly"
++    assert numArray.sumRange(0, len(nums) + 1) == 10 + sum(nums[1:-1]) + 20, "Failed to update the edges correctly"
+ 
+ # Edge case: Test with a single-element array
+ def test_single_element():
+</pre><h3>Mutant 167</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -53,7 +53,7 @@
+     numArray = NumArray(nums)
+     numArray.update(0, 10)  # Update the first element
+     numArray.update(len(nums) - 1, 20)  # Update the last element
+-    assert numArray.sumRange(0, len(nums) - 1) == 10 + sum(nums[1:-1]) + 20, "Failed to update the edges correctly"
++    assert numArray.sumRange(0, len(nums) - 1) == 10 + sum(nums[1:-1]) + 20, "XXFailed to update the edges correctlyXX"
+ 
+ # Edge case: Test with a single-element array
+ def test_single_element():
+</pre><h3>Mutant 168</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -61,7 +61,7 @@
+     Tests initializing, updating, and querying a NumArray with a single element,
+     to ensure the segment tree correctly handles arrays of size one.
+     """
+-    nums = [10]
++    nums = [11]
+     numArray = NumArray(nums)
+     numArray.update(0, 5)
+     assert numArray.sumRange(0, 0) == 5, "Failed with a single-element array"
+</pre><h3>Mutant 171</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -63,6 +63,6 @@
+     """
+     nums = [10]
+     numArray = NumArray(nums)
+-    numArray.update(0, 5)
++    numArray.update(1, 5)
+     assert numArray.sumRange(0, 0) == 5, "Failed with a single-element array"
+ 
+</pre><h3>Mutant 174</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -64,5 +64,5 @@
+     nums = [10]
+     numArray = NumArray(nums)
+     numArray.update(0, 5)
+-    assert numArray.sumRange(0, 0) == 5, "Failed with a single-element array"
++    assert numArray.sumRange(0, 1) == 5, "Failed with a single-element array"
+ 
+</pre><h3>Mutant 177</h3><pre>--- ..\P40\.\tests\test_Problem40_ChatGPT.py
++++ ..\P40\.\tests\test_Problem40_ChatGPT.py
+@@ -64,5 +64,5 @@
+     nums = [10]
+     numArray = NumArray(nums)
+     numArray.update(0, 5)
+-    assert numArray.sumRange(0, 0) == 5, "Failed with a single-element array"
++    assert numArray.sumRange(0, 0) == 5, "XXFailed with a single-element arrayXX"
+ 
+</pre></body></html>

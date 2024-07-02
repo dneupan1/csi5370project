@@ -1,0 +1,175 @@
+<html><body><h1>..\P10\.\tests\test_Problem10_NLP_To_Test.py</h1>Killed 27 out of 43 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 66</h3><pre>--- ..\P10\.\tests\test_Problem10_NLP_To_Test.py
++++ ..\P10\.\tests\test_Problem10_NLP_To_Test.py
+@@ -2,7 +2,7 @@
+ from Problem10_GeneratedSolution import cherryPickup as max_cherries
+ 
+ 
+-@pytest.mark.parametrize("grid, expected", [
++@pytest.mark.parametrize("XXgrid, expectedXX", [
+     # Basic examples provided in the problem statement
+     ([[0,1,-1], [1,0,-1], [1,1,1]], 5),
+     ([[1,1,-1], [1,-1,1], [-1,1,1]], 0),
+</pre><h3>Mutant 69</h3><pre>--- ..\P10\.\tests\test_Problem10_NLP_To_Test.py
++++ ..\P10\.\tests\test_Problem10_NLP_To_Test.py
+@@ -4,7 +4,7 @@
+ 
+ @pytest.mark.parametrize("grid, expected", [
+     # Basic examples provided in the problem statement
+-    ([[0,1,-1], [1,0,-1], [1,1,1]], 5),
++    ([[0,1,+1], [1,0,-1], [1,1,1]], 5),
+     ([[1,1,-1], [1,-1,1], [-1,1,1]], 0),
+ 
+     # Edge cases
+</pre><h3>Mutant 70</h3><pre>--- ..\P10\.\tests\test_Problem10_NLP_To_Test.py
++++ ..\P10\.\tests\test_Problem10_NLP_To_Test.py
+@@ -4,7 +4,7 @@
+ 
+ @pytest.mark.parametrize("grid, expected", [
+     # Basic examples provided in the problem statement
+-    ([[0,1,-1], [1,0,-1], [1,1,1]], 5),
++    ([[0,1,-2], [1,0,-1], [1,1,1]], 5),
+     ([[1,1,-1], [1,-1,1], [-1,1,1]], 0),
+ 
+     # Edge cases
+</pre><h3>Mutant 74</h3><pre>--- ..\P10\.\tests\test_Problem10_NLP_To_Test.py
++++ ..\P10\.\tests\test_Problem10_NLP_To_Test.py
+@@ -4,7 +4,7 @@
+ 
+ @pytest.mark.parametrize("grid, expected", [
+     # Basic examples provided in the problem statement
+-    ([[0,1,-1], [1,0,-1], [1,1,1]], 5),
++    ([[0,1,-1], [1,0,-2], [1,1,1]], 5),
+     ([[1,1,-1], [1,-1,1], [-1,1,1]], 0),
+ 
+     # Edge cases
+</pre><h3>Mutant 79</h3><pre>--- ..\P10\.\tests\test_Problem10_NLP_To_Test.py
++++ ..\P10\.\tests\test_Problem10_NLP_To_Test.py
+@@ -5,7 +5,7 @@
+ @pytest.mark.parametrize("grid, expected", [
+     # Basic examples provided in the problem statement
+     ([[0,1,-1], [1,0,-1], [1,1,1]], 5),
+-    ([[1,1,-1], [1,-1,1], [-1,1,1]], 0),
++    ([[2,1,-1], [1,-1,1], [-1,1,1]], 0),
+ 
+     # Edge cases
+     ([[1]], 1),  # Smallest grid possible, with only one cherry
+</pre><h3>Mutant 80</h3><pre>--- ..\P10\.\tests\test_Problem10_NLP_To_Test.py
++++ ..\P10\.\tests\test_Problem10_NLP_To_Test.py
+@@ -5,7 +5,7 @@
+ @pytest.mark.parametrize("grid, expected", [
+     # Basic examples provided in the problem statement
+     ([[0,1,-1], [1,0,-1], [1,1,1]], 5),
+-    ([[1,1,-1], [1,-1,1], [-1,1,1]], 0),
++    ([[1,2,-1], [1,-1,1], [-1,1,1]], 0),
+ 
+     # Edge cases
+     ([[1]], 1),  # Smallest grid possible, with only one cherry
+</pre><h3>Mutant 83</h3><pre>--- ..\P10\.\tests\test_Problem10_NLP_To_Test.py
++++ ..\P10\.\tests\test_Problem10_NLP_To_Test.py
+@@ -5,7 +5,7 @@
+ @pytest.mark.parametrize("grid, expected", [
+     # Basic examples provided in the problem statement
+     ([[0,1,-1], [1,0,-1], [1,1,1]], 5),
+-    ([[1,1,-1], [1,-1,1], [-1,1,1]], 0),
++    ([[1,1,-1], [2,-1,1], [-1,1,1]], 0),
+ 
+     # Edge cases
+     ([[1]], 1),  # Smallest grid possible, with only one cherry
+</pre><h3>Mutant 86</h3><pre>--- ..\P10\.\tests\test_Problem10_NLP_To_Test.py
++++ ..\P10\.\tests\test_Problem10_NLP_To_Test.py
+@@ -5,7 +5,7 @@
+ @pytest.mark.parametrize("grid, expected", [
+     # Basic examples provided in the problem statement
+     ([[0,1,-1], [1,0,-1], [1,1,1]], 5),
+-    ([[1,1,-1], [1,-1,1], [-1,1,1]], 0),
++    ([[1,1,-1], [1,-1,2], [-1,1,1]], 0),
+ 
+     # Edge cases
+     ([[1]], 1),  # Smallest grid possible, with only one cherry
+</pre><h3>Mutant 89</h3><pre>--- ..\P10\.\tests\test_Problem10_NLP_To_Test.py
++++ ..\P10\.\tests\test_Problem10_NLP_To_Test.py
+@@ -5,7 +5,7 @@
+ @pytest.mark.parametrize("grid, expected", [
+     # Basic examples provided in the problem statement
+     ([[0,1,-1], [1,0,-1], [1,1,1]], 5),
+-    ([[1,1,-1], [1,-1,1], [-1,1,1]], 0),
++    ([[1,1,-1], [1,-1,1], [-1,2,1]], 0),
+ 
+     # Edge cases
+     ([[1]], 1),  # Smallest grid possible, with only one cherry
+</pre><h3>Mutant 90</h3><pre>--- ..\P10\.\tests\test_Problem10_NLP_To_Test.py
++++ ..\P10\.\tests\test_Problem10_NLP_To_Test.py
+@@ -5,7 +5,7 @@
+ @pytest.mark.parametrize("grid, expected", [
+     # Basic examples provided in the problem statement
+     ([[0,1,-1], [1,0,-1], [1,1,1]], 5),
+-    ([[1,1,-1], [1,-1,1], [-1,1,1]], 0),
++    ([[1,1,-1], [1,-1,1], [-1,1,2]], 0),
+ 
+     # Edge cases
+     ([[1]], 1),  # Smallest grid possible, with only one cherry
+</pre><h3>Mutant 97</h3><pre>--- ..\P10\.\tests\test_Problem10_NLP_To_Test.py
++++ ..\P10\.\tests\test_Problem10_NLP_To_Test.py
+@@ -10,7 +10,7 @@
+     # Edge cases
+     ([[1]], 1),  # Smallest grid possible, with only one cherry
+     ([[0]], 0),  # Smallest grid possible, no cherries
+-    ([[-1]], 0),  # Smallest grid, impassable
++    ([[-2]], 0),  # Smallest grid, impassable
+     ([[1, -1], [-1, 1]], 0),  # No valid path through the grid
+ 
+     
+</pre><h3>Mutant 99</h3><pre>--- ..\P10\.\tests\test_Problem10_NLP_To_Test.py
++++ ..\P10\.\tests\test_Problem10_NLP_To_Test.py
+@@ -11,7 +11,7 @@
+     ([[1]], 1),  # Smallest grid possible, with only one cherry
+     ([[0]], 0),  # Smallest grid possible, no cherries
+     ([[-1]], 0),  # Smallest grid, impassable
+-    ([[1, -1], [-1, 1]], 0),  # No valid path through the grid
++    ([[2, -1], [-1, 1]], 0),  # No valid path through the grid
+ 
+     
+     # Larger grids with clear paths
+</pre><h3>Mutant 101</h3><pre>--- ..\P10\.\tests\test_Problem10_NLP_To_Test.py
++++ ..\P10\.\tests\test_Problem10_NLP_To_Test.py
+@@ -11,7 +11,7 @@
+     ([[1]], 1),  # Smallest grid possible, with only one cherry
+     ([[0]], 0),  # Smallest grid possible, no cherries
+     ([[-1]], 0),  # Smallest grid, impassable
+-    ([[1, -1], [-1, 1]], 0),  # No valid path through the grid
++    ([[1, -2], [-1, 1]], 0),  # No valid path through the grid
+ 
+     
+     # Larger grids with clear paths
+</pre><h3>Mutant 103</h3><pre>--- ..\P10\.\tests\test_Problem10_NLP_To_Test.py
++++ ..\P10\.\tests\test_Problem10_NLP_To_Test.py
+@@ -11,7 +11,7 @@
+     ([[1]], 1),  # Smallest grid possible, with only one cherry
+     ([[0]], 0),  # Smallest grid possible, no cherries
+     ([[-1]], 0),  # Smallest grid, impassable
+-    ([[1, -1], [-1, 1]], 0),  # No valid path through the grid
++    ([[1, -1], [-2, 1]], 0),  # No valid path through the grid
+ 
+     
+     # Larger grids with clear paths
+</pre><h3>Mutant 104</h3><pre>--- ..\P10\.\tests\test_Problem10_NLP_To_Test.py
++++ ..\P10\.\tests\test_Problem10_NLP_To_Test.py
+@@ -11,7 +11,7 @@
+     ([[1]], 1),  # Smallest grid possible, with only one cherry
+     ([[0]], 0),  # Smallest grid possible, no cherries
+     ([[-1]], 0),  # Smallest grid, impassable
+-    ([[1, -1], [-1, 1]], 0),  # No valid path through the grid
++    ([[1, -1], [-1, 2]], 0),  # No valid path through the grid
+ 
+     
+     # Larger grids with clear paths
+</pre><h3>Mutant 108</h3><pre>--- ..\P10\.\tests\test_Problem10_NLP_To_Test.py
++++ ..\P10\.\tests\test_Problem10_NLP_To_Test.py
+@@ -43,5 +43,5 @@
+     - Larger, more complex grids to simulate realistic scenarios and ensure the pathfinding logic is robust.
+     - Cases with no possible paths due to blocks to ensure graceful handling of no-solution scenarios.
+     """
+-    assert max_cherries(grid) == expected, f"Expected {expected} cherries, but got a different number for grid {grid}"
++    assert max_cherries(grid) == expected, f"XXExpected {expected} cherries, but got a different number for grid {grid}XX"
+ 
+</pre></body></html>

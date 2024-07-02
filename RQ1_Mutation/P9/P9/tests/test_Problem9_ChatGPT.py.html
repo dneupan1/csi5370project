@@ -1,0 +1,164 @@
+<html><body><h1>..\P9\.\tests\test_Problem9_ChatGPT.py</h1>Killed 41 out of 56 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 30</h3><pre>--- ..\P9\.\tests\test_Problem9_ChatGPT.py
++++ ..\P9\.\tests\test_Problem9_ChatGPT.py
+@@ -7,7 +7,7 @@
+     Test a grid where the minimum path is non-straight.
+     """
+     grid = [
+-        [1, 10, 1],
++        [1, 11, 1],
+         [1, 10, 1],
+         [1, 1, 1]
+     ]
+</pre><h3>Mutant 31</h3><pre>--- ..\P9\.\tests\test_Problem9_ChatGPT.py
++++ ..\P9\.\tests\test_Problem9_ChatGPT.py
+@@ -7,7 +7,7 @@
+     Test a grid where the minimum path is non-straight.
+     """
+     grid = [
+-        [1, 10, 1],
++        [1, 10, 2],
+         [1, 10, 1],
+         [1, 1, 1]
+     ]
+</pre><h3>Mutant 33</h3><pre>--- ..\P9\.\tests\test_Problem9_ChatGPT.py
++++ ..\P9\.\tests\test_Problem9_ChatGPT.py
+@@ -8,7 +8,7 @@
+     """
+     grid = [
+         [1, 10, 1],
+-        [1, 10, 1],
++        [1, 11, 1],
+         [1, 1, 1]
+     ]
+     expected_sum = 5  # 1 -> 1 -> 1 -> 1 -> 1
+</pre><h3>Mutant 34</h3><pre>--- ..\P9\.\tests\test_Problem9_ChatGPT.py
++++ ..\P9\.\tests\test_Problem9_ChatGPT.py
+@@ -8,7 +8,7 @@
+     """
+     grid = [
+         [1, 10, 1],
+-        [1, 10, 1],
++        [1, 10, 2],
+         [1, 1, 1]
+     ]
+     expected_sum = 5  # 1 -> 1 -> 1 -> 1 -> 1
+</pre><h3>Mutant 42</h3><pre>--- ..\P9\.\tests\test_Problem9_ChatGPT.py
++++ ..\P9\.\tests\test_Problem9_ChatGPT.py
+@@ -12,7 +12,7 @@
+         [1, 1, 1]
+     ]
+     expected_sum = 5  # 1 -> 1 -> 1 -> 1 -> 1
+-    assert minPathSum(grid) == expected_sum, "Should calculate the correct minimum path sum for a non-straight path"
++    assert minPathSum(grid) == expected_sum, "XXShould calculate the correct minimum path sum for a non-straight pathXX"
+ 
+ def test_single_row_grid():
+     """
+</pre><h3>Mutant 51</h3><pre>--- ..\P9\.\tests\test_Problem9_ChatGPT.py
++++ ..\P9\.\tests\test_Problem9_ChatGPT.py
+@@ -20,7 +20,7 @@
+     """
+     grid = [[1, 2, 3, 4]]
+     expected_sum = 10  # 1 -> 2 -> 3 -> 4
+-    assert minPathSum(grid) == expected_sum, "Should calculate the correct minimum path sum for a single row grid"
++    assert minPathSum(grid) == expected_sum, "XXShould calculate the correct minimum path sum for a single row gridXX"
+ 
+ def test_single_column_grid():
+     """
+</pre><h3>Mutant 60</h3><pre>--- ..\P9\.\tests\test_Problem9_ChatGPT.py
++++ ..\P9\.\tests\test_Problem9_ChatGPT.py
+@@ -28,7 +28,7 @@
+     """
+     grid = [[1], [2], [3], [4]]
+     expected_sum = 10  # 1 -> 2 -> 3 -> 4
+-    assert minPathSum(grid) == expected_sum, "Should calculate the correct minimum path sum for a single column grid"
++    assert minPathSum(grid) == expected_sum, "XXShould calculate the correct minimum path sum for a single column gridXX"
+ 
+ def test_negative_numbers_grid():
+     """
+</pre><h3>Mutant 63</h3><pre>--- ..\P9\.\tests\test_Problem9_ChatGPT.py
++++ ..\P9\.\tests\test_Problem9_ChatGPT.py
+@@ -35,7 +35,7 @@
+     Test a grid that includes negative numbers.
+     """
+     grid = [
+-        [-1, -2, -3],
++        [-1, +2, -3],
+         [-2, -3, -4],
+         [-3, -4, -5]
+     ]
+</pre><h3>Mutant 65</h3><pre>--- ..\P9\.\tests\test_Problem9_ChatGPT.py
++++ ..\P9\.\tests\test_Problem9_ChatGPT.py
+@@ -35,7 +35,7 @@
+     Test a grid that includes negative numbers.
+     """
+     grid = [
+-        [-1, -2, -3],
++        [-1, -2, +3],
+         [-2, -3, -4],
+         [-3, -4, -5]
+     ]
+</pre><h3>Mutant 67</h3><pre>--- ..\P9\.\tests\test_Problem9_ChatGPT.py
++++ ..\P9\.\tests\test_Problem9_ChatGPT.py
+@@ -36,7 +36,7 @@
+     """
+     grid = [
+         [-1, -2, -3],
+-        [-2, -3, -4],
++        [+2, -3, -4],
+         [-3, -4, -5]
+     ]
+     expected_sum = -15  # Path through all cells
+</pre><h3>Mutant 69</h3><pre>--- ..\P9\.\tests\test_Problem9_ChatGPT.py
++++ ..\P9\.\tests\test_Problem9_ChatGPT.py
+@@ -36,7 +36,7 @@
+     """
+     grid = [
+         [-1, -2, -3],
+-        [-2, -3, -4],
++        [-2, +3, -4],
+         [-3, -4, -5]
+     ]
+     expected_sum = -15  # Path through all cells
+</pre><h3>Mutant 71</h3><pre>--- ..\P9\.\tests\test_Problem9_ChatGPT.py
++++ ..\P9\.\tests\test_Problem9_ChatGPT.py
+@@ -36,7 +36,7 @@
+     """
+     grid = [
+         [-1, -2, -3],
+-        [-2, -3, -4],
++        [-2, -3, +4],
+         [-3, -4, -5]
+     ]
+     expected_sum = -15  # Path through all cells
+</pre><h3>Mutant 73</h3><pre>--- ..\P9\.\tests\test_Problem9_ChatGPT.py
++++ ..\P9\.\tests\test_Problem9_ChatGPT.py
+@@ -37,7 +37,7 @@
+     grid = [
+         [-1, -2, -3],
+         [-2, -3, -4],
+-        [-3, -4, -5]
++        [+3, -4, -5]
+     ]
+     expected_sum = -15  # Path through all cells
+     assert minPathSum(grid) == expected_sum, "Should calculate the correct minimum path sum for a grid with negative numbers"
+</pre><h3>Mutant 75</h3><pre>--- ..\P9\.\tests\test_Problem9_ChatGPT.py
++++ ..\P9\.\tests\test_Problem9_ChatGPT.py
+@@ -37,7 +37,7 @@
+     grid = [
+         [-1, -2, -3],
+         [-2, -3, -4],
+-        [-3, -4, -5]
++        [-3, +4, -5]
+     ]
+     expected_sum = -15  # Path through all cells
+     assert minPathSum(grid) == expected_sum, "Should calculate the correct minimum path sum for a grid with negative numbers"
+</pre><h3>Mutant 84</h3><pre>--- ..\P9\.\tests\test_Problem9_ChatGPT.py
++++ ..\P9\.\tests\test_Problem9_ChatGPT.py
+@@ -40,5 +40,5 @@
+         [-3, -4, -5]
+     ]
+     expected_sum = -15  # Path through all cells
+-    assert minPathSum(grid) == expected_sum, "Should calculate the correct minimum path sum for a grid with negative numbers"
++    assert minPathSum(grid) == expected_sum, "XXShould calculate the correct minimum path sum for a grid with negative numbersXX"
+ 
+</pre></body></html>

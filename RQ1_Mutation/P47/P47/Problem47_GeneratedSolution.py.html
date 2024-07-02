@@ -1,0 +1,89 @@
+<html><body><h1>..\P47\.\Problem47_GeneratedSolution.py</h1>Killed 22 out of 30 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 1</h3><pre>--- ..\P47\.\Problem47_GeneratedSolution.py
++++ ..\P47\.\Problem47_GeneratedSolution.py
+@@ -11,7 +11,7 @@
+     A boolean indicating whether the path crosses itself.
+     """
+     # Initialize the starting point.
+-    x, y = 0, 0
++    x, y = 1, 0
+     # Add the starting point to the visited set.
+     visited = set([(x, y)])
+     
+</pre><h3>Mutant 2</h3><pre>--- ..\P47\.\Problem47_GeneratedSolution.py
++++ ..\P47\.\Problem47_GeneratedSolution.py
+@@ -11,7 +11,7 @@
+     A boolean indicating whether the path crosses itself.
+     """
+     # Initialize the starting point.
+-    x, y = 0, 0
++    x, y = 0, 1
+     # Add the starting point to the visited set.
+     visited = set([(x, y)])
+     
+</pre><h3>Mutant 5</h3><pre>--- ..\P47\.\Problem47_GeneratedSolution.py
++++ ..\P47\.\Problem47_GeneratedSolution.py
+@@ -16,7 +16,7 @@
+     visited = set([(x, y)])
+     
+     # Directions are represented as (dx, dy).
+-    directions = [(0, 1), (-1, 0), (0, -1), (1, 0)]
++    directions = [(1, 1), (-1, 0), (0, -1), (1, 0)]
+     dir_index = 0  # Start by moving north.
+     
+     for d in distance:
+</pre><h3>Mutant 10</h3><pre>--- ..\P47\.\Problem47_GeneratedSolution.py
++++ ..\P47\.\Problem47_GeneratedSolution.py
+@@ -16,7 +16,7 @@
+     visited = set([(x, y)])
+     
+     # Directions are represented as (dx, dy).
+-    directions = [(0, 1), (-1, 0), (0, -1), (1, 0)]
++    directions = [(0, 1), (-1, 0), (1, -1), (1, 0)]
+     dir_index = 0  # Start by moving north.
+     
+     for d in distance:
+</pre><h3>Mutant 16</h3><pre>--- ..\P47\.\Problem47_GeneratedSolution.py
++++ ..\P47\.\Problem47_GeneratedSolution.py
+@@ -17,7 +17,7 @@
+     
+     # Directions are represented as (dx, dy).
+     directions = [(0, 1), (-1, 0), (0, -1), (1, 0)]
+-    dir_index = 0  # Start by moving north.
++    dir_index = 1  # Start by moving north.
+     
+     for d in distance:
+         dx, dy = directions[dir_index]
+</pre><h3>Mutant 20</h3><pre>--- ..\P47\.\Problem47_GeneratedSolution.py
++++ ..\P47\.\Problem47_GeneratedSolution.py
+@@ -23,7 +23,7 @@
+         dx, dy = directions[dir_index]
+         # Update the position based on the distance moved in the current direction.
+         for _ in range(d):
+-            x += dx
++            x -= dx
+             y += dy
+             # Check if the new position has been visited before.
+             if (x, y) in visited:
+</pre><h3>Mutant 22</h3><pre>--- ..\P47\.\Problem47_GeneratedSolution.py
++++ ..\P47\.\Problem47_GeneratedSolution.py
+@@ -24,7 +24,7 @@
+         # Update the position based on the distance moved in the current direction.
+         for _ in range(d):
+             x += dx
+-            y += dy
++            y -= dy
+             # Check if the new position has been visited before.
+             if (x, y) in visited:
+                 return True
+</pre><h3>Mutant 25</h3><pre>--- ..\P47\.\Problem47_GeneratedSolution.py
++++ ..\P47\.\Problem47_GeneratedSolution.py
+@@ -30,7 +30,7 @@
+                 return True
+             visited.add((x, y))
+         # Change direction counter-clockwise.
+-        dir_index = (dir_index + 1) % 4
++        dir_index = (dir_index - 1) % 4
+     
+     # If the loop completes without finding any crossing, return False.
+     return False
+</pre></body></html>

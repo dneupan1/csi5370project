@@ -1,0 +1,296 @@
+<html><body><h1>..\P21\.\tests\test_Problem21_NLP_To_test.py</h1>Killed 19 out of 46 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 96</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -1,7 +1,7 @@
+ import pytest
+ from Problem21_GeneratedSolution import countPartitions as countGreatPartitions  # Assuming the function 'countGreatPartitions' is defined in 'solution.py'
+ 
+-MOD = 10**9 + 7
++MOD = 11**9 + 7
+ 
+ @pytest.mark.parametrize("nums, k, expected", [
+     # Example 1: Multiple valid partitions
+</pre><h3>Mutant 97</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -1,7 +1,7 @@
+ import pytest
+ from Problem21_GeneratedSolution import countPartitions as countGreatPartitions  # Assuming the function 'countGreatPartitions' is defined in 'solution.py'
+ 
+-MOD = 10**9 + 7
++MOD = 10*9 + 7
+ 
+ @pytest.mark.parametrize("nums, k, expected", [
+     # Example 1: Multiple valid partitions
+</pre><h3>Mutant 98</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -1,7 +1,7 @@
+ import pytest
+ from Problem21_GeneratedSolution import countPartitions as countGreatPartitions  # Assuming the function 'countGreatPartitions' is defined in 'solution.py'
+ 
+-MOD = 10**9 + 7
++MOD = 10**10 + 7
+ 
+ @pytest.mark.parametrize("nums, k, expected", [
+     # Example 1: Multiple valid partitions
+</pre><h3>Mutant 99</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -1,7 +1,7 @@
+ import pytest
+ from Problem21_GeneratedSolution import countPartitions as countGreatPartitions  # Assuming the function 'countGreatPartitions' is defined in 'solution.py'
+ 
+-MOD = 10**9 + 7
++MOD = 10**9 - 7
+ 
+ @pytest.mark.parametrize("nums, k, expected", [
+     # Example 1: Multiple valid partitions
+</pre><h3>Mutant 100</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -1,7 +1,7 @@
+ import pytest
+ from Problem21_GeneratedSolution import countPartitions as countGreatPartitions  # Assuming the function 'countGreatPartitions' is defined in 'solution.py'
+ 
+-MOD = 10**9 + 7
++MOD = 10**9 + 8
+ 
+ @pytest.mark.parametrize("nums, k, expected", [
+     # Example 1: Multiple valid partitions
+</pre><h3>Mutant 101</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -1,7 +1,7 @@
+ import pytest
+ from Problem21_GeneratedSolution import countPartitions as countGreatPartitions  # Assuming the function 'countGreatPartitions' is defined in 'solution.py'
+ 
+-MOD = 10**9 + 7
++MOD = None
+ 
+ @pytest.mark.parametrize("nums, k, expected", [
+     # Example 1: Multiple valid partitions
+</pre><h3>Mutant 102</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -3,7 +3,7 @@
+ 
+ MOD = 10**9 + 7
+ 
+-@pytest.mark.parametrize("nums, k, expected", [
++@pytest.mark.parametrize("XXnums, k, expectedXX", [
+     # Example 1: Multiple valid partitions
+     ([1, 2, 3, 4], 4, 6),
+     # Example 2: No valid partitions
+</pre><h3>Mutant 106</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -5,7 +5,7 @@
+ 
+ @pytest.mark.parametrize("nums, k, expected", [
+     # Example 1: Multiple valid partitions
+-    ([1, 2, 3, 4], 4, 6),
++    ([1, 2, 3, 5], 4, 6),
+     # Example 2: No valid partitions
+     ([3, 3, 3], 4, 0),
+     # Example 3: Simple case with only two elements
+</pre><h3>Mutant 112</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -7,7 +7,7 @@
+     # Example 1: Multiple valid partitions
+     ([1, 2, 3, 4], 4, 6),
+     # Example 2: No valid partitions
+-    ([3, 3, 3], 4, 0),
++    ([3, 3, 3], 5, 0),
+     # Example 3: Simple case with only two elements
+     ([6, 6], 2, 2),
+     # Edge case: Empty array, should be 0 as there are no partitions possible
+</pre><h3>Mutant 114</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -9,7 +9,7 @@
+     # Example 2: No valid partitions
+     ([3, 3, 3], 4, 0),
+     # Example 3: Simple case with only two elements
+-    ([6, 6], 2, 2),
++    ([7, 6], 2, 2),
+     # Edge case: Empty array, should be 0 as there are no partitions possible
+     ([], 1, 0),
+     # Edge case: Single element equal to k, cannot form two groups
+</pre><h3>Mutant 115</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -9,7 +9,7 @@
+     # Example 2: No valid partitions
+     ([3, 3, 3], 4, 0),
+     # Example 3: Simple case with only two elements
+-    ([6, 6], 2, 2),
++    ([6, 7], 2, 2),
+     # Edge case: Empty array, should be 0 as there are no partitions possible
+     ([], 1, 0),
+     # Edge case: Single element equal to k, cannot form two groups
+</pre><h3>Mutant 116</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -9,7 +9,7 @@
+     # Example 2: No valid partitions
+     ([3, 3, 3], 4, 0),
+     # Example 3: Simple case with only two elements
+-    ([6, 6], 2, 2),
++    ([6, 6], 3, 2),
+     # Edge case: Empty array, should be 0 as there are no partitions possible
+     ([], 1, 0),
+     # Edge case: Single element equal to k, cannot form two groups
+</pre><h3>Mutant 118</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -11,7 +11,7 @@
+     # Example 3: Simple case with only two elements
+     ([6, 6], 2, 2),
+     # Edge case: Empty array, should be 0 as there are no partitions possible
+-    ([], 1, 0),
++    ([], 2, 0),
+     # Edge case: Single element equal to k, cannot form two groups
+     ([5], 5, 0),
+     # Edge case: Single element greater than k, cannot form two groups
+</pre><h3>Mutant 120</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -13,7 +13,7 @@
+     # Edge case: Empty array, should be 0 as there are no partitions possible
+     ([], 1, 0),
+     # Edge case: Single element equal to k, cannot form two groups
+-    ([5], 5, 0),
++    ([6], 5, 0),
+     # Edge case: Single element greater than k, cannot form two groups
+     ([10], 1, 0),
+     # Case with all elements the same and greater than k
+</pre><h3>Mutant 121</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -13,7 +13,7 @@
+     # Edge case: Empty array, should be 0 as there are no partitions possible
+     ([], 1, 0),
+     # Edge case: Single element equal to k, cannot form two groups
+-    ([5], 5, 0),
++    ([5], 6, 0),
+     # Edge case: Single element greater than k, cannot form two groups
+     ([10], 1, 0),
+     # Case with all elements the same and greater than k
+</pre><h3>Mutant 123</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -15,7 +15,7 @@
+     # Edge case: Single element equal to k, cannot form two groups
+     ([5], 5, 0),
+     # Edge case: Single element greater than k, cannot form two groups
+-    ([10], 1, 0),
++    ([11], 1, 0),
+     # Case with all elements the same and greater than k
+     #([5, 5, 5], 5, 0),
+     # Case with elements adding up exactly to 2*k
+</pre><h3>Mutant 124</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -15,7 +15,7 @@
+     # Edge case: Single element equal to k, cannot form two groups
+     ([5], 5, 0),
+     # Edge case: Single element greater than k, cannot form two groups
+-    ([10], 1, 0),
++    ([10], 2, 0),
+     # Case with all elements the same and greater than k
+     #([5, 5, 5], 5, 0),
+     # Case with elements adding up exactly to 2*k
+</pre><h3>Mutant 126</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -19,7 +19,7 @@
+     # Case with all elements the same and greater than k
+     #([5, 5, 5], 5, 0),
+     # Case with elements adding up exactly to 2*k
+-    ([2, 2, 2, 2], 4, 6),
++    ([3, 2, 2, 2], 4, 6),
+     # Large case with no valid partitions due to high k
+     ([1, 1, 1, 1], 5, 0),
+     # Mixed elements with some repeated values
+</pre><h3>Mutant 127</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -19,7 +19,7 @@
+     # Case with all elements the same and greater than k
+     #([5, 5, 5], 5, 0),
+     # Case with elements adding up exactly to 2*k
+-    ([2, 2, 2, 2], 4, 6),
++    ([2, 3, 2, 2], 4, 6),
+     # Large case with no valid partitions due to high k
+     ([1, 1, 1, 1], 5, 0),
+     # Mixed elements with some repeated values
+</pre><h3>Mutant 128</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -19,7 +19,7 @@
+     # Case with all elements the same and greater than k
+     #([5, 5, 5], 5, 0),
+     # Case with elements adding up exactly to 2*k
+-    ([2, 2, 2, 2], 4, 6),
++    ([2, 2, 3, 2], 4, 6),
+     # Large case with no valid partitions due to high k
+     ([1, 1, 1, 1], 5, 0),
+     # Mixed elements with some repeated values
+</pre><h3>Mutant 129</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -19,7 +19,7 @@
+     # Case with all elements the same and greater than k
+     #([5, 5, 5], 5, 0),
+     # Case with elements adding up exactly to 2*k
+-    ([2, 2, 2, 2], 4, 6),
++    ([2, 2, 2, 3], 4, 6),
+     # Large case with no valid partitions due to high k
+     ([1, 1, 1, 1], 5, 0),
+     # Mixed elements with some repeated values
+</pre><h3>Mutant 132</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -21,7 +21,7 @@
+     # Case with elements adding up exactly to 2*k
+     ([2, 2, 2, 2], 4, 6),
+     # Large case with no valid partitions due to high k
+-    ([1, 1, 1, 1], 5, 0),
++    ([2, 1, 1, 1], 5, 0),
+     # Mixed elements with some repeated values
+     #([1, 2, 2, 3, 3, 4], 6, 10),
+     # Larger array with multiple valid partitions
+</pre><h3>Mutant 133</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -21,7 +21,7 @@
+     # Case with elements adding up exactly to 2*k
+     ([2, 2, 2, 2], 4, 6),
+     # Large case with no valid partitions due to high k
+-    ([1, 1, 1, 1], 5, 0),
++    ([1, 2, 1, 1], 5, 0),
+     # Mixed elements with some repeated values
+     #([1, 2, 2, 3, 3, 4], 6, 10),
+     # Larger array with multiple valid partitions
+</pre><h3>Mutant 134</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -21,7 +21,7 @@
+     # Case with elements adding up exactly to 2*k
+     ([2, 2, 2, 2], 4, 6),
+     # Large case with no valid partitions due to high k
+-    ([1, 1, 1, 1], 5, 0),
++    ([1, 1, 2, 1], 5, 0),
+     # Mixed elements with some repeated values
+     #([1, 2, 2, 3, 3, 4], 6, 10),
+     # Larger array with multiple valid partitions
+</pre><h3>Mutant 135</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -21,7 +21,7 @@
+     # Case with elements adding up exactly to 2*k
+     ([2, 2, 2, 2], 4, 6),
+     # Large case with no valid partitions due to high k
+-    ([1, 1, 1, 1], 5, 0),
++    ([1, 1, 1, 2], 5, 0),
+     # Mixed elements with some repeated values
+     #([1, 2, 2, 3, 3, 4], 6, 10),
+     # Larger array with multiple valid partitions
+</pre><h3>Mutant 136</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -21,7 +21,7 @@
+     # Case with elements adding up exactly to 2*k
+     ([2, 2, 2, 2], 4, 6),
+     # Large case with no valid partitions due to high k
+-    ([1, 1, 1, 1], 5, 0),
++    ([1, 1, 1, 1], 6, 0),
+     # Mixed elements with some repeated values
+     #([1, 2, 2, 3, 3, 4], 6, 10),
+     # Larger array with multiple valid partitions
+</pre><h3>Mutant 141</h3><pre>--- ..\P21\.\tests\test_Problem21_NLP_To_test.py
++++ ..\P21\.\tests\test_Problem21_NLP_To_test.py
+@@ -43,5 +43,5 @@
+     expected (int): The expected number of distinct great partitions.
+     """
+     result = countGreatPartitions(nums, k)
+-    assert result == expected, f"Test failed for nums={nums}, k={k}. Expected {expected}, got {result}"
++    assert result == expected, f"XXTest failed for nums={nums}, k={k}. Expected {expected}, got {result}XX"
+ 
+</pre></body></html>

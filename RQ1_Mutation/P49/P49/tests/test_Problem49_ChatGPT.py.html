@@ -1,0 +1,725 @@
+<html><body><h1>..\P49\.\tests\test_Problem49_ChatGPT.py</h1>Killed 32 out of 98 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 30</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -8,7 +8,7 @@
+     Test cases where rectangles form a perfect rectangular cover without any gaps or overlaps.
+     """
+     assert isRectangleCover([
+-        [1, 1, 3, 3],
++        [2, 1, 3, 3],
+         [3, 1, 4, 2],
+         [3, 2, 4, 3],
+         [1, 3, 2, 4],
+</pre><h3>Mutant 31</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -8,7 +8,7 @@
+     Test cases where rectangles form a perfect rectangular cover without any gaps or overlaps.
+     """
+     assert isRectangleCover([
+-        [1, 1, 3, 3],
++        [1, 2, 3, 3],
+         [3, 1, 4, 2],
+         [3, 2, 4, 3],
+         [1, 3, 2, 4],
+</pre><h3>Mutant 32</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -8,7 +8,7 @@
+     Test cases where rectangles form a perfect rectangular cover without any gaps or overlaps.
+     """
+     assert isRectangleCover([
+-        [1, 1, 3, 3],
++        [1, 1, 4, 3],
+         [3, 1, 4, 2],
+         [3, 2, 4, 3],
+         [1, 3, 2, 4],
+</pre><h3>Mutant 33</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -8,7 +8,7 @@
+     Test cases where rectangles form a perfect rectangular cover without any gaps or overlaps.
+     """
+     assert isRectangleCover([
+-        [1, 1, 3, 3],
++        [1, 1, 3, 4],
+         [3, 1, 4, 2],
+         [3, 2, 4, 3],
+         [1, 3, 2, 4],
+</pre><h3>Mutant 34</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -9,7 +9,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+-        [3, 1, 4, 2],
++        [4, 1, 4, 2],
+         [3, 2, 4, 3],
+         [1, 3, 2, 4],
+         [2, 3, 3, 4]
+</pre><h3>Mutant 35</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -9,7 +9,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+-        [3, 1, 4, 2],
++        [3, 2, 4, 2],
+         [3, 2, 4, 3],
+         [1, 3, 2, 4],
+         [2, 3, 3, 4]
+</pre><h3>Mutant 36</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -9,7 +9,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+-        [3, 1, 4, 2],
++        [3, 1, 5, 2],
+         [3, 2, 4, 3],
+         [1, 3, 2, 4],
+         [2, 3, 3, 4]
+</pre><h3>Mutant 37</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -9,7 +9,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+-        [3, 1, 4, 2],
++        [3, 1, 4, 3],
+         [3, 2, 4, 3],
+         [1, 3, 2, 4],
+         [2, 3, 3, 4]
+</pre><h3>Mutant 38</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -10,7 +10,7 @@
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+         [3, 1, 4, 2],
+-        [3, 2, 4, 3],
++        [4, 2, 4, 3],
+         [1, 3, 2, 4],
+         [2, 3, 3, 4]
+     ]) == True, "Failed on a perfect rectangle cover"
+</pre><h3>Mutant 39</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -10,7 +10,7 @@
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+         [3, 1, 4, 2],
+-        [3, 2, 4, 3],
++        [3, 3, 4, 3],
+         [1, 3, 2, 4],
+         [2, 3, 3, 4]
+     ]) == True, "Failed on a perfect rectangle cover"
+</pre><h3>Mutant 40</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -10,7 +10,7 @@
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+         [3, 1, 4, 2],
+-        [3, 2, 4, 3],
++        [3, 2, 5, 3],
+         [1, 3, 2, 4],
+         [2, 3, 3, 4]
+     ]) == True, "Failed on a perfect rectangle cover"
+</pre><h3>Mutant 41</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -10,7 +10,7 @@
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+         [3, 1, 4, 2],
+-        [3, 2, 4, 3],
++        [3, 2, 4, 4],
+         [1, 3, 2, 4],
+         [2, 3, 3, 4]
+     ]) == True, "Failed on a perfect rectangle cover"
+</pre><h3>Mutant 42</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -11,7 +11,7 @@
+         [1, 1, 3, 3],
+         [3, 1, 4, 2],
+         [3, 2, 4, 3],
+-        [1, 3, 2, 4],
++        [2, 3, 2, 4],
+         [2, 3, 3, 4]
+     ]) == True, "Failed on a perfect rectangle cover"
+ 
+</pre><h3>Mutant 43</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -11,7 +11,7 @@
+         [1, 1, 3, 3],
+         [3, 1, 4, 2],
+         [3, 2, 4, 3],
+-        [1, 3, 2, 4],
++        [1, 4, 2, 4],
+         [2, 3, 3, 4]
+     ]) == True, "Failed on a perfect rectangle cover"
+ 
+</pre><h3>Mutant 44</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -11,7 +11,7 @@
+         [1, 1, 3, 3],
+         [3, 1, 4, 2],
+         [3, 2, 4, 3],
+-        [1, 3, 2, 4],
++        [1, 3, 3, 4],
+         [2, 3, 3, 4]
+     ]) == True, "Failed on a perfect rectangle cover"
+ 
+</pre><h3>Mutant 45</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -11,7 +11,7 @@
+         [1, 1, 3, 3],
+         [3, 1, 4, 2],
+         [3, 2, 4, 3],
+-        [1, 3, 2, 4],
++        [1, 3, 2, 5],
+         [2, 3, 3, 4]
+     ]) == True, "Failed on a perfect rectangle cover"
+ 
+</pre><h3>Mutant 46</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -12,7 +12,7 @@
+         [3, 1, 4, 2],
+         [3, 2, 4, 3],
+         [1, 3, 2, 4],
+-        [2, 3, 3, 4]
++        [3, 3, 3, 4]
+     ]) == True, "Failed on a perfect rectangle cover"
+ 
+ def test_overlapping_rectangles():
+</pre><h3>Mutant 47</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -12,7 +12,7 @@
+         [3, 1, 4, 2],
+         [3, 2, 4, 3],
+         [1, 3, 2, 4],
+-        [2, 3, 3, 4]
++        [2, 4, 3, 4]
+     ]) == True, "Failed on a perfect rectangle cover"
+ 
+ def test_overlapping_rectangles():
+</pre><h3>Mutant 48</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -12,7 +12,7 @@
+         [3, 1, 4, 2],
+         [3, 2, 4, 3],
+         [1, 3, 2, 4],
+-        [2, 3, 3, 4]
++        [2, 3, 4, 4]
+     ]) == True, "Failed on a perfect rectangle cover"
+ 
+ def test_overlapping_rectangles():
+</pre><h3>Mutant 49</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -12,7 +12,7 @@
+         [3, 1, 4, 2],
+         [3, 2, 4, 3],
+         [1, 3, 2, 4],
+-        [2, 3, 3, 4]
++        [2, 3, 3, 5]
+     ]) == True, "Failed on a perfect rectangle cover"
+ 
+ def test_overlapping_rectangles():
+</pre><h3>Mutant 50</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -13,7 +13,7 @@
+         [3, 2, 4, 3],
+         [1, 3, 2, 4],
+         [2, 3, 3, 4]
+-    ]) == True, "Failed on a perfect rectangle cover"
++    ]) != True, "Failed on a perfect rectangle cover"
+ 
+ def test_overlapping_rectangles():
+     """
+</pre><h3>Mutant 51</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -13,7 +13,7 @@
+         [3, 2, 4, 3],
+         [1, 3, 2, 4],
+         [2, 3, 3, 4]
+-    ]) == True, "Failed on a perfect rectangle cover"
++    ]) == False, "Failed on a perfect rectangle cover"
+ 
+ def test_overlapping_rectangles():
+     """
+</pre><h3>Mutant 52</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -13,7 +13,7 @@
+         [3, 2, 4, 3],
+         [1, 3, 2, 4],
+         [2, 3, 3, 4]
+-    ]) == True, "Failed on a perfect rectangle cover"
++    ]) == True, "XXFailed on a perfect rectangle coverXX"
+ 
+ def test_overlapping_rectangles():
+     """
+</pre><h3>Mutant 53</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -20,7 +20,7 @@
+     Test cases where rectangles overlap, which should not form a valid cover.
+     """
+     assert isRectangleCover([
+-        [1, 1, 3, 3],
++        [2, 1, 3, 3],
+         [2, 2, 4, 4],  # This rectangle overlaps with the first one
+         [1, 3, 2, 4]
+     ]) == False, "Failed on overlapping rectangles"
+</pre><h3>Mutant 54</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -20,7 +20,7 @@
+     Test cases where rectangles overlap, which should not form a valid cover.
+     """
+     assert isRectangleCover([
+-        [1, 1, 3, 3],
++        [1, 2, 3, 3],
+         [2, 2, 4, 4],  # This rectangle overlaps with the first one
+         [1, 3, 2, 4]
+     ]) == False, "Failed on overlapping rectangles"
+</pre><h3>Mutant 55</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -20,7 +20,7 @@
+     Test cases where rectangles overlap, which should not form a valid cover.
+     """
+     assert isRectangleCover([
+-        [1, 1, 3, 3],
++        [1, 1, 4, 3],
+         [2, 2, 4, 4],  # This rectangle overlaps with the first one
+         [1, 3, 2, 4]
+     ]) == False, "Failed on overlapping rectangles"
+</pre><h3>Mutant 56</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -20,7 +20,7 @@
+     Test cases where rectangles overlap, which should not form a valid cover.
+     """
+     assert isRectangleCover([
+-        [1, 1, 3, 3],
++        [1, 1, 3, 4],
+         [2, 2, 4, 4],  # This rectangle overlaps with the first one
+         [1, 3, 2, 4]
+     ]) == False, "Failed on overlapping rectangles"
+</pre><h3>Mutant 57</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -21,7 +21,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+-        [2, 2, 4, 4],  # This rectangle overlaps with the first one
++        [3, 2, 4, 4],  # This rectangle overlaps with the first one
+         [1, 3, 2, 4]
+     ]) == False, "Failed on overlapping rectangles"
+ 
+</pre><h3>Mutant 58</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -21,7 +21,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+-        [2, 2, 4, 4],  # This rectangle overlaps with the first one
++        [2, 3, 4, 4],  # This rectangle overlaps with the first one
+         [1, 3, 2, 4]
+     ]) == False, "Failed on overlapping rectangles"
+ 
+</pre><h3>Mutant 59</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -21,7 +21,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+-        [2, 2, 4, 4],  # This rectangle overlaps with the first one
++        [2, 2, 5, 4],  # This rectangle overlaps with the first one
+         [1, 3, 2, 4]
+     ]) == False, "Failed on overlapping rectangles"
+ 
+</pre><h3>Mutant 60</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -21,7 +21,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+-        [2, 2, 4, 4],  # This rectangle overlaps with the first one
++        [2, 2, 4, 5],  # This rectangle overlaps with the first one
+         [1, 3, 2, 4]
+     ]) == False, "Failed on overlapping rectangles"
+ 
+</pre><h3>Mutant 61</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -22,7 +22,7 @@
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+         [2, 2, 4, 4],  # This rectangle overlaps with the first one
+-        [1, 3, 2, 4]
++        [2, 3, 2, 4]
+     ]) == False, "Failed on overlapping rectangles"
+ 
+ def test_with_gap():
+</pre><h3>Mutant 62</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -22,7 +22,7 @@
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+         [2, 2, 4, 4],  # This rectangle overlaps with the first one
+-        [1, 3, 2, 4]
++        [1, 4, 2, 4]
+     ]) == False, "Failed on overlapping rectangles"
+ 
+ def test_with_gap():
+</pre><h3>Mutant 63</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -22,7 +22,7 @@
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+         [2, 2, 4, 4],  # This rectangle overlaps with the first one
+-        [1, 3, 2, 4]
++        [1, 3, 3, 4]
+     ]) == False, "Failed on overlapping rectangles"
+ 
+ def test_with_gap():
+</pre><h3>Mutant 64</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -22,7 +22,7 @@
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+         [2, 2, 4, 4],  # This rectangle overlaps with the first one
+-        [1, 3, 2, 4]
++        [1, 3, 2, 5]
+     ]) == False, "Failed on overlapping rectangles"
+ 
+ def test_with_gap():
+</pre><h3>Mutant 67</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -23,7 +23,7 @@
+         [1, 1, 3, 3],
+         [2, 2, 4, 4],  # This rectangle overlaps with the first one
+         [1, 3, 2, 4]
+-    ]) == False, "Failed on overlapping rectangles"
++    ]) == False, "XXFailed on overlapping rectanglesXX"
+ 
+ def test_with_gap():
+     """
+</pre><h3>Mutant 68</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -30,7 +30,7 @@
+     Test cases where there is a gap between rectangles, which should not form a valid cover.
+     """
+     assert isRectangleCover([
+-        [1, 1, 2, 2],
++        [2, 1, 2, 2],
+         [2, 2, 3, 3]  # There is a gap between the two rectangles
+     ]) == False, "Failed on rectangles with a gap"
+ 
+</pre><h3>Mutant 69</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -30,7 +30,7 @@
+     Test cases where there is a gap between rectangles, which should not form a valid cover.
+     """
+     assert isRectangleCover([
+-        [1, 1, 2, 2],
++        [1, 2, 2, 2],
+         [2, 2, 3, 3]  # There is a gap between the two rectangles
+     ]) == False, "Failed on rectangles with a gap"
+ 
+</pre><h3>Mutant 70</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -30,7 +30,7 @@
+     Test cases where there is a gap between rectangles, which should not form a valid cover.
+     """
+     assert isRectangleCover([
+-        [1, 1, 2, 2],
++        [1, 1, 3, 2],
+         [2, 2, 3, 3]  # There is a gap between the two rectangles
+     ]) == False, "Failed on rectangles with a gap"
+ 
+</pre><h3>Mutant 71</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -30,7 +30,7 @@
+     Test cases where there is a gap between rectangles, which should not form a valid cover.
+     """
+     assert isRectangleCover([
+-        [1, 1, 2, 2],
++        [1, 1, 2, 3],
+         [2, 2, 3, 3]  # There is a gap between the two rectangles
+     ]) == False, "Failed on rectangles with a gap"
+ 
+</pre><h3>Mutant 72</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -31,7 +31,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 2, 2],
+-        [2, 2, 3, 3]  # There is a gap between the two rectangles
++        [3, 2, 3, 3]  # There is a gap between the two rectangles
+     ]) == False, "Failed on rectangles with a gap"
+ 
+ def test_incorrect_corner_count():
+</pre><h3>Mutant 73</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -31,7 +31,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 2, 2],
+-        [2, 2, 3, 3]  # There is a gap between the two rectangles
++        [2, 3, 3, 3]  # There is a gap between the two rectangles
+     ]) == False, "Failed on rectangles with a gap"
+ 
+ def test_incorrect_corner_count():
+</pre><h3>Mutant 74</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -31,7 +31,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 2, 2],
+-        [2, 2, 3, 3]  # There is a gap between the two rectangles
++        [2, 2, 4, 3]  # There is a gap between the two rectangles
+     ]) == False, "Failed on rectangles with a gap"
+ 
+ def test_incorrect_corner_count():
+</pre><h3>Mutant 75</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -31,7 +31,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 2, 2],
+-        [2, 2, 3, 3]  # There is a gap between the two rectangles
++        [2, 2, 3, 4]  # There is a gap between the two rectangles
+     ]) == False, "Failed on rectangles with a gap"
+ 
+ def test_incorrect_corner_count():
+</pre><h3>Mutant 78</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -32,7 +32,7 @@
+     assert isRectangleCover([
+         [1, 1, 2, 2],
+         [2, 2, 3, 3]  # There is a gap between the two rectangles
+-    ]) == False, "Failed on rectangles with a gap"
++    ]) == False, "XXFailed on rectangles with a gapXX"
+ 
+ def test_incorrect_corner_count():
+     """
+</pre><h3>Mutant 79</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -40,7 +40,7 @@
+     This scenario occurs when rectangles form an L-shape or any other shape that doesn't cover the bounding rectangle.
+     """
+     assert isRectangleCover([
+-        [1, 1, 2, 3],
++        [2, 1, 2, 3],
+         [2, 1, 3, 2]
+     ]) == False, "Failed on incorrect corner count"
+ 
+</pre><h3>Mutant 80</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -40,7 +40,7 @@
+     This scenario occurs when rectangles form an L-shape or any other shape that doesn't cover the bounding rectangle.
+     """
+     assert isRectangleCover([
+-        [1, 1, 2, 3],
++        [1, 2, 2, 3],
+         [2, 1, 3, 2]
+     ]) == False, "Failed on incorrect corner count"
+ 
+</pre><h3>Mutant 81</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -40,7 +40,7 @@
+     This scenario occurs when rectangles form an L-shape or any other shape that doesn't cover the bounding rectangle.
+     """
+     assert isRectangleCover([
+-        [1, 1, 2, 3],
++        [1, 1, 3, 3],
+         [2, 1, 3, 2]
+     ]) == False, "Failed on incorrect corner count"
+ 
+</pre><h3>Mutant 82</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -40,7 +40,7 @@
+     This scenario occurs when rectangles form an L-shape or any other shape that doesn't cover the bounding rectangle.
+     """
+     assert isRectangleCover([
+-        [1, 1, 2, 3],
++        [1, 1, 2, 4],
+         [2, 1, 3, 2]
+     ]) == False, "Failed on incorrect corner count"
+ 
+</pre><h3>Mutant 83</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -41,7 +41,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 2, 3],
+-        [2, 1, 3, 2]
++        [3, 1, 3, 2]
+     ]) == False, "Failed on incorrect corner count"
+ 
+ def test_additional_rectangles_outside_cover():
+</pre><h3>Mutant 84</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -41,7 +41,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 2, 3],
+-        [2, 1, 3, 2]
++        [2, 2, 3, 2]
+     ]) == False, "Failed on incorrect corner count"
+ 
+ def test_additional_rectangles_outside_cover():
+</pre><h3>Mutant 85</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -41,7 +41,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 2, 3],
+-        [2, 1, 3, 2]
++        [2, 1, 4, 2]
+     ]) == False, "Failed on incorrect corner count"
+ 
+ def test_additional_rectangles_outside_cover():
+</pre><h3>Mutant 89</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -42,7 +42,7 @@
+     assert isRectangleCover([
+         [1, 1, 2, 3],
+         [2, 1, 3, 2]
+-    ]) == False, "Failed on incorrect corner count"
++    ]) == False, "XXFailed on incorrect corner countXX"
+ 
+ def test_additional_rectangles_outside_cover():
+     """
+</pre><h3>Mutant 90</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -49,7 +49,7 @@
+     Test cases where additional rectangles lie outside the bounding rectangle of the cover.
+     """
+     assert isRectangleCover([
+-        [1, 1, 3, 3],
++        [2, 1, 3, 3],
+         [4, 4, 5, 5]  # This rectangle is outside the bounding box of the first rectangle.
+     ]) == False, "Failed on rectangles outside cover"
+ 
+</pre><h3>Mutant 91</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -49,7 +49,7 @@
+     Test cases where additional rectangles lie outside the bounding rectangle of the cover.
+     """
+     assert isRectangleCover([
+-        [1, 1, 3, 3],
++        [1, 2, 3, 3],
+         [4, 4, 5, 5]  # This rectangle is outside the bounding box of the first rectangle.
+     ]) == False, "Failed on rectangles outside cover"
+ 
+</pre><h3>Mutant 92</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -49,7 +49,7 @@
+     Test cases where additional rectangles lie outside the bounding rectangle of the cover.
+     """
+     assert isRectangleCover([
+-        [1, 1, 3, 3],
++        [1, 1, 4, 3],
+         [4, 4, 5, 5]  # This rectangle is outside the bounding box of the first rectangle.
+     ]) == False, "Failed on rectangles outside cover"
+ 
+</pre><h3>Mutant 93</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -49,7 +49,7 @@
+     Test cases where additional rectangles lie outside the bounding rectangle of the cover.
+     """
+     assert isRectangleCover([
+-        [1, 1, 3, 3],
++        [1, 1, 3, 4],
+         [4, 4, 5, 5]  # This rectangle is outside the bounding box of the first rectangle.
+     ]) == False, "Failed on rectangles outside cover"
+ 
+</pre><h3>Mutant 94</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -50,7 +50,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+-        [4, 4, 5, 5]  # This rectangle is outside the bounding box of the first rectangle.
++        [5, 4, 5, 5]  # This rectangle is outside the bounding box of the first rectangle.
+     ]) == False, "Failed on rectangles outside cover"
+ 
+ def test_single_rectangle():
+</pre><h3>Mutant 95</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -50,7 +50,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+-        [4, 4, 5, 5]  # This rectangle is outside the bounding box of the first rectangle.
++        [4, 5, 5, 5]  # This rectangle is outside the bounding box of the first rectangle.
+     ]) == False, "Failed on rectangles outside cover"
+ 
+ def test_single_rectangle():
+</pre><h3>Mutant 96</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -50,7 +50,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+-        [4, 4, 5, 5]  # This rectangle is outside the bounding box of the first rectangle.
++        [4, 4, 6, 5]  # This rectangle is outside the bounding box of the first rectangle.
+     ]) == False, "Failed on rectangles outside cover"
+ 
+ def test_single_rectangle():
+</pre><h3>Mutant 97</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -50,7 +50,7 @@
+     """
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+-        [4, 4, 5, 5]  # This rectangle is outside the bounding box of the first rectangle.
++        [4, 4, 5, 6]  # This rectangle is outside the bounding box of the first rectangle.
+     ]) == False, "Failed on rectangles outside cover"
+ 
+ def test_single_rectangle():
+</pre><h3>Mutant 100</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -51,7 +51,7 @@
+     assert isRectangleCover([
+         [1, 1, 3, 3],
+         [4, 4, 5, 5]  # This rectangle is outside the bounding box of the first rectangle.
+-    ]) == False, "Failed on rectangles outside cover"
++    ]) == False, "XXFailed on rectangles outside coverXX"
+ 
+ def test_single_rectangle():
+     """
+</pre><h3>Mutant 103</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -57,7 +57,7 @@
+     """
+     Test cases with a single rectangle, which technically forms a perfect cover of itself.
+     """
+-    assert isRectangleCover([[0, 0, 1, 1]]) == True, "Failed on a single rectangle"
++    assert isRectangleCover([[0, 0, 2, 1]]) == True, "Failed on a single rectangle"
+ 
+ def test_exact_fit_but_overlapping_edges():
+     """
+</pre><h3>Mutant 104</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -57,7 +57,7 @@
+     """
+     Test cases with a single rectangle, which technically forms a perfect cover of itself.
+     """
+-    assert isRectangleCover([[0, 0, 1, 1]]) == True, "Failed on a single rectangle"
++    assert isRectangleCover([[0, 0, 1, 2]]) == True, "Failed on a single rectangle"
+ 
+ def test_exact_fit_but_overlapping_edges():
+     """
+</pre><h3>Mutant 107</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -57,7 +57,7 @@
+     """
+     Test cases with a single rectangle, which technically forms a perfect cover of itself.
+     """
+-    assert isRectangleCover([[0, 0, 1, 1]]) == True, "Failed on a single rectangle"
++    assert isRectangleCover([[0, 0, 1, 1]]) == True, "XXFailed on a single rectangleXX"
+ 
+ def test_exact_fit_but_overlapping_edges():
+     """
+</pre><h3>Mutant 126</h3><pre>--- ..\P49\.\tests\test_Problem49_ChatGPT.py
++++ ..\P49\.\tests\test_Problem49_ChatGPT.py
+@@ -68,5 +68,5 @@
+         [2, 1, 3, 2],
+         [1, 2, 2, 3],
+         [2, 2, 3, 3]
+-    ]) == True, "Failed on rectangles with overlapping edges but exact fit"
++    ]) == True, "XXFailed on rectangles with overlapping edges but exact fitXX"
+ 
+</pre></body></html>

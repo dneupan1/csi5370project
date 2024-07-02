@@ -1,0 +1,231 @@
+<html><body><h1>..\P41\.\tests\test_Problem41_GeneratedSolution.py</h1>Killed 4 out of 25 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 75</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -5,7 +5,7 @@
+ import Problem41_GeneratedSolution as module_1
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_0():
+     object_0 = module_0.object()
+     list_0 = [object_0, object_0]
+</pre><h3>Mutant 77</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -7,7 +7,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+-    object_0 = module_0.object()
++    object_0 = None
+     list_0 = [object_0, object_0]
+     module_1.maxCoins(list_0)
+ 
+</pre><h3>Mutant 78</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -8,7 +8,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+     object_0 = module_0.object()
+-    list_0 = [object_0, object_0]
++    list_0 = None
+     module_1.maxCoins(list_0)
+ 
+ 
+</pre><h3>Mutant 79</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -12,7 +12,7 @@
+     module_1.maxCoins(list_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_1():
+     none_type_0 = None
+     list_0 = []
+</pre><h3>Mutant 81</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -14,7 +14,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_1():
+-    none_type_0 = None
++    none_type_0 = ""
+     list_0 = []
+     var_0 = module_1.maxCoins(list_0)
+     assert var_0 == 0
+</pre><h3>Mutant 82</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -15,7 +15,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_1():
+     none_type_0 = None
+-    list_0 = []
++    list_0 = None
+     var_0 = module_1.maxCoins(list_0)
+     assert var_0 == 0
+     module_1.maxCoins(none_type_0)
+</pre><h3>Mutant 83</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -16,7 +16,7 @@
+ def test_case_1():
+     none_type_0 = None
+     list_0 = []
+-    var_0 = module_1.maxCoins(list_0)
++    var_0 = None
+     assert var_0 == 0
+     module_1.maxCoins(none_type_0)
+ 
+</pre><h3>Mutant 84</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -17,7 +17,7 @@
+     none_type_0 = None
+     list_0 = []
+     var_0 = module_1.maxCoins(list_0)
+-    assert var_0 == 0
++    assert var_0 != 0
+     module_1.maxCoins(none_type_0)
+ 
+ 
+</pre><h3>Mutant 85</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -17,7 +17,7 @@
+     none_type_0 = None
+     list_0 = []
+     var_0 = module_1.maxCoins(list_0)
+-    assert var_0 == 0
++    assert var_0 == 1
+     module_1.maxCoins(none_type_0)
+ 
+ 
+</pre><h3>Mutant 86</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -21,7 +21,7 @@
+     module_1.maxCoins(none_type_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_2():
+     none_type_0 = None
+     module_1.maxCoins(none_type_0)
+</pre><h3>Mutant 88</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -23,7 +23,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+-    none_type_0 = None
++    none_type_0 = ""
+     module_1.maxCoins(none_type_0)
+ 
+ 
+</pre><h3>Mutant 89</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -27,7 +27,7 @@
+     module_1.maxCoins(none_type_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_3():
+     float_0 = 1486.479846
+     list_0 = [float_0, float_0, float_0]
+</pre><h3>Mutant 91</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -29,7 +29,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+-    float_0 = 1486.479846
++    float_0 = 1487.479846
+     list_0 = [float_0, float_0, float_0]
+     var_0 = module_1.maxCoins(list_0)
+     assert var_0 == pytest.approx(3286770173.4405785, abs=0.01, rel=0.01)
+</pre><h3>Mutant 92</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -29,7 +29,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+-    float_0 = 1486.479846
++    float_0 = None
+     list_0 = [float_0, float_0, float_0]
+     var_0 = module_1.maxCoins(list_0)
+     assert var_0 == pytest.approx(3286770173.4405785, abs=0.01, rel=0.01)
+</pre><h3>Mutant 93</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -30,7 +30,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+     float_0 = 1486.479846
+-    list_0 = [float_0, float_0, float_0]
++    list_0 = None
+     var_0 = module_1.maxCoins(list_0)
+     assert var_0 == pytest.approx(3286770173.4405785, abs=0.01, rel=0.01)
+     none_type_0 = None
+</pre><h3>Mutant 94</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -31,7 +31,7 @@
+ def test_case_3():
+     float_0 = 1486.479846
+     list_0 = [float_0, float_0, float_0]
+-    var_0 = module_1.maxCoins(list_0)
++    var_0 = None
+     assert var_0 == pytest.approx(3286770173.4405785, abs=0.01, rel=0.01)
+     none_type_0 = None
+     module_1.maxCoins(none_type_0)
+</pre><h3>Mutant 95</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -32,7 +32,7 @@
+     float_0 = 1486.479846
+     list_0 = [float_0, float_0, float_0]
+     var_0 = module_1.maxCoins(list_0)
+-    assert var_0 == pytest.approx(3286770173.4405785, abs=0.01, rel=0.01)
++    assert var_0 != pytest.approx(3286770173.4405785, abs=0.01, rel=0.01)
+     none_type_0 = None
+     module_1.maxCoins(none_type_0)
+ 
+</pre><h3>Mutant 96</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -32,7 +32,7 @@
+     float_0 = 1486.479846
+     list_0 = [float_0, float_0, float_0]
+     var_0 = module_1.maxCoins(list_0)
+-    assert var_0 == pytest.approx(3286770173.4405785, abs=0.01, rel=0.01)
++    assert var_0 == pytest.approx(6573540346.881157, abs=0.01, rel=0.01)
+     none_type_0 = None
+     module_1.maxCoins(none_type_0)
+ 
+</pre><h3>Mutant 97</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -32,7 +32,7 @@
+     float_0 = 1486.479846
+     list_0 = [float_0, float_0, float_0]
+     var_0 = module_1.maxCoins(list_0)
+-    assert var_0 == pytest.approx(3286770173.4405785, abs=0.01, rel=0.01)
++    assert var_0 == pytest.approx(3286770173.4405785, abs=1.01, rel=0.01)
+     none_type_0 = None
+     module_1.maxCoins(none_type_0)
+ 
+</pre><h3>Mutant 98</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -32,7 +32,7 @@
+     float_0 = 1486.479846
+     list_0 = [float_0, float_0, float_0]
+     var_0 = module_1.maxCoins(list_0)
+-    assert var_0 == pytest.approx(3286770173.4405785, abs=0.01, rel=0.01)
++    assert var_0 == pytest.approx(3286770173.4405785, abs=0.01, rel=1.01)
+     none_type_0 = None
+     module_1.maxCoins(none_type_0)
+ 
+</pre><h3>Mutant 99</h3><pre>--- ..\P41\.\tests\test_Problem41_GeneratedSolution.py
++++ ..\P41\.\tests\test_Problem41_GeneratedSolution.py
+@@ -33,6 +33,6 @@
+     list_0 = [float_0, float_0, float_0]
+     var_0 = module_1.maxCoins(list_0)
+     assert var_0 == pytest.approx(3286770173.4405785, abs=0.01, rel=0.01)
+-    none_type_0 = None
++    none_type_0 = ""
+     module_1.maxCoins(none_type_0)
+ 
+</pre></body></html>

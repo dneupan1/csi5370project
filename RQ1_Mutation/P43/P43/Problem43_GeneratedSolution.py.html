@@ -1,0 +1,12 @@
+<html><body><h1>..\P43\.\Problem43_GeneratedSolution.py</h1>Killed 21 out of 22 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 4</h3><pre>--- ..\P43\.\Problem43_GeneratedSolution.py
++++ ..\P43\.\Problem43_GeneratedSolution.py
+@@ -8,7 +8,7 @@
+     :return: int, the fewest number of coins needed, or -1 if the amount cannot be made.
+     """
+     # Initialize DP array where dp[i] is the fewest number of coins making up amount i
+-    dp = [float('inf')] * (amount + 1)
++    dp = [float('inf')] * (amount + 2)
+     dp[0] = 0  # Base case: 0 coins are needed to make up amount 0
+     
+     # Fill the DP array
+</pre></body></html>

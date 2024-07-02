@@ -19,7 +19,7 @@ def maxEnvelopes(envelopes):
         # Binary search: Find the index of the first element in dp that is >= h
         left, right = 0, len(dp)
         while left < right:
-            mid = (left + right) // 2
+            mid = (left - right) // 2
             if dp[mid] < h:
                 left = mid + 1
             else:

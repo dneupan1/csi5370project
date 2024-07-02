@@ -1,0 +1,166 @@
+<html><body><h1>..\P4\.\tests\test_Problem4_NLP_to_test.py</h1>Killed 36 out of 51 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 161</h3><pre>--- ..\P4\.\tests\test_Problem4_NLP_to_test.py
++++ ..\P4\.\tests\test_Problem4_NLP_to_test.py
+@@ -5,7 +5,7 @@
+ # Define test cases using the pytest framework
+ # Each test function is decorated with @pytest.mark
+ 
+-@pytest.mark.parametrize("s, p, expected", [
++@pytest.mark.parametrize("XXs, p, expectedXX", [
+     # Basic examples
+     ("aa", "a", False),    # Test matching exact characters without special symbols
+     ("aa", "a*", True),    # Test '*' wildcard, matching multiple characters
+</pre><h3>Mutant 162</h3><pre>--- ..\P4\.\tests\test_Problem4_NLP_to_test.py
++++ ..\P4\.\tests\test_Problem4_NLP_to_test.py
+@@ -7,7 +7,7 @@
+ 
+ @pytest.mark.parametrize("s, p, expected", [
+     # Basic examples
+-    ("aa", "a", False),    # Test matching exact characters without special symbols
++    ("XXaaXX", "a", False),    # Test matching exact characters without special symbols
+     ("aa", "a*", True),    # Test '*' wildcard, matching multiple characters
+     ("ab", ".*", True),    # Test '.*', matching any characters
+     
+</pre><h3>Mutant 163</h3><pre>--- ..\P4\.\tests\test_Problem4_NLP_to_test.py
++++ ..\P4\.\tests\test_Problem4_NLP_to_test.py
+@@ -7,7 +7,7 @@
+ 
+ @pytest.mark.parametrize("s, p, expected", [
+     # Basic examples
+-    ("aa", "a", False),    # Test matching exact characters without special symbols
++    ("aa", "XXaXX", False),    # Test matching exact characters without special symbols
+     ("aa", "a*", True),    # Test '*' wildcard, matching multiple characters
+     ("ab", ".*", True),    # Test '.*', matching any characters
+     
+</pre><h3>Mutant 168</h3><pre>--- ..\P4\.\tests\test_Problem4_NLP_to_test.py
++++ ..\P4\.\tests\test_Problem4_NLP_to_test.py
+@@ -9,7 +9,7 @@
+     # Basic examples
+     ("aa", "a", False),    # Test matching exact characters without special symbols
+     ("aa", "a*", True),    # Test '*' wildcard, matching multiple characters
+-    ("ab", ".*", True),    # Test '.*', matching any characters
++    ("XXabXX", ".*", True),    # Test '.*', matching any characters
+     
+     # More extensive testing of '.' and '*'
+     ("aab", "c*a*b", True),  # '*' matching zero of 'c' and multiple 'a'
+</pre><h3>Mutant 174</h3><pre>--- ..\P4\.\tests\test_Problem4_NLP_to_test.py
++++ ..\P4\.\tests\test_Problem4_NLP_to_test.py
+@@ -13,7 +13,7 @@
+     
+     # More extensive testing of '.' and '*'
+     ("aab", "c*a*b", True),  # '*' matching zero of 'c' and multiple 'a'
+-    ("mississippi", "mis*is*p*.", False),  # Multiple '*' and '.' characters
++    ("XXmississippiXX", "mis*is*p*.", False),  # Multiple '*' and '.' characters
+     
+     # Edge cases
+     ("", "", True),         # Both strings empty
+</pre><h3>Mutant 175</h3><pre>--- ..\P4\.\tests\test_Problem4_NLP_to_test.py
++++ ..\P4\.\tests\test_Problem4_NLP_to_test.py
+@@ -13,7 +13,7 @@
+     
+     # More extensive testing of '.' and '*'
+     ("aab", "c*a*b", True),  # '*' matching zero of 'c' and multiple 'a'
+-    ("mississippi", "mis*is*p*.", False),  # Multiple '*' and '.' characters
++    ("mississippi", "XXmis*is*p*.XX", False),  # Multiple '*' and '.' characters
+     
+     # Edge cases
+     ("", "", True),         # Both strings empty
+</pre><h3>Mutant 180</h3><pre>--- ..\P4\.\tests\test_Problem4_NLP_to_test.py
++++ ..\P4\.\tests\test_Problem4_NLP_to_test.py
+@@ -17,7 +17,7 @@
+     
+     # Edge cases
+     ("", "", True),         # Both strings empty
+-    ("", ".*", True),       # Empty string matches with any pattern
++    ("XXXX", ".*", True),       # Empty string matches with any pattern
+     ("a", "", False),       # Non-empty string does not match empty pattern
+     ("", "a*", True),       # Empty string matches zero occurrences of 'a'
+ 
+</pre><h3>Mutant 183</h3><pre>--- ..\P4\.\tests\test_Problem4_NLP_to_test.py
++++ ..\P4\.\tests\test_Problem4_NLP_to_test.py
+@@ -18,7 +18,7 @@
+     # Edge cases
+     ("", "", True),         # Both strings empty
+     ("", ".*", True),       # Empty string matches with any pattern
+-    ("a", "", False),       # Non-empty string does not match empty pattern
++    ("XXaXX", "", False),       # Non-empty string does not match empty pattern
+     ("", "a*", True),       # Empty string matches zero occurrences of 'a'
+ 
+     # Tests with no special characters
+</pre><h3>Mutant 184</h3><pre>--- ..\P4\.\tests\test_Problem4_NLP_to_test.py
++++ ..\P4\.\tests\test_Problem4_NLP_to_test.py
+@@ -18,7 +18,7 @@
+     # Edge cases
+     ("", "", True),         # Both strings empty
+     ("", ".*", True),       # Empty string matches with any pattern
+-    ("a", "", False),       # Non-empty string does not match empty pattern
++    ("a", "XXXX", False),       # Non-empty string does not match empty pattern
+     ("", "a*", True),       # Empty string matches zero occurrences of 'a'
+ 
+     # Tests with no special characters
+</pre><h3>Mutant 192</h3><pre>--- ..\P4\.\tests\test_Problem4_NLP_to_test.py
++++ ..\P4\.\tests\test_Problem4_NLP_to_test.py
+@@ -23,7 +23,7 @@
+ 
+     # Tests with no special characters
+     ("hello", "hello", True),  # Direct match
+-    ("hello", "world", False), # Direct mismatch
++    ("XXhelloXX", "world", False), # Direct mismatch
+ 
+     # Single character tests
+     ("a", ".", True),         # Single '.' matches any single character
+</pre><h3>Mutant 193</h3><pre>--- ..\P4\.\tests\test_Problem4_NLP_to_test.py
++++ ..\P4\.\tests\test_Problem4_NLP_to_test.py
+@@ -23,7 +23,7 @@
+ 
+     # Tests with no special characters
+     ("hello", "hello", True),  # Direct match
+-    ("hello", "world", False), # Direct mismatch
++    ("hello", "XXworldXX", False), # Direct mismatch
+ 
+     # Single character tests
+     ("a", ".", True),         # Single '.' matches any single character
+</pre><h3>Mutant 198</h3><pre>--- ..\P4\.\tests\test_Problem4_NLP_to_test.py
++++ ..\P4\.\tests\test_Problem4_NLP_to_test.py
+@@ -27,7 +27,7 @@
+ 
+     # Single character tests
+     ("a", ".", True),         # Single '.' matches any single character
+-    ("", ".", False),         # '.' does not match empty string
++    ("XXXX", ".", False),         # '.' does not match empty string
+     ("abc", "abc", True),     # Exact match
+     ("abc", "ab.", True),     # '.' as any single character
+     ("abc", "abcd", False),   # Mismatch with additional characters in pattern
+</pre><h3>Mutant 199</h3><pre>--- ..\P4\.\tests\test_Problem4_NLP_to_test.py
++++ ..\P4\.\tests\test_Problem4_NLP_to_test.py
+@@ -27,7 +27,7 @@
+ 
+     # Single character tests
+     ("a", ".", True),         # Single '.' matches any single character
+-    ("", ".", False),         # '.' does not match empty string
++    ("", "XX.XX", False),         # '.' does not match empty string
+     ("abc", "abc", True),     # Exact match
+     ("abc", "ab.", True),     # '.' as any single character
+     ("abc", "abcd", False),   # Mismatch with additional characters in pattern
+</pre><h3>Mutant 207</h3><pre>--- ..\P4\.\tests\test_Problem4_NLP_to_test.py
++++ ..\P4\.\tests\test_Problem4_NLP_to_test.py
+@@ -30,7 +30,7 @@
+     ("", ".", False),         # '.' does not match empty string
+     ("abc", "abc", True),     # Exact match
+     ("abc", "ab.", True),     # '.' as any single character
+-    ("abc", "abcd", False),   # Mismatch with additional characters in pattern
++    ("XXabcXX", "abcd", False),   # Mismatch with additional characters in pattern
+ ])
+ def test_regex_matching(s, p, expected):
+     """
+</pre><h3>Mutant 208</h3><pre>--- ..\P4\.\tests\test_Problem4_NLP_to_test.py
++++ ..\P4\.\tests\test_Problem4_NLP_to_test.py
+@@ -30,7 +30,7 @@
+     ("", ".", False),         # '.' does not match empty string
+     ("abc", "abc", True),     # Exact match
+     ("abc", "ab.", True),     # '.' as any single character
+-    ("abc", "abcd", False),   # Mismatch with additional characters in pattern
++    ("abc", "XXabcdXX", False),   # Mismatch with additional characters in pattern
+ ])
+ def test_regex_matching(s, p, expected):
+     """
+</pre></body></html>

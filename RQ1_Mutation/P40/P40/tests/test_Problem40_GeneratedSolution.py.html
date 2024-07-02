@@ -1,0 +1,826 @@
+<html><body><h1>..\P40\.\tests\test_Problem40_GeneratedSolution.py</h1>Killed 594 out of 669 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 379</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -184,7 +184,7 @@
+     assert int_1 == 174
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_2():
+     bytes_0 = b"@\xfb\xd8\r\xfdj\x06\xbc\xd9'\x8aQ\xc4W"
+     int_0 = -1618
+</pre><h3>Mutant 381</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -186,7 +186,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+-    bytes_0 = b"@\xfb\xd8\r\xfdj\x06\xbc\xd9'\x8aQ\xc4W"
++    bytes_0 = b"XX@\xfb\xd8\r\xfdj\x06\xbc\xd9'\x8aQ\xc4WXX"
+     int_0 = -1618
+     num_array_0 = module_0.NumArray(bytes_0)
+     assert (
+</pre><h3>Mutant 382</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -186,7 +186,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+-    bytes_0 = b"@\xfb\xd8\r\xfdj\x06\xbc\xd9'\x8aQ\xc4W"
++    bytes_0 = None
+     int_0 = -1618
+     num_array_0 = module_0.NumArray(bytes_0)
+     assert (
+</pre><h3>Mutant 384</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -187,7 +187,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+     bytes_0 = b"@\xfb\xd8\r\xfdj\x06\xbc\xd9'\x8aQ\xc4W"
+-    int_0 = -1618
++    int_0 = -1619
+     num_array_0 = module_0.NumArray(bytes_0)
+     assert (
+         f"{type(num_array_0).__module__}.{type(num_array_0).__qualname__}"
+</pre><h3>Mutant 385</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -187,7 +187,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+     bytes_0 = b"@\xfb\xd8\r\xfdj\x06\xbc\xd9'\x8aQ\xc4W"
+-    int_0 = -1618
++    int_0 = None
+     num_array_0 = module_0.NumArray(bytes_0)
+     assert (
+         f"{type(num_array_0).__module__}.{type(num_array_0).__qualname__}"
+</pre><h3>Mutant 386</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -188,7 +188,7 @@
+ def test_case_2():
+     bytes_0 = b"@\xfb\xd8\r\xfdj\x06\xbc\xd9'\x8aQ\xc4W"
+     int_0 = -1618
+-    num_array_0 = module_0.NumArray(bytes_0)
++    num_array_0 = None
+     assert (
+         f"{type(num_array_0).__module__}.{type(num_array_0).__qualname__}"
+         == "Problem40_GeneratedSolution.NumArray"
+</pre><h3>Mutant 387</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -190,7 +190,7 @@
+     int_0 = -1618
+     num_array_0 = module_0.NumArray(bytes_0)
+     assert (
+-        f"{type(num_array_0).__module__}.{type(num_array_0).__qualname__}"
++        f"XX{type(num_array_0).__module__}.{type(num_array_0).__qualname__}XX"
+         == "Problem40_GeneratedSolution.NumArray"
+     )
+     assert num_array_0.n == 14
+</pre><h3>Mutant 388</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -191,7 +191,7 @@
+     num_array_0 = module_0.NumArray(bytes_0)
+     assert (
+         f"{type(num_array_0).__module__}.{type(num_array_0).__qualname__}"
+-        == "Problem40_GeneratedSolution.NumArray"
++        != "Problem40_GeneratedSolution.NumArray"
+     )
+     assert num_array_0.n == 14
+     assert num_array_0.tree == [
+</pre><h3>Mutant 389</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -191,7 +191,7 @@
+     num_array_0 = module_0.NumArray(bytes_0)
+     assert (
+         f"{type(num_array_0).__module__}.{type(num_array_0).__qualname__}"
+-        == "Problem40_GeneratedSolution.NumArray"
++        == "XXProblem40_GeneratedSolution.NumArrayXX"
+     )
+     assert num_array_0.n == 14
+     assert num_array_0.tree == [
+</pre><h3>Mutant 390</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -193,7 +193,7 @@
+         f"{type(num_array_0).__module__}.{type(num_array_0).__qualname__}"
+         == "Problem40_GeneratedSolution.NumArray"
+     )
+-    assert num_array_0.n == 14
++    assert num_array_0.n != 14
+     assert num_array_0.tree == [
+         1855,
+         909,
+</pre><h3>Mutant 391</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -193,7 +193,7 @@
+         f"{type(num_array_0).__module__}.{type(num_array_0).__qualname__}"
+         == "Problem40_GeneratedSolution.NumArray"
+     )
+-    assert num_array_0.n == 14
++    assert num_array_0.n == 15
+     assert num_array_0.tree == [
+         1855,
+         909,
+</pre><h3>Mutant 392</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -194,7 +194,7 @@
+         == "Problem40_GeneratedSolution.NumArray"
+     )
+     assert num_array_0.n == 14
+-    assert num_array_0.tree == [
++    assert num_array_0.tree != [
+         1855,
+         909,
+         946,
+</pre><h3>Mutant 393</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -195,7 +195,7 @@
+     )
+     assert num_array_0.n == 14
+     assert num_array_0.tree == [
+-        1855,
++        1856,
+         909,
+         946,
+         544,
+</pre><h3>Mutant 394</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -196,7 +196,7 @@
+     assert num_array_0.n == 14
+     assert num_array_0.tree == [
+         1855,
+-        909,
++        910,
+         946,
+         544,
+         365,
+</pre><h3>Mutant 395</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -197,7 +197,7 @@
+     assert num_array_0.tree == [
+         1855,
+         909,
+-        946,
++        947,
+         544,
+         365,
+         582,
+</pre><h3>Mutant 396</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -198,7 +198,7 @@
+         1855,
+         909,
+         946,
+-        544,
++        545,
+         365,
+         582,
+         364,
+</pre><h3>Mutant 397</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -199,7 +199,7 @@
+         909,
+         946,
+         544,
+-        365,
++        366,
+         582,
+         364,
+         315,
+</pre><h3>Mutant 398</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -200,7 +200,7 @@
+         946,
+         544,
+         365,
+-        582,
++        583,
+         364,
+         315,
+         229,
+</pre><h3>Mutant 399</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -201,7 +201,7 @@
+         544,
+         365,
+         582,
+-        364,
++        365,
+         315,
+         229,
+         359,
+</pre><h3>Mutant 400</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -202,7 +202,7 @@
+         365,
+         582,
+         364,
+-        315,
++        316,
+         229,
+         359,
+         6,
+</pre><h3>Mutant 401</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -203,7 +203,7 @@
+         582,
+         364,
+         315,
+-        229,
++        230,
+         359,
+         6,
+         405,
+</pre><h3>Mutant 402</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -204,7 +204,7 @@
+         364,
+         315,
+         229,
+-        359,
++        360,
+         6,
+         405,
+         177,
+</pre><h3>Mutant 403</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -205,7 +205,7 @@
+         315,
+         229,
+         359,
+-        6,
++        7,
+         405,
+         177,
+         277,
+</pre><h3>Mutant 404</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -206,7 +206,7 @@
+         229,
+         359,
+         6,
+-        405,
++        406,
+         177,
+         277,
+         87,
+</pre><h3>Mutant 405</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -207,7 +207,7 @@
+         359,
+         6,
+         405,
+-        177,
++        178,
+         277,
+         87,
+         64,
+</pre><h3>Mutant 406</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -208,7 +208,7 @@
+         6,
+         405,
+         177,
+-        277,
++        278,
+         87,
+         64,
+         251,
+</pre><h3>Mutant 407</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -209,7 +209,7 @@
+         405,
+         177,
+         277,
+-        87,
++        88,
+         64,
+         251,
+         216,
+</pre><h3>Mutant 408</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -210,7 +210,7 @@
+         177,
+         277,
+         87,
+-        64,
++        65,
+         251,
+         216,
+         13,
+</pre><h3>Mutant 409</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -211,7 +211,7 @@
+         277,
+         87,
+         64,
+-        251,
++        252,
+         216,
+         13,
+         253,
+</pre><h3>Mutant 410</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -212,7 +212,7 @@
+         87,
+         64,
+         251,
+-        216,
++        217,
+         13,
+         253,
+         106,
+</pre><h3>Mutant 411</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -213,7 +213,7 @@
+         64,
+         251,
+         216,
+-        13,
++        14,
+         253,
+         106,
+         0,
+</pre><h3>Mutant 412</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -214,7 +214,7 @@
+         251,
+         216,
+         13,
+-        253,
++        254,
+         106,
+         0,
+         0,
+</pre><h3>Mutant 413</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -215,7 +215,7 @@
+         216,
+         13,
+         253,
+-        106,
++        107,
+         0,
+         0,
+         188,
+</pre><h3>Mutant 414</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -216,7 +216,7 @@
+         13,
+         253,
+         106,
+-        0,
++        1,
+         0,
+         188,
+         217,
+</pre><h3>Mutant 415</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -217,7 +217,7 @@
+         253,
+         106,
+         0,
+-        0,
++        1,
+         188,
+         217,
+         39,
+</pre><h3>Mutant 416</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -218,7 +218,7 @@
+         106,
+         0,
+         0,
+-        188,
++        189,
+         217,
+         39,
+         138,
+</pre><h3>Mutant 417</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -219,7 +219,7 @@
+         0,
+         0,
+         188,
+-        217,
++        218,
+         39,
+         138,
+         81,
+</pre><h3>Mutant 418</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -220,7 +220,7 @@
+         0,
+         188,
+         217,
+-        39,
++        40,
+         138,
+         81,
+         196,
+</pre><h3>Mutant 419</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -221,7 +221,7 @@
+         188,
+         217,
+         39,
+-        138,
++        139,
+         81,
+         196,
+         0,
+</pre><h3>Mutant 420</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -222,7 +222,7 @@
+         217,
+         39,
+         138,
+-        81,
++        82,
+         196,
+         0,
+         0,
+</pre><h3>Mutant 421</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -223,7 +223,7 @@
+         39,
+         138,
+         81,
+-        196,
++        197,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 422</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -224,7 +224,7 @@
+         138,
+         81,
+         196,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 423</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -225,7 +225,7 @@
+         81,
+         196,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 424</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -226,7 +226,7 @@
+         196,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 425</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -227,7 +227,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 426</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -228,7 +228,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 427</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -229,7 +229,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 428</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -230,7 +230,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 429</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -231,7 +231,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 430</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -232,7 +232,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 431</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -233,7 +233,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 432</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -234,7 +234,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 433</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -235,7 +235,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 434</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -236,7 +236,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 435</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -237,7 +237,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 436</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -238,7 +238,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 437</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -239,7 +239,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 438</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -240,7 +240,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 439</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -241,7 +241,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 440</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -242,7 +242,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 441</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -243,7 +243,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 442</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -244,7 +244,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 443</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -245,7 +245,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 444</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -246,7 +246,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 445</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -247,7 +247,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+         0,
+</pre><h3>Mutant 446</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -248,7 +248,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+         0,
+     ]
+</pre><h3>Mutant 447</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -249,7 +249,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+         0,
+     ]
+     none_type_0 = None
+</pre><h3>Mutant 448</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -250,7 +250,7 @@
+         0,
+         0,
+         0,
+-        0,
++        1,
+     ]
+     none_type_0 = None
+     num_array_0.sumRange(int_0, none_type_0)
+</pre><h3>Mutant 449</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -252,7 +252,7 @@
+         0,
+         0,
+     ]
+-    none_type_0 = None
++    none_type_0 = ""
+     num_array_0.sumRange(int_0, none_type_0)
+ 
+ 
+</pre><h3>Mutant 452</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -258,7 +258,7 @@
+ 
+ def test_case_3():
+     bytes_0 = b"@\xfb\xd8\r\xfdj\x06\xbc\xd9'\x8aQ\xc4W"
+-    int_0 = -1614
++    int_0 = +1614
+     num_array_0 = module_0.NumArray(bytes_0)
+     assert (
+         f"{type(num_array_0).__module__}.{type(num_array_0).__qualname__}"
+</pre><h3>Mutant 453</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -258,7 +258,7 @@
+ 
+ def test_case_3():
+     bytes_0 = b"@\xfb\xd8\r\xfdj\x06\xbc\xd9'\x8aQ\xc4W"
+-    int_0 = -1614
++    int_0 = -1615
+     num_array_0 = module_0.NumArray(bytes_0)
+     assert (
+         f"{type(num_array_0).__module__}.{type(num_array_0).__qualname__}"
+</pre><h3>Mutant 524</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -329,7 +329,7 @@
+ 
+ def test_case_4():
+     bytes_0 = b"@\xfb\xd8\r\xfdj\xbc\xbc\xd9'\x8aQ\xc4W"
+-    int_0 = -1592
++    int_0 = -1593
+     num_array_0 = module_0.NumArray(bytes_0)
+     assert (
+         f"{type(num_array_0).__module__}.{type(num_array_0).__qualname__}"
+</pre><h3>Mutant 715</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -521,7 +521,7 @@
+ 
+ def test_case_5():
+     bytes_0 = b"@\xfb\xd8\r\xfdj\xbc\xbc\xd9'\x8aQ\xc4W"
+-    int_0 = -1592
++    int_0 = +1592
+     num_array_0 = module_0.NumArray(bytes_0)
+     assert (
+         f"{type(num_array_0).__module__}.{type(num_array_0).__qualname__}"
+</pre><h3>Mutant 716</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -521,7 +521,7 @@
+ 
+ def test_case_5():
+     bytes_0 = b"@\xfb\xd8\r\xfdj\xbc\xbc\xd9'\x8aQ\xc4W"
+-    int_0 = -1592
++    int_0 = -1593
+     num_array_0 = module_0.NumArray(bytes_0)
+     assert (
+         f"{type(num_array_0).__module__}.{type(num_array_0).__qualname__}"
+</pre><h3>Mutant 781</h3><pre>--- ..\P40\.\tests\test_Problem40_GeneratedSolution.py
++++ ..\P40\.\tests\test_Problem40_GeneratedSolution.py
+@@ -586,7 +586,7 @@
+         0,
+         0,
+     ]
+-    int_1 = 800
++    int_1 = 801
+     num_array_1 = module_0.NumArray(bytes_0)
+     assert num_array_1.tree == [
+         2037,
+</pre></body></html>

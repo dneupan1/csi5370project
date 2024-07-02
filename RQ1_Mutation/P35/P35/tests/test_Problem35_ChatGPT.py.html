@@ -1,0 +1,121 @@
+<html><body><h1>..\P35\.\tests\test_Problem35_ChatGPT.py</h1>Killed 39 out of 50 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 24</h3><pre>--- ..\P35\.\tests\test_Problem35_ChatGPT.py
++++ ..\P35\.\tests\test_Problem35_ChatGPT.py
+@@ -4,7 +4,7 @@
+ 
+ # Test with a basic example where palindrome pairs are formed by appending
+ def test_basic_pairs():
+-    words = ["bat", "tab", "cat"]
++    words = ["bat", "tab", "XXcatXX"]
+     expected = [[0, 1], [1, 0]]  # "battab" and "tabbat" are palindromes
+     assert sorted(palindromePairs(words)) == sorted(expected), "Failed with basic palindrome pairs"
+ 
+</pre><h3>Mutant 32</h3><pre>--- ..\P35\.\tests\test_Problem35_ChatGPT.py
++++ ..\P35\.\tests\test_Problem35_ChatGPT.py
+@@ -6,7 +6,7 @@
+ def test_basic_pairs():
+     words = ["bat", "tab", "cat"]
+     expected = [[0, 1], [1, 0]]  # "battab" and "tabbat" are palindromes
+-    assert sorted(palindromePairs(words)) == sorted(expected), "Failed with basic palindrome pairs"
++    assert sorted(palindromePairs(words)) == sorted(expected), "XXFailed with basic palindrome pairsXX"
+ 
+ 
+ # Test with words that are themselves palindromes
+</pre><h3>Mutant 49</h3><pre>--- ..\P35\.\tests\test_Problem35_ChatGPT.py
++++ ..\P35\.\tests\test_Problem35_ChatGPT.py
+@@ -13,7 +13,7 @@
+ def test_self_palindrome():
+     words = ["abcd", "dcba", "lls", "s", "sssll"]
+     expected = [[0, 1], [1, 0], [2, 4], [3, 2]]  # Includes "slls" and "llssssll"
+-    assert sorted(palindromePairs(words)) == sorted(expected), "Failed with words that are themselves palindromes"
++    assert sorted(palindromePairs(words)) == sorted(expected), "XXFailed with words that are themselves palindromesXX"
+ 
+ # Test with no possible palindrome pairs
+ def test_no_pairs():
+</pre><h3>Mutant 50</h3><pre>--- ..\P35\.\tests\test_Problem35_ChatGPT.py
++++ ..\P35\.\tests\test_Problem35_ChatGPT.py
+@@ -17,7 +17,7 @@
+ 
+ # Test with no possible palindrome pairs
+ def test_no_pairs():
+-    words = ["abc", "def"]
++    words = ["XXabcXX", "def"]
+     expected = []  # No palindrome pairs can be formed
+     assert palindromePairs(words) == expected, "Failed with no possible palindrome pairs"
+ 
+</pre><h3>Mutant 51</h3><pre>--- ..\P35\.\tests\test_Problem35_ChatGPT.py
++++ ..\P35\.\tests\test_Problem35_ChatGPT.py
+@@ -17,7 +17,7 @@
+ 
+ # Test with no possible palindrome pairs
+ def test_no_pairs():
+-    words = ["abc", "def"]
++    words = ["abc", "XXdefXX"]
+     expected = []  # No palindrome pairs can be formed
+     assert palindromePairs(words) == expected, "Failed with no possible palindrome pairs"
+ 
+</pre><h3>Mutant 55</h3><pre>--- ..\P35\.\tests\test_Problem35_ChatGPT.py
++++ ..\P35\.\tests\test_Problem35_ChatGPT.py
+@@ -19,7 +19,7 @@
+ def test_no_pairs():
+     words = ["abc", "def"]
+     expected = []  # No palindrome pairs can be formed
+-    assert palindromePairs(words) == expected, "Failed with no possible palindrome pairs"
++    assert palindromePairs(words) == expected, "XXFailed with no possible palindrome pairsXX"
+ 
+ # Test with complex cases involving multiple palindrome pairs and overlaps
+ def test_complex_cases():
+</pre><h3>Mutant 56</h3><pre>--- ..\P35\.\tests\test_Problem35_ChatGPT.py
++++ ..\P35\.\tests\test_Problem35_ChatGPT.py
+@@ -23,7 +23,7 @@
+ 
+ # Test with complex cases involving multiple palindrome pairs and overlaps
+ def test_complex_cases():
+-    words = ["a", "abc", "aba", ""]
++    words = ["XXaXX", "abc", "aba", ""]
+     expected = [[0, 3], [3, 0], [2, 3], [3, 2]]  # "a" and "" make two pairs, "aba" and "" make two pairs
+     assert sorted(palindromePairs(words)) == sorted(expected), "Failed with complex cases"
+ 
+</pre><h3>Mutant 57</h3><pre>--- ..\P35\.\tests\test_Problem35_ChatGPT.py
++++ ..\P35\.\tests\test_Problem35_ChatGPT.py
+@@ -23,7 +23,7 @@
+ 
+ # Test with complex cases involving multiple palindrome pairs and overlaps
+ def test_complex_cases():
+-    words = ["a", "abc", "aba", ""]
++    words = ["a", "XXabcXX", "aba", ""]
+     expected = [[0, 3], [3, 0], [2, 3], [3, 2]]  # "a" and "" make two pairs, "aba" and "" make two pairs
+     assert sorted(palindromePairs(words)) == sorted(expected), "Failed with complex cases"
+ 
+</pre><h3>Mutant 58</h3><pre>--- ..\P35\.\tests\test_Problem35_ChatGPT.py
++++ ..\P35\.\tests\test_Problem35_ChatGPT.py
+@@ -23,7 +23,7 @@
+ 
+ # Test with complex cases involving multiple palindrome pairs and overlaps
+ def test_complex_cases():
+-    words = ["a", "abc", "aba", ""]
++    words = ["a", "abc", "XXabaXX", ""]
+     expected = [[0, 3], [3, 0], [2, 3], [3, 2]]  # "a" and "" make two pairs, "aba" and "" make two pairs
+     assert sorted(palindromePairs(words)) == sorted(expected), "Failed with complex cases"
+ 
+</pre><h3>Mutant 71</h3><pre>--- ..\P35\.\tests\test_Problem35_ChatGPT.py
++++ ..\P35\.\tests\test_Problem35_ChatGPT.py
+@@ -25,6 +25,6 @@
+ def test_complex_cases():
+     words = ["a", "abc", "aba", ""]
+     expected = [[0, 3], [3, 0], [2, 3], [3, 2]]  # "a" and "" make two pairs, "aba" and "" make two pairs
+-    assert sorted(palindromePairs(words)) == sorted(expected), "Failed with complex cases"
++    assert sorted(palindromePairs(words)) == sorted(expected), "XXFailed with complex casesXX"
+ 
+ 
+</pre><h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 29</h3><pre>--- ..\P35\.\tests\test_Problem35_ChatGPT.py
++++ ..\P35\.\tests\test_Problem35_ChatGPT.py
+@@ -5,7 +5,7 @@
+ # Test with a basic example where palindrome pairs are formed by appending
+ def test_basic_pairs():
+     words = ["bat", "tab", "cat"]
+-    expected = [[0, 1], [1, 0]]  # "battab" and "tabbat" are palindromes
++    expected = [[0, 1], [1, 1]]  # "battab" and "tabbat" are palindromes
+     assert sorted(palindromePairs(words)) == sorted(expected), "Failed with basic palindrome pairs"
+ 
+ 
+</pre></body></html>

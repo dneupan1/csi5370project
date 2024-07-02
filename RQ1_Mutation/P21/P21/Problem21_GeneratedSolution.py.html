@@ -1,0 +1,12 @@
+<html><body><h1>..\P21\.\Problem21_GeneratedSolution.py</h1>Killed 27 out of 28 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 1</h3><pre>--- ..\P21\.\Problem21_GeneratedSolution.py
++++ ..\P21\.\Problem21_GeneratedSolution.py
+@@ -1,7 +1,7 @@
+ from typing import List
+ 
+ def countPartitions( nums: List[int], k: int) -> int:
+-    kMod = 1_000_000_007
++    kMod = 1000000008
+     summ = sum(nums)
+     ans = pow(2, len(nums), kMod)  # 2^n % kMod
+     dp = [1] + [0] * k
+</pre></body></html>

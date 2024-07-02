@@ -1,0 +1,98 @@
+<html><body><h1>..\P23\.\tests\test_Problem23_NLP_To_Test.py</h1>Killed 9 out of 18 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 107</h3><pre>--- ..\P23\.\tests\test_Problem23_NLP_To_Test.py
++++ ..\P23\.\tests\test_Problem23_NLP_To_Test.py
+@@ -1,7 +1,7 @@
+ import pytest
+ from Problem23_GeneratedSolution import reorderDigits as originalDigits  # Assuming the function 'originalDigits' is defined in 'solution.py'
+ 
+-@pytest.mark.parametrize("input_string, expected_output", [
++@pytest.mark.parametrize("XXinput_string, expected_outputXX", [
+     # Example 1: Contains zero, one, two
+     ("owoztneoer", "012"),
+     # Example 2: Contains four, five
+</pre><h3>Mutant 108</h3><pre>--- ..\P23\.\tests\test_Problem23_NLP_To_Test.py
++++ ..\P23\.\tests\test_Problem23_NLP_To_Test.py
+@@ -3,7 +3,7 @@
+ 
+ @pytest.mark.parametrize("input_string, expected_output", [
+     # Example 1: Contains zero, one, two
+-    ("owoztneoer", "012"),
++    ("XXowoztneoerXX", "012"),
+     # Example 2: Contains four, five
+     ("fviefuro", "45"),
+     # Edge case: Empty string
+</pre><h3>Mutant 110</h3><pre>--- ..\P23\.\tests\test_Problem23_NLP_To_Test.py
++++ ..\P23\.\tests\test_Problem23_NLP_To_Test.py
+@@ -5,7 +5,7 @@
+     # Example 1: Contains zero, one, two
+     ("owoztneoer", "012"),
+     # Example 2: Contains four, five
+-    ("fviefuro", "45"),
++    ("XXfviefuroXX", "45"),
+     # Edge case: Empty string
+     ("", ""),
+     # All digits represented
+</pre><h3>Mutant 112</h3><pre>--- ..\P23\.\tests\test_Problem23_NLP_To_Test.py
++++ ..\P23\.\tests\test_Problem23_NLP_To_Test.py
+@@ -7,7 +7,7 @@
+     # Example 2: Contains four, five
+     ("fviefuro", "45"),
+     # Edge case: Empty string
+-    ("", ""),
++    ("XXXX", ""),
+     # All digits represented
+     ("zeroonetwothreefourfivesixseveneightnine", "0123456789"),
+     # Digits in a random order
+</pre><h3>Mutant 114</h3><pre>--- ..\P23\.\tests\test_Problem23_NLP_To_Test.py
++++ ..\P23\.\tests\test_Problem23_NLP_To_Test.py
+@@ -9,7 +9,7 @@
+     # Edge case: Empty string
+     ("", ""),
+     # All digits represented
+-    ("zeroonetwothreefourfivesixseveneightnine", "0123456789"),
++    ("XXzeroonetwothreefourfivesixseveneightnineXX", "0123456789"),
+     # Digits in a random order
+     ("ninetwoonezero", "0129"),
+     # Digits with repetition
+</pre><h3>Mutant 116</h3><pre>--- ..\P23\.\tests\test_Problem23_NLP_To_Test.py
++++ ..\P23\.\tests\test_Problem23_NLP_To_Test.py
+@@ -11,7 +11,7 @@
+     # All digits represented
+     ("zeroonetwothreefourfivesixseveneightnine", "0123456789"),
+     # Digits in a random order
+-    ("ninetwoonezero", "0129"),
++    ("XXninetwoonezeroXX", "0129"),
+     # Digits with repetition
+     ("oneone", "11"),
+     # Long string with mixed characters
+</pre><h3>Mutant 118</h3><pre>--- ..\P23\.\tests\test_Problem23_NLP_To_Test.py
++++ ..\P23\.\tests\test_Problem23_NLP_To_Test.py
+@@ -13,7 +13,7 @@
+     # Digits in a random order
+     ("ninetwoonezero", "0129"),
+     # Digits with repetition
+-    ("oneone", "11"),
++    ("XXoneoneXX", "11"),
+     # Long string with mixed characters
+     #("gigteightxtsixhreezerosevenineightfiveourfneightwo", "0123456788"),
+     # Only one kind of digit
+</pre><h3>Mutant 120</h3><pre>--- ..\P23\.\tests\test_Problem23_NLP_To_Test.py
++++ ..\P23\.\tests\test_Problem23_NLP_To_Test.py
+@@ -17,7 +17,7 @@
+     # Long string with mixed characters
+     #("gigteightxtsixhreezerosevenineightfiveourfneightwo", "0123456788"),
+     # Only one kind of digit
+-    ("zerozerozero", "000"),
++    ("XXzerozerozeroXX", "000"),
+     # String with repeated complex pattern
+     #("onetwothreefourfivetwothreefourfive", "123452345"),
+     # Test string with maximum complexity
+</pre><h3>Mutant 124</h3><pre>--- ..\P23\.\tests\test_Problem23_NLP_To_Test.py
++++ ..\P23\.\tests\test_Problem23_NLP_To_Test.py
+@@ -37,5 +37,5 @@
+     input_string (str): The input string containing jumbled English words of digits.
+     expected_output (str): The expected output string of digits in ascending numerical order.
+     """
+-    assert originalDigits(input_string) == expected_output, f"Test failed for input='{input_string}'. Expected output='{expected_output}', got='{originalDigits(input_string)}'"
++    assert originalDigits(input_string) == expected_output, f"XXTest failed for input='{input_string}'. Expected output='{expected_output}', got='{originalDigits(input_string)}'XX"
+ 
+</pre></body></html>

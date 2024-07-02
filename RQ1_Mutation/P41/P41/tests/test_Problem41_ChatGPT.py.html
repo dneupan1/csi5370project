@@ -1,0 +1,297 @@
+<html><body><h1>..\P41\.\tests\test_Problem41_ChatGPT.py</h1>Killed 20 out of 48 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 29</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -7,7 +7,7 @@
+     """
+     Expect 0 coins when there are no balloons to burst.
+     """
+-    assert maxCoins([]) == 0, "Failed with no balloons"
++    assert maxCoins([]) == 0, "XXFailed with no balloonsXX"
+ 
+ # Test with a single balloon
+ def test_single_balloon():
+</pre><h3>Mutant 33</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -14,7 +14,7 @@
+     """
+     The only balloon to burst should yield its value in coins.
+     """
+-    assert maxCoins([3]) == 3, "Failed with a single balloon"
++    assert maxCoins([3]) == 3, "XXFailed with a single balloonXX"
+ 
+ # Test with two balloons
+ @pytest.mark.skip()
+</pre><h3>Mutant 35</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -22,7 +22,7 @@
+     """
+     With two balloons, the optimal strategy is to burst the one with a lower value first.
+     """
+-    assert maxCoins([3, 1]) == 4, "Failed with two balloons"
++    assert maxCoins([4, 1]) == 4, "Failed with two balloons"
+ 
+ # Test with multiple balloons requiring strategy
+ def test_multiple_balloons():
+</pre><h3>Mutant 36</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -22,7 +22,7 @@
+     """
+     With two balloons, the optimal strategy is to burst the one with a lower value first.
+     """
+-    assert maxCoins([3, 1]) == 4, "Failed with two balloons"
++    assert maxCoins([3, 2]) == 4, "Failed with two balloons"
+ 
+ # Test with multiple balloons requiring strategy
+ def test_multiple_balloons():
+</pre><h3>Mutant 37</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -22,7 +22,7 @@
+     """
+     With two balloons, the optimal strategy is to burst the one with a lower value first.
+     """
+-    assert maxCoins([3, 1]) == 4, "Failed with two balloons"
++    assert maxCoins([3, 1]) != 4, "Failed with two balloons"
+ 
+ # Test with multiple balloons requiring strategy
+ def test_multiple_balloons():
+</pre><h3>Mutant 38</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -22,7 +22,7 @@
+     """
+     With two balloons, the optimal strategy is to burst the one with a lower value first.
+     """
+-    assert maxCoins([3, 1]) == 4, "Failed with two balloons"
++    assert maxCoins([3, 1]) == 5, "Failed with two balloons"
+ 
+ # Test with multiple balloons requiring strategy
+ def test_multiple_balloons():
+</pre><h3>Mutant 39</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -22,7 +22,7 @@
+     """
+     With two balloons, the optimal strategy is to burst the one with a lower value first.
+     """
+-    assert maxCoins([3, 1]) == 4, "Failed with two balloons"
++    assert maxCoins([3, 1]) == 4, "XXFailed with two balloonsXX"
+ 
+ # Test with multiple balloons requiring strategy
+ def test_multiple_balloons():
+</pre><h3>Mutant 46</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -29,7 +29,7 @@
+     """
+     Tests a case requiring strategic bursting to maximize coins.
+     """
+-    assert maxCoins([3, 1, 5, 8]) == 167, "Failed with multiple balloons requiring strategy"
++    assert maxCoins([3, 1, 5, 8]) == 167, "XXFailed with multiple balloons requiring strategyXX"
+ 
+ # Test with balloons having zero value
+ def test_zero_value_balloons():
+</pre><h3>Mutant 55</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -36,7 +36,7 @@
+     """
+     Balloons with 0 value should not impact the total coins collected when they are not the last to be burst.
+     """
+-    assert maxCoins([0, 3, 1, 5, 8, 0]) == 167, "Failed with balloons having zero value"
++    assert maxCoins([0, 3, 1, 5, 8, 0]) == 167, "XXFailed with balloons having zero valueXX"
+ 
+ # Test with balloons of large values
+ def test_large_value_balloons():
+</pre><h3>Mutant 56</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -43,7 +43,7 @@
+     """
+     Tests the function's ability to handle balloons with large values.
+     """
+-    assert maxCoins([35, 16, 83, 87]) > 0, "Failed with balloons of large values"
++    assert maxCoins([36, 16, 83, 87]) > 0, "Failed with balloons of large values"
+ 
+ # Test with increasing sequence of balloons
+ def test_increasing_sequence_balloons():
+</pre><h3>Mutant 57</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -43,7 +43,7 @@
+     """
+     Tests the function's ability to handle balloons with large values.
+     """
+-    assert maxCoins([35, 16, 83, 87]) > 0, "Failed with balloons of large values"
++    assert maxCoins([35, 17, 83, 87]) > 0, "Failed with balloons of large values"
+ 
+ # Test with increasing sequence of balloons
+ def test_increasing_sequence_balloons():
+</pre><h3>Mutant 58</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -43,7 +43,7 @@
+     """
+     Tests the function's ability to handle balloons with large values.
+     """
+-    assert maxCoins([35, 16, 83, 87]) > 0, "Failed with balloons of large values"
++    assert maxCoins([35, 16, 84, 87]) > 0, "Failed with balloons of large values"
+ 
+ # Test with increasing sequence of balloons
+ def test_increasing_sequence_balloons():
+</pre><h3>Mutant 59</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -43,7 +43,7 @@
+     """
+     Tests the function's ability to handle balloons with large values.
+     """
+-    assert maxCoins([35, 16, 83, 87]) > 0, "Failed with balloons of large values"
++    assert maxCoins([35, 16, 83, 88]) > 0, "Failed with balloons of large values"
+ 
+ # Test with increasing sequence of balloons
+ def test_increasing_sequence_balloons():
+</pre><h3>Mutant 60</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -43,7 +43,7 @@
+     """
+     Tests the function's ability to handle balloons with large values.
+     """
+-    assert maxCoins([35, 16, 83, 87]) > 0, "Failed with balloons of large values"
++    assert maxCoins([35, 16, 83, 87]) >= 0, "Failed with balloons of large values"
+ 
+ # Test with increasing sequence of balloons
+ def test_increasing_sequence_balloons():
+</pre><h3>Mutant 61</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -43,7 +43,7 @@
+     """
+     Tests the function's ability to handle balloons with large values.
+     """
+-    assert maxCoins([35, 16, 83, 87]) > 0, "Failed with balloons of large values"
++    assert maxCoins([35, 16, 83, 87]) > 1, "Failed with balloons of large values"
+ 
+ # Test with increasing sequence of balloons
+ def test_increasing_sequence_balloons():
+</pre><h3>Mutant 62</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -43,7 +43,7 @@
+     """
+     Tests the function's ability to handle balloons with large values.
+     """
+-    assert maxCoins([35, 16, 83, 87]) > 0, "Failed with balloons of large values"
++    assert maxCoins([35, 16, 83, 87]) > 0, "XXFailed with balloons of large valuesXX"
+ 
+ # Test with increasing sequence of balloons
+ def test_increasing_sequence_balloons():
+</pre><h3>Mutant 63</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -50,7 +50,7 @@
+     """
+     Tests a scenario where the balloons have values in an increasing sequence.
+     """
+-    assert maxCoins([1, 2, 3]) > 0, "Failed with increasing sequence of balloons"
++    assert maxCoins([2, 2, 3]) > 0, "Failed with increasing sequence of balloons"
+ 
+ # Test with decreasing sequence of balloons
+ def test_decreasing_sequence_balloons():
+</pre><h3>Mutant 64</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -50,7 +50,7 @@
+     """
+     Tests a scenario where the balloons have values in an increasing sequence.
+     """
+-    assert maxCoins([1, 2, 3]) > 0, "Failed with increasing sequence of balloons"
++    assert maxCoins([1, 3, 3]) > 0, "Failed with increasing sequence of balloons"
+ 
+ # Test with decreasing sequence of balloons
+ def test_decreasing_sequence_balloons():
+</pre><h3>Mutant 65</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -50,7 +50,7 @@
+     """
+     Tests a scenario where the balloons have values in an increasing sequence.
+     """
+-    assert maxCoins([1, 2, 3]) > 0, "Failed with increasing sequence of balloons"
++    assert maxCoins([1, 2, 4]) > 0, "Failed with increasing sequence of balloons"
+ 
+ # Test with decreasing sequence of balloons
+ def test_decreasing_sequence_balloons():
+</pre><h3>Mutant 66</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -50,7 +50,7 @@
+     """
+     Tests a scenario where the balloons have values in an increasing sequence.
+     """
+-    assert maxCoins([1, 2, 3]) > 0, "Failed with increasing sequence of balloons"
++    assert maxCoins([1, 2, 3]) >= 0, "Failed with increasing sequence of balloons"
+ 
+ # Test with decreasing sequence of balloons
+ def test_decreasing_sequence_balloons():
+</pre><h3>Mutant 67</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -50,7 +50,7 @@
+     """
+     Tests a scenario where the balloons have values in an increasing sequence.
+     """
+-    assert maxCoins([1, 2, 3]) > 0, "Failed with increasing sequence of balloons"
++    assert maxCoins([1, 2, 3]) > 1, "Failed with increasing sequence of balloons"
+ 
+ # Test with decreasing sequence of balloons
+ def test_decreasing_sequence_balloons():
+</pre><h3>Mutant 68</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -50,7 +50,7 @@
+     """
+     Tests a scenario where the balloons have values in an increasing sequence.
+     """
+-    assert maxCoins([1, 2, 3]) > 0, "Failed with increasing sequence of balloons"
++    assert maxCoins([1, 2, 3]) > 0, "XXFailed with increasing sequence of balloonsXX"
+ 
+ # Test with decreasing sequence of balloons
+ def test_decreasing_sequence_balloons():
+</pre><h3>Mutant 69</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -57,5 +57,5 @@
+     """
+     Tests a scenario where the balloons have values in a decreasing sequence.
+     """
+-    assert maxCoins([3, 2, 1]) > 0, "Failed with decreasing sequence of balloons"
++    assert maxCoins([4, 2, 1]) > 0, "Failed with decreasing sequence of balloons"
+ 
+</pre><h3>Mutant 70</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -57,5 +57,5 @@
+     """
+     Tests a scenario where the balloons have values in a decreasing sequence.
+     """
+-    assert maxCoins([3, 2, 1]) > 0, "Failed with decreasing sequence of balloons"
++    assert maxCoins([3, 3, 1]) > 0, "Failed with decreasing sequence of balloons"
+ 
+</pre><h3>Mutant 71</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -57,5 +57,5 @@
+     """
+     Tests a scenario where the balloons have values in a decreasing sequence.
+     """
+-    assert maxCoins([3, 2, 1]) > 0, "Failed with decreasing sequence of balloons"
++    assert maxCoins([3, 2, 2]) > 0, "Failed with decreasing sequence of balloons"
+ 
+</pre><h3>Mutant 72</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -57,5 +57,5 @@
+     """
+     Tests a scenario where the balloons have values in a decreasing sequence.
+     """
+-    assert maxCoins([3, 2, 1]) > 0, "Failed with decreasing sequence of balloons"
++    assert maxCoins([3, 2, 1]) >= 0, "Failed with decreasing sequence of balloons"
+ 
+</pre><h3>Mutant 73</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -57,5 +57,5 @@
+     """
+     Tests a scenario where the balloons have values in a decreasing sequence.
+     """
+-    assert maxCoins([3, 2, 1]) > 0, "Failed with decreasing sequence of balloons"
++    assert maxCoins([3, 2, 1]) > 1, "Failed with decreasing sequence of balloons"
+ 
+</pre><h3>Mutant 74</h3><pre>--- ..\P41\.\tests\test_Problem41_ChatGPT.py
++++ ..\P41\.\tests\test_Problem41_ChatGPT.py
+@@ -57,5 +57,5 @@
+     """
+     Tests a scenario where the balloons have values in a decreasing sequence.
+     """
+-    assert maxCoins([3, 2, 1]) > 0, "Failed with decreasing sequence of balloons"
++    assert maxCoins([3, 2, 1]) > 0, "XXFailed with decreasing sequence of balloonsXX"
+ 
+</pre></body></html>

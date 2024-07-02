@@ -1,0 +1,155 @@
+<html><body><h1>..\P5\.\tests\test_Problem5_NLP_To_Test.py</h1>Killed 40 out of 54 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 137</h3><pre>--- ..\P5\.\tests\test_Problem5_NLP_To_Test.py
++++ ..\P5\.\tests\test_Problem5_NLP_To_Test.py
+@@ -2,7 +2,7 @@
+ 
+ from Problem5_GeneratedSolution import isMatch as is_match  # Assuming the function is defined in a file named solution.py
+ 
+-@pytest.mark.parametrize("s, p, expected", [
++@pytest.mark.parametrize("XXs, p, expectedXX", [
+     # Basic examples
+     ("aa", "a", False),    # Test basic mismatch without wildcards
+     ("aa", "*", True),     # Test '*' wildcard matching entire string
+</pre><h3>Mutant 138</h3><pre>--- ..\P5\.\tests\test_Problem5_NLP_To_Test.py
++++ ..\P5\.\tests\test_Problem5_NLP_To_Test.py
+@@ -4,7 +4,7 @@
+ 
+ @pytest.mark.parametrize("s, p, expected", [
+     # Basic examples
+-    ("aa", "a", False),    # Test basic mismatch without wildcards
++    ("XXaaXX", "a", False),    # Test basic mismatch without wildcards
+     ("aa", "*", True),     # Test '*' wildcard matching entire string
+     ("cb", "?a", False),   # Test '?' wildcard matching one character, not full string
+ 
+</pre><h3>Mutant 139</h3><pre>--- ..\P5\.\tests\test_Problem5_NLP_To_Test.py
++++ ..\P5\.\tests\test_Problem5_NLP_To_Test.py
+@@ -4,7 +4,7 @@
+ 
+ @pytest.mark.parametrize("s, p, expected", [
+     # Basic examples
+-    ("aa", "a", False),    # Test basic mismatch without wildcards
++    ("aa", "XXaXX", False),    # Test basic mismatch without wildcards
+     ("aa", "*", True),     # Test '*' wildcard matching entire string
+     ("cb", "?a", False),   # Test '?' wildcard matching one character, not full string
+ 
+</pre><h3>Mutant 141</h3><pre>--- ..\P5\.\tests\test_Problem5_NLP_To_Test.py
++++ ..\P5\.\tests\test_Problem5_NLP_To_Test.py
+@@ -5,7 +5,7 @@
+ @pytest.mark.parametrize("s, p, expected", [
+     # Basic examples
+     ("aa", "a", False),    # Test basic mismatch without wildcards
+-    ("aa", "*", True),     # Test '*' wildcard matching entire string
++    ("XXaaXX", "*", True),     # Test '*' wildcard matching entire string
+     ("cb", "?a", False),   # Test '?' wildcard matching one character, not full string
+ 
+     # Testing '?' and '*'
+</pre><h3>Mutant 144</h3><pre>--- ..\P5\.\tests\test_Problem5_NLP_To_Test.py
++++ ..\P5\.\tests\test_Problem5_NLP_To_Test.py
+@@ -6,7 +6,7 @@
+     # Basic examples
+     ("aa", "a", False),    # Test basic mismatch without wildcards
+     ("aa", "*", True),     # Test '*' wildcard matching entire string
+-    ("cb", "?a", False),   # Test '?' wildcard matching one character, not full string
++    ("XXcbXX", "?a", False),   # Test '?' wildcard matching one character, not full string
+ 
+     # Testing '?' and '*'
+     ("abc", "a?c", True),  # '?' matches one character in the middle
+</pre><h3>Mutant 145</h3><pre>--- ..\P5\.\tests\test_Problem5_NLP_To_Test.py
++++ ..\P5\.\tests\test_Problem5_NLP_To_Test.py
+@@ -6,7 +6,7 @@
+     # Basic examples
+     ("aa", "a", False),    # Test basic mismatch without wildcards
+     ("aa", "*", True),     # Test '*' wildcard matching entire string
+-    ("cb", "?a", False),   # Test '?' wildcard matching one character, not full string
++    ("cb", "XX?aXX", False),   # Test '?' wildcard matching one character, not full string
+ 
+     # Testing '?' and '*'
+     ("abc", "a?c", True),  # '?' matches one character in the middle
+</pre><h3>Mutant 159</h3><pre>--- ..\P5\.\tests\test_Problem5_NLP_To_Test.py
++++ ..\P5\.\tests\test_Problem5_NLP_To_Test.py
+@@ -13,7 +13,7 @@
+     ("abc", "abc*", True), # '*' at the end can be empty
+     ("abc", "*abc", True), # '*' at the start can be empty
+     ("abc", "a*", True),   # '*' matches the rest of the string
+-    ("abc", "*d", False),  # '*' does not match if remaining characters differ
++    ("XXabcXX", "*d", False),  # '*' does not match if remaining characters differ
+     ("abc", "???", True),  # '?' matches all characters individually
+ 
+     # Edge cases
+</pre><h3>Mutant 160</h3><pre>--- ..\P5\.\tests\test_Problem5_NLP_To_Test.py
++++ ..\P5\.\tests\test_Problem5_NLP_To_Test.py
+@@ -13,7 +13,7 @@
+     ("abc", "abc*", True), # '*' at the end can be empty
+     ("abc", "*abc", True), # '*' at the start can be empty
+     ("abc", "a*", True),   # '*' matches the rest of the string
+-    ("abc", "*d", False),  # '*' does not match if remaining characters differ
++    ("abc", "XX*dXX", False),  # '*' does not match if remaining characters differ
+     ("abc", "???", True),  # '?' matches all characters individually
+ 
+     # Edge cases
+</pre><h3>Mutant 168</h3><pre>--- ..\P5\.\tests\test_Problem5_NLP_To_Test.py
++++ ..\P5\.\tests\test_Problem5_NLP_To_Test.py
+@@ -18,7 +18,7 @@
+ 
+     # Edge cases
+     ("", "", True),         # Both strings empty
+-    ("", "*", True),        # Empty string matches with '*' wildcard
++    ("XXXX", "*", True),        # Empty string matches with '*' wildcard
+     ("a", "", False),       # Non-empty string does not match empty pattern
+     ("", "?", False),       # '?' does not match empty string
+ 
+</pre><h3>Mutant 171</h3><pre>--- ..\P5\.\tests\test_Problem5_NLP_To_Test.py
++++ ..\P5\.\tests\test_Problem5_NLP_To_Test.py
+@@ -19,7 +19,7 @@
+     # Edge cases
+     ("", "", True),         # Both strings empty
+     ("", "*", True),        # Empty string matches with '*' wildcard
+-    ("a", "", False),       # Non-empty string does not match empty pattern
++    ("XXaXX", "", False),       # Non-empty string does not match empty pattern
+     ("", "?", False),       # '?' does not match empty string
+ 
+     # Complex patterns
+</pre><h3>Mutant 172</h3><pre>--- ..\P5\.\tests\test_Problem5_NLP_To_Test.py
++++ ..\P5\.\tests\test_Problem5_NLP_To_Test.py
+@@ -19,7 +19,7 @@
+     # Edge cases
+     ("", "", True),         # Both strings empty
+     ("", "*", True),        # Empty string matches with '*' wildcard
+-    ("a", "", False),       # Non-empty string does not match empty pattern
++    ("a", "XXXX", False),       # Non-empty string does not match empty pattern
+     ("", "?", False),       # '?' does not match empty string
+ 
+     # Complex patterns
+</pre><h3>Mutant 174</h3><pre>--- ..\P5\.\tests\test_Problem5_NLP_To_Test.py
++++ ..\P5\.\tests\test_Problem5_NLP_To_Test.py
+@@ -20,7 +20,7 @@
+     ("", "", True),         # Both strings empty
+     ("", "*", True),        # Empty string matches with '*' wildcard
+     ("a", "", False),       # Non-empty string does not match empty pattern
+-    ("", "?", False),       # '?' does not match empty string
++    ("XXXX", "?", False),       # '?' does not match empty string
+ 
+     # Complex patterns
+     ("abefcdgiescdfimde", "ab*cd?i*de", True),  # Complex pattern with mixed wildcards
+</pre><h3>Mutant 175</h3><pre>--- ..\P5\.\tests\test_Problem5_NLP_To_Test.py
++++ ..\P5\.\tests\test_Problem5_NLP_To_Test.py
+@@ -20,7 +20,7 @@
+     ("", "", True),         # Both strings empty
+     ("", "*", True),        # Empty string matches with '*' wildcard
+     ("a", "", False),       # Non-empty string does not match empty pattern
+-    ("", "?", False),       # '?' does not match empty string
++    ("", "XX?XX", False),       # '?' does not match empty string
+ 
+     # Complex patterns
+     ("abefcdgiescdfimde", "ab*cd?i*de", True),  # Complex pattern with mixed wildcards
+</pre><h3>Mutant 183</h3><pre>--- ..\P5\.\tests\test_Problem5_NLP_To_Test.py
++++ ..\P5\.\tests\test_Problem5_NLP_To_Test.py
+@@ -27,7 +27,7 @@
+ 
+     # More edge cases
+     ("hello", "he*o", True),  # '*' matches middle characters
+-    ("hello", "*l*", True),   # '*' matches multiple characters including 'l'
++    ("XXhelloXX", "*l*", True),   # '*' matches multiple characters including 'l'
+     ("hello", "he??o", True), # '??' matches two characters
+     #("hello", "he???", False) # '???' too long to match
+ ])
+</pre></body></html>

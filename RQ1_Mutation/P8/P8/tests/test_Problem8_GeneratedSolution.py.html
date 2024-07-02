@@ -1,0 +1,561 @@
+<html><body><h1>..\P8\.\tests\test_Problem8_GeneratedSolution.py</h1>Killed 11 out of 62 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 101</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -4,7 +4,7 @@
+ import Problem8_GeneratedSolution as module_0
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_0():
+     bool_0 = True
+     list_node_0 = module_0.ListNode()
+</pre><h3>Mutant 103</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -6,7 +6,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+-    bool_0 = True
++    bool_0 = False
+     list_node_0 = module_0.ListNode()
+     assert list_node_0.val == 0
+     list_node_1 = module_0.reverseKGroup(list_node_0, bool_0)
+</pre><h3>Mutant 104</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -6,7 +6,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+-    bool_0 = True
++    bool_0 = None
+     list_node_0 = module_0.ListNode()
+     assert list_node_0.val == 0
+     list_node_1 = module_0.reverseKGroup(list_node_0, bool_0)
+</pre><h3>Mutant 105</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -7,7 +7,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+     bool_0 = True
+-    list_node_0 = module_0.ListNode()
++    list_node_0 = None
+     assert list_node_0.val == 0
+     list_node_1 = module_0.reverseKGroup(list_node_0, bool_0)
+     assert (
+</pre><h3>Mutant 106</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -8,7 +8,7 @@
+ def test_case_0():
+     bool_0 = True
+     list_node_0 = module_0.ListNode()
+-    assert list_node_0.val == 0
++    assert list_node_0.val != 0
+     list_node_1 = module_0.reverseKGroup(list_node_0, bool_0)
+     assert (
+         f"{type(list_node_1).__module__}.{type(list_node_1).__qualname__}"
+</pre><h3>Mutant 107</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -8,7 +8,7 @@
+ def test_case_0():
+     bool_0 = True
+     list_node_0 = module_0.ListNode()
+-    assert list_node_0.val == 0
++    assert list_node_0.val == 1
+     list_node_1 = module_0.reverseKGroup(list_node_0, bool_0)
+     assert (
+         f"{type(list_node_1).__module__}.{type(list_node_1).__qualname__}"
+</pre><h3>Mutant 108</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -9,7 +9,7 @@
+     bool_0 = True
+     list_node_0 = module_0.ListNode()
+     assert list_node_0.val == 0
+-    list_node_1 = module_0.reverseKGroup(list_node_0, bool_0)
++    list_node_1 = None
+     assert (
+         f"{type(list_node_1).__module__}.{type(list_node_1).__qualname__}"
+         == "Problem8_GeneratedSolution.ListNode"
+</pre><h3>Mutant 109</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -11,7 +11,7 @@
+     assert list_node_0.val == 0
+     list_node_1 = module_0.reverseKGroup(list_node_0, bool_0)
+     assert (
+-        f"{type(list_node_1).__module__}.{type(list_node_1).__qualname__}"
++        f"XX{type(list_node_1).__module__}.{type(list_node_1).__qualname__}XX"
+         == "Problem8_GeneratedSolution.ListNode"
+     )
+     assert list_node_1.val == 0
+</pre><h3>Mutant 110</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -12,7 +12,7 @@
+     list_node_1 = module_0.reverseKGroup(list_node_0, bool_0)
+     assert (
+         f"{type(list_node_1).__module__}.{type(list_node_1).__qualname__}"
+-        == "Problem8_GeneratedSolution.ListNode"
++        != "Problem8_GeneratedSolution.ListNode"
+     )
+     assert list_node_1.val == 0
+     assert list_node_1.next is None
+</pre><h3>Mutant 111</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -12,7 +12,7 @@
+     list_node_1 = module_0.reverseKGroup(list_node_0, bool_0)
+     assert (
+         f"{type(list_node_1).__module__}.{type(list_node_1).__qualname__}"
+-        == "Problem8_GeneratedSolution.ListNode"
++        == "XXProblem8_GeneratedSolution.ListNodeXX"
+     )
+     assert list_node_1.val == 0
+     assert list_node_1.next is None
+</pre><h3>Mutant 112</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -14,7 +14,7 @@
+         f"{type(list_node_1).__module__}.{type(list_node_1).__qualname__}"
+         == "Problem8_GeneratedSolution.ListNode"
+     )
+-    assert list_node_1.val == 0
++    assert list_node_1.val != 0
+     assert list_node_1.next is None
+     module_0.reverseKGroup(bool_0, list_node_1)
+ 
+</pre><h3>Mutant 113</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -14,7 +14,7 @@
+         f"{type(list_node_1).__module__}.{type(list_node_1).__qualname__}"
+         == "Problem8_GeneratedSolution.ListNode"
+     )
+-    assert list_node_1.val == 0
++    assert list_node_1.val == 1
+     assert list_node_1.next is None
+     module_0.reverseKGroup(bool_0, list_node_1)
+ 
+</pre><h3>Mutant 114</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -15,7 +15,7 @@
+         == "Problem8_GeneratedSolution.ListNode"
+     )
+     assert list_node_1.val == 0
+-    assert list_node_1.next is None
++    assert list_node_1.next is not None
+     module_0.reverseKGroup(bool_0, list_node_1)
+ 
+ 
+</pre><h3>Mutant 115</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -19,7 +19,7 @@
+     module_0.reverseKGroup(bool_0, list_node_1)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_1():
+     set_0 = set()
+     list_node_0 = module_0.ListNode(set_0, set_0)
+</pre><h3>Mutant 117</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -21,7 +21,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_1():
+-    set_0 = set()
++    set_0 = None
+     list_node_0 = module_0.ListNode(set_0, set_0)
+     bool_0 = True
+     module_0.reverseKGroup(bool_0, bool_0)
+</pre><h3>Mutant 118</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -22,7 +22,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_1():
+     set_0 = set()
+-    list_node_0 = module_0.ListNode(set_0, set_0)
++    list_node_0 = None
+     bool_0 = True
+     module_0.reverseKGroup(bool_0, bool_0)
+ 
+</pre><h3>Mutant 119</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -23,7 +23,7 @@
+ def test_case_1():
+     set_0 = set()
+     list_node_0 = module_0.ListNode(set_0, set_0)
+-    bool_0 = True
++    bool_0 = False
+     module_0.reverseKGroup(bool_0, bool_0)
+ 
+ 
+</pre><h3>Mutant 120</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -23,7 +23,7 @@
+ def test_case_1():
+     set_0 = set()
+     list_node_0 = module_0.ListNode(set_0, set_0)
+-    bool_0 = True
++    bool_0 = None
+     module_0.reverseKGroup(bool_0, bool_0)
+ 
+ 
+</pre><h3>Mutant 121</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -27,7 +27,7 @@
+     module_0.reverseKGroup(bool_0, bool_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_2():
+     none_type_0 = None
+     list_node_0 = module_0.ListNode(none_type_0)
+</pre><h3>Mutant 123</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -29,7 +29,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+-    none_type_0 = None
++    none_type_0 = ""
+     list_node_0 = module_0.ListNode(none_type_0)
+     list_node_1 = module_0.ListNode()
+     assert list_node_1.val == 0
+</pre><h3>Mutant 124</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -30,7 +30,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+     none_type_0 = None
+-    list_node_0 = module_0.ListNode(none_type_0)
++    list_node_0 = None
+     list_node_1 = module_0.ListNode()
+     assert list_node_1.val == 0
+     bool_0 = False
+</pre><h3>Mutant 125</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -31,7 +31,7 @@
+ def test_case_2():
+     none_type_0 = None
+     list_node_0 = module_0.ListNode(none_type_0)
+-    list_node_1 = module_0.ListNode()
++    list_node_1 = None
+     assert list_node_1.val == 0
+     bool_0 = False
+     list_node_2 = module_0.ListNode(bool_0, bool_0)
+</pre><h3>Mutant 126</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -32,7 +32,7 @@
+     none_type_0 = None
+     list_node_0 = module_0.ListNode(none_type_0)
+     list_node_1 = module_0.ListNode()
+-    assert list_node_1.val == 0
++    assert list_node_1.val != 0
+     bool_0 = False
+     list_node_2 = module_0.ListNode(bool_0, bool_0)
+     module_0.reverseKGroup(list_node_2, bool_0)
+</pre><h3>Mutant 127</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -32,7 +32,7 @@
+     none_type_0 = None
+     list_node_0 = module_0.ListNode(none_type_0)
+     list_node_1 = module_0.ListNode()
+-    assert list_node_1.val == 0
++    assert list_node_1.val == 1
+     bool_0 = False
+     list_node_2 = module_0.ListNode(bool_0, bool_0)
+     module_0.reverseKGroup(list_node_2, bool_0)
+</pre><h3>Mutant 128</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -33,7 +33,7 @@
+     list_node_0 = module_0.ListNode(none_type_0)
+     list_node_1 = module_0.ListNode()
+     assert list_node_1.val == 0
+-    bool_0 = False
++    bool_0 = True
+     list_node_2 = module_0.ListNode(bool_0, bool_0)
+     module_0.reverseKGroup(list_node_2, bool_0)
+ 
+</pre><h3>Mutant 129</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -33,7 +33,7 @@
+     list_node_0 = module_0.ListNode(none_type_0)
+     list_node_1 = module_0.ListNode()
+     assert list_node_1.val == 0
+-    bool_0 = False
++    bool_0 = None
+     list_node_2 = module_0.ListNode(bool_0, bool_0)
+     module_0.reverseKGroup(list_node_2, bool_0)
+ 
+</pre><h3>Mutant 130</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -34,7 +34,7 @@
+     list_node_1 = module_0.ListNode()
+     assert list_node_1.val == 0
+     bool_0 = False
+-    list_node_2 = module_0.ListNode(bool_0, bool_0)
++    list_node_2 = None
+     module_0.reverseKGroup(list_node_2, bool_0)
+ 
+ 
+</pre><h3>Mutant 134</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -43,7 +43,7 @@
+     assert list_node_0.val == 0
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_4():
+     bool_0 = True
+     list_node_0 = module_0.ListNode(next=bool_0)
+</pre><h3>Mutant 138</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -46,7 +46,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_4():
+     bool_0 = True
+-    list_node_0 = module_0.ListNode(next=bool_0)
++    list_node_0 = None
+     assert list_node_0.val == 0
+     none_type_0 = None
+     var_0 = module_0.ListNode(next=none_type_0)
+</pre><h3>Mutant 139</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -47,7 +47,7 @@
+ def test_case_4():
+     bool_0 = True
+     list_node_0 = module_0.ListNode(next=bool_0)
+-    assert list_node_0.val == 0
++    assert list_node_0.val != 0
+     none_type_0 = None
+     var_0 = module_0.ListNode(next=none_type_0)
+     assert var_0.val == 0
+</pre><h3>Mutant 140</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -47,7 +47,7 @@
+ def test_case_4():
+     bool_0 = True
+     list_node_0 = module_0.ListNode(next=bool_0)
+-    assert list_node_0.val == 0
++    assert list_node_0.val == 1
+     none_type_0 = None
+     var_0 = module_0.ListNode(next=none_type_0)
+     assert var_0.val == 0
+</pre><h3>Mutant 141</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -48,7 +48,7 @@
+     bool_0 = True
+     list_node_0 = module_0.ListNode(next=bool_0)
+     assert list_node_0.val == 0
+-    none_type_0 = None
++    none_type_0 = ""
+     var_0 = module_0.ListNode(next=none_type_0)
+     assert var_0.val == 0
+     list_node_1 = module_0.ListNode(var_0, bool_0)
+</pre><h3>Mutant 142</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -49,7 +49,7 @@
+     list_node_0 = module_0.ListNode(next=bool_0)
+     assert list_node_0.val == 0
+     none_type_0 = None
+-    var_0 = module_0.ListNode(next=none_type_0)
++    var_0 = None
+     assert var_0.val == 0
+     list_node_1 = module_0.ListNode(var_0, bool_0)
+     int_0 = 2163
+</pre><h3>Mutant 143</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -50,7 +50,7 @@
+     assert list_node_0.val == 0
+     none_type_0 = None
+     var_0 = module_0.ListNode(next=none_type_0)
+-    assert var_0.val == 0
++    assert var_0.val != 0
+     list_node_1 = module_0.ListNode(var_0, bool_0)
+     int_0 = 2163
+     module_0.reverseKGroup(list_node_1, int_0)
+</pre><h3>Mutant 144</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -50,7 +50,7 @@
+     assert list_node_0.val == 0
+     none_type_0 = None
+     var_0 = module_0.ListNode(next=none_type_0)
+-    assert var_0.val == 0
++    assert var_0.val == 1
+     list_node_1 = module_0.ListNode(var_0, bool_0)
+     int_0 = 2163
+     module_0.reverseKGroup(list_node_1, int_0)
+</pre><h3>Mutant 146</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -52,7 +52,7 @@
+     var_0 = module_0.ListNode(next=none_type_0)
+     assert var_0.val == 0
+     list_node_1 = module_0.ListNode(var_0, bool_0)
+-    int_0 = 2163
++    int_0 = 2164
+     module_0.reverseKGroup(list_node_1, int_0)
+ 
+ 
+</pre><h3>Mutant 147</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -52,7 +52,7 @@
+     var_0 = module_0.ListNode(next=none_type_0)
+     assert var_0.val == 0
+     list_node_1 = module_0.ListNode(var_0, bool_0)
+-    int_0 = 2163
++    int_0 = None
+     module_0.reverseKGroup(list_node_1, int_0)
+ 
+ 
+</pre><h3>Mutant 148</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -56,7 +56,7 @@
+     module_0.reverseKGroup(list_node_1, int_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_5():
+     list_node_0 = module_0.ListNode()
+     assert list_node_0.val == 0
+</pre><h3>Mutant 150</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -58,7 +58,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_5():
+-    list_node_0 = module_0.ListNode()
++    list_node_0 = None
+     assert list_node_0.val == 0
+     none_type_0 = None
+     list_node_1 = module_0.ListNode(none_type_0)
+</pre><h3>Mutant 151</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -59,7 +59,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_5():
+     list_node_0 = module_0.ListNode()
+-    assert list_node_0.val == 0
++    assert list_node_0.val != 0
+     none_type_0 = None
+     list_node_1 = module_0.ListNode(none_type_0)
+     float_0 = 3338.19041
+</pre><h3>Mutant 152</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -59,7 +59,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_5():
+     list_node_0 = module_0.ListNode()
+-    assert list_node_0.val == 0
++    assert list_node_0.val == 1
+     none_type_0 = None
+     list_node_1 = module_0.ListNode(none_type_0)
+     float_0 = 3338.19041
+</pre><h3>Mutant 153</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -60,7 +60,7 @@
+ def test_case_5():
+     list_node_0 = module_0.ListNode()
+     assert list_node_0.val == 0
+-    none_type_0 = None
++    none_type_0 = ""
+     list_node_1 = module_0.ListNode(none_type_0)
+     float_0 = 3338.19041
+     var_0 = module_0.reverseKGroup(list_node_1, float_0)
+</pre><h3>Mutant 154</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -61,7 +61,7 @@
+     list_node_0 = module_0.ListNode()
+     assert list_node_0.val == 0
+     none_type_0 = None
+-    list_node_1 = module_0.ListNode(none_type_0)
++    list_node_1 = None
+     float_0 = 3338.19041
+     var_0 = module_0.reverseKGroup(list_node_1, float_0)
+     assert (
+</pre><h3>Mutant 155</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -62,7 +62,7 @@
+     assert list_node_0.val == 0
+     none_type_0 = None
+     list_node_1 = module_0.ListNode(none_type_0)
+-    float_0 = 3338.19041
++    float_0 = 3339.19041
+     var_0 = module_0.reverseKGroup(list_node_1, float_0)
+     assert (
+         f"{type(var_0).__module__}.{type(var_0).__qualname__}"
+</pre><h3>Mutant 156</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -62,7 +62,7 @@
+     assert list_node_0.val == 0
+     none_type_0 = None
+     list_node_1 = module_0.ListNode(none_type_0)
+-    float_0 = 3338.19041
++    float_0 = None
+     var_0 = module_0.reverseKGroup(list_node_1, float_0)
+     assert (
+         f"{type(var_0).__module__}.{type(var_0).__qualname__}"
+</pre><h3>Mutant 157</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -63,7 +63,7 @@
+     none_type_0 = None
+     list_node_1 = module_0.ListNode(none_type_0)
+     float_0 = 3338.19041
+-    var_0 = module_0.reverseKGroup(list_node_1, float_0)
++    var_0 = None
+     assert (
+         f"{type(var_0).__module__}.{type(var_0).__qualname__}"
+         == "Problem8_GeneratedSolution.ListNode"
+</pre><h3>Mutant 158</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -65,7 +65,7 @@
+     float_0 = 3338.19041
+     var_0 = module_0.reverseKGroup(list_node_1, float_0)
+     assert (
+-        f"{type(var_0).__module__}.{type(var_0).__qualname__}"
++        f"XX{type(var_0).__module__}.{type(var_0).__qualname__}XX"
+         == "Problem8_GeneratedSolution.ListNode"
+     )
+     assert var_0.val is None
+</pre><h3>Mutant 159</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -66,7 +66,7 @@
+     var_0 = module_0.reverseKGroup(list_node_1, float_0)
+     assert (
+         f"{type(var_0).__module__}.{type(var_0).__qualname__}"
+-        == "Problem8_GeneratedSolution.ListNode"
++        != "Problem8_GeneratedSolution.ListNode"
+     )
+     assert var_0.val is None
+     assert var_0.next is None
+</pre><h3>Mutant 160</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -66,7 +66,7 @@
+     var_0 = module_0.reverseKGroup(list_node_1, float_0)
+     assert (
+         f"{type(var_0).__module__}.{type(var_0).__qualname__}"
+-        == "Problem8_GeneratedSolution.ListNode"
++        == "XXProblem8_GeneratedSolution.ListNodeXX"
+     )
+     assert var_0.val is None
+     assert var_0.next is None
+</pre><h3>Mutant 161</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -68,7 +68,7 @@
+         f"{type(var_0).__module__}.{type(var_0).__qualname__}"
+         == "Problem8_GeneratedSolution.ListNode"
+     )
+-    assert var_0.val is None
++    assert var_0.val is not None
+     assert var_0.next is None
+     module_0.reverseKGroup(none_type_0, list_node_0)
+ 
+</pre><h3>Mutant 162</h3><pre>--- ..\P8\.\tests\test_Problem8_GeneratedSolution.py
++++ ..\P8\.\tests\test_Problem8_GeneratedSolution.py
+@@ -69,6 +69,6 @@
+         == "Problem8_GeneratedSolution.ListNode"
+     )
+     assert var_0.val is None
+-    assert var_0.next is None
++    assert var_0.next is not None
+     module_0.reverseKGroup(none_type_0, list_node_0)
+ 
+</pre></body></html>

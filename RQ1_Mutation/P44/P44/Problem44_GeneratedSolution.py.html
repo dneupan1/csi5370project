@@ -1,0 +1,23 @@
+<html><body><h1>..\P44\.\Problem44_GeneratedSolution.py</h1>Killed 32 out of 34 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 9</h3><pre>--- ..\P44\.\Problem44_GeneratedSolution.py
++++ ..\P44\.\Problem44_GeneratedSolution.py
+@@ -13,7 +13,7 @@
+             piles[i][j] += piles[i][j - 1]
+     
+     # Initialize a dp table where dp[i][j] represents the maximum value for choosing j coins from the first i piles
+-    dp = [[0] * (k + 1) for _ in range(len(piles) + 1)]
++    dp = [[0] * (k + 2) for _ in range(len(piles) + 1)]
+     
+     # Fill dp table
+     for i in range(1, len(piles) + 1):
+</pre><h3>Mutant 11</h3><pre>--- ..\P44\.\Problem44_GeneratedSolution.py
++++ ..\P44\.\Problem44_GeneratedSolution.py
+@@ -13,7 +13,7 @@
+             piles[i][j] += piles[i][j - 1]
+     
+     # Initialize a dp table where dp[i][j] represents the maximum value for choosing j coins from the first i piles
+-    dp = [[0] * (k + 1) for _ in range(len(piles) + 1)]
++    dp = [[0] * (k + 1) for _ in range(len(piles) + 2)]
+     
+     # Fill dp table
+     for i in range(1, len(piles) + 1):
+</pre></body></html>

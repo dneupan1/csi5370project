@@ -1,0 +1,440 @@
+<html><body><h1>..\P42\.\tests\test_Problem42_ChatGPT.py</h1>Killed 23 out of 63 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 66</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -8,7 +8,7 @@
+     With the minimum number of stones (equal to k), the cost should be the sum of all stones,
+     as they can be merged in one step.
+     """
+-    stones = [3, 2, 4, 1]
++    stones = [4, 2, 4, 1]
+     k = 4
+     expected = sum(stones)
+     assert mergeStones(stones, k) == expected, "Failed with the minimum stones that can be merged"
+</pre><h3>Mutant 67</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -8,7 +8,7 @@
+     With the minimum number of stones (equal to k), the cost should be the sum of all stones,
+     as they can be merged in one step.
+     """
+-    stones = [3, 2, 4, 1]
++    stones = [3, 3, 4, 1]
+     k = 4
+     expected = sum(stones)
+     assert mergeStones(stones, k) == expected, "Failed with the minimum stones that can be merged"
+</pre><h3>Mutant 68</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -8,7 +8,7 @@
+     With the minimum number of stones (equal to k), the cost should be the sum of all stones,
+     as they can be merged in one step.
+     """
+-    stones = [3, 2, 4, 1]
++    stones = [3, 2, 5, 1]
+     k = 4
+     expected = sum(stones)
+     assert mergeStones(stones, k) == expected, "Failed with the minimum stones that can be merged"
+</pre><h3>Mutant 69</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -8,7 +8,7 @@
+     With the minimum number of stones (equal to k), the cost should be the sum of all stones,
+     as they can be merged in one step.
+     """
+-    stones = [3, 2, 4, 1]
++    stones = [3, 2, 4, 2]
+     k = 4
+     expected = sum(stones)
+     assert mergeStones(stones, k) == expected, "Failed with the minimum stones that can be merged"
+</pre><h3>Mutant 75</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -11,7 +11,7 @@
+     stones = [3, 2, 4, 1]
+     k = 4
+     expected = sum(stones)
+-    assert mergeStones(stones, k) == expected, "Failed with the minimum stones that can be merged"
++    assert mergeStones(stones, k) == expected, "XXFailed with the minimum stones that can be mergedXX"
+ 
+ # Test with an impossible scenario
+ def test_impossible_merge():
+</pre><h3>Mutant 76</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -19,7 +19,7 @@
+     If it's not possible to merge the stones into one pile based on the (n-1) % (k-1) != 0 condition,
+     the function should return -1.
+     """
+-    stones = [3, 2, 4, 1]
++    stones = [4, 2, 4, 1]
+     k = 3
+     assert mergeStones(stones, k) == -1, "Failed with an impossible merge scenario"
+ 
+</pre><h3>Mutant 77</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -19,7 +19,7 @@
+     If it's not possible to merge the stones into one pile based on the (n-1) % (k-1) != 0 condition,
+     the function should return -1.
+     """
+-    stones = [3, 2, 4, 1]
++    stones = [3, 3, 4, 1]
+     k = 3
+     assert mergeStones(stones, k) == -1, "Failed with an impossible merge scenario"
+ 
+</pre><h3>Mutant 78</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -19,7 +19,7 @@
+     If it's not possible to merge the stones into one pile based on the (n-1) % (k-1) != 0 condition,
+     the function should return -1.
+     """
+-    stones = [3, 2, 4, 1]
++    stones = [3, 2, 5, 1]
+     k = 3
+     assert mergeStones(stones, k) == -1, "Failed with an impossible merge scenario"
+ 
+</pre><h3>Mutant 79</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -19,7 +19,7 @@
+     If it's not possible to merge the stones into one pile based on the (n-1) % (k-1) != 0 condition,
+     the function should return -1.
+     """
+-    stones = [3, 2, 4, 1]
++    stones = [3, 2, 4, 2]
+     k = 3
+     assert mergeStones(stones, k) == -1, "Failed with an impossible merge scenario"
+ 
+</pre><h3>Mutant 86</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -21,7 +21,7 @@
+     """
+     stones = [3, 2, 4, 1]
+     k = 3
+-    assert mergeStones(stones, k) == -1, "Failed with an impossible merge scenario"
++    assert mergeStones(stones, k) == -1, "XXFailed with an impossible merge scenarioXX"
+ 
+ # Test with a simple case where stones can be merged
+ @pytest.mark.skip()
+</pre><h3>Mutant 88</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -30,7 +30,7 @@
+     Tests a simple case where the stones can be merged with some cost.
+     This test ensures the DP logic is correctly minimizing the merge cost.
+     """
+-    stones = [3, 5, 1, 2]
++    stones = [4, 5, 1, 2]
+     k = 2
+     expected = 25  # Explanation: merge (3,5) -> 8, (1,2) -> 3, merge (8, 1, 2) -> 11, total cost = 8+3+11+3 = 25
+     assert mergeStones(stones, k) == expected, "Failed with a simple merge case"
+</pre><h3>Mutant 89</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -30,7 +30,7 @@
+     Tests a simple case where the stones can be merged with some cost.
+     This test ensures the DP logic is correctly minimizing the merge cost.
+     """
+-    stones = [3, 5, 1, 2]
++    stones = [3, 6, 1, 2]
+     k = 2
+     expected = 25  # Explanation: merge (3,5) -> 8, (1,2) -> 3, merge (8, 1, 2) -> 11, total cost = 8+3+11+3 = 25
+     assert mergeStones(stones, k) == expected, "Failed with a simple merge case"
+</pre><h3>Mutant 90</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -30,7 +30,7 @@
+     Tests a simple case where the stones can be merged with some cost.
+     This test ensures the DP logic is correctly minimizing the merge cost.
+     """
+-    stones = [3, 5, 1, 2]
++    stones = [3, 5, 2, 2]
+     k = 2
+     expected = 25  # Explanation: merge (3,5) -> 8, (1,2) -> 3, merge (8, 1, 2) -> 11, total cost = 8+3+11+3 = 25
+     assert mergeStones(stones, k) == expected, "Failed with a simple merge case"
+</pre><h3>Mutant 91</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -30,7 +30,7 @@
+     Tests a simple case where the stones can be merged with some cost.
+     This test ensures the DP logic is correctly minimizing the merge cost.
+     """
+-    stones = [3, 5, 1, 2]
++    stones = [3, 5, 1, 3]
+     k = 2
+     expected = 25  # Explanation: merge (3,5) -> 8, (1,2) -> 3, merge (8, 1, 2) -> 11, total cost = 8+3+11+3 = 25
+     assert mergeStones(stones, k) == expected, "Failed with a simple merge case"
+</pre><h3>Mutant 92</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -30,7 +30,7 @@
+     Tests a simple case where the stones can be merged with some cost.
+     This test ensures the DP logic is correctly minimizing the merge cost.
+     """
+-    stones = [3, 5, 1, 2]
++    stones = None
+     k = 2
+     expected = 25  # Explanation: merge (3,5) -> 8, (1,2) -> 3, merge (8, 1, 2) -> 11, total cost = 8+3+11+3 = 25
+     assert mergeStones(stones, k) == expected, "Failed with a simple merge case"
+</pre><h3>Mutant 93</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -31,7 +31,7 @@
+     This test ensures the DP logic is correctly minimizing the merge cost.
+     """
+     stones = [3, 5, 1, 2]
+-    k = 2
++    k = 3
+     expected = 25  # Explanation: merge (3,5) -> 8, (1,2) -> 3, merge (8, 1, 2) -> 11, total cost = 8+3+11+3 = 25
+     assert mergeStones(stones, k) == expected, "Failed with a simple merge case"
+ 
+</pre><h3>Mutant 94</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -31,7 +31,7 @@
+     This test ensures the DP logic is correctly minimizing the merge cost.
+     """
+     stones = [3, 5, 1, 2]
+-    k = 2
++    k = None
+     expected = 25  # Explanation: merge (3,5) -> 8, (1,2) -> 3, merge (8, 1, 2) -> 11, total cost = 8+3+11+3 = 25
+     assert mergeStones(stones, k) == expected, "Failed with a simple merge case"
+ 
+</pre><h3>Mutant 95</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -32,7 +32,7 @@
+     """
+     stones = [3, 5, 1, 2]
+     k = 2
+-    expected = 25  # Explanation: merge (3,5) -> 8, (1,2) -> 3, merge (8, 1, 2) -> 11, total cost = 8+3+11+3 = 25
++    expected = 26  # Explanation: merge (3,5) -> 8, (1,2) -> 3, merge (8, 1, 2) -> 11, total cost = 8+3+11+3 = 25
+     assert mergeStones(stones, k) == expected, "Failed with a simple merge case"
+ 
+ # Test with larger number of stones and complex scenario
+</pre><h3>Mutant 96</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -32,7 +32,7 @@
+     """
+     stones = [3, 5, 1, 2]
+     k = 2
+-    expected = 25  # Explanation: merge (3,5) -> 8, (1,2) -> 3, merge (8, 1, 2) -> 11, total cost = 8+3+11+3 = 25
++    expected = None  # Explanation: merge (3,5) -> 8, (1,2) -> 3, merge (8, 1, 2) -> 11, total cost = 8+3+11+3 = 25
+     assert mergeStones(stones, k) == expected, "Failed with a simple merge case"
+ 
+ # Test with larger number of stones and complex scenario
+</pre><h3>Mutant 97</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -33,7 +33,7 @@
+     stones = [3, 5, 1, 2]
+     k = 2
+     expected = 25  # Explanation: merge (3,5) -> 8, (1,2) -> 3, merge (8, 1, 2) -> 11, total cost = 8+3+11+3 = 25
+-    assert mergeStones(stones, k) == expected, "Failed with a simple merge case"
++    assert mergeStones(stones, k) != expected, "Failed with a simple merge case"
+ 
+ # Test with larger number of stones and complex scenario
+ @pytest.mark.skip()
+</pre><h3>Mutant 98</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -33,7 +33,7 @@
+     stones = [3, 5, 1, 2]
+     k = 2
+     expected = 25  # Explanation: merge (3,5) -> 8, (1,2) -> 3, merge (8, 1, 2) -> 11, total cost = 8+3+11+3 = 25
+-    assert mergeStones(stones, k) == expected, "Failed with a simple merge case"
++    assert mergeStones(stones, k) == expected, "XXFailed with a simple merge caseXX"
+ 
+ # Test with larger number of stones and complex scenario
+ @pytest.mark.skip()
+</pre><h3>Mutant 100</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -42,7 +42,7 @@
+     Tests a more complex scenario with a larger number of stones.
+     This ensures the function handles larger inputs and more complex merging strategies.
+     """
+-    stones = [4, 6, 4, 7, 5]
++    stones = [5, 6, 4, 7, 5]
+     k = 2
+     expected = 56  # One of the optimal ways to merge with minimal cost
+     assert mergeStones(stones, k) == expected, "Failed with a complex merge case"
+</pre><h3>Mutant 101</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -42,7 +42,7 @@
+     Tests a more complex scenario with a larger number of stones.
+     This ensures the function handles larger inputs and more complex merging strategies.
+     """
+-    stones = [4, 6, 4, 7, 5]
++    stones = [4, 7, 4, 7, 5]
+     k = 2
+     expected = 56  # One of the optimal ways to merge with minimal cost
+     assert mergeStones(stones, k) == expected, "Failed with a complex merge case"
+</pre><h3>Mutant 102</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -42,7 +42,7 @@
+     Tests a more complex scenario with a larger number of stones.
+     This ensures the function handles larger inputs and more complex merging strategies.
+     """
+-    stones = [4, 6, 4, 7, 5]
++    stones = [4, 6, 5, 7, 5]
+     k = 2
+     expected = 56  # One of the optimal ways to merge with minimal cost
+     assert mergeStones(stones, k) == expected, "Failed with a complex merge case"
+</pre><h3>Mutant 103</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -42,7 +42,7 @@
+     Tests a more complex scenario with a larger number of stones.
+     This ensures the function handles larger inputs and more complex merging strategies.
+     """
+-    stones = [4, 6, 4, 7, 5]
++    stones = [4, 6, 4, 8, 5]
+     k = 2
+     expected = 56  # One of the optimal ways to merge with minimal cost
+     assert mergeStones(stones, k) == expected, "Failed with a complex merge case"
+</pre><h3>Mutant 104</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -42,7 +42,7 @@
+     Tests a more complex scenario with a larger number of stones.
+     This ensures the function handles larger inputs and more complex merging strategies.
+     """
+-    stones = [4, 6, 4, 7, 5]
++    stones = [4, 6, 4, 7, 6]
+     k = 2
+     expected = 56  # One of the optimal ways to merge with minimal cost
+     assert mergeStones(stones, k) == expected, "Failed with a complex merge case"
+</pre><h3>Mutant 105</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -42,7 +42,7 @@
+     Tests a more complex scenario with a larger number of stones.
+     This ensures the function handles larger inputs and more complex merging strategies.
+     """
+-    stones = [4, 6, 4, 7, 5]
++    stones = None
+     k = 2
+     expected = 56  # One of the optimal ways to merge with minimal cost
+     assert mergeStones(stones, k) == expected, "Failed with a complex merge case"
+</pre><h3>Mutant 106</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -43,7 +43,7 @@
+     This ensures the function handles larger inputs and more complex merging strategies.
+     """
+     stones = [4, 6, 4, 7, 5]
+-    k = 2
++    k = 3
+     expected = 56  # One of the optimal ways to merge with minimal cost
+     assert mergeStones(stones, k) == expected, "Failed with a complex merge case"
+ 
+</pre><h3>Mutant 107</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -43,7 +43,7 @@
+     This ensures the function handles larger inputs and more complex merging strategies.
+     """
+     stones = [4, 6, 4, 7, 5]
+-    k = 2
++    k = None
+     expected = 56  # One of the optimal ways to merge with minimal cost
+     assert mergeStones(stones, k) == expected, "Failed with a complex merge case"
+ 
+</pre><h3>Mutant 108</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -44,7 +44,7 @@
+     """
+     stones = [4, 6, 4, 7, 5]
+     k = 2
+-    expected = 56  # One of the optimal ways to merge with minimal cost
++    expected = 57  # One of the optimal ways to merge with minimal cost
+     assert mergeStones(stones, k) == expected, "Failed with a complex merge case"
+ 
+ # Test with only one stone
+</pre><h3>Mutant 109</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -44,7 +44,7 @@
+     """
+     stones = [4, 6, 4, 7, 5]
+     k = 2
+-    expected = 56  # One of the optimal ways to merge with minimal cost
++    expected = None  # One of the optimal ways to merge with minimal cost
+     assert mergeStones(stones, k) == expected, "Failed with a complex merge case"
+ 
+ # Test with only one stone
+</pre><h3>Mutant 110</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -45,7 +45,7 @@
+     stones = [4, 6, 4, 7, 5]
+     k = 2
+     expected = 56  # One of the optimal ways to merge with minimal cost
+-    assert mergeStones(stones, k) == expected, "Failed with a complex merge case"
++    assert mergeStones(stones, k) != expected, "Failed with a complex merge case"
+ 
+ # Test with only one stone
+ def test_single_stone():
+</pre><h3>Mutant 111</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -45,7 +45,7 @@
+     stones = [4, 6, 4, 7, 5]
+     k = 2
+     expected = 56  # One of the optimal ways to merge with minimal cost
+-    assert mergeStones(stones, k) == expected, "Failed with a complex merge case"
++    assert mergeStones(stones, k) == expected, "XXFailed with a complex merge caseXX"
+ 
+ # Test with only one stone
+ def test_single_stone():
+</pre><h3>Mutant 112</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -52,7 +52,7 @@
+     """
+     If there's only one stone, no merges are needed, so the cost should be 0.
+     """
+-    stones = [7]
++    stones = [8]
+     k = 2
+     expected = 0
+     assert mergeStones(stones, k) == expected, "Failed with a single stone"
+</pre><h3>Mutant 114</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -53,7 +53,7 @@
+     If there's only one stone, no merges are needed, so the cost should be 0.
+     """
+     stones = [7]
+-    k = 2
++    k = 3
+     expected = 0
+     assert mergeStones(stones, k) == expected, "Failed with a single stone"
+ 
+</pre><h3>Mutant 119</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -55,7 +55,7 @@
+     stones = [7]
+     k = 2
+     expected = 0
+-    assert mergeStones(stones, k) == expected, "Failed with a single stone"
++    assert mergeStones(stones, k) == expected, "XXFailed with a single stoneXX"
+ 
+ # Test with two stones and k greater than 2 (impossible case)
+ def test_two_stones():
+</pre><h3>Mutant 120</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -63,7 +63,7 @@
+     With only two stones and k greater than 2, it's impossible to merge them into one pile,
+     so the function should return -1.
+     """
+-    stones = [7, 3]
++    stones = [8, 3]
+     k = 3
+     assert mergeStones(stones, k) == -1, "Failed with two stones and k > 2"
+ 
+</pre><h3>Mutant 121</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -63,7 +63,7 @@
+     With only two stones and k greater than 2, it's impossible to merge them into one pile,
+     so the function should return -1.
+     """
+-    stones = [7, 3]
++    stones = [7, 4]
+     k = 3
+     assert mergeStones(stones, k) == -1, "Failed with two stones and k > 2"
+ 
+</pre><h3>Mutant 123</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -64,7 +64,7 @@
+     so the function should return -1.
+     """
+     stones = [7, 3]
+-    k = 3
++    k = 4
+     assert mergeStones(stones, k) == -1, "Failed with two stones and k > 2"
+ 
+ 
+</pre><h3>Mutant 128</h3><pre>--- ..\P42\.\tests\test_Problem42_ChatGPT.py
++++ ..\P42\.\tests\test_Problem42_ChatGPT.py
+@@ -65,6 +65,6 @@
+     """
+     stones = [7, 3]
+     k = 3
+-    assert mergeStones(stones, k) == -1, "Failed with two stones and k > 2"
++    assert mergeStones(stones, k) == -1, "XXFailed with two stones and k > 2XX"
+ 
+ 
+</pre></body></html>

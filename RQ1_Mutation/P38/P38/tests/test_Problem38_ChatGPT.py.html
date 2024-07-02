@@ -1,0 +1,315 @@
+<html><body><h1>..\P38\.\tests\test_Problem38_ChatGPT.py</h1>Killed 23 out of 53 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 13</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -8,7 +8,7 @@
+     An empty list has no subsequence, hence the length of the longest increasing
+     subsequence should be 0.
+     """
+-    assert lengthOfLIS([]) == 0, "Failed to return 0 for an empty list"
++    assert lengthOfLIS([]) == 0, "XXFailed to return 0 for an empty listXX"
+ 
+ # Test with all elements being the same
+ def test_all_elements_same():
+</pre><h3>Mutant 14</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -16,7 +16,7 @@
+     When all elements in the list are the same, the longest increasing subsequence
+     can only be of length 1, as all elements are equal and there's no increase.
+     """
+-    assert lengthOfLIS([5, 5, 5, 5]) == 1, "Failed with all elements the same"
++    assert lengthOfLIS([6, 5, 5, 5]) == 1, "Failed with all elements the same"
+ 
+ # Test with a strictly increasing sequence
+ def test_strictly_increasing_sequence():
+</pre><h3>Mutant 20</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -16,7 +16,7 @@
+     When all elements in the list are the same, the longest increasing subsequence
+     can only be of length 1, as all elements are equal and there's no increase.
+     """
+-    assert lengthOfLIS([5, 5, 5, 5]) == 1, "Failed with all elements the same"
++    assert lengthOfLIS([5, 5, 5, 5]) == 1, "XXFailed with all elements the sameXX"
+ 
+ # Test with a strictly increasing sequence
+ def test_strictly_increasing_sequence():
+</pre><h3>Mutant 25</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -24,7 +24,7 @@
+     In a strictly increasing sequence, the entire list itself is the longest
+     increasing subsequence. Thus, the expected result is the length of the list.
+     """
+-    assert lengthOfLIS([1, 2, 3, 4, 5]) == 5, "Failed with a strictly increasing sequence"
++    assert lengthOfLIS([1, 2, 3, 4, 6]) == 5, "Failed with a strictly increasing sequence"
+ 
+ # Test with a strictly decreasing sequence
+ def test_strictly_decreasing_sequence():
+</pre><h3>Mutant 28</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -24,7 +24,7 @@
+     In a strictly increasing sequence, the entire list itself is the longest
+     increasing subsequence. Thus, the expected result is the length of the list.
+     """
+-    assert lengthOfLIS([1, 2, 3, 4, 5]) == 5, "Failed with a strictly increasing sequence"
++    assert lengthOfLIS([1, 2, 3, 4, 5]) == 5, "XXFailed with a strictly increasing sequenceXX"
+ 
+ # Test with a strictly decreasing sequence
+ def test_strictly_decreasing_sequence():
+</pre><h3>Mutant 29</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -32,7 +32,7 @@
+     For a strictly decreasing sequence, the longest increasing subsequence has
+     a length of 1, as no two elements can form an increasing sequence.
+     """
+-    assert lengthOfLIS([5, 4, 3, 2, 1]) == 1, "Failed with a strictly decreasing sequence"
++    assert lengthOfLIS([6, 4, 3, 2, 1]) == 1, "Failed with a strictly decreasing sequence"
+ 
+ # Test with a mixed sequence
+ def test_mixed_sequence():
+</pre><h3>Mutant 30</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -32,7 +32,7 @@
+     For a strictly decreasing sequence, the longest increasing subsequence has
+     a length of 1, as no two elements can form an increasing sequence.
+     """
+-    assert lengthOfLIS([5, 4, 3, 2, 1]) == 1, "Failed with a strictly decreasing sequence"
++    assert lengthOfLIS([5, 5, 3, 2, 1]) == 1, "Failed with a strictly decreasing sequence"
+ 
+ # Test with a mixed sequence
+ def test_mixed_sequence():
+</pre><h3>Mutant 31</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -32,7 +32,7 @@
+     For a strictly decreasing sequence, the longest increasing subsequence has
+     a length of 1, as no two elements can form an increasing sequence.
+     """
+-    assert lengthOfLIS([5, 4, 3, 2, 1]) == 1, "Failed with a strictly decreasing sequence"
++    assert lengthOfLIS([5, 4, 4, 2, 1]) == 1, "Failed with a strictly decreasing sequence"
+ 
+ # Test with a mixed sequence
+ def test_mixed_sequence():
+</pre><h3>Mutant 32</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -32,7 +32,7 @@
+     For a strictly decreasing sequence, the longest increasing subsequence has
+     a length of 1, as no two elements can form an increasing sequence.
+     """
+-    assert lengthOfLIS([5, 4, 3, 2, 1]) == 1, "Failed with a strictly decreasing sequence"
++    assert lengthOfLIS([5, 4, 3, 3, 1]) == 1, "Failed with a strictly decreasing sequence"
+ 
+ # Test with a mixed sequence
+ def test_mixed_sequence():
+</pre><h3>Mutant 33</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -32,7 +32,7 @@
+     For a strictly decreasing sequence, the longest increasing subsequence has
+     a length of 1, as no two elements can form an increasing sequence.
+     """
+-    assert lengthOfLIS([5, 4, 3, 2, 1]) == 1, "Failed with a strictly decreasing sequence"
++    assert lengthOfLIS([5, 4, 3, 2, 2]) == 1, "Failed with a strictly decreasing sequence"
+ 
+ # Test with a mixed sequence
+ def test_mixed_sequence():
+</pre><h3>Mutant 36</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -32,7 +32,7 @@
+     For a strictly decreasing sequence, the longest increasing subsequence has
+     a length of 1, as no two elements can form an increasing sequence.
+     """
+-    assert lengthOfLIS([5, 4, 3, 2, 1]) == 1, "Failed with a strictly decreasing sequence"
++    assert lengthOfLIS([5, 4, 3, 2, 1]) == 1, "XXFailed with a strictly decreasing sequenceXX"
+ 
+ # Test with a mixed sequence
+ def test_mixed_sequence():
+</pre><h3>Mutant 37</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -41,7 +41,7 @@
+     The test verifies the function's ability to identify the longest increasing
+     subsequence within a complex sequence.
+     """
+-    assert lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]) == 4, "Failed with a mixed sequence"
++    assert lengthOfLIS([11, 9, 2, 5, 3, 7, 101, 18]) == 4, "Failed with a mixed sequence"
+ 
+ # Test with a single element
+ def test_single_element():
+</pre><h3>Mutant 38</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -41,7 +41,7 @@
+     The test verifies the function's ability to identify the longest increasing
+     subsequence within a complex sequence.
+     """
+-    assert lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]) == 4, "Failed with a mixed sequence"
++    assert lengthOfLIS([10, 10, 2, 5, 3, 7, 101, 18]) == 4, "Failed with a mixed sequence"
+ 
+ # Test with a single element
+ def test_single_element():
+</pre><h3>Mutant 39</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -41,7 +41,7 @@
+     The test verifies the function's ability to identify the longest increasing
+     subsequence within a complex sequence.
+     """
+-    assert lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]) == 4, "Failed with a mixed sequence"
++    assert lengthOfLIS([10, 9, 3, 5, 3, 7, 101, 18]) == 4, "Failed with a mixed sequence"
+ 
+ # Test with a single element
+ def test_single_element():
+</pre><h3>Mutant 40</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -41,7 +41,7 @@
+     The test verifies the function's ability to identify the longest increasing
+     subsequence within a complex sequence.
+     """
+-    assert lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]) == 4, "Failed with a mixed sequence"
++    assert lengthOfLIS([10, 9, 2, 6, 3, 7, 101, 18]) == 4, "Failed with a mixed sequence"
+ 
+ # Test with a single element
+ def test_single_element():
+</pre><h3>Mutant 41</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -41,7 +41,7 @@
+     The test verifies the function's ability to identify the longest increasing
+     subsequence within a complex sequence.
+     """
+-    assert lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]) == 4, "Failed with a mixed sequence"
++    assert lengthOfLIS([10, 9, 2, 5, 4, 7, 101, 18]) == 4, "Failed with a mixed sequence"
+ 
+ # Test with a single element
+ def test_single_element():
+</pre><h3>Mutant 42</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -41,7 +41,7 @@
+     The test verifies the function's ability to identify the longest increasing
+     subsequence within a complex sequence.
+     """
+-    assert lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]) == 4, "Failed with a mixed sequence"
++    assert lengthOfLIS([10, 9, 2, 5, 3, 8, 101, 18]) == 4, "Failed with a mixed sequence"
+ 
+ # Test with a single element
+ def test_single_element():
+</pre><h3>Mutant 43</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -41,7 +41,7 @@
+     The test verifies the function's ability to identify the longest increasing
+     subsequence within a complex sequence.
+     """
+-    assert lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]) == 4, "Failed with a mixed sequence"
++    assert lengthOfLIS([10, 9, 2, 5, 3, 7, 102, 18]) == 4, "Failed with a mixed sequence"
+ 
+ # Test with a single element
+ def test_single_element():
+</pre><h3>Mutant 44</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -41,7 +41,7 @@
+     The test verifies the function's ability to identify the longest increasing
+     subsequence within a complex sequence.
+     """
+-    assert lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]) == 4, "Failed with a mixed sequence"
++    assert lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 19]) == 4, "Failed with a mixed sequence"
+ 
+ # Test with a single element
+ def test_single_element():
+</pre><h3>Mutant 47</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -41,7 +41,7 @@
+     The test verifies the function's ability to identify the longest increasing
+     subsequence within a complex sequence.
+     """
+-    assert lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]) == 4, "Failed with a mixed sequence"
++    assert lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]) == 4, "XXFailed with a mixed sequenceXX"
+ 
+ # Test with a single element
+ def test_single_element():
+</pre><h3>Mutant 48</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -49,7 +49,7 @@
+     A list with a single element has a longest increasing subsequence of length 1,
+     as the single element itself forms a valid increasing subsequence.
+     """
+-    assert lengthOfLIS([1]) == 1, "Failed with a single element"
++    assert lengthOfLIS([2]) == 1, "Failed with a single element"
+ 
+ # Test with repeated elements contributing to LIS
+ def test_repeated_elements_contributing():
+</pre><h3>Mutant 51</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -49,7 +49,7 @@
+     A list with a single element has a longest increasing subsequence of length 1,
+     as the single element itself forms a valid increasing subsequence.
+     """
+-    assert lengthOfLIS([1]) == 1, "Failed with a single element"
++    assert lengthOfLIS([1]) == 1, "XXFailed with a single elementXX"
+ 
+ # Test with repeated elements contributing to LIS
+ def test_repeated_elements_contributing():
+</pre><h3>Mutant 52</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -57,5 +57,5 @@
+     Tests a scenario where the list contains repeated elements that contribute
+     to the length of the longest increasing subsequence.
+     """
+-    assert lengthOfLIS([1, 3, 6, 7, 9, 4, 10, 5, 6]) == 6, "Failed with repeated elements contributing to LIS"
++    assert lengthOfLIS([2, 3, 6, 7, 9, 4, 10, 5, 6]) == 6, "Failed with repeated elements contributing to LIS"
+ 
+</pre><h3>Mutant 53</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -57,5 +57,5 @@
+     Tests a scenario where the list contains repeated elements that contribute
+     to the length of the longest increasing subsequence.
+     """
+-    assert lengthOfLIS([1, 3, 6, 7, 9, 4, 10, 5, 6]) == 6, "Failed with repeated elements contributing to LIS"
++    assert lengthOfLIS([1, 4, 6, 7, 9, 4, 10, 5, 6]) == 6, "Failed with repeated elements contributing to LIS"
+ 
+</pre><h3>Mutant 55</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -57,5 +57,5 @@
+     Tests a scenario where the list contains repeated elements that contribute
+     to the length of the longest increasing subsequence.
+     """
+-    assert lengthOfLIS([1, 3, 6, 7, 9, 4, 10, 5, 6]) == 6, "Failed with repeated elements contributing to LIS"
++    assert lengthOfLIS([1, 3, 6, 8, 9, 4, 10, 5, 6]) == 6, "Failed with repeated elements contributing to LIS"
+ 
+</pre><h3>Mutant 57</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -57,5 +57,5 @@
+     Tests a scenario where the list contains repeated elements that contribute
+     to the length of the longest increasing subsequence.
+     """
+-    assert lengthOfLIS([1, 3, 6, 7, 9, 4, 10, 5, 6]) == 6, "Failed with repeated elements contributing to LIS"
++    assert lengthOfLIS([1, 3, 6, 7, 9, 5, 10, 5, 6]) == 6, "Failed with repeated elements contributing to LIS"
+ 
+</pre><h3>Mutant 58</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -57,5 +57,5 @@
+     Tests a scenario where the list contains repeated elements that contribute
+     to the length of the longest increasing subsequence.
+     """
+-    assert lengthOfLIS([1, 3, 6, 7, 9, 4, 10, 5, 6]) == 6, "Failed with repeated elements contributing to LIS"
++    assert lengthOfLIS([1, 3, 6, 7, 9, 4, 11, 5, 6]) == 6, "Failed with repeated elements contributing to LIS"
+ 
+</pre><h3>Mutant 59</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -57,5 +57,5 @@
+     Tests a scenario where the list contains repeated elements that contribute
+     to the length of the longest increasing subsequence.
+     """
+-    assert lengthOfLIS([1, 3, 6, 7, 9, 4, 10, 5, 6]) == 6, "Failed with repeated elements contributing to LIS"
++    assert lengthOfLIS([1, 3, 6, 7, 9, 4, 10, 6, 6]) == 6, "Failed with repeated elements contributing to LIS"
+ 
+</pre><h3>Mutant 60</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -57,5 +57,5 @@
+     Tests a scenario where the list contains repeated elements that contribute
+     to the length of the longest increasing subsequence.
+     """
+-    assert lengthOfLIS([1, 3, 6, 7, 9, 4, 10, 5, 6]) == 6, "Failed with repeated elements contributing to LIS"
++    assert lengthOfLIS([1, 3, 6, 7, 9, 4, 10, 5, 7]) == 6, "Failed with repeated elements contributing to LIS"
+ 
+</pre><h3>Mutant 63</h3><pre>--- ..\P38\.\tests\test_Problem38_ChatGPT.py
++++ ..\P38\.\tests\test_Problem38_ChatGPT.py
+@@ -57,5 +57,5 @@
+     Tests a scenario where the list contains repeated elements that contribute
+     to the length of the longest increasing subsequence.
+     """
+-    assert lengthOfLIS([1, 3, 6, 7, 9, 4, 10, 5, 6]) == 6, "Failed with repeated elements contributing to LIS"
++    assert lengthOfLIS([1, 3, 6, 7, 9, 4, 10, 5, 6]) == 6, "XXFailed with repeated elements contributing to LISXX"
+ 
+</pre></body></html>

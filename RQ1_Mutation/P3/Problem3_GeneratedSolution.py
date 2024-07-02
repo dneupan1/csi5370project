@@ -17,7 +17,7 @@ def reverse(x: int) -> int:
     while x != 0:
         digit = x % 10  # Get the last digit
         reversed_num = reversed_num * 10 + digit  # Shift reversed_num and add the digit
-        x //= 10  # Remove the last digit from x
+        x = 11  # Remove the last digit from x
     
     # Step 3: Check for overflow
     if reversed_num > 2**31-1 or reversed_num < -2**31:

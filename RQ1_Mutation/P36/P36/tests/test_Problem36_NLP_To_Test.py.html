@@ -1,0 +1,285 @@
+<html><body><h1>..\P36\.\tests\test_Problem36_NLP_To_Test.py</h1>Killed 47 out of 73 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 232</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -32,7 +32,7 @@
+         return left
+     return find_node(root.right, value)
+ 
+-@pytest.mark.parametrize("values, p_val, q_val, expected_val", [
++@pytest.mark.parametrize("XXvalues, p_val, q_val, expected_valXX", [
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+</pre><h3>Mutant 236</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -33,7 +33,7 @@
+     return find_node(root.right, value)
+ 
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+-    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
++    ([3, 5, 1, 7, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+</pre><h3>Mutant 237</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -33,7 +33,7 @@
+     return find_node(root.right, value)
+ 
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+-    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
++    ([3, 5, 1, 6, 3, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+</pre><h3>Mutant 238</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -33,7 +33,7 @@
+     return find_node(root.right, value)
+ 
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+-    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
++    ([3, 5, 1, 6, 2, 1, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+</pre><h3>Mutant 239</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -33,7 +33,7 @@
+     return find_node(root.right, value)
+ 
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+-    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
++    ([3, 5, 1, 6, 2, 0, 9, None, None, 7, 4], 5, 1, 3),  # Example 1
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+</pre><h3>Mutant 240</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -33,7 +33,7 @@
+     return find_node(root.right, value)
+ 
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+-    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
++    ([3, 5, 1, 6, 2, 0, 8, None, None, 8, 4], 5, 1, 3),  # Example 1
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+</pre><h3>Mutant 241</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -33,7 +33,7 @@
+     return find_node(root.right, value)
+ 
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+-    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
++    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 5], 5, 1, 3),  # Example 1
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+</pre><h3>Mutant 242</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -33,7 +33,7 @@
+     return find_node(root.right, value)
+ 
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+-    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
++    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 6, 1, 3),  # Example 1
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+</pre><h3>Mutant 247</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -34,7 +34,7 @@
+ 
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
+-    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
++    ([3, 5, 2, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+     ([1, 2, 3, None, 4], 4, 3, 1),  # LCA at root with missing nodes
+</pre><h3>Mutant 248</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -34,7 +34,7 @@
+ 
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
+-    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
++    ([3, 5, 1, 7, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+     ([1, 2, 3, None, 4], 4, 3, 1),  # LCA at root with missing nodes
+</pre><h3>Mutant 249</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -34,7 +34,7 @@
+ 
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
+-    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
++    ([3, 5, 1, 6, 3, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+     ([1, 2, 3, None, 4], 4, 3, 1),  # LCA at root with missing nodes
+</pre><h3>Mutant 250</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -34,7 +34,7 @@
+ 
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
+-    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
++    ([3, 5, 1, 6, 2, 1, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+     ([1, 2, 3, None, 4], 4, 3, 1),  # LCA at root with missing nodes
+</pre><h3>Mutant 251</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -34,7 +34,7 @@
+ 
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
+-    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
++    ([3, 5, 1, 6, 2, 0, 9, None, None, 7, 4], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+     ([1, 2, 3, None, 4], 4, 3, 1),  # LCA at root with missing nodes
+</pre><h3>Mutant 252</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -34,7 +34,7 @@
+ 
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
+-    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
++    ([3, 5, 1, 6, 2, 0, 8, None, None, 8, 4], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+     ([1, 2, 3, None, 4], 4, 3, 1),  # LCA at root with missing nodes
+</pre><h3>Mutant 253</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -34,7 +34,7 @@
+ 
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
+-    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
++    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 5], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+     ([1, 2, 3, None, 4], 4, 3, 1),  # LCA at root with missing nodes
+</pre><h3>Mutant 255</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -34,7 +34,7 @@
+ 
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
+-    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
++    ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 5, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+     ([1, 2, 3, None, 4], 4, 3, 1),  # LCA at root with missing nodes
+</pre><h3>Mutant 258</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -35,7 +35,7 @@
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
+-    ([1, 2], 1, 2, 1),  # Example 3
++    ([1, 3], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+     ([1, 2, 3, None, 4], 4, 3, 1),  # LCA at root with missing nodes
+     ([5, 3, 6, 2, 4, None, 7], 2, 7, 5)  # LCA in a BST
+</pre><h3>Mutant 260</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -35,7 +35,7 @@
+ @pytest.mark.parametrize("values, p_val, q_val, expected_val", [
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
+-    ([1, 2], 1, 2, 1),  # Example 3
++    ([1, 2], 1, 3, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+     ([1, 2, 3, None, 4], 4, 3, 1),  # LCA at root with missing nodes
+     ([5, 3, 6, 2, 4, None, 7], 2, 7, 5)  # LCA in a BST
+</pre><h3>Mutant 263</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -36,7 +36,7 @@
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+-    ([1], 1, 1, 1),  # Single node tree
++    ([1], 2, 1, 1),  # Single node tree
+     ([1, 2, 3, None, 4], 4, 3, 1),  # LCA at root with missing nodes
+     ([5, 3, 6, 2, 4, None, 7], 2, 7, 5)  # LCA in a BST
+ ])
+</pre><h3>Mutant 264</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -36,7 +36,7 @@
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 1, 3),  # Example 1
+     ([3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 5, 4, 5),  # Example 2
+     ([1, 2], 1, 2, 1),  # Example 3
+-    ([1], 1, 1, 1),  # Single node tree
++    ([1], 1, 2, 1),  # Single node tree
+     ([1, 2, 3, None, 4], 4, 3, 1),  # LCA at root with missing nodes
+     ([5, 3, 6, 2, 4, None, 7], 2, 7, 5)  # LCA in a BST
+ ])
+</pre><h3>Mutant 274</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -38,7 +38,7 @@
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+     ([1, 2, 3, None, 4], 4, 3, 1),  # LCA at root with missing nodes
+-    ([5, 3, 6, 2, 4, None, 7], 2, 7, 5)  # LCA in a BST
++    ([5, 4, 6, 2, 4, None, 7], 2, 7, 5)  # LCA in a BST
+ ])
+ def test_find_LCA(values, p_val, q_val, expected_val):
+     """
+</pre><h3>Mutant 275</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -38,7 +38,7 @@
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+     ([1, 2, 3, None, 4], 4, 3, 1),  # LCA at root with missing nodes
+-    ([5, 3, 6, 2, 4, None, 7], 2, 7, 5)  # LCA in a BST
++    ([5, 3, 7, 2, 4, None, 7], 2, 7, 5)  # LCA in a BST
+ ])
+ def test_find_LCA(values, p_val, q_val, expected_val):
+     """
+</pre><h3>Mutant 277</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -38,7 +38,7 @@
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+     ([1, 2, 3, None, 4], 4, 3, 1),  # LCA at root with missing nodes
+-    ([5, 3, 6, 2, 4, None, 7], 2, 7, 5)  # LCA in a BST
++    ([5, 3, 6, 2, 5, None, 7], 2, 7, 5)  # LCA in a BST
+ ])
+ def test_find_LCA(values, p_val, q_val, expected_val):
+     """
+</pre><h3>Mutant 279</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -38,7 +38,7 @@
+     ([1, 2], 1, 2, 1),  # Example 3
+     ([1], 1, 1, 1),  # Single node tree
+     ([1, 2, 3, None, 4], 4, 3, 1),  # LCA at root with missing nodes
+-    ([5, 3, 6, 2, 4, None, 7], 2, 7, 5)  # LCA in a BST
++    ([5, 3, 6, 2, 4, None, 7], 3, 7, 5)  # LCA in a BST
+ ])
+ def test_find_LCA(values, p_val, q_val, expected_val):
+     """
+</pre><h3>Mutant 288</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -59,6 +59,6 @@
+     p = find_node(root, p_val)
+     q = find_node(root, q_val)
+     lca = find_LCA(root, p, q)
+-    assert lca.val == expected_val, f"Test failed for values={values}, p_val={p_val}, q_val={q_val}. Expected LCA={expected_val}, found={lca.val if lca else 'None'}"
++    assert lca.val == expected_val, f"Test failed for values={values}, p_val={p_val}, q_val={q_val}. Expected LCA={expected_val}, found={lca.val if lca else 'XXNoneXX'}"
+ 
+ 
+</pre><h3>Mutant 289</h3><pre>--- ..\P36\.\tests\test_Problem36_NLP_To_Test.py
++++ ..\P36\.\tests\test_Problem36_NLP_To_Test.py
+@@ -59,6 +59,6 @@
+     p = find_node(root, p_val)
+     q = find_node(root, q_val)
+     lca = find_LCA(root, p, q)
+-    assert lca.val == expected_val, f"Test failed for values={values}, p_val={p_val}, q_val={q_val}. Expected LCA={expected_val}, found={lca.val if lca else 'None'}"
++    assert lca.val == expected_val, f"XXTest failed for values={values}, p_val={p_val}, q_val={q_val}. Expected LCA={expected_val}, found={lca.val if lca else 'None'}XX"
+ 
+ 
+</pre></body></html>

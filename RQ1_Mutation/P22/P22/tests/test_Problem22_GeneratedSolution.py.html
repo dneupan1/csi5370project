@@ -1,0 +1,230 @@
+<html><body><h1>..\P22\.\tests\test_Problem22_GeneratedSolution.py</h1>Killed 4 out of 25 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 59</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -5,7 +5,7 @@
+ import builtins as module_1
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_0():
+     bytes_0 = b"\xceX\xa3N"
+     var_0 = module_0.canPartition(bytes_0)
+</pre><h3>Mutant 61</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -7,7 +7,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+-    bytes_0 = b"\xceX\xa3N"
++    bytes_0 = b"XX\xceX\xa3NXX"
+     var_0 = module_0.canPartition(bytes_0)
+     module_0.canPartition(var_0)
+ 
+</pre><h3>Mutant 62</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -7,7 +7,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+-    bytes_0 = b"\xceX\xa3N"
++    bytes_0 = None
+     var_0 = module_0.canPartition(bytes_0)
+     module_0.canPartition(var_0)
+ 
+</pre><h3>Mutant 63</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -8,7 +8,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+     bytes_0 = b"\xceX\xa3N"
+-    var_0 = module_0.canPartition(bytes_0)
++    var_0 = None
+     module_0.canPartition(var_0)
+ 
+ 
+</pre><h3>Mutant 64</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -12,7 +12,7 @@
+     module_0.canPartition(var_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_1():
+     str_0 = ""
+     var_0 = module_0.canPartition(str_0)
+</pre><h3>Mutant 66</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -14,7 +14,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_1():
+-    str_0 = ""
++    str_0 = "XXXX"
+     var_0 = module_0.canPartition(str_0)
+     assert var_0 is True
+     module_0.canPartition(var_0)
+</pre><h3>Mutant 67</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -14,7 +14,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_1():
+-    str_0 = ""
++    str_0 = None
+     var_0 = module_0.canPartition(str_0)
+     assert var_0 is True
+     module_0.canPartition(var_0)
+</pre><h3>Mutant 68</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -15,7 +15,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_1():
+     str_0 = ""
+-    var_0 = module_0.canPartition(str_0)
++    var_0 = None
+     assert var_0 is True
+     module_0.canPartition(var_0)
+ 
+</pre><h3>Mutant 69</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -16,7 +16,7 @@
+ def test_case_1():
+     str_0 = ""
+     var_0 = module_0.canPartition(str_0)
+-    assert var_0 is True
++    assert var_0 is not True
+     module_0.canPartition(var_0)
+ 
+ 
+</pre><h3>Mutant 70</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -16,7 +16,7 @@
+ def test_case_1():
+     str_0 = ""
+     var_0 = module_0.canPartition(str_0)
+-    assert var_0 is True
++    assert var_0 is False
+     module_0.canPartition(var_0)
+ 
+ 
+</pre><h3>Mutant 71</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -20,7 +20,7 @@
+     module_0.canPartition(var_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_2():
+     float_0 = 3979.953
+     module_0.canPartition(float_0)
+</pre><h3>Mutant 73</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -22,7 +22,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+-    float_0 = 3979.953
++    float_0 = 3980.953
+     module_0.canPartition(float_0)
+ 
+ 
+</pre><h3>Mutant 74</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -22,7 +22,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+-    float_0 = 3979.953
++    float_0 = None
+     module_0.canPartition(float_0)
+ 
+ 
+</pre><h3>Mutant 75</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -26,7 +26,7 @@
+     module_0.canPartition(float_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_3():
+     bytes_0 = b"A\x03-&\x16\x9f\xfc\x04\xa7\x8cM\xaes=\xb4\x82\xc1\x83"
+     var_0 = module_0.canPartition(bytes_0)
+</pre><h3>Mutant 77</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -28,7 +28,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+-    bytes_0 = b"A\x03-&\x16\x9f\xfc\x04\xa7\x8cM\xaes=\xb4\x82\xc1\x83"
++    bytes_0 = b"XXA\x03-&\x16\x9f\xfc\x04\xa7\x8cM\xaes=\xb4\x82\xc1\x83XX"
+     var_0 = module_0.canPartition(bytes_0)
+     assert var_0 is True
+     bytes_1 = b"\x0e\x1c\xe6\xb8\x16\xad\x9f\xc3\x03\xdd\xb8"
+</pre><h3>Mutant 78</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -28,7 +28,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+-    bytes_0 = b"A\x03-&\x16\x9f\xfc\x04\xa7\x8cM\xaes=\xb4\x82\xc1\x83"
++    bytes_0 = None
+     var_0 = module_0.canPartition(bytes_0)
+     assert var_0 is True
+     bytes_1 = b"\x0e\x1c\xe6\xb8\x16\xad\x9f\xc3\x03\xdd\xb8"
+</pre><h3>Mutant 79</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -29,7 +29,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+     bytes_0 = b"A\x03-&\x16\x9f\xfc\x04\xa7\x8cM\xaes=\xb4\x82\xc1\x83"
+-    var_0 = module_0.canPartition(bytes_0)
++    var_0 = None
+     assert var_0 is True
+     bytes_1 = b"\x0e\x1c\xe6\xb8\x16\xad\x9f\xc3\x03\xdd\xb8"
+     module_1.object(*bytes_1)
+</pre><h3>Mutant 80</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -30,7 +30,7 @@
+ def test_case_3():
+     bytes_0 = b"A\x03-&\x16\x9f\xfc\x04\xa7\x8cM\xaes=\xb4\x82\xc1\x83"
+     var_0 = module_0.canPartition(bytes_0)
+-    assert var_0 is True
++    assert var_0 is not True
+     bytes_1 = b"\x0e\x1c\xe6\xb8\x16\xad\x9f\xc3\x03\xdd\xb8"
+     module_1.object(*bytes_1)
+ 
+</pre><h3>Mutant 81</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -30,7 +30,7 @@
+ def test_case_3():
+     bytes_0 = b"A\x03-&\x16\x9f\xfc\x04\xa7\x8cM\xaes=\xb4\x82\xc1\x83"
+     var_0 = module_0.canPartition(bytes_0)
+-    assert var_0 is True
++    assert var_0 is False
+     bytes_1 = b"\x0e\x1c\xe6\xb8\x16\xad\x9f\xc3\x03\xdd\xb8"
+     module_1.object(*bytes_1)
+ 
+</pre><h3>Mutant 82</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -31,6 +31,6 @@
+     bytes_0 = b"A\x03-&\x16\x9f\xfc\x04\xa7\x8cM\xaes=\xb4\x82\xc1\x83"
+     var_0 = module_0.canPartition(bytes_0)
+     assert var_0 is True
+-    bytes_1 = b"\x0e\x1c\xe6\xb8\x16\xad\x9f\xc3\x03\xdd\xb8"
++    bytes_1 = b"XX\x0e\x1c\xe6\xb8\x16\xad\x9f\xc3\x03\xdd\xb8XX"
+     module_1.object(*bytes_1)
+ 
+</pre><h3>Mutant 83</h3><pre>--- ..\P22\.\tests\test_Problem22_GeneratedSolution.py
++++ ..\P22\.\tests\test_Problem22_GeneratedSolution.py
+@@ -31,6 +31,6 @@
+     bytes_0 = b"A\x03-&\x16\x9f\xfc\x04\xa7\x8cM\xaes=\xb4\x82\xc1\x83"
+     var_0 = module_0.canPartition(bytes_0)
+     assert var_0 is True
+-    bytes_1 = b"\x0e\x1c\xe6\xb8\x16\xad\x9f\xc3\x03\xdd\xb8"
++    bytes_1 = None
+     module_1.object(*bytes_1)
+ 
+</pre></body></html>

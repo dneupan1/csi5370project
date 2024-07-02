@@ -1,0 +1,45 @@
+<html><body><h1>..\P14\.\Problem14_GeneratedSolution.py</h1>Killed 50 out of 54 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 35</h3><pre>--- ..\P14\.\Problem14_GeneratedSolution.py
++++ ..\P14\.\Problem14_GeneratedSolution.py
+@@ -34,7 +34,7 @@
+             cycle_s2_count = s2_count - s2_count_prev
+ 
+             # How many full cycles can we execute with the remaining s1 repetitions?
+-            full_cycles = (n1 - pre_cycle_s1_count) // cycle_s1_count
++            full_cycles = (n1 - pre_cycle_s1_count) / cycle_s1_count
+ 
+             # Total s2 count is from pre-cycle + full cycles * cycle_s2_count
+             total_s2_count = pre_cycle_s2_count + full_cycles * cycle_s2_count
+</pre><h3>Mutant 40</h3><pre>--- ..\P14\.\Problem14_GeneratedSolution.py
++++ ..\P14\.\Problem14_GeneratedSolution.py
+@@ -40,7 +40,7 @@
+             total_s2_count = pre_cycle_s2_count + full_cycles * cycle_s2_count
+ 
+             # Remaining s1 repetitions after accounting for full cycles
+-            remaining_s1_count = (n1 - pre_cycle_s1_count) % cycle_s1_count
++            remaining_s1_count = (n1 + pre_cycle_s1_count) % cycle_s1_count
+ 
+             # Add the s2 count achievable with the remaining s1 repetitions
+             for _ in range(remaining_s1_count):
+</pre><h3>Mutant 48</h3><pre>--- ..\P14\.\Problem14_GeneratedSolution.py
++++ ..\P14\.\Problem14_GeneratedSolution.py
+@@ -48,7 +48,7 @@
+                     if char == s2[index_s2]:
+                         index_s2 += 1
+                         if index_s2 == s2_length:
+-                            index_s2 = 0
++                            index_s2 = 1
+                             total_s2_count += 1
+             # Return the total s2 count found divided by n2
+             return total_s2_count // n2
+</pre><h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 49</h3><pre>--- ..\P14\.\Problem14_GeneratedSolution.py
++++ ..\P14\.\Problem14_GeneratedSolution.py
+@@ -48,7 +48,7 @@
+                     if char == s2[index_s2]:
+                         index_s2 += 1
+                         if index_s2 == s2_length:
+-                            index_s2 = 0
++                            index_s2 = None
+                             total_s2_count += 1
+             # Return the total s2 count found divided by n2
+             return total_s2_count // n2
+</pre></body></html>

@@ -25,7 +25,7 @@ def count_good_subarrays(nums, k):
                 freq[nums[left]] -= 1
                 if freq[nums[left]] == 0:
                     k += 1
-                left += 1
+                left = 3
             
             # Add to count the number of subarrays ending at `right` with at most `k` different integers.
             count += right - left + 1

@@ -1,0 +1,881 @@
+<html><body><h1>..\P40\.\tests\test_Problem40_NLP_To_Test.py</h1>Killed 1 out of 82 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 847</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -2,7 +2,7 @@
+ from Problem40_GeneratedSolution import NumArray  # Assuming the NumArray class is defined in solution.py
+ 
+ class TestNumArray:
+-    @pytest.mark.skip()
++
+     def test_operations(self):
+         # Initialize NumArray with an array
+         num_array = NumArray([1, 3, 5])
+</pre><h3>Mutant 848</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -5,7 +5,7 @@
+     @pytest.mark.skip()
+     def test_operations(self):
+         # Initialize NumArray with an array
+-        num_array = NumArray([1, 3, 5])
++        num_array = NumArray([2, 3, 5])
+         # Test initial sum range
+         assert num_array.sumRange(0, 2) == 9, "Initial sumRange incorrect"
+         # Update the array and check for changes
+</pre><h3>Mutant 849</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -5,7 +5,7 @@
+     @pytest.mark.skip()
+     def test_operations(self):
+         # Initialize NumArray with an array
+-        num_array = NumArray([1, 3, 5])
++        num_array = NumArray([1, 4, 5])
+         # Test initial sum range
+         assert num_array.sumRange(0, 2) == 9, "Initial sumRange incorrect"
+         # Update the array and check for changes
+</pre><h3>Mutant 850</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -5,7 +5,7 @@
+     @pytest.mark.skip()
+     def test_operations(self):
+         # Initialize NumArray with an array
+-        num_array = NumArray([1, 3, 5])
++        num_array = NumArray([1, 3, 6])
+         # Test initial sum range
+         assert num_array.sumRange(0, 2) == 9, "Initial sumRange incorrect"
+         # Update the array and check for changes
+</pre><h3>Mutant 851</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -5,7 +5,7 @@
+     @pytest.mark.skip()
+     def test_operations(self):
+         # Initialize NumArray with an array
+-        num_array = NumArray([1, 3, 5])
++        num_array = None
+         # Test initial sum range
+         assert num_array.sumRange(0, 2) == 9, "Initial sumRange incorrect"
+         # Update the array and check for changes
+</pre><h3>Mutant 852</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -7,7 +7,7 @@
+         # Initialize NumArray with an array
+         num_array = NumArray([1, 3, 5])
+         # Test initial sum range
+-        assert num_array.sumRange(0, 2) == 9, "Initial sumRange incorrect"
++        assert num_array.sumRange(1, 2) == 9, "Initial sumRange incorrect"
+         # Update the array and check for changes
+         num_array.update(1, 2)
+         assert num_array.sumRange(0, 2) == 8, "sumRange after update incorrect"
+</pre><h3>Mutant 853</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -7,7 +7,7 @@
+         # Initialize NumArray with an array
+         num_array = NumArray([1, 3, 5])
+         # Test initial sum range
+-        assert num_array.sumRange(0, 2) == 9, "Initial sumRange incorrect"
++        assert num_array.sumRange(0, 3) == 9, "Initial sumRange incorrect"
+         # Update the array and check for changes
+         num_array.update(1, 2)
+         assert num_array.sumRange(0, 2) == 8, "sumRange after update incorrect"
+</pre><h3>Mutant 854</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -7,7 +7,7 @@
+         # Initialize NumArray with an array
+         num_array = NumArray([1, 3, 5])
+         # Test initial sum range
+-        assert num_array.sumRange(0, 2) == 9, "Initial sumRange incorrect"
++        assert num_array.sumRange(0, 2) != 9, "Initial sumRange incorrect"
+         # Update the array and check for changes
+         num_array.update(1, 2)
+         assert num_array.sumRange(0, 2) == 8, "sumRange after update incorrect"
+</pre><h3>Mutant 855</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -7,7 +7,7 @@
+         # Initialize NumArray with an array
+         num_array = NumArray([1, 3, 5])
+         # Test initial sum range
+-        assert num_array.sumRange(0, 2) == 9, "Initial sumRange incorrect"
++        assert num_array.sumRange(0, 2) == 10, "Initial sumRange incorrect"
+         # Update the array and check for changes
+         num_array.update(1, 2)
+         assert num_array.sumRange(0, 2) == 8, "sumRange after update incorrect"
+</pre><h3>Mutant 856</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -7,7 +7,7 @@
+         # Initialize NumArray with an array
+         num_array = NumArray([1, 3, 5])
+         # Test initial sum range
+-        assert num_array.sumRange(0, 2) == 9, "Initial sumRange incorrect"
++        assert num_array.sumRange(0, 2) == 9, "XXInitial sumRange incorrectXX"
+         # Update the array and check for changes
+         num_array.update(1, 2)
+         assert num_array.sumRange(0, 2) == 8, "sumRange after update incorrect"
+</pre><h3>Mutant 857</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -9,7 +9,7 @@
+         # Test initial sum range
+         assert num_array.sumRange(0, 2) == 9, "Initial sumRange incorrect"
+         # Update the array and check for changes
+-        num_array.update(1, 2)
++        num_array.update(2, 2)
+         assert num_array.sumRange(0, 2) == 8, "sumRange after update incorrect"
+     
+     @pytest.mark.skip()
+</pre><h3>Mutant 858</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -9,7 +9,7 @@
+         # Test initial sum range
+         assert num_array.sumRange(0, 2) == 9, "Initial sumRange incorrect"
+         # Update the array and check for changes
+-        num_array.update(1, 2)
++        num_array.update(1, 3)
+         assert num_array.sumRange(0, 2) == 8, "sumRange after update incorrect"
+     
+     @pytest.mark.skip()
+</pre><h3>Mutant 859</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -10,7 +10,7 @@
+         assert num_array.sumRange(0, 2) == 9, "Initial sumRange incorrect"
+         # Update the array and check for changes
+         num_array.update(1, 2)
+-        assert num_array.sumRange(0, 2) == 8, "sumRange after update incorrect"
++        assert num_array.sumRange(1, 2) == 8, "sumRange after update incorrect"
+     
+     @pytest.mark.skip()
+     def test_single_element(self):
+</pre><h3>Mutant 860</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -10,7 +10,7 @@
+         assert num_array.sumRange(0, 2) == 9, "Initial sumRange incorrect"
+         # Update the array and check for changes
+         num_array.update(1, 2)
+-        assert num_array.sumRange(0, 2) == 8, "sumRange after update incorrect"
++        assert num_array.sumRange(0, 3) == 8, "sumRange after update incorrect"
+     
+     @pytest.mark.skip()
+     def test_single_element(self):
+</pre><h3>Mutant 861</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -10,7 +10,7 @@
+         assert num_array.sumRange(0, 2) == 9, "Initial sumRange incorrect"
+         # Update the array and check for changes
+         num_array.update(1, 2)
+-        assert num_array.sumRange(0, 2) == 8, "sumRange after update incorrect"
++        assert num_array.sumRange(0, 2) != 8, "sumRange after update incorrect"
+     
+     @pytest.mark.skip()
+     def test_single_element(self):
+</pre><h3>Mutant 862</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -10,7 +10,7 @@
+         assert num_array.sumRange(0, 2) == 9, "Initial sumRange incorrect"
+         # Update the array and check for changes
+         num_array.update(1, 2)
+-        assert num_array.sumRange(0, 2) == 8, "sumRange after update incorrect"
++        assert num_array.sumRange(0, 2) == 9, "sumRange after update incorrect"
+     
+     @pytest.mark.skip()
+     def test_single_element(self):
+</pre><h3>Mutant 863</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -10,7 +10,7 @@
+         assert num_array.sumRange(0, 2) == 9, "Initial sumRange incorrect"
+         # Update the array and check for changes
+         num_array.update(1, 2)
+-        assert num_array.sumRange(0, 2) == 8, "sumRange after update incorrect"
++        assert num_array.sumRange(0, 2) == 8, "XXsumRange after update incorrectXX"
+     
+     @pytest.mark.skip()
+     def test_single_element(self):
+</pre><h3>Mutant 864</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -11,8 +11,7 @@
+         # Update the array and check for changes
+         num_array.update(1, 2)
+         assert num_array.sumRange(0, 2) == 8, "sumRange after update incorrect"
+-    
+-    @pytest.mark.skip()
++
+     def test_single_element(self):
+         # Test with a single element array
+         num_array = NumArray([10])
+</pre><h3>Mutant 865</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -15,7 +15,7 @@
+     @pytest.mark.skip()
+     def test_single_element(self):
+         # Test with a single element array
+-        num_array = NumArray([10])
++        num_array = NumArray([11])
+         assert num_array.sumRange(0, 0) == 10, "Single element sumRange incorrect"
+         # Update single element and check result
+         num_array.update(0, 5)
+</pre><h3>Mutant 866</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -15,7 +15,7 @@
+     @pytest.mark.skip()
+     def test_single_element(self):
+         # Test with a single element array
+-        num_array = NumArray([10])
++        num_array = None
+         assert num_array.sumRange(0, 0) == 10, "Single element sumRange incorrect"
+         # Update single element and check result
+         num_array.update(0, 5)
+</pre><h3>Mutant 867</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -16,7 +16,7 @@
+     def test_single_element(self):
+         # Test with a single element array
+         num_array = NumArray([10])
+-        assert num_array.sumRange(0, 0) == 10, "Single element sumRange incorrect"
++        assert num_array.sumRange(1, 0) == 10, "Single element sumRange incorrect"
+         # Update single element and check result
+         num_array.update(0, 5)
+         assert num_array.sumRange(0, 0) == 5, "Single element update incorrect"
+</pre><h3>Mutant 868</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -16,7 +16,7 @@
+     def test_single_element(self):
+         # Test with a single element array
+         num_array = NumArray([10])
+-        assert num_array.sumRange(0, 0) == 10, "Single element sumRange incorrect"
++        assert num_array.sumRange(0, 1) == 10, "Single element sumRange incorrect"
+         # Update single element and check result
+         num_array.update(0, 5)
+         assert num_array.sumRange(0, 0) == 5, "Single element update incorrect"
+</pre><h3>Mutant 869</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -16,7 +16,7 @@
+     def test_single_element(self):
+         # Test with a single element array
+         num_array = NumArray([10])
+-        assert num_array.sumRange(0, 0) == 10, "Single element sumRange incorrect"
++        assert num_array.sumRange(0, 0) != 10, "Single element sumRange incorrect"
+         # Update single element and check result
+         num_array.update(0, 5)
+         assert num_array.sumRange(0, 0) == 5, "Single element update incorrect"
+</pre><h3>Mutant 870</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -16,7 +16,7 @@
+     def test_single_element(self):
+         # Test with a single element array
+         num_array = NumArray([10])
+-        assert num_array.sumRange(0, 0) == 10, "Single element sumRange incorrect"
++        assert num_array.sumRange(0, 0) == 11, "Single element sumRange incorrect"
+         # Update single element and check result
+         num_array.update(0, 5)
+         assert num_array.sumRange(0, 0) == 5, "Single element update incorrect"
+</pre><h3>Mutant 871</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -16,7 +16,7 @@
+     def test_single_element(self):
+         # Test with a single element array
+         num_array = NumArray([10])
+-        assert num_array.sumRange(0, 0) == 10, "Single element sumRange incorrect"
++        assert num_array.sumRange(0, 0) == 10, "XXSingle element sumRange incorrectXX"
+         # Update single element and check result
+         num_array.update(0, 5)
+         assert num_array.sumRange(0, 0) == 5, "Single element update incorrect"
+</pre><h3>Mutant 872</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -18,7 +18,7 @@
+         num_array = NumArray([10])
+         assert num_array.sumRange(0, 0) == 10, "Single element sumRange incorrect"
+         # Update single element and check result
+-        num_array.update(0, 5)
++        num_array.update(1, 5)
+         assert num_array.sumRange(0, 0) == 5, "Single element update incorrect"
+     
+     @pytest.mark.skip()
+</pre><h3>Mutant 873</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -18,7 +18,7 @@
+         num_array = NumArray([10])
+         assert num_array.sumRange(0, 0) == 10, "Single element sumRange incorrect"
+         # Update single element and check result
+-        num_array.update(0, 5)
++        num_array.update(0, 6)
+         assert num_array.sumRange(0, 0) == 5, "Single element update incorrect"
+     
+     @pytest.mark.skip()
+</pre><h3>Mutant 874</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -19,7 +19,7 @@
+         assert num_array.sumRange(0, 0) == 10, "Single element sumRange incorrect"
+         # Update single element and check result
+         num_array.update(0, 5)
+-        assert num_array.sumRange(0, 0) == 5, "Single element update incorrect"
++        assert num_array.sumRange(1, 0) == 5, "Single element update incorrect"
+     
+     @pytest.mark.skip()
+     def test_zero_elements(self):
+</pre><h3>Mutant 875</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -19,7 +19,7 @@
+         assert num_array.sumRange(0, 0) == 10, "Single element sumRange incorrect"
+         # Update single element and check result
+         num_array.update(0, 5)
+-        assert num_array.sumRange(0, 0) == 5, "Single element update incorrect"
++        assert num_array.sumRange(0, 1) == 5, "Single element update incorrect"
+     
+     @pytest.mark.skip()
+     def test_zero_elements(self):
+</pre><h3>Mutant 876</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -19,7 +19,7 @@
+         assert num_array.sumRange(0, 0) == 10, "Single element sumRange incorrect"
+         # Update single element and check result
+         num_array.update(0, 5)
+-        assert num_array.sumRange(0, 0) == 5, "Single element update incorrect"
++        assert num_array.sumRange(0, 0) != 5, "Single element update incorrect"
+     
+     @pytest.mark.skip()
+     def test_zero_elements(self):
+</pre><h3>Mutant 877</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -19,7 +19,7 @@
+         assert num_array.sumRange(0, 0) == 10, "Single element sumRange incorrect"
+         # Update single element and check result
+         num_array.update(0, 5)
+-        assert num_array.sumRange(0, 0) == 5, "Single element update incorrect"
++        assert num_array.sumRange(0, 0) == 6, "Single element update incorrect"
+     
+     @pytest.mark.skip()
+     def test_zero_elements(self):
+</pre><h3>Mutant 878</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -19,7 +19,7 @@
+         assert num_array.sumRange(0, 0) == 10, "Single element sumRange incorrect"
+         # Update single element and check result
+         num_array.update(0, 5)
+-        assert num_array.sumRange(0, 0) == 5, "Single element update incorrect"
++        assert num_array.sumRange(0, 0) == 5, "XXSingle element update incorrectXX"
+     
+     @pytest.mark.skip()
+     def test_zero_elements(self):
+</pre><h3>Mutant 880</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -24,7 +24,7 @@
+     @pytest.mark.skip()
+     def test_zero_elements(self):
+         # Edge case: zero elements
+-        num_array = NumArray([])
++        num_array = None
+         # Test behavior on empty array
+         with pytest.raises(IndexError):
+             num_array.sumRange(0, 0)  # Expecting an error due to no elements
+</pre><h3>Mutant 881</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -27,7 +27,7 @@
+         num_array = NumArray([])
+         # Test behavior on empty array
+         with pytest.raises(IndexError):
+-            num_array.sumRange(0, 0)  # Expecting an error due to no elements
++            num_array.sumRange(1, 0)  # Expecting an error due to no elements
+     
+     @pytest.mark.skip()
+     def test_out_of_bounds(self):
+</pre><h3>Mutant 882</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -27,7 +27,7 @@
+         num_array = NumArray([])
+         # Test behavior on empty array
+         with pytest.raises(IndexError):
+-            num_array.sumRange(0, 0)  # Expecting an error due to no elements
++            num_array.sumRange(0, 1)  # Expecting an error due to no elements
+     
+     @pytest.mark.skip()
+     def test_out_of_bounds(self):
+</pre><h3>Mutant 884</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -32,7 +32,7 @@
+     @pytest.mark.skip()
+     def test_out_of_bounds(self):
+         # Testing with index out of bounds
+-        num_array = NumArray([2, 5, 7])
++        num_array = NumArray([3, 5, 7])
+         with pytest.raises(IndexError):
+             num_array.update(3, 1)  # Out of bounds update
+         with pytest.raises(IndexError):
+</pre><h3>Mutant 885</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -32,7 +32,7 @@
+     @pytest.mark.skip()
+     def test_out_of_bounds(self):
+         # Testing with index out of bounds
+-        num_array = NumArray([2, 5, 7])
++        num_array = NumArray([2, 6, 7])
+         with pytest.raises(IndexError):
+             num_array.update(3, 1)  # Out of bounds update
+         with pytest.raises(IndexError):
+</pre><h3>Mutant 886</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -32,7 +32,7 @@
+     @pytest.mark.skip()
+     def test_out_of_bounds(self):
+         # Testing with index out of bounds
+-        num_array = NumArray([2, 5, 7])
++        num_array = NumArray([2, 5, 8])
+         with pytest.raises(IndexError):
+             num_array.update(3, 1)  # Out of bounds update
+         with pytest.raises(IndexError):
+</pre><h3>Mutant 887</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -32,7 +32,7 @@
+     @pytest.mark.skip()
+     def test_out_of_bounds(self):
+         # Testing with index out of bounds
+-        num_array = NumArray([2, 5, 7])
++        num_array = None
+         with pytest.raises(IndexError):
+             num_array.update(3, 1)  # Out of bounds update
+         with pytest.raises(IndexError):
+</pre><h3>Mutant 888</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -34,7 +34,7 @@
+         # Testing with index out of bounds
+         num_array = NumArray([2, 5, 7])
+         with pytest.raises(IndexError):
+-            num_array.update(3, 1)  # Out of bounds update
++            num_array.update(4, 1)  # Out of bounds update
+         with pytest.raises(IndexError):
+             num_array.sumRange(1, 3)  # Out of bounds sumRange
+     
+</pre><h3>Mutant 889</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -34,7 +34,7 @@
+         # Testing with index out of bounds
+         num_array = NumArray([2, 5, 7])
+         with pytest.raises(IndexError):
+-            num_array.update(3, 1)  # Out of bounds update
++            num_array.update(3, 2)  # Out of bounds update
+         with pytest.raises(IndexError):
+             num_array.sumRange(1, 3)  # Out of bounds sumRange
+     
+</pre><h3>Mutant 890</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -36,7 +36,7 @@
+         with pytest.raises(IndexError):
+             num_array.update(3, 1)  # Out of bounds update
+         with pytest.raises(IndexError):
+-            num_array.sumRange(1, 3)  # Out of bounds sumRange
++            num_array.sumRange(2, 3)  # Out of bounds sumRange
+     
+     @pytest.mark.skip()
+     def test_large_range(self):
+</pre><h3>Mutant 891</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -36,7 +36,7 @@
+         with pytest.raises(IndexError):
+             num_array.update(3, 1)  # Out of bounds update
+         with pytest.raises(IndexError):
+-            num_array.sumRange(1, 3)  # Out of bounds sumRange
++            num_array.sumRange(1, 4)  # Out of bounds sumRange
+     
+     @pytest.mark.skip()
+     def test_large_range(self):
+</pre><h3>Mutant 892</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -37,8 +37,7 @@
+             num_array.update(3, 1)  # Out of bounds update
+         with pytest.raises(IndexError):
+             num_array.sumRange(1, 3)  # Out of bounds sumRange
+-    
+-    @pytest.mark.skip()
++
+     def test_large_range(self):
+         # Test large continuous updates and queries
+         num_array = NumArray([i for i in range(100)])
+</pre><h3>Mutant 893</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -41,7 +41,7 @@
+     @pytest.mark.skip()
+     def test_large_range(self):
+         # Test large continuous updates and queries
+-        num_array = NumArray([i for i in range(100)])
++        num_array = NumArray([i for i in range(101)])
+         num_array.update(50, 1000)
+         assert num_array.sumRange(0, 99) == sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
+     
+</pre><h3>Mutant 894</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -41,7 +41,7 @@
+     @pytest.mark.skip()
+     def test_large_range(self):
+         # Test large continuous updates and queries
+-        num_array = NumArray([i for i in range(100)])
++        num_array = None
+         num_array.update(50, 1000)
+         assert num_array.sumRange(0, 99) == sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
+     
+</pre><h3>Mutant 895</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -42,7 +42,7 @@
+     def test_large_range(self):
+         # Test large continuous updates and queries
+         num_array = NumArray([i for i in range(100)])
+-        num_array.update(50, 1000)
++        num_array.update(51, 1000)
+         assert num_array.sumRange(0, 99) == sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
+     
+     @pytest.mark.skip()
+</pre><h3>Mutant 896</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -42,7 +42,7 @@
+     def test_large_range(self):
+         # Test large continuous updates and queries
+         num_array = NumArray([i for i in range(100)])
+-        num_array.update(50, 1000)
++        num_array.update(50, 1001)
+         assert num_array.sumRange(0, 99) == sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
+     
+     @pytest.mark.skip()
+</pre><h3>Mutant 897</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -43,7 +43,7 @@
+         # Test large continuous updates and queries
+         num_array = NumArray([i for i in range(100)])
+         num_array.update(50, 1000)
+-        assert num_array.sumRange(0, 99) == sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
++        assert num_array.sumRange(1, 99) == sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
+     
+     @pytest.mark.skip()
+     def test_negative_numbers(self):
+</pre><h3>Mutant 898</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -43,7 +43,7 @@
+         # Test large continuous updates and queries
+         num_array = NumArray([i for i in range(100)])
+         num_array.update(50, 1000)
+-        assert num_array.sumRange(0, 99) == sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
++        assert num_array.sumRange(0, 100) == sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
+     
+     @pytest.mark.skip()
+     def test_negative_numbers(self):
+</pre><h3>Mutant 899</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -43,7 +43,7 @@
+         # Test large continuous updates and queries
+         num_array = NumArray([i for i in range(100)])
+         num_array.update(50, 1000)
+-        assert num_array.sumRange(0, 99) == sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
++        assert num_array.sumRange(0, 99) != sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
+     
+     @pytest.mark.skip()
+     def test_negative_numbers(self):
+</pre><h3>Mutant 900</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -43,7 +43,7 @@
+         # Test large continuous updates and queries
+         num_array = NumArray([i for i in range(100)])
+         num_array.update(50, 1000)
+-        assert num_array.sumRange(0, 99) == sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
++        assert num_array.sumRange(0, 99) == sum(range(101)) - 50 + 1000, "Large range sum incorrect after update"
+     
+     @pytest.mark.skip()
+     def test_negative_numbers(self):
+</pre><h3>Mutant 901</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -43,7 +43,7 @@
+         # Test large continuous updates and queries
+         num_array = NumArray([i for i in range(100)])
+         num_array.update(50, 1000)
+-        assert num_array.sumRange(0, 99) == sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
++        assert num_array.sumRange(0, 99) == sum(range(100)) + 50 + 1000, "Large range sum incorrect after update"
+     
+     @pytest.mark.skip()
+     def test_negative_numbers(self):
+</pre><h3>Mutant 902</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -43,7 +43,7 @@
+         # Test large continuous updates and queries
+         num_array = NumArray([i for i in range(100)])
+         num_array.update(50, 1000)
+-        assert num_array.sumRange(0, 99) == sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
++        assert num_array.sumRange(0, 99) == sum(range(100)) - 51 + 1000, "Large range sum incorrect after update"
+     
+     @pytest.mark.skip()
+     def test_negative_numbers(self):
+</pre><h3>Mutant 903</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -43,7 +43,7 @@
+         # Test large continuous updates and queries
+         num_array = NumArray([i for i in range(100)])
+         num_array.update(50, 1000)
+-        assert num_array.sumRange(0, 99) == sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
++        assert num_array.sumRange(0, 99) == sum(range(100)) - 50 - 1000, "Large range sum incorrect after update"
+     
+     @pytest.mark.skip()
+     def test_negative_numbers(self):
+</pre><h3>Mutant 904</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -43,7 +43,7 @@
+         # Test large continuous updates and queries
+         num_array = NumArray([i for i in range(100)])
+         num_array.update(50, 1000)
+-        assert num_array.sumRange(0, 99) == sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
++        assert num_array.sumRange(0, 99) == sum(range(100)) - 50 + 1001, "Large range sum incorrect after update"
+     
+     @pytest.mark.skip()
+     def test_negative_numbers(self):
+</pre><h3>Mutant 905</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -43,7 +43,7 @@
+         # Test large continuous updates and queries
+         num_array = NumArray([i for i in range(100)])
+         num_array.update(50, 1000)
+-        assert num_array.sumRange(0, 99) == sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
++        assert num_array.sumRange(0, 99) == sum(range(100)) - 50 + 1000, "XXLarge range sum incorrect after updateXX"
+     
+     @pytest.mark.skip()
+     def test_negative_numbers(self):
+</pre><h3>Mutant 906</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -44,8 +44,7 @@
+         num_array = NumArray([i for i in range(100)])
+         num_array.update(50, 1000)
+         assert num_array.sumRange(0, 99) == sum(range(100)) - 50 + 1000, "Large range sum incorrect after update"
+-    
+-    @pytest.mark.skip()
++
+     def test_negative_numbers(self):
+         # Test negative numbers handling
+         num_array = NumArray([-2, -1, -3])
+</pre><h3>Mutant 907</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -48,7 +48,7 @@
+     @pytest.mark.skip()
+     def test_negative_numbers(self):
+         # Test negative numbers handling
+-        num_array = NumArray([-2, -1, -3])
++        num_array = NumArray([+2, -1, -3])
+         assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+         assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
+</pre><h3>Mutant 908</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -48,7 +48,7 @@
+     @pytest.mark.skip()
+     def test_negative_numbers(self):
+         # Test negative numbers handling
+-        num_array = NumArray([-2, -1, -3])
++        num_array = NumArray([-3, -1, -3])
+         assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+         assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
+</pre><h3>Mutant 909</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -48,7 +48,7 @@
+     @pytest.mark.skip()
+     def test_negative_numbers(self):
+         # Test negative numbers handling
+-        num_array = NumArray([-2, -1, -3])
++        num_array = NumArray([-2, +1, -3])
+         assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+         assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
+</pre><h3>Mutant 910</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -48,7 +48,7 @@
+     @pytest.mark.skip()
+     def test_negative_numbers(self):
+         # Test negative numbers handling
+-        num_array = NumArray([-2, -1, -3])
++        num_array = NumArray([-2, -2, -3])
+         assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+         assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
+</pre><h3>Mutant 911</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -48,7 +48,7 @@
+     @pytest.mark.skip()
+     def test_negative_numbers(self):
+         # Test negative numbers handling
+-        num_array = NumArray([-2, -1, -3])
++        num_array = NumArray([-2, -1, +3])
+         assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+         assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
+</pre><h3>Mutant 912</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -48,7 +48,7 @@
+     @pytest.mark.skip()
+     def test_negative_numbers(self):
+         # Test negative numbers handling
+-        num_array = NumArray([-2, -1, -3])
++        num_array = NumArray([-2, -1, -4])
+         assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+         assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
+</pre><h3>Mutant 913</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -48,7 +48,7 @@
+     @pytest.mark.skip()
+     def test_negative_numbers(self):
+         # Test negative numbers handling
+-        num_array = NumArray([-2, -1, -3])
++        num_array = None
+         assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+         assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
+</pre><h3>Mutant 914</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -49,7 +49,7 @@
+     def test_negative_numbers(self):
+         # Test negative numbers handling
+         num_array = NumArray([-2, -1, -3])
+-        assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
++        assert num_array.sumRange(1, 2) == -6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+         assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
+ 
+</pre><h3>Mutant 915</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -49,7 +49,7 @@
+     def test_negative_numbers(self):
+         # Test negative numbers handling
+         num_array = NumArray([-2, -1, -3])
+-        assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
++        assert num_array.sumRange(0, 3) == -6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+         assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
+ 
+</pre><h3>Mutant 916</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -49,7 +49,7 @@
+     def test_negative_numbers(self):
+         # Test negative numbers handling
+         num_array = NumArray([-2, -1, -3])
+-        assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
++        assert num_array.sumRange(0, 2) != -6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+         assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
+ 
+</pre><h3>Mutant 917</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -49,7 +49,7 @@
+     def test_negative_numbers(self):
+         # Test negative numbers handling
+         num_array = NumArray([-2, -1, -3])
+-        assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
++        assert num_array.sumRange(0, 2) == +6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+         assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
+ 
+</pre><h3>Mutant 918</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -49,7 +49,7 @@
+     def test_negative_numbers(self):
+         # Test negative numbers handling
+         num_array = NumArray([-2, -1, -3])
+-        assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
++        assert num_array.sumRange(0, 2) == -7, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+         assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
+ 
+</pre><h3>Mutant 919</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -49,7 +49,7 @@
+     def test_negative_numbers(self):
+         # Test negative numbers handling
+         num_array = NumArray([-2, -1, -3])
+-        assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
++        assert num_array.sumRange(0, 2) == -6, "XXNegative numbers sumRange incorrectXX"
+         num_array.update(1, -10)
+         assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
+ 
+</pre><h3>Mutant 920</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -50,6 +50,6 @@
+         # Test negative numbers handling
+         num_array = NumArray([-2, -1, -3])
+         assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
+-        num_array.update(1, -10)
++        num_array.update(2, -10)
+         assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
+ 
+</pre><h3>Mutant 921</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -50,6 +50,6 @@
+         # Test negative numbers handling
+         num_array = NumArray([-2, -1, -3])
+         assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
+-        num_array.update(1, -10)
++        num_array.update(1, +10)
+         assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
+ 
+</pre><h3>Mutant 922</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -50,6 +50,6 @@
+         # Test negative numbers handling
+         num_array = NumArray([-2, -1, -3])
+         assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
+-        num_array.update(1, -10)
++        num_array.update(1, -11)
+         assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
+ 
+</pre><h3>Mutant 923</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -51,5 +51,5 @@
+         num_array = NumArray([-2, -1, -3])
+         assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+-        assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
++        assert num_array.sumRange(1, 2) == -15, "Negative numbers update incorrect"
+ 
+</pre><h3>Mutant 924</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -51,5 +51,5 @@
+         num_array = NumArray([-2, -1, -3])
+         assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+-        assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
++        assert num_array.sumRange(0, 3) == -15, "Negative numbers update incorrect"
+ 
+</pre><h3>Mutant 925</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -51,5 +51,5 @@
+         num_array = NumArray([-2, -1, -3])
+         assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+-        assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
++        assert num_array.sumRange(0, 2) != -15, "Negative numbers update incorrect"
+ 
+</pre><h3>Mutant 926</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -51,5 +51,5 @@
+         num_array = NumArray([-2, -1, -3])
+         assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+-        assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
++        assert num_array.sumRange(0, 2) == +15, "Negative numbers update incorrect"
+ 
+</pre><h3>Mutant 927</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -51,5 +51,5 @@
+         num_array = NumArray([-2, -1, -3])
+         assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+-        assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
++        assert num_array.sumRange(0, 2) == -16, "Negative numbers update incorrect"
+ 
+</pre><h3>Mutant 928</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -51,5 +51,5 @@
+         num_array = NumArray([-2, -1, -3])
+         assert num_array.sumRange(0, 2) == -6, "Negative numbers sumRange incorrect"
+         num_array.update(1, -10)
+-        assert num_array.sumRange(0, 2) == -15, "Negative numbers update incorrect"
++        assert num_array.sumRange(0, 2) == -15, "XXNegative numbers update incorrectXX"
+ 
+</pre><h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 879</h3><pre>--- ..\P40\.\tests\test_Problem40_NLP_To_Test.py
++++ ..\P40\.\tests\test_Problem40_NLP_To_Test.py
+@@ -20,8 +20,7 @@
+         # Update single element and check result
+         num_array.update(0, 5)
+         assert num_array.sumRange(0, 0) == 5, "Single element update incorrect"
+-    
+-    @pytest.mark.skip()
++
+     def test_zero_elements(self):
+         # Edge case: zero elements
+         num_array = NumArray([])
+</pre></body></html>

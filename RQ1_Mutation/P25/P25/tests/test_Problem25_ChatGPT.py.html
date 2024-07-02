@@ -1,0 +1,123 @@
+<html><body><h1>..\P25\.\tests\test_Problem25_ChatGPT.py</h1>Killed 37 out of 49 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 71</h3><pre>--- ..\P25\.\tests\test_Problem25_ChatGPT.py
++++ ..\P25\.\tests\test_Problem25_ChatGPT.py
+@@ -37,7 +37,7 @@
+     Test a scenario where no combination of operations leads to the target.
+     """
+     num = "3456237490"
+-    target = 9191
++    target = None
+     expected = []
+     assert addOperators(num, target) == expected
+ 
+</pre><h3>Mutant 82</h3><pre>--- ..\P25\.\tests\test_Problem25_ChatGPT.py
++++ ..\P25\.\tests\test_Problem25_ChatGPT.py
+@@ -57,7 +57,7 @@
+     """
+     Test a more complex scenario where multiple combinations of operations lead to the target.
+     """
+-    num = "123456789"
++    num = "XX123456789XX"
+     target = 100
+     # Expected results would be complex; this is just a placeholder to indicate the type of test
+     # The actual expected list should be filled based on the function's correct output
+</pre><h3>Mutant 83</h3><pre>--- ..\P25\.\tests\test_Problem25_ChatGPT.py
++++ ..\P25\.\tests\test_Problem25_ChatGPT.py
+@@ -57,7 +57,7 @@
+     """
+     Test a more complex scenario where multiple combinations of operations lead to the target.
+     """
+-    num = "123456789"
++    num = None
+     target = 100
+     # Expected results would be complex; this is just a placeholder to indicate the type of test
+     # The actual expected list should be filled based on the function's correct output
+</pre><h3>Mutant 84</h3><pre>--- ..\P25\.\tests\test_Problem25_ChatGPT.py
++++ ..\P25\.\tests\test_Problem25_ChatGPT.py
+@@ -58,7 +58,7 @@
+     Test a more complex scenario where multiple combinations of operations lead to the target.
+     """
+     num = "123456789"
+-    target = 100
++    target = 101
+     # Expected results would be complex; this is just a placeholder to indicate the type of test
+     # The actual expected list should be filled based on the function's correct output
+     expected = ["1+2+3-4+5+6+78+9", "12+34-5+67-8+9", "..."]
+</pre><h3>Mutant 85</h3><pre>--- ..\P25\.\tests\test_Problem25_ChatGPT.py
++++ ..\P25\.\tests\test_Problem25_ChatGPT.py
+@@ -58,7 +58,7 @@
+     Test a more complex scenario where multiple combinations of operations lead to the target.
+     """
+     num = "123456789"
+-    target = 100
++    target = None
+     # Expected results would be complex; this is just a placeholder to indicate the type of test
+     # The actual expected list should be filled based on the function's correct output
+     expected = ["1+2+3-4+5+6+78+9", "12+34-5+67-8+9", "..."]
+</pre><h3>Mutant 86</h3><pre>--- ..\P25\.\tests\test_Problem25_ChatGPT.py
++++ ..\P25\.\tests\test_Problem25_ChatGPT.py
+@@ -61,6 +61,6 @@
+     target = 100
+     # Expected results would be complex; this is just a placeholder to indicate the type of test
+     # The actual expected list should be filled based on the function's correct output
+-    expected = ["1+2+3-4+5+6+78+9", "12+34-5+67-8+9", "..."]
++    expected = ["XX1+2+3-4+5+6+78+9XX", "12+34-5+67-8+9", "..."]
+     assert sorted(addOperators(num, target))[:2] == sorted(expected)[:2]  # Example comparison
+ 
+</pre><h3>Mutant 87</h3><pre>--- ..\P25\.\tests\test_Problem25_ChatGPT.py
++++ ..\P25\.\tests\test_Problem25_ChatGPT.py
+@@ -61,6 +61,6 @@
+     target = 100
+     # Expected results would be complex; this is just a placeholder to indicate the type of test
+     # The actual expected list should be filled based on the function's correct output
+-    expected = ["1+2+3-4+5+6+78+9", "12+34-5+67-8+9", "..."]
++    expected = ["1+2+3-4+5+6+78+9", "XX12+34-5+67-8+9XX", "..."]
+     assert sorted(addOperators(num, target))[:2] == sorted(expected)[:2]  # Example comparison
+ 
+</pre><h3>Mutant 88</h3><pre>--- ..\P25\.\tests\test_Problem25_ChatGPT.py
++++ ..\P25\.\tests\test_Problem25_ChatGPT.py
+@@ -61,6 +61,6 @@
+     target = 100
+     # Expected results would be complex; this is just a placeholder to indicate the type of test
+     # The actual expected list should be filled based on the function's correct output
+-    expected = ["1+2+3-4+5+6+78+9", "12+34-5+67-8+9", "..."]
++    expected = ["1+2+3-4+5+6+78+9", "12+34-5+67-8+9", "XX...XX"]
+     assert sorted(addOperators(num, target))[:2] == sorted(expected)[:2]  # Example comparison
+ 
+</pre><h3>Mutant 89</h3><pre>--- ..\P25\.\tests\test_Problem25_ChatGPT.py
++++ ..\P25\.\tests\test_Problem25_ChatGPT.py
+@@ -61,6 +61,6 @@
+     target = 100
+     # Expected results would be complex; this is just a placeholder to indicate the type of test
+     # The actual expected list should be filled based on the function's correct output
+-    expected = ["1+2+3-4+5+6+78+9", "12+34-5+67-8+9", "..."]
++    expected = None
+     assert sorted(addOperators(num, target))[:2] == sorted(expected)[:2]  # Example comparison
+ 
+</pre><h3>Mutant 90</h3><pre>--- ..\P25\.\tests\test_Problem25_ChatGPT.py
++++ ..\P25\.\tests\test_Problem25_ChatGPT.py
+@@ -62,5 +62,5 @@
+     # Expected results would be complex; this is just a placeholder to indicate the type of test
+     # The actual expected list should be filled based on the function's correct output
+     expected = ["1+2+3-4+5+6+78+9", "12+34-5+67-8+9", "..."]
+-    assert sorted(addOperators(num, target))[:2] == sorted(expected)[:2]  # Example comparison
++    assert sorted(addOperators(num, target))[:3] == sorted(expected)[:2]  # Example comparison
+ 
+</pre><h3>Mutant 91</h3><pre>--- ..\P25\.\tests\test_Problem25_ChatGPT.py
++++ ..\P25\.\tests\test_Problem25_ChatGPT.py
+@@ -62,5 +62,5 @@
+     # Expected results would be complex; this is just a placeholder to indicate the type of test
+     # The actual expected list should be filled based on the function's correct output
+     expected = ["1+2+3-4+5+6+78+9", "12+34-5+67-8+9", "..."]
+-    assert sorted(addOperators(num, target))[:2] == sorted(expected)[:2]  # Example comparison
++    assert sorted(addOperators(num, target))[:2] != sorted(expected)[:2]  # Example comparison
+ 
+</pre><h3>Mutant 92</h3><pre>--- ..\P25\.\tests\test_Problem25_ChatGPT.py
++++ ..\P25\.\tests\test_Problem25_ChatGPT.py
+@@ -62,5 +62,5 @@
+     # Expected results would be complex; this is just a placeholder to indicate the type of test
+     # The actual expected list should be filled based on the function's correct output
+     expected = ["1+2+3-4+5+6+78+9", "12+34-5+67-8+9", "..."]
+-    assert sorted(addOperators(num, target))[:2] == sorted(expected)[:2]  # Example comparison
++    assert sorted(addOperators(num, target))[:2] == sorted(expected)[:3]  # Example comparison
+ 
+</pre></body></html>

@@ -1,0 +1,318 @@
+<html><body><h1>..\P36\.\tests\test_Problem36_GeneratedSolution.py</h1>Killed 115 out of 144 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 73</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -5,7 +5,7 @@
+ import builtins as module_1
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_0():
+     int_0 = 619
+     var_0 = module_0.lowestCommonAncestor(int_0, int_0, int_0)
+</pre><h3>Mutant 75</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -7,7 +7,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+-    int_0 = 619
++    int_0 = 620
+     var_0 = module_0.lowestCommonAncestor(int_0, int_0, int_0)
+     assert var_0 == 619
+     bool_0 = True
+</pre><h3>Mutant 76</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -7,7 +7,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+-    int_0 = 619
++    int_0 = None
+     var_0 = module_0.lowestCommonAncestor(int_0, int_0, int_0)
+     assert var_0 == 619
+     bool_0 = True
+</pre><h3>Mutant 77</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -8,7 +8,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+     int_0 = 619
+-    var_0 = module_0.lowestCommonAncestor(int_0, int_0, int_0)
++    var_0 = None
+     assert var_0 == 619
+     bool_0 = True
+     float_0 = 206.3468
+</pre><h3>Mutant 78</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -9,7 +9,7 @@
+ def test_case_0():
+     int_0 = 619
+     var_0 = module_0.lowestCommonAncestor(int_0, int_0, int_0)
+-    assert var_0 == 619
++    assert var_0 != 619
+     bool_0 = True
+     float_0 = 206.3468
+     module_0.lowestCommonAncestor(bool_0, float_0, float_0)
+</pre><h3>Mutant 79</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -9,7 +9,7 @@
+ def test_case_0():
+     int_0 = 619
+     var_0 = module_0.lowestCommonAncestor(int_0, int_0, int_0)
+-    assert var_0 == 619
++    assert var_0 == 620
+     bool_0 = True
+     float_0 = 206.3468
+     module_0.lowestCommonAncestor(bool_0, float_0, float_0)
+</pre><h3>Mutant 82</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -11,7 +11,7 @@
+     var_0 = module_0.lowestCommonAncestor(int_0, int_0, int_0)
+     assert var_0 == 619
+     bool_0 = True
+-    float_0 = 206.3468
++    float_0 = 207.3468
+     module_0.lowestCommonAncestor(bool_0, float_0, float_0)
+ 
+ 
+</pre><h3>Mutant 83</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -11,7 +11,7 @@
+     var_0 = module_0.lowestCommonAncestor(int_0, int_0, int_0)
+     assert var_0 == 619
+     bool_0 = True
+-    float_0 = 206.3468
++    float_0 = None
+     module_0.lowestCommonAncestor(bool_0, float_0, float_0)
+ 
+ 
+</pre><h3>Mutant 84</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -15,7 +15,7 @@
+     module_0.lowestCommonAncestor(bool_0, float_0, float_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_1():
+     str_0 = "k@Pg_(c^?i_S`"
+     none_type_0 = None
+</pre><h3>Mutant 86</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -17,7 +17,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_1():
+-    str_0 = "k@Pg_(c^?i_S`"
++    str_0 = "XXk@Pg_(c^?i_S`XX"
+     none_type_0 = None
+     var_0 = module_0.lowestCommonAncestor(none_type_0, str_0, none_type_0)
+     module_0.lowestCommonAncestor(str_0, var_0, none_type_0)
+</pre><h3>Mutant 88</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -18,7 +18,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_1():
+     str_0 = "k@Pg_(c^?i_S`"
+-    none_type_0 = None
++    none_type_0 = ""
+     var_0 = module_0.lowestCommonAncestor(none_type_0, str_0, none_type_0)
+     module_0.lowestCommonAncestor(str_0, var_0, none_type_0)
+ 
+</pre><h3>Mutant 89</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -19,7 +19,7 @@
+ def test_case_1():
+     str_0 = "k@Pg_(c^?i_S`"
+     none_type_0 = None
+-    var_0 = module_0.lowestCommonAncestor(none_type_0, str_0, none_type_0)
++    var_0 = None
+     module_0.lowestCommonAncestor(str_0, var_0, none_type_0)
+ 
+ 
+</pre><h3>Mutant 90</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -24,7 +24,7 @@
+ 
+ 
+ def test_case_2():
+-    int_0 = 4290
++    int_0 = 4291
+     tree_node_0 = module_0.TreeNode(int_0)
+ 
+ 
+</pre><h3>Mutant 91</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -24,7 +24,7 @@
+ 
+ 
+ def test_case_2():
+-    int_0 = 4290
++    int_0 = None
+     tree_node_0 = module_0.TreeNode(int_0)
+ 
+ 
+</pre><h3>Mutant 92</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -25,7 +25,7 @@
+ 
+ def test_case_2():
+     int_0 = 4290
+-    tree_node_0 = module_0.TreeNode(int_0)
++    tree_node_0 = None
+ 
+ 
+ def test_case_3():
+</pre><h3>Mutant 96</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -30,7 +30,7 @@
+ 
+ def test_case_3():
+     int_0 = -2148
+-    none_type_0 = None
++    none_type_0 = ""
+     var_0 = module_0.lowestCommonAncestor(int_0, none_type_0, int_0)
+     assert var_0 == -2148
+     tree_node_0 = module_0.TreeNode(right=var_0)
+</pre><h3>Mutant 114</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -43,7 +43,7 @@
+     assert var_1.val == 0
+     assert var_1.left is None
+     assert var_1.right == -2148
+-    list_0 = []
++    list_0 = None
+     tree_node_1 = module_0.TreeNode(right=list_0)
+     assert tree_node_1.val == 0
+     tree_node_2 = module_0.TreeNode(none_type_0, right=none_type_0)
+</pre><h3>Mutant 118</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -46,7 +46,7 @@
+     list_0 = []
+     tree_node_1 = module_0.TreeNode(right=list_0)
+     assert tree_node_1.val == 0
+-    tree_node_2 = module_0.TreeNode(none_type_0, right=none_type_0)
++    tree_node_2 = None
+ 
+ 
+ def test_case_4():
+</pre><h3>Mutant 144</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -72,7 +72,7 @@
+     assert var_1.val == 0
+     assert var_1.left is None
+     assert var_1.right is None
+-    none_type_0 = None
++    none_type_0 = ""
+     tree_node_3 = module_0.TreeNode(left=tree_node_0, right=none_type_0)
+     assert tree_node_3.val == 0
+     var_2 = module_0.lowestCommonAncestor(tree_node_3, tree_node_2, var_0)
+</pre><h3>Mutant 155</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -80,7 +80,7 @@
+     assert var_2.left is None
+     tree_node_4 = module_0.TreeNode()
+     assert tree_node_4.val == 0
+-    var_3 = module_0.lowestCommonAncestor(tree_node_1, tree_node_3, tree_node_3)
++    var_3 = None
+ 
+ 
+ def test_case_5():
+</pre><h3>Mutant 156</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -84,7 +84,7 @@
+ 
+ 
+ def test_case_5():
+-    float_0 = 1997.0153
++    float_0 = 1998.0153
+     none_type_0 = None
+     dict_0 = {}
+     object_0 = module_1.object(**dict_0)
+</pre><h3>Mutant 157</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -84,7 +84,7 @@
+ 
+ 
+ def test_case_5():
+-    float_0 = 1997.0153
++    float_0 = None
+     none_type_0 = None
+     dict_0 = {}
+     object_0 = module_1.object(**dict_0)
+</pre><h3>Mutant 160</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -87,7 +87,7 @@
+     float_0 = 1997.0153
+     none_type_0 = None
+     dict_0 = {}
+-    object_0 = module_1.object(**dict_0)
++    object_0 = None
+     var_0 = module_0.lowestCommonAncestor(none_type_0, none_type_0, object_0)
+     tree_node_0 = module_0.TreeNode(float_0, none_type_0, var_0)
+     var_1 = module_0.lowestCommonAncestor(tree_node_0, object_0, var_0)
+</pre><h3>Mutant 161</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -88,7 +88,7 @@
+     none_type_0 = None
+     dict_0 = {}
+     object_0 = module_1.object(**dict_0)
+-    var_0 = module_0.lowestCommonAncestor(none_type_0, none_type_0, object_0)
++    var_0 = None
+     tree_node_0 = module_0.TreeNode(float_0, none_type_0, var_0)
+     var_1 = module_0.lowestCommonAncestor(tree_node_0, object_0, var_0)
+     tree_node_1 = module_0.TreeNode(right=var_1)
+</pre><h3>Mutant 162</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -89,7 +89,7 @@
+     dict_0 = {}
+     object_0 = module_1.object(**dict_0)
+     var_0 = module_0.lowestCommonAncestor(none_type_0, none_type_0, object_0)
+-    tree_node_0 = module_0.TreeNode(float_0, none_type_0, var_0)
++    tree_node_0 = None
+     var_1 = module_0.lowestCommonAncestor(tree_node_0, object_0, var_0)
+     tree_node_1 = module_0.TreeNode(right=var_1)
+     assert tree_node_1.val == 0
+</pre><h3>Mutant 163</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -90,7 +90,7 @@
+     object_0 = module_1.object(**dict_0)
+     var_0 = module_0.lowestCommonAncestor(none_type_0, none_type_0, object_0)
+     tree_node_0 = module_0.TreeNode(float_0, none_type_0, var_0)
+-    var_1 = module_0.lowestCommonAncestor(tree_node_0, object_0, var_0)
++    var_1 = None
+     tree_node_1 = module_0.TreeNode(right=var_1)
+     assert tree_node_1.val == 0
+     assert tree_node_1.right is None
+</pre><h3>Mutant 182</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -109,7 +109,7 @@
+     assert var_0.val == 0
+     assert var_0.left is None
+     assert var_0.right is None
+-    object_0 = module_1.object()
++    object_0 = None
+     tree_node_2 = module_0.TreeNode(right=object_0)
+     assert tree_node_2.val == 0
+     var_1 = module_0.lowestCommonAncestor(var_0, tree_node_1, tree_node_0)
+</pre><h3>Mutant 216</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -143,5 +143,5 @@
+     )
+     tree_node_5 = module_0.TreeNode()
+     assert tree_node_5.val == 0
+-    var_3 = module_1.object()
++    var_3 = None
+ 
+</pre><h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 98</h3><pre>--- ..\P36\.\tests\test_Problem36_GeneratedSolution.py
++++ ..\P36\.\tests\test_Problem36_GeneratedSolution.py
+@@ -32,7 +32,7 @@
+     int_0 = -2148
+     none_type_0 = None
+     var_0 = module_0.lowestCommonAncestor(int_0, none_type_0, int_0)
+-    assert var_0 == -2148
++    assert var_0 != -2148
+     tree_node_0 = module_0.TreeNode(right=var_0)
+     assert tree_node_0.val == 0
+     var_1 = module_0.lowestCommonAncestor(tree_node_0, tree_node_0, none_type_0)
+</pre></body></html>

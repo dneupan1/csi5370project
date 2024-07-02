@@ -1,0 +1,132 @@
+<html><body><h1>..\P29\.\tests\test_Problem29_GeneratedSolution.py</h1>Killed 4 out of 16 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 107</h3><pre>--- ..\P29\.\tests\test_Problem29_GeneratedSolution.py
++++ ..\P29\.\tests\test_Problem29_GeneratedSolution.py
+@@ -4,7 +4,7 @@
+ import Problem29_GeneratedSolution as module_0
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_0():
+     str_0 = "Wh6j({3e(oF]"
+     module_0.rotate(str_0)
+</pre><h3>Mutant 109</h3><pre>--- ..\P29\.\tests\test_Problem29_GeneratedSolution.py
++++ ..\P29\.\tests\test_Problem29_GeneratedSolution.py
+@@ -6,7 +6,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+-    str_0 = "Wh6j({3e(oF]"
++    str_0 = "XXWh6j({3e(oF]XX"
+     module_0.rotate(str_0)
+ 
+ 
+</pre><h3>Mutant 110</h3><pre>--- ..\P29\.\tests\test_Problem29_GeneratedSolution.py
++++ ..\P29\.\tests\test_Problem29_GeneratedSolution.py
+@@ -6,7 +6,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+-    str_0 = "Wh6j({3e(oF]"
++    str_0 = None
+     module_0.rotate(str_0)
+ 
+ 
+</pre><h3>Mutant 112</h3><pre>--- ..\P29\.\tests\test_Problem29_GeneratedSolution.py
++++ ..\P29\.\tests\test_Problem29_GeneratedSolution.py
+@@ -12,7 +12,7 @@
+ 
+ def test_case_1():
+     tuple_0 = ()
+-    var_0 = module_0.rotate(tuple_0)
++    var_0 = None
+ 
+ 
+ @pytest.mark.xfail(strict=True)
+</pre><h3>Mutant 113</h3><pre>--- ..\P29\.\tests\test_Problem29_GeneratedSolution.py
++++ ..\P29\.\tests\test_Problem29_GeneratedSolution.py
+@@ -15,7 +15,7 @@
+     var_0 = module_0.rotate(tuple_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_2():
+     bool_0 = True
+     module_0.rotate(bool_0)
+</pre><h3>Mutant 115</h3><pre>--- ..\P29\.\tests\test_Problem29_GeneratedSolution.py
++++ ..\P29\.\tests\test_Problem29_GeneratedSolution.py
+@@ -17,7 +17,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+-    bool_0 = True
++    bool_0 = False
+     module_0.rotate(bool_0)
+ 
+ 
+</pre><h3>Mutant 116</h3><pre>--- ..\P29\.\tests\test_Problem29_GeneratedSolution.py
++++ ..\P29\.\tests\test_Problem29_GeneratedSolution.py
+@@ -17,7 +17,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+-    bool_0 = True
++    bool_0 = None
+     module_0.rotate(bool_0)
+ 
+ 
+</pre><h3>Mutant 117</h3><pre>--- ..\P29\.\tests\test_Problem29_GeneratedSolution.py
++++ ..\P29\.\tests\test_Problem29_GeneratedSolution.py
+@@ -21,7 +21,7 @@
+     module_0.rotate(bool_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_3():
+     bool_0 = False
+     dict_0 = {bool_0: bool_0, bool_0: bool_0}
+</pre><h3>Mutant 119</h3><pre>--- ..\P29\.\tests\test_Problem29_GeneratedSolution.py
++++ ..\P29\.\tests\test_Problem29_GeneratedSolution.py
+@@ -23,7 +23,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+-    bool_0 = False
++    bool_0 = True
+     dict_0 = {bool_0: bool_0, bool_0: bool_0}
+     tuple_0 = (dict_0,)
+     module_0.rotate(tuple_0)
+</pre><h3>Mutant 120</h3><pre>--- ..\P29\.\tests\test_Problem29_GeneratedSolution.py
++++ ..\P29\.\tests\test_Problem29_GeneratedSolution.py
+@@ -23,7 +23,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+-    bool_0 = False
++    bool_0 = None
+     dict_0 = {bool_0: bool_0, bool_0: bool_0}
+     tuple_0 = (dict_0,)
+     module_0.rotate(tuple_0)
+</pre><h3>Mutant 121</h3><pre>--- ..\P29\.\tests\test_Problem29_GeneratedSolution.py
++++ ..\P29\.\tests\test_Problem29_GeneratedSolution.py
+@@ -24,7 +24,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_3():
+     bool_0 = False
+-    dict_0 = {bool_0: bool_0, bool_0: bool_0}
++    dict_0 = None
+     tuple_0 = (dict_0,)
+     module_0.rotate(tuple_0)
+ 
+</pre><h3>Mutant 122</h3><pre>--- ..\P29\.\tests\test_Problem29_GeneratedSolution.py
++++ ..\P29\.\tests\test_Problem29_GeneratedSolution.py
+@@ -25,6 +25,6 @@
+ def test_case_3():
+     bool_0 = False
+     dict_0 = {bool_0: bool_0, bool_0: bool_0}
+-    tuple_0 = (dict_0,)
++    tuple_0 = None
+     module_0.rotate(tuple_0)
+ 
+</pre></body></html>

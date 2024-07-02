@@ -1,0 +1,32 @@
+<html><body><h1>..\P4\.\Problem4_GeneratedSolution.py</h1>Killed 62 out of 65 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 4</h3><pre>--- ..\P4\.\Problem4_GeneratedSolution.py
++++ ..\P4\.\Problem4_GeneratedSolution.py
+@@ -1,6 +1,6 @@
+ def isMatch(s: str, p: str) -> bool:
+     # Step 1: Initialize the DP table
+-    dp = [[False] * (len(p) + 1) for _ in range(len(s) + 1)]
++    dp = [[False] * (len(p) + 2) for _ in range(len(s) + 1)]
+     dp[0][0] = True
+     
+     # Step 2: Handle patterns like a*, a*b*, a*b*c* at dp[0][j]
+</pre><h3>Mutant 6</h3><pre>--- ..\P4\.\Problem4_GeneratedSolution.py
++++ ..\P4\.\Problem4_GeneratedSolution.py
+@@ -1,6 +1,6 @@
+ def isMatch(s: str, p: str) -> bool:
+     # Step 1: Initialize the DP table
+-    dp = [[False] * (len(p) + 1) for _ in range(len(s) + 1)]
++    dp = [[False] * (len(p) + 1) for _ in range(len(s) + 2)]
+     dp[0][0] = True
+     
+     # Step 2: Handle patterns like a*, a*b*, a*b*c* at dp[0][j]
+</pre><h3>Mutant 52</h3><pre>--- ..\P4\.\Problem4_GeneratedSolution.py
++++ ..\P4\.\Problem4_GeneratedSolution.py
+@@ -14,7 +14,7 @@
+             if p[j-1] == '.' or p[j-1] == s[i-1]:
+                 dp[i][j] = dp[i-1][j-1]
+             elif p[j-1] == '*':
+-                dp[i][j] = dp[i][j-2] or (dp[i-1][j] and (s[i-1] == p[j-2] or p[j-2] == '.'))
++                dp[i][j] = dp[i][j-2] or (dp[i-2][j] and (s[i-1] == p[j-2] or p[j-2] == '.'))
+     
+     # Step 4: Return the result
+     return dp[len(s)][len(p)]
+</pre></body></html>
