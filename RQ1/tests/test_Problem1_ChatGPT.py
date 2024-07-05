@@ -1,5 +1,5 @@
 import pytest
-from Problem1_GeneratedSolution import length_of_longest_substring  # Adjust the import path according to your project structure
+from Problem1_GeneratedSolution import length_of_longest_substring  # Adjust the import path according to your project structure\
 
 # Test with unique characters
 def test_unique_characters():
