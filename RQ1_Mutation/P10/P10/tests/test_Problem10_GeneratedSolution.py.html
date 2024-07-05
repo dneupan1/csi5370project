@@ -1,0 +1,139 @@
+<html><body><h1>..\P10\.\tests\test_Problem10_GeneratedSolution.py</h1>Killed 3 out of 16 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 109</h3><pre>--- ..\P10\.\tests\test_Problem10_GeneratedSolution.py
++++ ..\P10\.\tests\test_Problem10_GeneratedSolution.py
+@@ -4,7 +4,7 @@
+ import Problem10_GeneratedSolution as module_0
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_0():
+     str_0 = "kkgC\x0cw0reun8QFP*)\tm#"
+     module_0.cherryPickup(str_0)
+</pre><h3>Mutant 111</h3><pre>--- ..\P10\.\tests\test_Problem10_GeneratedSolution.py
++++ ..\P10\.\tests\test_Problem10_GeneratedSolution.py
+@@ -6,7 +6,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+-    str_0 = "kkgC\x0cw0reun8QFP*)\tm#"
++    str_0 = "XXkkgC\x0cw0reun8QFP*)\tm#XX"
+     module_0.cherryPickup(str_0)
+ 
+ 
+</pre><h3>Mutant 112</h3><pre>--- ..\P10\.\tests\test_Problem10_GeneratedSolution.py
++++ ..\P10\.\tests\test_Problem10_GeneratedSolution.py
+@@ -6,7 +6,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_0():
+-    str_0 = "kkgC\x0cw0reun8QFP*)\tm#"
++    str_0 = None
+     module_0.cherryPickup(str_0)
+ 
+ 
+</pre><h3>Mutant 113</h3><pre>--- ..\P10\.\tests\test_Problem10_GeneratedSolution.py
++++ ..\P10\.\tests\test_Problem10_GeneratedSolution.py
+@@ -10,7 +10,7 @@
+     module_0.cherryPickup(str_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_1():
+     str_0 = "K"
+     module_0.cherryPickup(str_0)
+</pre><h3>Mutant 115</h3><pre>--- ..\P10\.\tests\test_Problem10_GeneratedSolution.py
++++ ..\P10\.\tests\test_Problem10_GeneratedSolution.py
+@@ -12,7 +12,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_1():
+-    str_0 = "K"
++    str_0 = "XXKXX"
+     module_0.cherryPickup(str_0)
+ 
+ 
+</pre><h3>Mutant 116</h3><pre>--- ..\P10\.\tests\test_Problem10_GeneratedSolution.py
++++ ..\P10\.\tests\test_Problem10_GeneratedSolution.py
+@@ -12,7 +12,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_1():
+-    str_0 = "K"
++    str_0 = None
+     module_0.cherryPickup(str_0)
+ 
+ 
+</pre><h3>Mutant 117</h3><pre>--- ..\P10\.\tests\test_Problem10_GeneratedSolution.py
++++ ..\P10\.\tests\test_Problem10_GeneratedSolution.py
+@@ -16,7 +16,7 @@
+     module_0.cherryPickup(str_0)
+ 
+ 
+-@pytest.mark.xfail(strict=True)
++@pytest.mark.xfail(strict=False)
+ def test_case_2():
+     bytes_0 = b"/\xb2\xfawS\xc5"
+     list_0 = [bytes_0, bytes_0, bytes_0]
+</pre><h3>Mutant 119</h3><pre>--- ..\P10\.\tests\test_Problem10_GeneratedSolution.py
++++ ..\P10\.\tests\test_Problem10_GeneratedSolution.py
+@@ -18,7 +18,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+-    bytes_0 = b"/\xb2\xfawS\xc5"
++    bytes_0 = b"XX/\xb2\xfawS\xc5XX"
+     list_0 = [bytes_0, bytes_0, bytes_0]
+     var_0 = module_0.cherryPickup(list_0)
+     assert var_0 == 1378
+</pre><h3>Mutant 120</h3><pre>--- ..\P10\.\tests\test_Problem10_GeneratedSolution.py
++++ ..\P10\.\tests\test_Problem10_GeneratedSolution.py
+@@ -18,7 +18,7 @@
+ 
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+-    bytes_0 = b"/\xb2\xfawS\xc5"
++    bytes_0 = None
+     list_0 = [bytes_0, bytes_0, bytes_0]
+     var_0 = module_0.cherryPickup(list_0)
+     assert var_0 == 1378
+</pre><h3>Mutant 121</h3><pre>--- ..\P10\.\tests\test_Problem10_GeneratedSolution.py
++++ ..\P10\.\tests\test_Problem10_GeneratedSolution.py
+@@ -19,7 +19,7 @@
+ @pytest.mark.xfail(strict=True)
+ def test_case_2():
+     bytes_0 = b"/\xb2\xfawS\xc5"
+-    list_0 = [bytes_0, bytes_0, bytes_0]
++    list_0 = None
+     var_0 = module_0.cherryPickup(list_0)
+     assert var_0 == 1378
+     module_0.cherryPickup(var_0)
+</pre><h3>Mutant 122</h3><pre>--- ..\P10\.\tests\test_Problem10_GeneratedSolution.py
++++ ..\P10\.\tests\test_Problem10_GeneratedSolution.py
+@@ -20,6 +20,6 @@
+ def test_case_2():
+     bytes_0 = b"/\xb2\xfawS\xc5"
+     list_0 = [bytes_0, bytes_0, bytes_0]
+-    var_0 = module_0.cherryPickup(list_0)
++    var_0 = None
+     assert var_0 == 1378
+     module_0.cherryPickup(var_0)
+</pre><h3>Mutant 123</h3><pre>--- ..\P10\.\tests\test_Problem10_GeneratedSolution.py
++++ ..\P10\.\tests\test_Problem10_GeneratedSolution.py
+@@ -21,5 +21,5 @@
+     bytes_0 = b"/\xb2\xfawS\xc5"
+     list_0 = [bytes_0, bytes_0, bytes_0]
+     var_0 = module_0.cherryPickup(list_0)
+-    assert var_0 == 1378
++    assert var_0 != 1378
+     module_0.cherryPickup(var_0)
+</pre><h3>Mutant 124</h3><pre>--- ..\P10\.\tests\test_Problem10_GeneratedSolution.py
++++ ..\P10\.\tests\test_Problem10_GeneratedSolution.py
+@@ -21,5 +21,5 @@
+     bytes_0 = b"/\xb2\xfawS\xc5"
+     list_0 = [bytes_0, bytes_0, bytes_0]
+     var_0 = module_0.cherryPickup(list_0)
+-    assert var_0 == 1378
++    assert var_0 == 1379
+     module_0.cherryPickup(var_0)
+</pre></body></html>

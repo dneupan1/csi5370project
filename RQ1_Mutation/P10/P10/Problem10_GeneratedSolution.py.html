@@ -1,4 +1,4 @@
-<html><body><h1>..\P10\.\Problem10_GeneratedSolution.py</h1>Killed 51 out of 54 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 15</h3><pre>--- ..\P10\.\Problem10_GeneratedSolution.py
+<html><body><h1>..\P10\.\Problem10_GeneratedSolution.py</h1>Killed 52 out of 54 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 15</h3><pre>--- ..\P10\.\Problem10_GeneratedSolution.py
 +++ ..\P10\.\Problem10_GeneratedSolution.py
 @@ -5,7 +5,7 @@
      def dfs(x1, y1, x2):
@@ -20,15 +20,4 @@
              return -float('inf')  # Impossible path
          if dp[x1][y1][x2] != -1:
              return dp[x1][y1][x2]  # Memoization
-</pre><h2>Suspicious</h2>Mutants that made the test suite take longer, but otherwise seemed ok<h3>Mutant 43</h3><pre>--- ..\P10\.\Problem10_GeneratedSolution.py
-+++ ..\P10\.\Problem10_GeneratedSolution.py
-@@ -19,7 +19,7 @@
-         dp[x1][y1][x2] = cherries + max(
-             dfs(x1 + 1, y1, x2 + 1),  # Down-Down
-             dfs(x1, y1 + 1, x2),      # Right-Down
--            dfs(x1 + 1, y1, x2),      # Down-Right
-+            dfs(x1 - 1, y1, x2),      # Down-Right
-             dfs(x1, y1 + 1, x2 + 1)   # Right-Right
-         )
-         
 </pre></body></html>
