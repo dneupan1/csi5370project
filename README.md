@@ -1,5 +1,4 @@
-# csi5370project
+# Evaluating LLM-Generated Test Code for Test Driven Development: Comparative Study of GPT-4 vs. PYNGUIN
 
-Project repository for CSI 5370
 
-This is the main repository for the CSI5370 project.
+This repository contains code and all the collected data for this research project.
